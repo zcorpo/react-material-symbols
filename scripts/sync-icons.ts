@@ -1,24 +1,21 @@
 import { promises as fs } from 'fs'
 import path from 'path'
 
-// ─── constants ─────────────────────────────────────────────────────────────
-
 const REPO = 'marella/material-symbols'
 const BASE_RAW = `https://raw.githubusercontent.com/${REPO}/main/svg`
 const ICONS_PKG = path.join(__dirname, '../packages/icons')
 const SRC_DIR = path.join(ICONS_PKG, 'src')
 
-const WEIGHTS = ['100', '200', '300', '400', '500', '600', '700'] as const
-const STYLES = ['outlined', 'rounded', 'sharp'] as const
-type Weight = (typeof WEIGHTS)[number]
-type Style = (typeof STYLES)[number]
+type Weight = '100' | '200' | '300' | '400' | '500' | '600' | '700'
+type Style = 'outlined' | 'rounded' | 'sharp'
+
+const WEIGHTS: Weight[] = ['100', '200', '300', '400', '500', '600', '700']
+const STYLES: Style[] = ['outlined', 'rounded', 'sharp']
 
 const GITHUB_HEADERS: HeadersInit = {
   Accept: 'application/vnd.github+json',
   'X-GitHub-Api-Version': '2022-11-28',
 }
-
-// ─── cli args ──────────────────────────────────────────────────────────────
 
 const argv = process.argv.slice(2)
 const getFlag = (name: string) => argv.find((a) => a.startsWith(`--${name}=`))?.split('=')[1]
@@ -27,32 +24,86 @@ const weightArg = getFlag('weight')
 const styleArg = getFlag('style')
 
 const targetWeights: Weight[] = weightArg
-  ? (weightArg.split(',').filter((w) => (WEIGHTS as readonly string[]).includes(w)) as Weight[])
+  ? weightArg.split(',').filter(isWeight)
   : [...WEIGHTS]
 const targetStyles: Style[] = styleArg
-  ? (styleArg.split(',').filter((s) => (STYLES as readonly string[]).includes(s)) as Style[])
+  ? styleArg.split(',').filter(isStyle)
   : [...STYLES]
 const force = argv.includes('--force')
 
-// ─── github helpers ────────────────────────────────────────────────────────
-
-interface GHTreeItem {
+type GHTreeItem = {
   path: string
   type: 'blob' | 'tree'
   sha: string
 }
-interface GHTreeResp {
+type GHTreeResp = {
   tree: GHTreeItem[]
   truncated?: boolean
 }
-interface GHBranch {
+type GHBranch = {
   commit: { commit: { tree: { sha: string } } }
 }
+type IconResult = {
+  name: string
+  componentName: string
+  paths: string[]
+}
 
-async function fetchJson<T>(url: string): Promise<T> {
+function isWeight(value: string): value is Weight {
+  return WEIGHTS.some((w) => w === value)
+}
+
+function isStyle(value: string): value is Style {
+  return STYLES.some((s) => s === value)
+}
+
+function isRecord(value: unknown): value is Record<string, unknown> {
+  return typeof value === 'object' && value !== null
+}
+
+function isGHTreeItem(value: unknown): value is GHTreeItem {
+  if (!isRecord(value)) return false
+  return (
+    typeof value.path === 'string' &&
+    (value.type === 'blob' || value.type === 'tree') &&
+    typeof value.sha === 'string'
+  )
+}
+
+function parseGHTreeResp(data: unknown): GHTreeResp {
+  if (!isRecord(data) || !Array.isArray(data.tree)) {
+    throw new Error('Invalid GitHub tree response')
+  }
+  const tree: GHTreeItem[] = []
+  for (const item of data.tree) {
+    if (!isGHTreeItem(item)) throw new Error('Invalid GitHub tree item')
+    tree.push(item)
+  }
+  const truncated = data.truncated === undefined ? undefined : Boolean(data.truncated)
+  return { tree, truncated }
+}
+
+function parseGHBranch(data: unknown): GHBranch {
+  if (!isRecord(data)) throw new Error('Invalid GitHub branch response')
+  const commit = data.commit
+  if (!isRecord(commit)) throw new Error('Invalid GitHub branch response')
+  const inner = commit.commit
+  if (!isRecord(inner)) throw new Error('Invalid GitHub branch response')
+  const tree = inner.tree
+  if (!isRecord(tree) || typeof tree.sha !== 'string') {
+    throw new Error('Invalid GitHub branch response')
+  }
+  return { commit: { commit: { tree: { sha: tree.sha } } } }
+}
+
+function isIconResult(value: IconResult | null): value is IconResult {
+  return value !== null
+}
+
+async function fetchJson(url: string): Promise<unknown> {
   const res = await fetch(url, { headers: GITHUB_HEADERS })
   if (!res.ok) throw new Error(`GET ${url} → ${res.status} ${res.statusText}`)
-  return res.json() as Promise<T>
+  return res.json()
 }
 
 async function fetchText(url: string, retries = 3): Promise<string> {
@@ -64,12 +115,12 @@ async function fetchText(url: string, retries = 3): Promise<string> {
   throw new Error(`Failed to fetch ${url}`)
 }
 
-// SHA cache so we don't re-fetch the same tree node twice
 const treeCache = new Map<string, GHTreeItem[]>()
 async function getTree(sha: string): Promise<GHTreeItem[]> {
-  if (treeCache.has(sha)) return treeCache.get(sha)!
-  const data = await fetchJson<GHTreeResp>(
-    `https://api.github.com/repos/${REPO}/git/trees/${sha}`,
+  const cached = treeCache.get(sha)
+  if (cached !== undefined) return cached
+  const data = parseGHTreeResp(
+    await fetchJson(`https://api.github.com/repos/${REPO}/git/trees/${sha}`),
   )
   treeCache.set(sha, data.tree)
   return data.tree
@@ -80,8 +131,6 @@ function findSubdir(items: GHTreeItem[], name: string): GHTreeItem {
   if (!item) throw new Error(`Directory "${name}" not found in tree`)
   return item
 }
-
-// ─── svg helpers ───────────────────────────────────────────────────────────
 
 function toComponentName(iconName: string): string {
   const pascal = iconName
@@ -117,8 +166,6 @@ ${pathsJsx}
 `
 }
 
-// ─── concurrency ───────────────────────────────────────────────────────────
-
 async function concurrentMap<T, R>(
   items: T[],
   fn: (item: T, index: number) => Promise<R>,
@@ -135,8 +182,6 @@ async function concurrentMap<T, R>(
   await Promise.all(Array.from({ length: Math.min(concurrency, items.length) }, worker))
   return results
 }
-
-// ─── sync one weight/style combination ─────────────────────────────────────
 
 async function syncCombination(
   weight: Weight,
@@ -175,7 +220,7 @@ async function syncCombination(
     20,
   )
 
-  const valid = icons.filter(Boolean) as { name: string; componentName: string; paths: string[] }[]
+  const valid = icons.filter(isIconResult)
 
   await Promise.all(
     valid.map(({ componentName, paths }) =>
@@ -195,8 +240,6 @@ async function syncCombination(
   if (failed.length) console.warn(`    Skipped: ${failed.join(', ')}`)
 }
 
-// ─── package.json exports updater ──────────────────────────────────────────
-
 async function updatePackageJson(): Promise<void> {
   const pkgPath = path.join(ICONS_PKG, 'package.json')
   const pkg = JSON.parse(await fs.readFile(pkgPath, 'utf-8'))
@@ -210,7 +253,10 @@ async function updatePackageJson(): Promise<void> {
       const indexPath = path.join(SRC_DIR, w, s, 'index.ts')
       const exists = await fs.access(indexPath).then(() => true).catch(() => false)
       if (!exists) continue
-      if (!firstWeight) { firstWeight = w; firstStyle = s }
+      if (!firstWeight) {
+        firstWeight = w
+        firstStyle = s
+      }
       exports[`./${w}/${s}`] = {
         import: {
           types: `./dist/${w}/${s}/index.d.mts`,
@@ -226,10 +272,14 @@ async function updatePackageJson(): Promise<void> {
 
   pkg.exports = exports
 
-  // Prefer 400/rounded as the legacy main/module/types default, fall back to first found
-  const defaultCombo: [Weight, Style] =
-    exports['./400/rounded'] ? ['400', 'rounded'] :
-    firstWeight ? [firstWeight, firstStyle!] : ['400', 'rounded']
+  let defaultCombo: [Weight, Style]
+  if (exports['./400/rounded']) {
+    defaultCombo = ['400', 'rounded']
+  } else if (firstWeight !== null && firstStyle !== null) {
+    defaultCombo = [firstWeight, firstStyle]
+  } else {
+    defaultCombo = ['400', 'rounded']
+  }
   const [dw, ds] = defaultCombo
   pkg.main = `./dist/${dw}/${ds}/index.js`
   pkg.module = `./dist/${dw}/${ds}/index.mjs`
@@ -239,24 +289,22 @@ async function updatePackageJson(): Promise<void> {
   console.log(`Updated package.json exports (${Object.keys(exports).length} entries)`)
 }
 
-// ─── main ──────────────────────────────────────────────────────────────────
-
 async function main() {
   const combinations: [Weight, Style][] = []
   for (const w of targetWeights) for (const s of targetStyles) combinations.push([w, s])
 
   console.log(`Syncing ${combinations.length} combination(s): ${combinations.map(([w, s]) => `${w}/${s}`).join(', ')}\n`)
 
-  // Resolve tree SHAs: root → svg, then per weight → per style
   process.stdout.write('Resolving tree structure…')
-  const branch = await fetchJson<GHBranch>(`https://api.github.com/repos/${REPO}/branches/main`)
+  const branch = parseGHBranch(
+    await fetchJson(`https://api.github.com/repos/${REPO}/branches/main`),
+  )
   const rootTree = await getTree(branch.commit.commit.tree.sha)
   const svgTree = await getTree(findSubdir(rootTree, 'svg').sha)
   process.stdout.write(' done\n\n')
 
-  // Pre-fetch weight trees in parallel (they're cached for style lookups below)
   const weightItems = svgTree.filter(
-    (t) => t.type === 'tree' && (targetWeights as string[]).includes(t.path),
+    (t) => t.type === 'tree' && isWeight(t.path) && targetWeights.includes(t.path),
   )
   await Promise.all(weightItems.map((t) => getTree(t.sha)))
 

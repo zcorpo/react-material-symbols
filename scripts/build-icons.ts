@@ -2,13 +2,15 @@ import { execSync } from 'child_process'
 import { existsSync, rmSync } from 'fs'
 import path from 'path'
 
-const WEIGHTS = ['100', '200', '300', '400', '500', '600', '700'] as const
-const STYLES = ['outlined', 'rounded', 'sharp'] as const
+type Weight = '100' | '200' | '300' | '400' | '500' | '600' | '700'
+type Style = 'outlined' | 'rounded' | 'sharp'
+
+const WEIGHTS: Weight[] = ['100', '200', '300', '400', '500', '600', '700']
+const STYLES: Style[] = ['outlined', 'rounded', 'sharp']
 
 const PKG_DIR = path.join(__dirname, '../packages/icons')
 const TSUP = path.join(PKG_DIR, 'node_modules/.bin/tsup')
 
-// Strip tsx's injected NODE_PATH so it doesn't leak its loader into tsup's child process
 const { NODE_PATH: _nodePath, ...cleanEnv } = process.env
 
 rmSync(path.join(PKG_DIR, 'dist'), { recursive: true, force: true })

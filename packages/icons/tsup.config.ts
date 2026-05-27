@@ -16,11 +16,23 @@ function makeCombo(w: string, s: string) {
   })
 }
 
-// BUILD_COMBO env var: build a single combination (used by scripts/build-icons.ts).
-// No env var: build all synced combinations in parallel (direct `pnpm build` usage).
+function parseBuildCombo(combo: string): { weight: string; style: string } | null {
+  const slash = combo.indexOf('/')
+  if (slash <= 0 || slash === combo.length - 1) return null
+  if (combo.indexOf('/', slash + 1) !== -1) return null
+  return { weight: combo.slice(0, slash), style: combo.slice(slash + 1) }
+}
+
 const single = process.env.BUILD_COMBO
 const config = single
-  ? makeCombo(...(single.split('/') as [string, string]))
+  ? (() => {
+      const parsed = parseBuildCombo(single)
+      if (!parsed) {
+        console.error(`Invalid BUILD_COMBO (expected weight/style): ${single}`)
+        process.exit(1)
+      }
+      return makeCombo(parsed.weight, parsed.style)
+    })()
   : (() => {
       const all = WEIGHTS.flatMap((w) =>
         STYLES.flatMap((s) => (existsSync(`src/${w}/${s}/index.ts`) ? [makeCombo(w, s)] : [])),
