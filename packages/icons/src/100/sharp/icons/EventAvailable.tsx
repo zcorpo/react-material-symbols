@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function EventAvailable({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M437-265 332-369l15-15 90 89 174-175 16 15-190 190ZM172-132v-622h142v-86h27v86h282v-86h24v86h141v622H172Zm22-22h572v-377H194v377Zm0-399h572v-179H194v179Zm0 0v-179 179Z" />
+    </svg>
+  )
+}

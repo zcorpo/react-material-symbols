@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function TextFieldsAltFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M80-160v-34h800v34H80Zm686-120v-508h22v508h-22Zm-568 0 215-508h14l215 508h-28l-62-147H284l-62 147h-24Zm96-169h249L419-745 294-449Z" />
+    </svg>
+  )
+}

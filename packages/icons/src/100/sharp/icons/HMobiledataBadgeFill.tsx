@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function HMobiledataBadgeFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M356-306h22v-163h204v163h22v-348h-22v163H378v-163h-22v348ZM172-172v-616h616v616H172Z" />
+    </svg>
+  )
+}

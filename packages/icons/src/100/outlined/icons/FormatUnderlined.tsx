@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function FormatUnderlined({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M236-217v-22h488v22H236Zm117-157.5Q306-420 306-499v-298h22v296q0 70 41 110t111 40q70 0 111-40t41-110v-296h22v298q0 79-47 124.5T480-329q-80 0-127-45.5Z" />
+    </svg>
+  )
+}

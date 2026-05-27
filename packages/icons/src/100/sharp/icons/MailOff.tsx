@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function MailOff({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M444-484Zm128-8Zm252 387L716-212H132v-536h80l22 22h-80v492h540L119-809l16-16 704 704-15 16Zm4-131-22-22v-454L534-529l-17-17 272-180H338l-22-22h512v512Z" />
+    </svg>
+  )
+}

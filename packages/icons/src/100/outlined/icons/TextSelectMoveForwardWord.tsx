@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function TextSelectMoveForwardWord({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="m669-361-16-15 92-93H443v-22h302l-92-93 16-15 119 119-119 119ZM194-194h136v-572H194v572Zm-22 22v-616h180v616H172Zm291 0v-34h34v34h-34Zm0-582v-34h34v34h-34Zm146 582v-34h34v34h-34Zm0-582v-34h34v34h-34Zm145 582v-34h34v34h-34Zm0-582v-34h34v34h-34ZM194-194h136-136Z" />
+    </svg>
+  )
+}

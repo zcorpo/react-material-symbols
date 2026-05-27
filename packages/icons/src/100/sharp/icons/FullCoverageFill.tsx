@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function FullCoverageFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M132-172v-453h22v431h552v22H132Zm163-163v-453h573v453H295Zm104-146h162v-204H399v204Zm203 0h162v-82H602v82Zm0-122h162v-82H602v82Z" />
+    </svg>
+  )
+}

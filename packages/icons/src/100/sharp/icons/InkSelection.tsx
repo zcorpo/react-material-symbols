@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function InkSelection({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M460-172v-328h328v22H498l290 290-16 16-290-290v290h-22Zm-142 0v-34h34v34h-34ZM172-754v-34h34v34h-34Zm146 0v-34h34v34h-34Zm145 0v-34h34v34h-34Zm146 0v-34h34v34h-34Zm145 0v-34h34v34h-34ZM172-172v-34h34v34h-34Zm0-146v-34h34v34h-34Zm0-145v-34h34v34h-34Zm0-146v-34h34v34h-34Zm582 0v-34h34v34h-34Z" />
+    </svg>
+  )
+}

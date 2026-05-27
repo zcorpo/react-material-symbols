@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function PhotoCameraBackFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M132-172v-534h176l74-82h196l74 82h176v534H132Zm190-122h326L548-426 447-300l-65-72-60 78Z" />
+    </svg>
+  )
+}

@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function SportsGymnastics({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="m508-106-4-386-216-57H36v-22h253l313-220 15 16-190 136 152 55 291-183 12 15-316 233-34 413h-24ZM250.08-658q-26.48 0-44.28-17.72t-17.8-44.2q0-26.48 17.72-44.28t44.2-17.8q26.48 0 44.28 17.72t17.8 44.2q0 26.48-17.72 44.28t-44.2 17.8Z" />
+    </svg>
+  )
+}

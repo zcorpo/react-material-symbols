@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function BallotFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M472-562h188v-22H472v22Zm0 185h188v-22H472v22ZM325-541h63v-63h-63v63Zm0 185h63v-63h-63v63ZM172-172v-616h616v616H172Z" />
+    </svg>
+  )
+}

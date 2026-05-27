@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function PentagonFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M298-146q-18 0-32-10t-20-27L124-553q-6-16-.5-33t20.5-28l306-212q14-10 30-10t30 10l306 212q15 11 20.5 28t.5 33L714-183q-6 17-20 27t-31 10H298Z" />
+    </svg>
+  )
+}

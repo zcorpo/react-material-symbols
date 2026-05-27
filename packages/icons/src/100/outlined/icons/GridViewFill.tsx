@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function GridViewFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M172-517v-271h271v271H172Zm0 345v-271h271v271H172Zm345-345v-271h271v271H517Zm0 345v-271h271v271H517Z" />
+    </svg>
+  )
+}

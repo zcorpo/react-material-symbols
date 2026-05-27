@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function InvertColors({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M480-172q-111 0-189.5-76T212-435q0-57 21.5-103t56.5-84l190-186 190 186q35 38 56.5 85.5T748-435q0 110-78 186.5T480-172Zm0-22v-582L305-604q-35 34-53 76.5T234-435q0 100 72 170.5T480-194Z" />
+    </svg>
+  )
+}

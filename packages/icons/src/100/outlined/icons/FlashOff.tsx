@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function FlashOff({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M352-828h259l-63 217h155L602-463l-16-16 75-110H501l14 14 67-231H374v115l-22-22v-115Zm100 584v-208H352v-124L128-801l16-15 672 672-15 16-255-254-94 138Zm27-341Z" />
+    </svg>
+  )
+}

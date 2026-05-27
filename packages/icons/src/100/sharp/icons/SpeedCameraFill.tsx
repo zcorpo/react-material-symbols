@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function SpeedCameraFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="m702-400-31-18 86-63 31 18-86 63ZM212-212v-22h193v-259l-173-95 106-176 398 216-186 133-124-67v270H212Z" />
+    </svg>
+  )
+}

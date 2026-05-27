@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function MmsFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M322-436h326L548-568 447-442l-65-72-60 78ZM132-180v-594q0-23 15.5-38.5T186-828h588q23 0 38.5 15.5T828-774v428q0 23-15.5 38.5T774-292H244L132-180Z" />
+    </svg>
+  )
+}

@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function VideocamFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M211-212q-23 0-38.5-15.5T157-266v-428q0-23 15.5-38.5T211-748h428q23 0 38.5 15.5T693-694v198l110-110v251L693-465v199q0 23-15.5 38.5T639-212H211Z" />
+    </svg>
+  )
+}

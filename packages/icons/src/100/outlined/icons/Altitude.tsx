@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function Altitude({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M749-483v-208l-93 92-15-15 119-119 119 119-15 16-93-93v208h-22ZM139-175l146-196 130.5 174H777L565-479 432-301l-15-19 148-197 256 342H139Zm293-22Z" />
+    </svg>
+  )
+}

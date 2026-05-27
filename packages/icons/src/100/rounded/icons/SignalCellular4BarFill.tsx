@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function SignalCellular4BarFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M179-132q-10 0-14.5-6t-4.5-14.12q0-3.56 1-6.72 1-3.16 3.79-5.95l630.42-630.42Q798-798 801.16-799t6.72-1q8.12 0 14.12 4.5t6 13.5v624q0 11.08-7.17 18.54Q813.67-132 803-132H179Z" />
+    </svg>
+  )
+}

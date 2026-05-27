@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function BreakingNewsAlt1Fill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M283-309h166v-22H283v22Zm372 0h22v-22h-22v22ZM283-469h166v-22H283v22Zm372 0h22v-182h-22v182ZM283-629h166v-22H283v22ZM130-172v-616h700v616H130Z" />
+    </svg>
+  )
+}

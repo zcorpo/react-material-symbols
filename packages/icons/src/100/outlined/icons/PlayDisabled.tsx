@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function PlayDisabled({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="m589-432-16-16 57-35-246-152-8-8v-24l292 186-79 49Zm94 228L508-379l-132 84v-216L202-684l16-16 480 480-15 16ZM398-485Zm0 149 91-58-91-91v149Zm-14-299Z" />
+    </svg>
+  )
+}

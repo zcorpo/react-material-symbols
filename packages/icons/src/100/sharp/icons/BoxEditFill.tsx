@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function BoxEditFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M172-172v-498l95-118h425l96 120v71L588-399v-261H372v263l108-54 107 53-109 108v118H172Zm400 0v-78l231-230 77 78-230 230h-78Zm231-192 37-38-37-38-38 38 38 38ZM209-682h540l-68-84H278l-69 84Z" />
+    </svg>
+  )
+}

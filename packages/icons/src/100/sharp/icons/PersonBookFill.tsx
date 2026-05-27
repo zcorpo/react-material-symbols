@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function PersonBookFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M347.51-272.34Q285.02-249.67 234-211v57h492v-57q-52.03-38.67-114.03-61.34Q549.96-295 479.98-295q-69.98 0-132.47 22.66ZM212-132v-696h536v696H212Zm349-291q33-33 33-80.5T561-584q-33-33-80.5-33T400-584q-33 33-33 80.5t33 80.5q33 33 80.5 33t80.5-33Z" />
+    </svg>
+  )
+}

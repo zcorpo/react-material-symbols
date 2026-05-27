@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function Icon1xMobiledata({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M267-306v-326h-81v-22h103v348h-22Zm200 0 110-186-97-162h26l86 140 82-140h25l-94 162 109 186h-26l-98-165-98 165h-25Z" />
+    </svg>
+  )
+}

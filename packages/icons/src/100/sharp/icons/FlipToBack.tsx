@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function FlipToBack({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M172-172v-471h22v449h449v22H172Zm146-146v-34h34v34h-34Zm0-145v-34h34v34h-34Zm0-146v-34h34v34h-34Zm0-145v-34h34v34h-34Zm145 436v-34h34v34h-34Zm0-436v-34h34v34h-34Zm146 0v-34h34v34h-34Zm0 436v-34h34v34h-34Zm145-436v-34h34v34h-34Zm0 436v-34h34v34h-34Zm0-145v-34h34v34h-34Zm0-146v-34h34v34h-34Z" />
+    </svg>
+  )
+}

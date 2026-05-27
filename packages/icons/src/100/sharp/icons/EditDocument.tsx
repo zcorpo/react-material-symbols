@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function EditDocument({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M542-132v-78l231-230 77 78-230 230h-78Zm268-230-37-38 37 38ZM570-160h38l144-144-18-20.03L715-343 570-198v38Zm-358 28v-696h374l162 162v98h-22v-84H572v-154H234v652h214v22H212Zm279-348Zm243 155.97L715-343l37 39-18-20.03Z" />
+    </svg>
+  )
+}

@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function AlignVerticalBottom({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M132-158v-22h696v22H132Zm187-138v-507h64v507h-64Zm258 0v-267h64v267h-64Z" />
+    </svg>
+  )
+}

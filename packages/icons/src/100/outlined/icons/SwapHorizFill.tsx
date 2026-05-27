@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function SwapHorizFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M294-213 132-375l162-162 16 16-136 135h307v22H174l136 135-16 16Zm372-211-16-16 136-135H479v-22h307L650-733l16-15 162 162-162 162Z" />
+    </svg>
+  )
+}

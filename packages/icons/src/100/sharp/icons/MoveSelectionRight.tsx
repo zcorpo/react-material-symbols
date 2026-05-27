@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function MoveSelectionRight({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M448-290v-380h380v380H448Zm22-22h336v-336H470v336Zm-180 22v-34h34v34h-34Zm0-346v-34h34v34h-34ZM132-290v-34h34v34h-34Zm0-173v-34h34v34h-34Zm0-173v-34h34v34h-34Zm506 156Z" />
+    </svg>
+  )
+}

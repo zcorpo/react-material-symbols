@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function UpiPayFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M471-375h25v-87h143v-123H471v210Zm228 0h25v-210h-25v210ZM496-487v-73h118v73H496ZM243-375h168v-210h-25v185H268v-185h-25v210ZM132-212v-536h696v536H132Z" />
+    </svg>
+  )
+}

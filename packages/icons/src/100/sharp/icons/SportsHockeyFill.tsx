@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function SportsHockeyFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M120-206v-58h54v58h-54Zm95 0v-58h175l44-98 12 21-62 135H215Zm571 0v-58h54v58h-54Zm-41 0H576L332-754h17l131 291 131-291h17L491-442l79 178h175v58Z" />
+    </svg>
+  )
+}

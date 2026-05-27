@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function PlannerReviewFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M507-106 358-789 247-268H106v-21h123l112-526h34l148 682 99-440h38l71 284h123v21H714l-73-286-102 448h-32Z" />
+    </svg>
+  )
+}

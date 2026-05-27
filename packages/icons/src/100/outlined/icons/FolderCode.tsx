@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function FolderCode({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M154-234v-492 503-11Zm32 22q-22.77 0-38.39-15.5Q132-243 132-266v-428q0-23 15.61-38.5Q163.23-748 186-748h199l74 74h315q23 0 38.5 15.5T828-620v205h-22v-205q0-14-9-23t-23-9H451l-74-74H186q-14 0-23 9t-9 23v428q0 14 9 23t23 9h253v22H186Zm449 91L533-223l102-103 15 16-87 87 87 87-15 15Zm130 0-15-15 87-87-87-87 15-16 103 103-103 102Z" />
+    </svg>
+  )
+}

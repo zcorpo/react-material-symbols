@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function RecentPatientFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M212-232v-47q0-23 14-42t37-30q57-25 111-38t106-13q31 0 62 4t63 13v153H212Zm193-310q-30-30-30-75.5t30-75q30-29.5 75-29.5t75 29.5q30 29.5 30 75T555-542q-30 30-75 30t-75-30Zm344 433v-130h-50v-172h134l-71 140h68l-81 162Z" />
+    </svg>
+  )
+}

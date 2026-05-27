@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function PictureInPictureMedium({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M132-212v-22h642q12 0 16-10t4-22v-482h34v482q0 22.77-15.61 38.39Q796.78-212 774-212H132Zm180-128v-309h388v309H312Z" />
+    </svg>
+  )
+}

@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function RamenDining({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M387-154h184v-50l10-2q82-24 139-80t77-114H163q20 58 76 114t138 80l10 2v50Zm-22 22v-56q-92-26-153-92.5T132-422h80v-339l616-67v26l-415 45v95h415v25H413v215h415q-17 75-80.5 141.5T593-188v56H365Zm-40-530h63v-92l-63 6v86Zm-88 0h63v-84l-63 8v76Zm88 240h63v-215h-63v215Zm-88 0h63v-215h-63v215Zm243 22Z" />
+    </svg>
+  )
+}

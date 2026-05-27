@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function ArtTrackFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M536-252H80v-456h456v456Zm150 0v-456h22v456h-22Zm172 0v-456h22v456h-22ZM171-371h273l-78-106-79 103-57-76-59 79Z" />
+    </svg>
+  )
+}

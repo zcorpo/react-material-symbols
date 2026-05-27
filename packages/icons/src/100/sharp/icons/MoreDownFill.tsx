@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function MoreDownFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M226-226v-362h22v340h340v22H226Zm200-200v-362h22v340h340v22H426Z" />
+    </svg>
+  )
+}

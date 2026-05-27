@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function PageHeader({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M172-766v-22h616v22H172Zm0 594v-488h616v488H172Zm22-22h572v-444H194v444Zm0 0v-444 444Z" />
+    </svg>
+  )
+}

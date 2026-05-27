@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function AddChartFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M293-305h22v-227h-22v227Zm150 0h22v-350h-22v350Zm150 0h22v-105h-22v105Zm117-349v-82h-82v-22h82v-82h22v82h82v22h-82v82h-22ZM146-172v-616h441v175h175v441H146Z" />
+    </svg>
+  )
+}

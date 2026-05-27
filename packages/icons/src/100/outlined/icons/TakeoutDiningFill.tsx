@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function TakeoutDiningFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M253-546 116-678l13-18 134 127-7-90 128-129h192l128 129-6 90 133-127 13 18-137 132H253Zm36 334-24-315h430l-24 315H289Z" />
+    </svg>
+  )
+}

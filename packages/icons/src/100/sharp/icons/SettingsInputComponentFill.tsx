@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function SettingsInputComponentFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M168-92v-184.07l-76-74.45V-462h174v111l-76 74.6V-92h-22Zm301 0v-184.07l-76-74.45V-462h174v111l-76 74.6V-92h-22Zm301 0v-184.07l-76-74.45V-462h174v111l-76 74.6V-92h-22ZM92-484v-226h76v-158h22v158h76v226H92Zm301 0v-226h76v-158h22v158h76v226H393Zm301 0v-226h76v-158h22v158h76v226H694Z" />
+    </svg>
+  )
+}

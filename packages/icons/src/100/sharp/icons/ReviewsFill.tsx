@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function ReviewsFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M132-180v-648h696v536H244L132-180Zm254-240 94-57 94 57-25-107 83-71-109-10-43-100-43 100-109 10 83 71-25 107Z" />
+    </svg>
+  )
+}

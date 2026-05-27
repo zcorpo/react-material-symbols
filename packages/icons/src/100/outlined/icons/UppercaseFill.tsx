@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function UppercaseFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M674-262v-303l-93 93-16-16 120-120 120 120-16 16-93-93v303h-22Zm-488 0 145-400h25l148 400h-27l-43-122H254l-42 122h-26Zm77-144h163l-81-228h-1l-81 228Z" />
+    </svg>
+  )
+}

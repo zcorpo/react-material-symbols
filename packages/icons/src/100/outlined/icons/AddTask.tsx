@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function AddTask({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M726-132v-120H606v-22h120v-120h22v120h120v22H748v120h-22ZM402-373q9.31 8 21.66 8.5Q436-364 445-372l212-194q3-3.13 3-7.44 0-4.31-2.5-7.56-3.5-3-8.43-3-4.94 0-8.07 3L423-382l-105-96q-4.18-2-8.09-2t-7.91 2q-3 3-3 7.5t3 7.5l100 90Zm-2 161q-113 0-193-77.84t-80-190Q127-592 207-670t193-78h159q113 0 194 77.39T834-480h-23 1q0-103-74-174.5T559-726H400q-104 0-177.5 71.5t-73.5 175Q149-376 222.5-305T400-234h127v22H400Zm80-268Z" />
+    </svg>
+  )
+}

@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function FastfoodFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M115-323q0-81 81-113.5T370.5-469q93.5 0 174 32.5T625-323H115Zm0 115v-24h510v24H115Zm0 116v-24h510v24H115Zm584 0v-234.74q0-84.71-66-139.99Q567-522 480-537l-21-145h181v-166h22v166h183L782-92h-83Z" />
+    </svg>
+  )
+}

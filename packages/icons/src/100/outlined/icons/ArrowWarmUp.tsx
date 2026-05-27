@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function ArrowWarmUp({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M469-789 249-568l-15-15 246-246 246 246-15 15-220-220v290h-22v-291Zm0 491v-126h22v126h-22Zm0 166v-92h22v92h-22Z" />
+    </svg>
+  )
+}

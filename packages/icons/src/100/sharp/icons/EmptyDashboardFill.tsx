@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function EmptyDashboardFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M250-250h202v-142H250v142Zm0-198h202v-262H250v262Zm258 198h202v-262H508v262Zm0-318h202v-142H508v142ZM172-172v-616h616v136h50v22h-50v139h50v22h-50v139h50v22h-50v136H172Z" />
+    </svg>
+  )
+}

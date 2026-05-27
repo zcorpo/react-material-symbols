@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function HealthCross({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M357-172v-185H172v-245h185v-186h245v186h186v245H602v185H357Zm22-22h201v-185h186v-201H580v-186H379v186H194v201h185v185Zm101-286Z" />
+    </svg>
+  )
+}

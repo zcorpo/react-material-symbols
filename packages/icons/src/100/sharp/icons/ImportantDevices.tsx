@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function ImportantDevices({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M624-172v-343h204v343H624Zm28-62h148v-219H652v219Zm-324 62v-22h101v-138H132v-456h616v199h-22v-177H154v412h396v22h-99v138h101v22H328Zm44-273 68-56 68 56-25-87 69-57h-85.72L440-668l-26.28 79H328l69 57-25 87Zm68-115Z" />
+    </svg>
+  )
+}

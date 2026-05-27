@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function HexagonFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M319-146q-14 0-27-7t-20-20L109-453q-7-13-7-27t7-27l163-280q7-13 20-20t27-7h322q14 0 27 7t20 20l163 280q7 13 7 27t-7 27L688-173q-7 13-20 20t-27 7H319Z" />
+    </svg>
+  )
+}

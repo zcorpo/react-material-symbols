@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function LandslideFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M132-132v-131l108 35 370-122 166 218H132Zm108-120-108-35v-126l108 35 183-60 165 71-348 115Zm468-188 120-54v-84l-115-26-61 49v70l56 45Zm-468 38-108-35v-151h162l105 135-159 51Zm246-256 142-57v-122l-137-28-79 53v104l74 50Z" />
+    </svg>
+  )
+}

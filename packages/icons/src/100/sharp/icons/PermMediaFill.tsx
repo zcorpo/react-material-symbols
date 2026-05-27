@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function PermMediaFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M92-184v-486h22v464h646v22H92Zm96-96v-548h264l80 80h336v468H188Zm188-154h336L612-569 506-437l-67-76-63 79Z" />
+    </svg>
+  )
+}

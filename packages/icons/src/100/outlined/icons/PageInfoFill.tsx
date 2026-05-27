@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function PageInfoFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M623.5-240.5Q592-272 592-317t31.5-76.5Q655-425 700-425t76.5 31.5Q808-362 808-317t-31.5 76.5Q745-209 700-209t-76.5-31.5ZM200-306v-22h292v22H200Zm-16.5-260.5Q152-598 152-643t31.5-76.5Q215-751 260-751t76.5 31.5Q368-688 368-643t-31.5 76.5Q305-535 260-535t-76.5-31.5ZM468-632v-22h292v22H468Z" />
+    </svg>
+  )
+}

@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function FlowchartFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M618-212v-74H469v-183H341v73H132v-169h209v74h128v-184h149v-74h210v170H618v-74H491v345h127v-73h210v169H618Z" />
+    </svg>
+  )
+}

@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function BorderAll({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M172-226v-508q0-21.5 16.25-37.75T226-788h508q21.5 0 37.75 16.25T788-734v508q0 21.5-16.25 37.75T734-172H226q-21.5 0-37.75-16.25T172-226Zm319-243v275h275v-275H491Zm0-22h275v-275H491v275Zm-22 0v-275H194v275h275Zm0 22H194v275h275v-275Z" />
+    </svg>
+  )
+}

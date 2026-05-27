@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function SummarizeFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M290-616h54v-54h-54v54Zm0 163h54v-54h-54v54Zm0 163h54v-54h-54v54ZM172-172v-616h447l169 169v447H172Zm431-594v163h163L603-766Z" />
+    </svg>
+  )
+}

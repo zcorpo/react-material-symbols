@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function TextureFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M180-180v-17l584-583h16v16L196-180h-16Zm-8-261v-32l315-315h32L172-441Zm0-284v-63h63l-63 63Zm553 553 63-63v63h-63Zm-284 0 347-347v32L473-172h-32Z" />
+    </svg>
+  )
+}

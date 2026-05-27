@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function VideoChatFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M306-429h266v-120l78 78v-180l-78 78v-120H306v264ZM132-180v-648h696v536H244L132-180Z" />
+    </svg>
+  )
+}

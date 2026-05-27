@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function StylusPen({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="m287-358 81-317h63v-52l46-101h6l47 101v52h63l81 317H287Zm29-22h329l-69-273H384l-68 273ZM212-172l31-80h474l31 80H212Zm104-208h329-329Z" />
+    </svg>
+  )
+}

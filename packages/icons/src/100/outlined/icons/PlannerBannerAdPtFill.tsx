@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function PlannerBannerAdPtFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M266-132q-23 0-38.5-15.5T212-186v-588q0-23 15.5-38.5T266-828h428q23 0 38.5 15.5T748-774v588q0 23-15.5 38.5T694-132H266Zm53-133h331l-99-133-104 128-66-76-62 81Z" />
+    </svg>
+  )
+}

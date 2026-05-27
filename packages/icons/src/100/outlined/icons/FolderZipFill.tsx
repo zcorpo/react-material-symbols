@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function FolderZipFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M186-212q-22.77 0-38.39-15.5Q132-243 132-266v-428q0-23 15.61-38.5Q163.23-748 186-748h199l74 74h315q23 0 38.5 15.5T828-620v354q0 23-15.5 38.5T774-212H186Zm370-22h84v-83.5h84V-401h-84v-83.5h84V-568h-84v-84h-84v83.67h84v83.66h-84V-401h84v83.5h-84v83.5Z" />
+    </svg>
+  )
+}

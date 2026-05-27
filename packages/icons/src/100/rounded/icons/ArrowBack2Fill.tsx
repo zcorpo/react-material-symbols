@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function ArrowBack2Fill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M332-457q-6-4-9.5-9.5T319-479q0-7 3.5-12.5t9.5-9.5l215-138q3-2 7-3t7-1q11 0 19 7.5t8 19.5v273q0 13-8 20t-19 7q-3 0-7-.5t-7-2.5L332-457Z" />
+    </svg>
+  )
+}

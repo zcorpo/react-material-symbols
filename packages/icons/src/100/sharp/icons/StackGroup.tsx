@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function StackGroup({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M372-132v-240H132v-456h456v240h240v456H372Zm22-22h412v-412H566v-240H154v412h240v240Zm86-326Z" />
+    </svg>
+  )
+}

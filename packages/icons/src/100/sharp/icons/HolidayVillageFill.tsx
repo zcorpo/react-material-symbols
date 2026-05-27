@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function HolidayVillageFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M204-212v-326l188-188 188 188v326H417v-106h-50v106H204Zm163-243h50v-50h-50v50Zm279 244v-352L483-726h34l151 151v364h-22Zm88 0v-389L608-726h35l113 114v401h-22Z" />
+    </svg>
+  )
+}

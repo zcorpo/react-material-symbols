@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function FlashAutoFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M252-244v-208H152v-376h259l-63 217h155L252-244Zm325-274 146-368h11l148 368h-30l-48-114H652l-47 114h-28Zm85-139h133l-64-163h-8l-61 163Z" />
+    </svg>
+  )
+}

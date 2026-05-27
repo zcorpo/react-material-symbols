@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function TravelFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="m399-172-78-149-150-79 32-32 137 24 134-134-298-127 43-42 362 62 128-129q14-14 34.5-14t34.5 14q14 14 14 34.5T778-709L650-581l61 362-43 43-126-298-134 134 22 136-31 32Z" />
+    </svg>
+  )
+}

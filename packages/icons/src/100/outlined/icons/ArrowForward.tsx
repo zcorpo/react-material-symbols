@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function ArrowForward({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M706-469H212v-22h494L465-732l15-16 268 268-268 268-15-16 241-241Z" />
+    </svg>
+  )
+}

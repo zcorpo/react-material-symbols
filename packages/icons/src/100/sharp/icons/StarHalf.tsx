@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function StarHalf({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="m615-273-35-155 119-103-157-14-62-145v334l135 83Zm-304 45 45-192-149-129 196-17 77-181 77 181 196 17-149 129 45 192-169-102-169 102Z" />
+    </svg>
+  )
+}

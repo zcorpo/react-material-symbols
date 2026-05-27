@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function BackpackFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M212-132v-490.27Q212-671 246-707q34-36 86-41v-80h62v80h172v-80h62v80q52 5 86 40.9t34 85.1v490H212Zm412-213h22v-98H314v22h310v76Z" />
+    </svg>
+  )
+}

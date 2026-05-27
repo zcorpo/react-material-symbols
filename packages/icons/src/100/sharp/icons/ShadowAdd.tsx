@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function ShadowAdd({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M549-429v-120H429v-22h120v-120h22v120h120v22H571v120h-22ZM132-132v-532h144v-164h552v552H664v144H132Zm166-166h508v-508H298v508Z" />
+    </svg>
+  )
+}

@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function KeyboardReturn({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M376-276 172-480l204-203 16 16-177 177h551v-164h22v185H215l177 177-16 16Z" />
+    </svg>
+  )
+}

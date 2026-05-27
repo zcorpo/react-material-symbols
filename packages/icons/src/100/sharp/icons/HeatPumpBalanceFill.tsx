@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function HeatPumpBalanceFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M186-636v361h184v-339h139v339h184v-379h190l-78 75 15 16 103-102-103-103-15 16 76 76H671v379H531v-339H348v339H208v-339h-22ZM92-148v-319h776v319H92Z" />
+    </svg>
+  )
+}

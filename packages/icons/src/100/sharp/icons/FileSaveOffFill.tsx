@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function FileSaveOffFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="m795-231-14-15 46-47 15 16-47 46Zm-61-61-22-22v-93h22v115Zm0-209H526L194-832l-21-22h349l212 212v141ZM498-394 844-48H592v22h282v-22L83-839l-15 15 118 118v520h312v-208Zm214-238L512-832l200 200-200-200v200h200Z" />
+    </svg>
+  )
+}

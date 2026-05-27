@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function FlexNoWrap({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M92-317v-326h176v326H92Zm300 0v-326h176v326H392Zm300 0v-326h176v326H692Zm-578-22h132v-282H114v282Zm610 0h122v-282H724v282Z" />
+    </svg>
+  )
+}

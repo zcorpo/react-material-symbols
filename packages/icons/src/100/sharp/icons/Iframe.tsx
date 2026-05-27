@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function Iframe({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M444-404h232v-112H444v112Zm-28 28v-168h288v168H416ZM132-212v-536h696v536H132Zm22-22h652v-411H154v411Z" />
+    </svg>
+  )
+}

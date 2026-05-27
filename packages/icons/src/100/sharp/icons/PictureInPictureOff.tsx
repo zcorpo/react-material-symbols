@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function PictureInPictureOff({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M607-457h159v-229H458v80l22 22v-80h264v185H585l22 22Zm199 199v-468H338l-22-22h512v512l-22-22ZM424-484Zm148-8ZM851-78 716-212H132v-536h80l22 22h-80v492h540L90-838l16-16L866-94l-15 16Z" />
+    </svg>
+  )
+}

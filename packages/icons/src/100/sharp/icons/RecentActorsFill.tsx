@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function RecentActorsFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M80-252v-456h456v456H80Zm22-80q45-30 97-47.5T308-397q57 0 109 17.5t97 47.5v-354H102v354Zm139.5-141.28q-27.5-27.28-27.5-66.5t27.28-66.72q27.28-27.5 66.5-27.5t66.72 27.28q27.5 27.28 27.5 66.5t-27.28 66.72q-27.28 27.5-66.5 27.5t-66.72-27.28ZM686-252v-456h22v456h-22Zm172 0v-456h22v456h-22Z" />
+    </svg>
+  )
+}
