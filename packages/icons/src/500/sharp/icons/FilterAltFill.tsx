@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function FilterAltFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M394.02-154.02v-283.83L105.8-806.22h748.4L566.22-437.85v283.83h-172.2Z" />
+    </svg>
+  )
+}

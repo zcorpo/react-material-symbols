@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function InboxFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M114.02-114.02v-732.2h732.2v732.2h-732.2ZM554-317.58q33-23.38 56.05-59.62h167.8v-400.65h-595.7v400.65H350q23 36.24 56.25 59.62 33.24 23.38 74 23.38 40.75 0 73.75-23.38Z" />
+    </svg>
+  )
+}

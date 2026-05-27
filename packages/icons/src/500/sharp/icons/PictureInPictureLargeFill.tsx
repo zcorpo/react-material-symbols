@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function PictureInPictureLargeFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M222.85-322.15v-417h495v417h-495ZM74.02-154.02v-68.13h743.83v-584.07h68.37v652.2H74.02Z" />
+    </svg>
+  )
+}

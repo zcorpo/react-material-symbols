@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function PositionBottomRight({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M372.15-289.15h355.7v-95.5h-355.7v95.5ZM114.02-114.02v-732.2h732.2v732.2h-732.2Zm68.13-68.13h595.7v-595.7h-595.7v595.7Zm0-595.7v595.7-595.7Z" />
+    </svg>
+  )
+}

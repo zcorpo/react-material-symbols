@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function Timer10({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M539.3-281.43h184.05v-397.14H539.3v397.14Zm-82.87 82.86v-562.86h349.79v562.86H456.43Zm-202.86 0v-480h-98.55v-82.86h181.41v562.86h-82.86Z" />
+    </svg>
+  )
+}

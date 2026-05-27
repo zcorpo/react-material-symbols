@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function ChromeReaderModeFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M74.02-154.02v-652.2h812.2v652.2H74.02Zm437.41-68.13h306.42v-515.7H511.43v515.7Zm44-355.28h219.42v-52.64H555.43v52.64Zm0 111.86h219.42v-52.86H555.43v52.86Zm0 111.64h219.42v-52.64H555.43v52.64Z" />
+    </svg>
+  )
+}

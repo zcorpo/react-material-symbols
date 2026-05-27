@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function FitPageWidthFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M341.74-380.89v-198.46L242.39-480l99.35 99.11ZM717.85-480l-99.35-99.35v198.46L717.85-480ZM74.02-154.02v-652.2h812.2v652.2H74.02Z" />
+    </svg>
+  )
+}

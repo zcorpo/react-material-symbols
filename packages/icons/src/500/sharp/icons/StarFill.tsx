@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function StarFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="m224.15-107.56 67.39-291.29L65.41-594.78l298.52-25.72L480-895.3l116.07 274.8 298.52 25.72-226.13 195.93 67.63 291.29L480-262.3 224.15-107.56Z" />
+    </svg>
+  )
+}
