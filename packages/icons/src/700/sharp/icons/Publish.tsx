@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function Publish({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M433-135v-323L319-343l-68-66 229-229 229 229-68 66-114-115v323h-94ZM135-588v-238h691v238h-95v-143H229v143h-94Z" />
+    </svg>
+  )
+}

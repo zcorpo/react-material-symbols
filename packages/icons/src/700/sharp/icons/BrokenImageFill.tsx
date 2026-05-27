@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function BrokenImageFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M95-95v-368l136 136 166-166 166 165 165-166 138 138v261H95Zm0-771h771v374L729-628 563-462 397-627 231-461 95-598v-268Z" />
+    </svg>
+  )
+}

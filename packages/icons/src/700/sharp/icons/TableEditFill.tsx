@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function TableEditFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M95-388v-234h355v234H95Zm0-294v-184h771v184H95Zm0 587v-233h355v233H95Zm415-293v-234h313L588-388h-78Zm6 333v-144l278-277 143 143L660-55H516Zm285-246 30-32-37-37-31 31 38 38Z" />
+    </svg>
+  )
+}

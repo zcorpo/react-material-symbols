@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function ArtTrack({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M628-175H17v-611h611v611Zm-517-94h422v-422H111v422Zm603 94v-611h72v611h-72Zm157 0v-611h72v611h-72ZM158-357h325L383-490l-85 110-60-82-80 105Zm-47-334v422-422Z" />
+    </svg>
+  )
+}

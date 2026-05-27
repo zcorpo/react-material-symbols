@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function DataTableFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M95-637h771v-189H95v189Zm0 251h771v-188H95v188Zm0 251h771v-188H95v188Zm63-566v-60h60v60h-60Zm0 251v-60h60v60h-60Zm0 251v-59h60v59h-60Z" />
+    </svg>
+  )
+}

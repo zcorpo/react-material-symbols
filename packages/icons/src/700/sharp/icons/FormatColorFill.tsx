@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function FormatColorFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="m239-901 59-59 428 426-312 313-310-313 251-251-116-116Zm176 176L231-543h366L415-725Zm296 452q-23-23-23-57 0-18 9.5-40t25.5-45q9-15 20.5-30.5T768-476q13 15 25.5 30.5T815-415q15 23 24 45t9 40q0 34-23.5 57t-57 23q-33.5 0-56.5-23ZM80 1v-132h800V1H80Z" />
+    </svg>
+  )
+}

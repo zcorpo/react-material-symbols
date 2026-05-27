@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function StylusBrushFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M480-321q-107 0-182-76t-75-180q0-41 3-79t29-81q26-43 84-94.5T507-951q3 48 42.5 96t80.5 82q42 34 75 88t33 108q0 104-75 180t-183 76ZM135-95l54-126h581l56 126H135Z" />
+    </svg>
+  )
+}

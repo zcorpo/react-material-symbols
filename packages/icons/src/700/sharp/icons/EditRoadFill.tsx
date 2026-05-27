@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function EditRoadFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M653-458v-368h95v275l-95 93ZM135-135v-691h94v691h-94Zm259-511v-180h94v180h-94Zm0 255v-179h94v179h-94Zm0 256v-180h94v180h-94Zm166 0v-144l278-277 143 143-277 278H560Zm286-246 29-32-37-37-30 31 38 38Z" />
+    </svg>
+  )
+}

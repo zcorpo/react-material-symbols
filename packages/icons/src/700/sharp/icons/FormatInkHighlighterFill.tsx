@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function FormatInkHighlighterFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M80 0v-144h800V0H80Zm74-250 129-128-49-49v-67l219-219 246 246-218 219h-68l-52-53-52 51H154Zm344-507 200-201 246 246-201 201-245-246Z" />
+    </svg>
+  )
+}

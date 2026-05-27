@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function LocalDrinkFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M189.27-55 95-906h771L772-55H189.27Zm28.97-585H742l18-171H200l18.24 171ZM556.5-228.87q31.5-30.87 31.5-74.68 0-46.83-28.5-99.64T480-505q-51 49-79.5 101.81T372-303.55q0 43.81 31.5 74.68Q435-198 480-198t76.5-30.87Z" />
+    </svg>
+  )
+}

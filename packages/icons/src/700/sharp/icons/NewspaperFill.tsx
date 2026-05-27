@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function NewspaperFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M63-92v-784l72 69 69.21-69 69.19 69 69.2-69 69.2 69 68.2-69 69 69 69.01-69 69 69L756-876l69 69 72-69v784H63Zm94-94h282v-280H157v280Zm364 0h282v-98H521v98Zm0-181h282v-99H521v99ZM157-549h646v-97H157v97Z" />
+    </svg>
+  )
+}

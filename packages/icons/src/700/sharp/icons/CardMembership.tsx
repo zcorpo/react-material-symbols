@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function CardMembership({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M149-349h662v-92H149v92ZM315-46v-209H55v-651h851v651H646v209l-166-83-165 83ZM149-572h662v-239H149v239Zm0 223v-462 462Z" />
+    </svg>
+  )
+}

@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function FontDownloadOffFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M845-25 513-357l54-47L880-92v37H55v-761l-45-43 51-51L896-76l-51 51Zm61-142L629-444 521-720h-83l-23 62-248-248h739v739Zm-653-73h80l43-117h137l-56-56h-58l15-43-56-56-105 272Zm234-408h-1l36 98-52-53 17-45Zm139 408h81l-15-39-125-125 59 164Z" />
+    </svg>
+  )
+}

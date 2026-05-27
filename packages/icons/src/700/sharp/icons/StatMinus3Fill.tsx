@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function StatMinus3Fill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M480-35 216-300l66-66 198 199 198-199 66 66L480-35Zm0-271L216-570l66-66 198 199 198-199 66 66-264 264Zm0-270L216-840l66-66 198 199 198-199 66 66-264 264Z" />
+    </svg>
+  )
+}

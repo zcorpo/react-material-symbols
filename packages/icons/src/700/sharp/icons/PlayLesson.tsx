@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function PlayLesson({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M95-54v-852h691v429q-20.5-6-47-7.5t-48 3.5v-330H462v269l-96-59-96 59v-269h-81v663h302q4 23 19 50t34 44H95Zm496.5-41.5Q536-151 536-232t55.5-136.5Q647-424 728-424t136.5 55.5Q920-313 920-232T864.5-95.5Q809-40 728-40T591.5-95.5ZM679-140l143-92-143-92v184ZM270-811h192-192Zm-81 0h502-214 14-302Z" />
+    </svg>
+  )
+}

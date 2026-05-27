@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function ColorizeFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M95-95v-204l366-365.59L388-737l78-77 92.33 92L723-890l167 167-169 165.66L813-465l-76 76-72.41-72L299-95H95Zm94-94h74l346-346-74-74-346 346v74Z" />
+    </svg>
+  )
+}

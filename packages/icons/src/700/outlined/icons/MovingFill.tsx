@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function MovingFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="m125-224-58-58 226-227q36-36 86.5-36t86.5 36l46 46q11 11 26.5 11t27.5-11l186-186H651v-82h243v242h-83v-100L625-404q-36 36-86.5 36T452-404l-47-47q-11-11-26.5-11T352-451L125-224Z" />
+    </svg>
+  )
+}

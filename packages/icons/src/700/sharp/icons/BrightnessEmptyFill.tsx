@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function BrightnessEmptyFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M481-1 342-135H135v-207L-2-480l137-138v-208h207l139-137 137 137h208v208l137 138-137 138v207H618L481-1Z" />
+    </svg>
+  )
+}

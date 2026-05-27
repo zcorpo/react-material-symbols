@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function Vo2MaxFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M543-135v-240h177v240H543Zm60-60h57v-120h-57v120ZM760-55v-144h130v-48H760v-60h190v144H820v48h130v60H760ZM10-135v-450l290-231v-128h94v128l290 231v160H475v290h-92v-568l-36-31-36 31-1 568H10Z" />
+    </svg>
+  )
+}

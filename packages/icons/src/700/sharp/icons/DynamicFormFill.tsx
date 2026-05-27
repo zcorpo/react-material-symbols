@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function DynamicFormFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M52-510v-325h482v325H52Zm0 384v-324h562v324H52Zm622 0v-384h-80v-325h312l-80 261h81L674-126ZM184-258h60v-60h-60v60Zm0-384h60v-60h-60v60Z" />
+    </svg>
+  )
+}

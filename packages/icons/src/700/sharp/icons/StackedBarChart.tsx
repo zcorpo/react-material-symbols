@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function StackedBarChart({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M135-135v-497h162v497H135Zm0-528v-163h162v163H135Zm264 528v-374h162v374H399Zm0-405v-163h162v163H399Zm264 405v-252h163v252H663Zm0-283v-162h163v162H663Z" />
+    </svg>
+  )
+}

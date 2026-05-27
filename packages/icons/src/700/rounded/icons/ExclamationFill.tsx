@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function ExclamationFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M446.5-382.63Q433-396.25 433-416v-320q0-19.75 13.68-33.38Q460.35-783 480.18-783q19.82 0 33.32 13.62Q527-755.75 527-736v320q0 19.75-13.68 33.37Q499.65-369 479.82-369q-19.82 0-33.32-13.63Zm0 191.95q-13.5-13.67-13.5-33.5 0-19.82 13.68-33.32 13.67-13.5 33.5-13.5 19.82 0 33.32 13.68 13.5 13.67 13.5 33.5 0 19.82-13.68 33.32-13.67 13.5-33.5 13.5-19.82 0-33.32-13.68Z" />
+    </svg>
+  )
+}

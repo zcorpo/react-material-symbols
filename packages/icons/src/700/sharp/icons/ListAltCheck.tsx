@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function ListAltCheck({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M189-189v-582 498-89 173ZM95-95v-771h771v431h-95v-336H189v582h298v94H95Zm606 40L547-210l65-67 89 89 178-177 67 65L701-55ZM432-450h244v-60H432v60Zm0-160h244v-60H432v60ZM270-450h60v-60h-60v60Zm0-160h60v-60h-60v60Z" />
+    </svg>
+  )
+}

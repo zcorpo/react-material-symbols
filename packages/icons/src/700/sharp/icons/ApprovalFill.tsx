@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function ApprovalFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M135-55v-354h691v354H135Zm94-175h502v-85H229v85Zm251-179L257-676q0-94 64.71-162T480-906q93.58 0 158.29 68T703-676L480-409Z" />
+    </svg>
+  )
+}

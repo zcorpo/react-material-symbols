@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function TabletMac({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M97-17v-926h766v926H97Zm94-184v90h578v-90H191Zm0-60h578v-498H191v498Zm0-558h578v-30H191v30Zm0 0v-30 30Zm0 618v90-90Zm310.5 66.32q8.5-8.67 8.5-21.5 0-12.82-8.68-21.32-8.67-8.5-21.5-8.5-12.82 0-21.32 8.68-8.5 8.67-8.5 21.5 0 12.82 8.68 21.32 8.67 8.5 21.5 8.5 12.82 0 21.32-8.68Z" />
+    </svg>
+  )
+}

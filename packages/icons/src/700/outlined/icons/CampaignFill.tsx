@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function CampaignFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M741-439v-82h185v82H741Zm74 302L666-248l50-66 148 110-49 67Zm-96-510-50-66 146-110 49 66-145 110ZM164-175v-160h-47q-36-4-59.5-31T34-429v-102q0-39 28-67t67-28h163l233-139v570L292-335h-29v160h-99Zm401-146v-319q38 27 60.5 69t22.5 91q0 49-22.5 91T565-321Z" />
+    </svg>
+  )
+}

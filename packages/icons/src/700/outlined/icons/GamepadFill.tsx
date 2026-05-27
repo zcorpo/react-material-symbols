@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function GamepadFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M480-541 350-671v-242h261v242L480-541Zm191 191L541-480l130-131h242v261H671Zm-624 0v-261h242l131 131-131 130H47ZM350-47v-242l130-131 131 131v242H350Z" />
+    </svg>
+  )
+}

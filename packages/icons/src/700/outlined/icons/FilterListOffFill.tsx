@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function FilterListOffFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M842-30 30-842l50-50L892-80l-50 50ZM624-434l-94-93h212v93H624ZM380-677l-94-94h580v94H380Zm2 487v-94h196v94H382ZM218-434v-93h220v93H218ZM95-677v-94h100v94H95Z" />
+    </svg>
+  )
+}

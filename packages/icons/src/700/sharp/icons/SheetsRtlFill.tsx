@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function SheetsRtlFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M142-431v-516h676v516H142Zm100-304h192v-113H242v113Zm284 0h193v-113H526v113ZM242-531h192v-112H242v112Zm284 0h193v-112H526v112ZM274-20 98-196l176-176 70 71-54 55h528v100H290l54 56-70 70Z" />
+    </svg>
+  )
+}

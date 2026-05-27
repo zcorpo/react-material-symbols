@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function AlignStartFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M55-811v-95h851v95H55Zm218 258v-134h414v134H273Zm0 240v-134h414v134H273Z" />
+    </svg>
+  )
+}

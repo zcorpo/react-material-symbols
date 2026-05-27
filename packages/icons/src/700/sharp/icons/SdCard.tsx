@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function SdCard({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M377-519h60v-157h-60v157Zm118 0h60v-157h-60v157Zm118 0h60v-157h-60v157ZM135-55v-597l254-254h437v851H135Zm94-94h502v-662H430L229-610.33V-149Zm0 0h502-502Z" />
+    </svg>
+  )
+}

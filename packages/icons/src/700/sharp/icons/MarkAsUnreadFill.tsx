@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function MarkAsUnreadFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M55-263v-459l361-184 469 245H682L417-800 150-664v401H55ZM180-95v-536h726v536H180Zm363-249 268-130v-71L543-418 274-545v71l269 130Z" />
+    </svg>
+  )
+}

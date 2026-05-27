@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function BacklightHigh({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M23-370v-95h184v95H23Zm238-200L120-711l67-66 141 141-67 66Zm2 364v-134h434v134H263Zm170-474v-235h94v235h-94Zm265 112-66-68 141-142 65 69-140 141Zm55 198v-95h184v95H753Z" />
+    </svg>
+  )
+}

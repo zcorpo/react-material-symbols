@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function ViewDayFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M83-112v-95h794v95H83Zm0-642v-94h794v94H83Zm95 448q-39.46 0-67.23-27.48Q83-360.95 83-400v-160q0-39.46 27.77-67.23Q138.54-655 178-655h604q39.46 0 67.23 27.77Q877-599.46 877-560v160q0 39.05-27.77 66.52Q821.46-306 782-306H178Z" />
+    </svg>
+  )
+}

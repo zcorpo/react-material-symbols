@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function Mail({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M55-135v-691h851v691H55Zm425-295L149-653v424h662v-424L480-430Zm0-83 327-218H154l326 218ZM149-653v-78 502-424Z" />
+    </svg>
+  )
+}

@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function EventUpcomingFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M590-55v-94h181v-421H189v203H95v-479h150.2v-60H327v60h306v-60h82.2v60H866v791H590ZM320 10l-66-66 96-97H33v-94h317l-96-97 66-66 211 210L320 10Z" />
+    </svg>
+  )
+}

@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function NightSightMaxFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M673-513v-120H553v-94h120v-120h94v120h120v94H767v120h-94ZM439.95-89Q293-89 191-190.98t-102-249Q89-587 190.98-689 292.97-791 440-791q5.67 0 14.33 1 8.67 1 14.67 4-33.1 36.39-50.55 80.85Q401-660.69 401-614q0 107 75 182t181 75q36.6 0 67.8-7 31.2-7 61.2-20-29 125-123.8 210T439.95-89Z" />
+    </svg>
+  )
+}

@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function Icon4gMobiledataBadge({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M518-280h272v-234h-96v72h15v79H601v-234h189v-83H518v400Zm-192 0h82v-107h55v-83h-55v-210h-82v210h-74v-210h-83v293h157v107ZM15-95v-771h931v771H15Zm94-94h742v-582H109v582Zm0 0v-582 582Z" />
+    </svg>
+  )
+}

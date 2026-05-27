@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function ClosedCaption({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M95-135v-691h771v691H95Zm94-94h582v-502H189v502Zm60-132h202v-78h-61v22h-79v-126h79v22h61v-78H249v238Zm261 0h202v-78h-62v22h-79v-126h79v22h62v-78H510v238ZM189-229v-502 502Z" />
+    </svg>
+  )
+}

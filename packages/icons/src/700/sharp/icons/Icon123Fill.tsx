@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function Icon123Fill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M208.5-354v-192H137v-60h131v252h-59.5Zm142.5 0v-150h132v-42H351v-60h192v150H411v42h132v60H351Zm260 0v-60h132v-42h-92v-48h92v-42H611v-60h192v252H611Z" />
+    </svg>
+  )
+}

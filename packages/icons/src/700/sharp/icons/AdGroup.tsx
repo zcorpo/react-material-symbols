@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function AdGroup({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M286-286h542v-491H286v491Zm-94 94v-731h731v731H192ZM37-37v-731h95v636h636v95H37Zm249-249v-542 542Z" />
+    </svg>
+  )
+}

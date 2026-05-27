@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function FaxFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M303-143v-705h446v231h160v474H303ZM28-92h245v-577H28v577Zm369-525h257v-137H397v137Zm30 331h140v-188H427v188Zm177-108h80v-80h-80v80Zm108 0h80v-80h-80v80ZM604-286h80v-80h-80v80Zm108 0h80v-80h-80v80Z" />
+    </svg>
+  )
+}

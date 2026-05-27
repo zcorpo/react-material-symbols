@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function CurrencyRupeeFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M557-95 273-397v-90h152q44.67 0 80.33-25Q541-537 549-587H223v-94h326q-10-40-48.04-65-38.03-25-80.96-25H223v-95h514v95H592q18 13 33.5 41t21.5 49h90v94h-91q-11.06 88.7-69.03 139.35Q519-397 441-394h-35L688-95H557Z" />
+    </svg>
+  )
+}

@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function ChessFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M95-55v-264h144l22-158H145v-87h671v87H699l23 158h144v264H95Zm149-569-61-282q37 35 79.5 47.5T340-846q35 0 70.5-12.5T480-906q34 35 69.5 47.5T619-846q35 0 80-13t82-47l-64 282H244Z" />
+    </svg>
+  )
+}

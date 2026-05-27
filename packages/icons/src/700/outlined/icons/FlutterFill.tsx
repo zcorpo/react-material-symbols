@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function FlutterFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M211-329 60-480l490.13-490H852L211-329ZM550 10 286-254l264.06-264H852L587.89-254 852 10H550Z" />
+    </svg>
+  )
+}

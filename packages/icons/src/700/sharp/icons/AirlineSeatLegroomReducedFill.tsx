@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function AirlineSeatLegroomReducedFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M551-109v-109l49-192H227v-453h254v262h232l46 60-96 323h122v109H551Zm-94-148H74v-606h83v523h300v83Z" />
+    </svg>
+  )
+}

@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function ToolsPhillipsFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M258-80v-95h445v95H258Zm0-155v-430l161-215h122l162 215v430H258Zm94-279 85-85v-147l-85 112v120Zm256 0v-120l-84-112v147l84 85Z" />
+    </svg>
+  )
+}

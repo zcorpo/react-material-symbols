@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function ChairAltFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M169-86v-413h145v-68H169v-308h622v308H646v68h145v413h-95v-110H264v110h-95Zm205-413h212v-68H374v68Z" />
+    </svg>
+  )
+}

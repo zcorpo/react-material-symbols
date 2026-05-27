@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function LightGroupFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M111-41v-95h334v95H111Zm583.65-70q-40.65 0-70.15-29.31Q595-169.63 595-211H440v-52q0-96.19 59.5-165.09Q559-497 648-514v-396h94v396q90 17 149 85.91 59 68.9 59 165.09v52H795q0 41.37-29.23 70.69Q736.55-111 694.65-111ZM231-211v-319H6l106.41-390H445l106 390H325v319h-94Z" />
+    </svg>
+  )
+}

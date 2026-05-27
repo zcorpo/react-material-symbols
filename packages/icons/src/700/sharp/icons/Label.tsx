@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function Label({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M55-135v-691h595l257 346-255.9 345H55Zm93-93h456l186-252-185.61-252H148v504Zm321-252Z" />
+    </svg>
+  )
+}

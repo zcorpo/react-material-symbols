@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function ViewWeekFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M56-135v-691h247v691H56Zm306 0v-691h237v691H362Zm297 0v-691h247v691H659Z" />
+    </svg>
+  )
+}

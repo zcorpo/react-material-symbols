@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function Medication({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M440-252h79v-111h114v-80H519v-111h-79v111H327v80h113v111ZM166-68v-668h629v668H166Zm94-95h440v-479H260v479Zm-43-634v-95h527v95H217Zm43 155v479-479Z" />
+    </svg>
+  )
+}

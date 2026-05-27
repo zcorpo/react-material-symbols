@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function Icon4mp({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M483-501h50v-63h27v-50h-27v-127h-50v127h-77v-127h-50v177h127v63ZM233-219h50v-181h53v123h50v-123h60v181h50v-231H233v231Zm323 0h50v-59h120v-172H556v231Zm50-109v-72h70v72h-70ZM95-95v-771h771v771H95Zm94-94h582v-582H189v582Zm0 0v-582 582Z" />
+    </svg>
+  )
+}

@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function CallSplitFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M435-135v-324L229-665v99h-94v-260h259v95h-98l233 233v363h-94Zm154-388-66-66 140-142h-97v-95h260v260h-95v-98L589-523Z" />
+    </svg>
+  )
+}

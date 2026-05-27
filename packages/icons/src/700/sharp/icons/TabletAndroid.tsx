@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function TabletAndroid({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M97-17v-926h766v926H97Zm94-184v90h578v-90H191Zm207 65h164v-40H398v40ZM191-261h578v-498H191v498Zm0-558h578v-30H191v30Zm0 0v-30 30Zm0 618v90-90Z" />
+    </svg>
+  )
+}

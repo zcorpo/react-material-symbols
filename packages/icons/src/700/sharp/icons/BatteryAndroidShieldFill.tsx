@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function BatteryAndroidShieldFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M10-215v-531h717l-237 95q3 116 43 244t148 192H10Zm740-28q-84-30-142-133t-58-223q32 4 78.5-16.5T750-688q74 52 120.5 72.5T950-599q0 120-58 223T750-243Zm0-79q45-27 78.5-86T874-537q-27-9-57-25t-67-39v279Z" />
+    </svg>
+  )
+}

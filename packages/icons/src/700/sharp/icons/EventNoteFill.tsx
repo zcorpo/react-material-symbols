@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function EventNoteFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M280-413v-72h400v72H280Zm0 177v-71h279v71H280ZM95-55v-791h150.2v-60H327v60h306v-60h82.2v60H866v791H95Zm94-94h582v-421H189v421Z" />
+    </svg>
+  )
+}

@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function SqlFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M95-357v-66h50v16h115v-56H95v-140h215v67h-50v-17H145v57h165v139H95Zm385 65v-65h-90v-246h229v246h-89v65h-50Zm-40-115h129v-146H440v146Zm259 50v-246h50v196h118v50H699Z" />
+    </svg>
+  )
+}

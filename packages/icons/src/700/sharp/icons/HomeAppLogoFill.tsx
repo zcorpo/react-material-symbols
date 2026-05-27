@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function HomeAppLogoFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M226-95q-54 0-92.5-38.5T95-226v-254q0-26 9.5-50t28.5-44l255-253q19-19 43-29t49-10q25 0 49.5 10t44.5 29l27 28-337 338v197h432v-197L547-611l121-122 159 159q18 20 28.5 43.5T866-480v254q0 54-38.5 92.5T734-95H226Z" />
+    </svg>
+  )
+}

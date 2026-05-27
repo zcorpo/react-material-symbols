@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function HighlighterSize3Fill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M298-158 157-299q-14-14-14-33t14-33l437-438q14-14 33.5-14.5T661-803l141 142q14 14 14 33t-14 33L365-158q-14 14-33.5 14T298-158Z" />
+    </svg>
+  )
+}

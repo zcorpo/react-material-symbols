@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function ForwardFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="m646-264-67-67 193-193-193-193 67-67 260 260-260 260ZM56-175v-181q0-91 61.5-153T271-571h225L351-717l66-67 260 260-260 260-66-67 145-146H271q-54 0-87.5 33.5T150-356v181H56Z" />
+    </svg>
+  )
+}

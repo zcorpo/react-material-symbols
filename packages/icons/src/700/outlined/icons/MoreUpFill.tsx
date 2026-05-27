@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function MoreUpFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M694-314v-380H314v-95h475v475h-95ZM483-103v-380H103v-94h474v474h-94Z" />
+    </svg>
+  )
+}

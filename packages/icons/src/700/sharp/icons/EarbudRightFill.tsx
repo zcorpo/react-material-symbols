@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function EarbudRightFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M500-55v-771h396v351H769v420H500ZM353-393q-107.5 0-182.75-75T95-649.5Q95-756 170.25-831T353-906h47v513h-47Z" />
+    </svg>
+  )
+}

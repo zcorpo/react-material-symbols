@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function RemoveRoadFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M717-422v-401h94v401h-94ZM91-137v-686h95v686H91Zm313-516v-170h95v170h-95Zm0 257v-169h95v169h-95Zm0 259v-171h95v171h-95Zm224 6 72-72-73-73 67-67 72.5 72 71.5-72 68 67-72 72.5 72 71.5-68 68-71-73-73 73-66-67Z" />
+    </svg>
+  )
+}

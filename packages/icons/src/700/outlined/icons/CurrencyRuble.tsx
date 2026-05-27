@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function CurrencyRuble({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M273-95v-127h-90v-94h90v-95h-90v-95h90v-360h277q94.31 0 160.65 66.49 66.35 66.48 66.35 161 0 94.51-66.35 161.01Q644.31-411 550-411H367v95h170v94H367v127h-94Zm94-411h183.05q55.95 0 94.45-37.95t38.5-94q0-56.05-38.26-94.55Q606.49-771 550-771H367v265Z" />
+    </svg>
+  )
+}

@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function HideImageFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M866-223 223-866h548q39 0 67 28t28 67v548ZM822-24l-71-71H189q-39 0-66.5-27.5T95-189v-562l-70-70 51-51L873-75l-51 51ZM223-268h357l-91-91-43 53-105-122-118 160Z" />
+    </svg>
+  )
+}

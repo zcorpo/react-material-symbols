@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function DeleteSweepFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M617-196v-71h157v71H617Zm0-391v-71h292v71H617Zm0 196v-72h247v72H617ZM97-675H52v-95h182v-45h162v45h182v95h-45v500H97v-500Z" />
+    </svg>
+  )
+}
