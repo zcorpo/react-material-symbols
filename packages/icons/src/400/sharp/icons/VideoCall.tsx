@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function VideoCall({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M80-160v-640h640v275l160-160v410L720-435v275H80Zm60-60h520v-520H140v520Zm0 0v-520 520Zm232-100h60v-132h132v-60H432v-132h-60v132H240v60h132v132Z" />
+    </svg>
+  )
+}

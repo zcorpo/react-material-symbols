@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function Icon4gMobiledata({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M284-280v-130H120v-270h60v210h104v-210h60v210h85v60h-85v130h-60Zm206 0v-400h350v60H550v280h231v-112H678v-60h162v232H490Z" />
+    </svg>
+  )
+}

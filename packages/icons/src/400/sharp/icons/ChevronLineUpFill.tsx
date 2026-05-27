@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function ChevronLineUpFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M240-660v-60h480v60H240Zm52 432-43-43 231-231 235 235-43 43-192-192-188 188Z" />
+    </svg>
+  )
+}

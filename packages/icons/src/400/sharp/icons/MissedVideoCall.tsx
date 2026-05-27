@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function MissedVideoCall({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M80-160v-640h640v275l160-160v410L720-435v275H80Zm60-60h520v-520H140v520Zm0 0v-520 520Zm289-111 175-175-43-43-132 132-123-123h90v-60H200v190h60v-90l169 169Z" />
+    </svg>
+  )
+}

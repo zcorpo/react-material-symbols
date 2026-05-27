@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function MobileLandscapeFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M40-200v-558h210v-42h173v42h497v558H40Zm191-258q9-9 9-21t-9-21q-9-9-21-9t-21 9q-9 9-9 21t9 21q9 9 21 9t21-9Z" />
+    </svg>
+  )
+}

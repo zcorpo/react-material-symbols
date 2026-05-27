@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function PhotoFrame({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M160-120v-80H40v-600h880v600H800v80H160Zm-60-140h760v-480H100v480Zm120-110h520L580-584 440-404 340-524 220-370ZM100-260v-480 480Z" />
+    </svg>
+  )
+}

@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function AirplayFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="m274-120 206-206 206 206H274ZM80-200v-640h800v640l-184 4-221-220-216 216H80Z" />
+    </svg>
+  )
+}

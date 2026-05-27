@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function WindowOpen({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M160-120v-720h640v720H160Zm60-390h220v-40h80v40h220v-270H220v270Zm0 330h520-520Z" />
+    </svg>
+  )
+}

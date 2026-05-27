@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function TableRestaurantFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M692-520H269l-14 100h450l-13-100ZM160-160l49-360H67l80-280h666l80 280H752l48 360h-60l-27-200H247l-27 200h-60Z" />
+    </svg>
+  )
+}

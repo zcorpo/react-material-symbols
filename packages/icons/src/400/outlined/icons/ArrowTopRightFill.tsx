@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function ArrowTopRightFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M200-160v-475h485L523-797l43-43 234 237-233 233-43-43 162-162H260v415h-60Z" />
+    </svg>
+  )
+}

@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function KeyboardAlt({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M40-160v-640h880v640H40Zm60-60h760v-520H100v520Zm227-64h306v-60H327v60ZM204-429h60v-60h-60v60Zm164 0h60v-60h-60v60Zm164 0h60v-60h-60v60Zm164 0h60v-60h-60v60ZM204-574h60v-60h-60v60Zm164 0h60v-60h-60v60Zm164 0h60v-60h-60v60Zm164 0h60v-60h-60v60ZM100-220v-520 520Z" />
+    </svg>
+  )
+}

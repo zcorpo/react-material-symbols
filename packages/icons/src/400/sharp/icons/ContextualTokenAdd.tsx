@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function ContextualTokenAdd({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M80-160v-640h520v60H140v520h680v-347h60v407H80Zm164-165h266v-102H244v102Zm0-207h266v-102H244v102Zm370 207h102v-242H614v242ZM140-220v-520 520Zm600-400v-80h-80v-60h80v-80h60v80h80v60h-80v80h-60Z" />
+    </svg>
+  )
+}

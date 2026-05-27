@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function ViewListFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M350-160h530v-174H350v174ZM80-626h210v-174H80v174Zm0 233h210v-173H80v173Zm0 233h210v-174H80v174Zm270-233h530v-173H350v173Zm0-233h530v-174H350v174Z" />
+    </svg>
+  )
+}

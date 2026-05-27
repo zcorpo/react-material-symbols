@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function PieChartFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M510-510v-309q123 8 210.5 97.5T819-510H510Zm-60 369q-131-11-220.5-109T140-480q0-132 89.5-230T450-819v678Zm60 0v-309h309q-11 122-98.5 211.5T510-141Z" />
+    </svg>
+  )
+}

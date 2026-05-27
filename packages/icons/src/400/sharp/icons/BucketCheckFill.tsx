@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function BucketCheckFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="m200-120-80-555h123v-165h475v165h123l-80 555H200Zm237-170 189-188-43-43-146 146-59-58-42 42 101 101ZM303-675h355v-105H303v105Z" />
+    </svg>
+  )
+}

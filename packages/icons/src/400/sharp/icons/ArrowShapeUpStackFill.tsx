@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function ArrowShapeUpStackFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M363-160v-124H161l320-343 320 343H598v124H363ZM160-490l321-344 321 344h-84L481-744 244-490h-84Z" />
+    </svg>
+  )
+}

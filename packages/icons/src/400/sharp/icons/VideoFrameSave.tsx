@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function VideoFrameSave({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M820-570v-170H650v-60h230v230h-60Zm-740 0v-230h230v60H140v170H80Zm0 410v-230h60v170h170v60H80Zm303-150v-340l267 170-267 170ZM612 0v-60h320V0H612Zm157-120L613-277l42-42 85 84v-199h60v199l85-84 42 42-158 157Z" />
+    </svg>
+  )
+}

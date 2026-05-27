@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function TextSelectEndFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M450-780v-60h60v60h-60Zm0 660v-60h60v60h-60ZM285-780v-60h60v60h-60Zm0 660v-60h60v60h-60ZM120-780v-60h60v60h-60Zm0 165v-60h60v60h-60Zm0 165v-60h60v60h-60Zm0 165v-60h60v60h-60Zm0 165v-60h60v60h-60Zm495 0v-60h82v-600h-82v-60h225v60h-83v600h83v60H615Z" />
+    </svg>
+  )
+}

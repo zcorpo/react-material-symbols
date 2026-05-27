@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function AddRowAbove({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M180-140h600v-269H180v269Zm660 60H120v-720h150v60h-90v271h600v-271h-90v-60h150v720ZM480-469Zm0 60v-60 60Zm0 0Zm-30-251v-80h-80v-60h80v-80h60v80h80v60h-80v80h-60Z" />
+    </svg>
+  )
+}

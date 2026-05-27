@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function CommentBank({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M523-547v-273H140v600l74-80h606v-520H716v273l-96-50-97 50ZM80-80v-800h800v640H240L80-80Zm60-740v520-520Z" />
+    </svg>
+  )
+}

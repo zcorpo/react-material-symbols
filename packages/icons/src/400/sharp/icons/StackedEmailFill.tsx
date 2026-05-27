@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function StackedEmailFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M160-240v-600h760v600H160ZM40-120v-619h60v559h720v60H40Zm500-325 320-261v-74L540-519 220-780v74l320 261Z" />
+    </svg>
+  )
+}

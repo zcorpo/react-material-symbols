@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function FolderOffFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M880-179 259-800h162l60 60h399v561ZM862-28 730-160H80v-640h94l60 60h-84l-94-94 42-42L904-70l-42 42Z" />
+    </svg>
+  )
+}

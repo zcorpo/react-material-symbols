@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function FeaturedPlayListFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M237-454h361v-60H237v60Zm0-129h361v-60H237v60ZM80-160v-640h800v640H80Z" />
+    </svg>
+  )
+}
