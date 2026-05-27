@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function ViewHeadline({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M150.39-352.78V-432h659.22v79.22H150.39Zm0 179.78v-79.78h659.22V-173H150.39Zm0-355v-79.78h659.22V-528H150.39Zm0-179.78V-787h659.22v79.22H150.39Z" />
+    </svg>
+  )
+}

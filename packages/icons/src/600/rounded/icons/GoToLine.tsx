@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function GoToLine({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M437.72-707.83q-17.33-17.45-17.33-42.29t17.44-42.16q17.45-17.33 42.29-17.33t42.16 17.44q17.33 17.45 17.33 42.29t-17.44 42.16q-17.45 17.33-42.29 17.33t-42.16-17.44Zm0 540q-17.33-17.45-17.33-42.29t17.44-42.16q17.45-17.33 42.29-17.33t42.16 17.44q17.33 17.45 17.33 42.29t-17.44 42.16q-17.45 17.33-42.29 17.33t-42.16-17.44Z" />
+    </svg>
+  )
+}

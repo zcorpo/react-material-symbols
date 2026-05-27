@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function AlignEnd({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M65.87-65.87v-79.22H894.7v79.22H65.87Zm214.52-454.52v-119.22h399.22v119.22H280.39Zm0 240v-119.22h399.22v119.22H280.39Z" />
+    </svg>
+  )
+}

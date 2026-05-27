@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function Equalizer({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M145.87-145.87v-340.35h153v340.35h-153Zm257.91 0V-814.7h152.44v668.83H403.78Zm257.35 0V-614.7H814.7v468.83H661.13Z" />
+    </svg>
+  )
+}

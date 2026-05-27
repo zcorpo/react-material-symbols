@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function LineStartDiamond({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M360-300.83 539.17-480 360-659.17 180.83-480 360-300.83Zm0 112.7L68.13-480 360-771.87l252.26 252.26h277.35v79.22H612.26L360-188.13ZM360-480Z" />
+    </svg>
+  )
+}
