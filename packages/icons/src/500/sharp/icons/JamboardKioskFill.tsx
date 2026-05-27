@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function JamboardKioskFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M245.93-114.02v-68.37h200V-318.8H74.02v-527.42h812.2v527.42H514.07v136.41h200v68.37H245.93Z" />
+    </svg>
+  )
+}

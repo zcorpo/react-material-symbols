@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function PaymentCard({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M132-212v-537h696v537H132Zm22-22h652v-493H154v493Zm92-90h304L385-637H246v313Zm294-254h174v-59H540v59ZM154-234v-493 493Z" />
+    </svg>
+  )
+}

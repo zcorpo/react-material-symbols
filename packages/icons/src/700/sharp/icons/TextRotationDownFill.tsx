@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function TextRotationDownFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M220-103 68-255l59-57 52 52v-551h83v551l52-52 58 57-152 152Zm212-164v-92l95-34v-174l-95-32v-86l440 164v90L432-267Zm158-141 200-69v-4l-200-69v142Z" />
+    </svg>
+  )
+}

@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function FullscreenPortrait({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M285.09-205.09h389.82v-549.82H285.09v549.82ZM814.7-65.87H145.87V-894.7H814.7v828.83Zm-79.79-79.22v-669.82H225.09v669.82h509.82Zm0-669.82H225.09h509.82Z" />
+    </svg>
+  )
+}

@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function TabCloseInactive({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M542-184v-22h132v22H542Zm-188 0v-22h142v22H354ZM180-568h-22v-132h22v132Zm0 188h-22v-142h22v142Zm128 196H158v-150h22v128h128v22Zm136-271 84-84 84 84 15-15-84-84 84-84-15-15-84 84-84-84-15 15 84 84-84 84 15 15ZM254-280v-548h548v548H254Zm22-22h504v-504H276v504Zm0 0v-504 504Z" />
+    </svg>
+  )
+}

@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function HouseWithShieldFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M480.22-265q57.78-14 95.28-65.5T613-445.04v-84.6L480-596l-132 66.36v84.6q0 63.04 37.53 114.56T480.22-265ZM135-95v-518l345-259 346 259v518H135Z" />
+    </svg>
+  )
+}

@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function CoffeeMakerFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M212-132v-696h536v22H634v58H349v-58H234v652h194q-35-19-57-50t-22-80v-146h285v146q0 49-22.5 80T555-154h193v22H212Zm298.71-436q8.29-8 8.29-19.5t-8.29-19.5q-8.29-8-19.71-8-11.42 0-19.71 8-8.29 8-8.29 19.5t8.29 19.5q8.29 8 19.71 8 11.42 0 19.71-8Z" />
+    </svg>
+  )
+}

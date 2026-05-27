@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function KeyboardFullFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M74.02-154.02v-652.2h812.2v652.2H74.02Zm68.13-228.13h675.7v-355.7h-675.7v355.7Z" />
+    </svg>
+  )
+}

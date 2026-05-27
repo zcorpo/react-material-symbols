@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function ButtonsAltFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M132-292v-376h696v376H132Zm173-94h25v-82h81v-25h-81v-81h-25v81h-81v25h81v82Z" />
+    </svg>
+  )
+}

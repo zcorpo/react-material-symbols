@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function SwitchAccess2({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M15-135v-691h398v163h-94v-68H109v502h210v-68h94v162H15Zm502 0v-162h95v68h67v94H517Zm266 0v-94h69v-68h94v162H783ZM517-663v-163h162v95h-67v68h-95Zm335 0v-68h-69v-95h163v163h-94ZM109-229v-502 502Zm614-74-65-66 60-64H187v-94h531l-60-64 65-65 174 176-174 177Z" />
+    </svg>
+  )
+}

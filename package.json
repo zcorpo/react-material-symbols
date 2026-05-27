@@ -1,0 +1,16 @@
+{
+  "name": "react-material-symbols",
+  "private": true,
+  "scripts": {
+    "sync": "tsx scripts/sync-icons.ts",
+    "build": "sh scripts/build-icons.sh"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": ["esbuild"]
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  }
+}

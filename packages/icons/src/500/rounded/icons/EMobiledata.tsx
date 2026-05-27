@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function EMobiledata({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M351.43-278.57q-13.94 0-23.4-9.46-9.46-9.46-9.46-23.4V-648.8q0-13.95 9.34-23.29t23.29-9.34H610q13.23 0 22.33 9.03 9.1 9.03 9.1 22.58 0 13.54-8.98 22.4-8.98 8.85-22.45 8.85H381.43v107.14H610q13.23 0 22.33 9.03 9.1 9.03 9.1 22.58 0 13.54-8.98 22.4-8.98 8.85-22.45 8.85H381.43v107.14H610q13.23 0 22.33 9.03 9.1 9.03 9.1 22.58 0 13.54-8.98 22.4-8.98 8.85-22.45 8.85H351.43Z" />
+    </svg>
+  )
+}

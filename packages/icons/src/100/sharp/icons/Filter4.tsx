@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function Filter4({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M254-280v-548h548v548H254Zm22-22h504v-504H276v504ZM158-184v-516h22v494h494v22H158Zm118-118v-504 504Zm316-77h22v-350h-22v156H451v-156h-22v178h163v172Z" />
+    </svg>
+  )
+}

@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function TableChart({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M172-172v-616h616v616H172Zm22-442h572v-152H194v152Zm0 420h129v-398H194v398Zm443 0h129v-398H637v398Zm-292 0h270v-398H345v398Z" />
+    </svg>
+  )
+}

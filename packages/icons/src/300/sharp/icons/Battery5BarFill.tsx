@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function Battery5BarFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M297.69-100v-702.15h108.46V-860h147.7v57.85h108.46V-100H297.69Zm45.39-474.61h273.84v-182.54H343.08v182.54Z" />
+    </svg>
+  )
+}

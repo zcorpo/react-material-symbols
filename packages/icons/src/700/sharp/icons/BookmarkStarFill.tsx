@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function BookmarkStarFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="m379-384 101-58 102 58-24-115 86-78-115-14-49-105-49 105-115 14 86 78-23 115ZM175-82v-789h611v789L480-212 175-82Z" />
+    </svg>
+  )
+}

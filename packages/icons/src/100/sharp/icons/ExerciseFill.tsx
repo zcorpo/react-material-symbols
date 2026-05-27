@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function ExerciseFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M757-581 580-758l43-43 175 177-41 43ZM334-157 156-333l47-47 177 177-46 46Zm129 9L148-463l108-108 101 102 134-134-102-101 108-110 317 317-110 108-101-102-134 134 102 101-108 108Z" />
+    </svg>
+  )
+}

@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function ScreenRotationUp({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="m528-95-16-15 103-102H292v-390l22 22v346h300L513-336l15-16 129 129L528-95Zm140-262-22-22v-347H346l101 102-15 15-129-128 129-129 16 16-103 102h323v391Z" />
+    </svg>
+  )
+}

@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function MobileFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M501.08-724.58q9.35-9.35 9.35-22.07t-9.35-22.08q-9.36-9.36-22.08-9.36-12.72 0-22.08 9.36-9.35 9.36-9.35 22.08 0 12.72 9.35 22.07 9.36 9.36 22.08 9.36 12.72 0 22.08-9.36ZM194.02-34.02v-892.2h569.96v213.11h42.24v177.78h-42.24v501.31H194.02Z" />
+    </svg>
+  )
+}

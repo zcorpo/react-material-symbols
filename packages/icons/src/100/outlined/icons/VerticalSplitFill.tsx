@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function VerticalSplitFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M170-396v-22h271v22H170Zm0 144v-22h271v22H170Zm0-290v-22h271v22H170Zm0-144v-22h271v22H170Zm465 434q-22.28 0-38.14-16.25T581-306v-348q0-21.5 15.86-37.75T635-708h101q22.28 0 38.14 16.25T790-654v348q0 21.5-15.86 37.75T736-252H635Z" />
+    </svg>
+  )
+}

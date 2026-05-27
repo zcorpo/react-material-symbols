@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function RectangleAddFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M457.31-337.31h45.38v-120h120v-45.38h-120v-120h-45.38v120h-120v45.38h120v120ZM100-180v-600h760v600H100Z" />
+    </svg>
+  )
+}

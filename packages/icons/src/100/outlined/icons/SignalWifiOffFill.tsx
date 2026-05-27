@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function SignalWifiOffFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M676-390 334-731q36-9 72.5-13t73.5-4q113 0 216.5 38T886-600L676-390Zm138 276L607-321 480-194 74-600q36-30 75-54.5t82-42.5L113-815l16-16 701 701-16 16Z" />
+    </svg>
+  )
+}

@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function PulmonologyFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M469-854h22v289l108 109 31-32-99-101v-145h170l127 330v258H520v-168l18-172-58-58-59 59 19 171v168H132v-258l127-330h170v146l-99 100 31 32 108-109v-289Z" />
+    </svg>
+  )
+}

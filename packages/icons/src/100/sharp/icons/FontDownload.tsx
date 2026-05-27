@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function FontDownload({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M312-262h25l43-121h201l42 121h25L487-710h-14L312-262Zm77-144 89-252h4l89 252H389ZM132-132v-696h696v696H132Zm22-22h652v-652H154v652Zm0 0v-652 652Z" />
+    </svg>
+  )
+}

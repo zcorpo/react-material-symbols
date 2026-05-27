@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function BreakfastDiningFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M215-172v-402q-32-18-57.5-44T132-684q0-44 30-74t74-30h488q44 0 74 30t30 74q0 40-25.5 66T745-574v402H215Zm265-111 159-157-159-159-157 159 157 157Zm0-31L355-439l125-128 127 128-127 125Z" />
+    </svg>
+  )
+}

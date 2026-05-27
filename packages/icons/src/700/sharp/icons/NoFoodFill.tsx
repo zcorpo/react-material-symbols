@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function NoFoodFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M856-13 569-300H17q0-97 72-165t232-68q34 0 66 3t63 9v101L22-848l51-51L907-64l-51 51ZM17-161v-90h608v90H17Zm0 144v-91h608v91H17Zm865-157L447-608l-17-155h206v-180h83v180h224l-61 589Z" />
+    </svg>
+  )
+}

@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function UnknownMed({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M120-464.62v-70.76h320v70.76H120Zm399.23 0v-70.76h320v70.76h-320Z" />
+    </svg>
+  )
+}

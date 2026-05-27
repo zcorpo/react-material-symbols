@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function Bookmark({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M252-198v-592h456v592l-228-97.83L252-198Zm22-35 206-88 206 88v-535H274v535Zm0-535h412-412Z" />
+    </svg>
+  )
+}

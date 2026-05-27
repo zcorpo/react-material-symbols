@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function OpenWithFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M480-34 293-221l68-68 72 71v-163h94v163l72-71 68 68L480-34ZM216-298 34-480l183-183 68 68-67 68h163v94H218l66 67-68 68Zm528 0-68-68 67-67H580v-94h163l-67-67 68-68 182 182-182 182ZM433-580v-163l-67 67-68-68 182-182 182 182-68 68-67-67v163h-94Z" />
+    </svg>
+  )
+}

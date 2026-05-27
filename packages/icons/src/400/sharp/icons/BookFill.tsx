@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function BookFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M160-80v-800h640v800H160Zm326-474 97-56 97 56v-266H486v266Z" />
+    </svg>
+  )
+}

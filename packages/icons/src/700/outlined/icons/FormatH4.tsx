@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function FormatH4({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M95-258v-443h94v174h137v-174h94v443h-94v-175H189v175H95Zm636 0v-135H540v-308h95v214h96v-214h95v214h80v94h-80v135h-95Z" />
+    </svg>
+  )
+}

@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function SweepFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M423-212v-82h227v82H423Zm-175-27L-4-490.2 64-557l184 184 396.13-396L710-701 248-239Zm337-148v-82h230v82H585Zm165-175v-82h227v82H750Z" />
+    </svg>
+  )
+}

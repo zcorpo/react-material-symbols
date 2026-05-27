@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function HangoutVideoOffFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M819-84 689-215H136v-528h56l5 5v32L97-806l16-16 722 722-16 16Zm11-124L673-366v-241L546-505v-103H431L293-747h537v539ZM293-355h256L293-611v256Z" />
+    </svg>
+  )
+}

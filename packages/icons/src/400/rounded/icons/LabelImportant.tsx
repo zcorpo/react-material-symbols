@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function LabelImportant({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M608-160H140q-19 0-26.5-16.5T117-208l206-272-206-272q-11-15-3.5-31.5T140-800h467q14.25 0 27 6.37 12.75 6.38 21 17.63l197 260q12 16 12.5 36T853-444L656-184q-8.25 11.25-21 17.62-12.75 6.38-27 6.38Zm-408-60h407l198-260-198-260H200l170 224q12 15.68 12 35.84Q382-460 370-444L200-220Zm303-260Z" />
+    </svg>
+  )
+}

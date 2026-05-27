@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function FormatTextdirectionVerticalFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M282-276v-137q-63 0-106.5-42.5T132-560q0-62 43.5-104.5T282-707h240v22h-80v409h-22v-409H304v409h-22Zm418 64L572-333l16-16 101 95v-453h22v453l101-95 16 16-128 121Z" />
+    </svg>
+  )
+}

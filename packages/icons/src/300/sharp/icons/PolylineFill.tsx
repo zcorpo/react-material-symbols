@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function PolylineFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M624.62-90v-92.69L315-337.31H130v-205.38h168.85l125.77-141.92V-870H630v205.38H467.85L335.38-515.39v138.24l289.24 143.61v-61.84H830V-90H624.62Z" />
+    </svg>
+  )
+}

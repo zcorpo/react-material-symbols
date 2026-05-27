@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function News({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M95-95v-771h547l224 224v547H95Zm94-94h582v-399H588v-183H189v582Zm82-108h418v-65H271v65Zm0-295h232v-66H271v66Zm0 148h418v-66H271v66Zm-82-327v183.43V-771v582-582Z" />
+    </svg>
+  )
+}

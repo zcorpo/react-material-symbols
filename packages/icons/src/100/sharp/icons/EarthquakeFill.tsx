@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function EarthquakeFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M359-132 258-469H132v-22h143l92 302 142-639h16l105 455 83-270h16l57 152h41v22h-58l-46-128-86 280h-17L517-765 377-132h-18Z" />
+    </svg>
+  )
+}

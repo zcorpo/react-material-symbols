@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function FormatTextOverflowFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M116-143v-674h94v674h-94Zm562-171-67-66 53-53H310v-94h354l-53-53 67-66 167 166-167 166ZM471-143v-190h94v190h-94Zm0-484v-190h94v190h-94Z" />
+    </svg>
+  )
+}

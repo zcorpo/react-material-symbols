@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function MpFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M235-360h50v-190h57v127h50v-127h56v190h50v-240H235v240Zm313 0h50v-63h126v-177H548v240Zm50-113v-77h76v77h-76ZM95-95v-771h771v771H95Z" />
+    </svg>
+  )
+}

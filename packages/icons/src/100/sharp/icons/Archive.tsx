@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function Archive({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="m480-291 123-123-15-15-97 97v-204h-22v204l-97-97-15 15 123 123ZM194-660v466h572v-466H194Zm-22 488v-498l95-118h425l96 120v496H172Zm37-510h540l-68-84H278l-69 84Zm271 255Z" />
+    </svg>
+  )
+}

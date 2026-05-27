@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function FinanceFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M120-120v-720h60v660h660v60H120Zm135-135v-334h119v334H255Zm198 0v-540h119v540H453Zm194 0v-170h119v170H647Z" />
+    </svg>
+  )
+}

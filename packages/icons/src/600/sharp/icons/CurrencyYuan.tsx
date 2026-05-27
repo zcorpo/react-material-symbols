@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function CurrencyYuan({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M440.39-105.87v-276.52h-210v-79.22h199.09L179.65-854.7h94.18L480-529.09 686.17-854.7h94.18L531.09-461.61h198.52v79.22h-210v276.52h-79.22Z" />
+    </svg>
+  )
+}

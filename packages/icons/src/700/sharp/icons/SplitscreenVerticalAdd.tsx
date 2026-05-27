@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function SplitscreenVerticalAdd({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M771-771h1-131 3.25H612h159Zm-253-95h348v547h-95v-452H612v676h-94v-771ZM95-95v-771h347v771H95Zm253-676H189v582h159v-582Zm0 0H189h159ZM786-17v-78h-78v-79h78v-78h80v78h77v79h-77v78h-80Z" />
+    </svg>
+  )
+}

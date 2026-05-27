@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function CandlestickChart({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M332-212v-83h-80v-370h80v-83h22v83h80v370h-80v83h-22Zm-58-105h138v-326H274v326Zm332 105v-183h-80v-200h80v-153h22v153h80v200h-80v183h-22Zm-58-205h138v-156H548v156Zm-205-63Zm274-15Z" />
+    </svg>
+  )
+}

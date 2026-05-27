@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function Splitscreen({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M160-540.69V-800h640v259.31H160Zm30.77-30.77h578.46v-197.77H190.77v197.77ZM160-160v-258.77h640V-160H160Zm30.77-30.77h578.46V-388H190.77v197.23Zm0-380.69v-197.77 197.77Zm0 380.69V-388v197.23Z" />
+    </svg>
+  )
+}

@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function BusinessCenter({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M132-172v-496h240v-108h216v108h240v496H132Zm262-496h172v-86H394v86Zm412 279H539v48H421v-48H154v195h652v-195Zm-363 26h74v-74h-74v74Zm-289-48h267v-48h118v48h267v-235H154v235Zm326 11Z" />
+    </svg>
+  )
+}

@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function Scan({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M212-132v-183h22v161h492v-161h22v183H212Zm0-353v-343h380l156 156v187h-22v-177H581v-144H234v321h-22ZM70-389v-22h820v22H70Zm410-96Zm0 170Z" />
+    </svg>
+  )
+}

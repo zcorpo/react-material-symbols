@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function ArrowSplit({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M212-468v-22h263l235-236H565v-22h183v183h-22v-145L485-468H212Zm353 256v-22h145L534-411l16-15 176 176v-146h22v184H565Z" />
+    </svg>
+  )
+}

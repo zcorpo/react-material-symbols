@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function WindowSensor({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M887.82-603q-19.82 0-33.32-13.63Q841-630.25 841-650v-160q0-19.75 13.68-33.38Q868.35-857 888.18-857q19.82 0 33.32 13.62Q935-829.75 935-810v160q0 19.75-13.68 33.37Q907.65-603 887.82-603ZM96-103v-754h675v754H96Zm95-424h185v-40h115v40h185v-236H191v236Zm0 330h485v-236H191v236Zm0 0h485-485Z" />
+    </svg>
+  )
+}

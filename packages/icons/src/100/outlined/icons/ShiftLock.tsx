@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function ShiftLock({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M372-306v-143H230l250-349 250 349H588v143H372Zm22-22h172v-143h118L480-759 276-471h118v143Zm86-216ZM206-184v-22h548v22H206Z" />
+    </svg>
+  )
+}

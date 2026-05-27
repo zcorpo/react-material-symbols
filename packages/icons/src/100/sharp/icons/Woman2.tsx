@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function Woman2({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M431-106v-240H306l121.53-330H533l121 330H529v240h-98Zm49.08-628q-26.48 0-44.28-18.22t-17.8-43.7q0-26.48 17.72-44.28t44.2-17.8q26.48 0 44.28 17.72t17.8 44.2q0 25.48-17.72 43.78t-44.2 18.3Z" />
+    </svg>
+  )
+}

@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function AccessibilityFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M428.5-755.42q-21.5-21.42-21.5-51.5t21.42-51.58q21.42-21.5 51.5-21.5t51.58 21.42q21.5 21.42 21.5 51.5t-21.42 51.58q-21.42 21.5-51.5 21.5t-51.58-21.42ZM372-80v-533H120v-60h720v60H588v533h-60v-260h-96v260h-60Z" />
+    </svg>
+  )
+}

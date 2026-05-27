@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function KeyboardArrowDownFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M480-320 216-584l67-67 197 197 197-197 67 67-264 264Z" />
+    </svg>
+  )
+}

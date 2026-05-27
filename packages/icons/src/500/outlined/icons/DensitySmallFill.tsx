@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function DensitySmallFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M114.02-74.02v-68.13h732.2v68.13h-732.2Zm0-248.2v-68.13h732.2v68.13h-732.2Zm0-247.43v-68.13h732.2v68.13h-732.2Zm0-248.2v-68.37h732.2v68.37h-732.2Z" />
+    </svg>
+  )
+}

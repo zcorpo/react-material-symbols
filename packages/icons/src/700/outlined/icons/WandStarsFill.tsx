@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function WandStarsFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="m161-96-66-66 323-322-186-46 209-131-17-245 188 158 228-91-93 227 159 189-246-19-129 209-46-184L161-96Zm24-547-90-91 92-92 90 91-92 92ZM735-95l-91-91 91-90 91 91-91 90Z" />
+    </svg>
+  )
+}

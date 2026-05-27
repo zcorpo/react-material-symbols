@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function FastRewindFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M869.07-228.76 506.09-480l362.98-251.24v502.48Zm-415.16 0L90.93-480l362.98-251.24v502.48Z" />
+    </svg>
+  )
+}

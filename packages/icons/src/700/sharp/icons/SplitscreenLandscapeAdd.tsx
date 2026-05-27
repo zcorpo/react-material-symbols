@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function SplitscreenLandscapeAdd({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M510-289h241v-382H510v382Zm-301 0h241v-382H209v382Zm598-363v-90h-90v-84h90v-90h83v90h90v84h-90v90h-83ZM149-229v-502 502Zm-94 94v-691h602v95H149v502h662v-359h95v453H55Z" />
+    </svg>
+  )
+}

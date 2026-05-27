@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function BottomAppBarFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M120-120v-720h720v720H120Zm381-242q9-9 9-21t-9-21q-9-9-21-9t-21 9q-9 9-9 21t9 21q9 9 21 9t21-9Zm-321-21h210q0-36 27-63t63-27q36 0 63 27t27 63h210v-397H180v397Z" />
+    </svg>
+  )
+}

@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function ShadesFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M172-133v-675h-40v-22h696v22h-40v676q-80 0-139.5-49T579-309H380q-10 78-70 127t-138 49Zm210-198h196v-477H382v477Z" />
+    </svg>
+  )
+}

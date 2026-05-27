@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function BrowseFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M172-172v-190h271v190H172Zm345 0v-353h271v353H517ZM172-436v-352h271v352H172Zm345-163v-189h271v189H517Z" />
+    </svg>
+  )
+}

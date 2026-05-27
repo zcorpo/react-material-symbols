@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function LanFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M146-106v-225h120v-160h203v-138H349v-225h262v225H491v138h203v160h120v225H552v-225h120v-138H288v138h120v225H146Z" />
+    </svg>
+  )
+}

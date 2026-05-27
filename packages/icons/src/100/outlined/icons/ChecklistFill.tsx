@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function ChecklistFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M237-261 132-366l15-15 89 89 173-173 15 16-187 188Zm0-280L132-646l15-15 89 89 173-173 15 16-187 188Zm284 212v-22h308v22H521Zm0-280v-22h308v22H521Z" />
+    </svg>
+  )
+}

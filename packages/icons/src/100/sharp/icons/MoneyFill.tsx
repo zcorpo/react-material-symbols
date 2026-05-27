@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function MoneyFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M578-346h143v-268H578v268Zm22-22v-224h99v224h-99Zm-251 22h142v-268H349v268Zm22-22v-224h98v224h-98Zm-132 22h22v-268h-22v268ZM132-212v-536h696v536H132Z" />
+    </svg>
+  )
+}

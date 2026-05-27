@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function FormatImageBack({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M120-120v-60h720v60H120Zm0-165v-60h165v-105H120v-60h165v-105H120v-60h720v60H675v105h165v60H675v105h165v60H120Zm225-60h270v-105H345v105Zm0-165h270v-105H345v105ZM120-780v-60h720v60H120Zm360 330Zm0-60Z" />
+    </svg>
+  )
+}

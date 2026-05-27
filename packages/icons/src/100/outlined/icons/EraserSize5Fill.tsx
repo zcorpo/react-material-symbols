@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function EraserSize5Fill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M408-172q-98 0-167-69t-69-167q0-45 17.5-88t52.5-79l146-145q34-35 77-52t89-17q98 0 166.5 68.5T789-554q0 46-17 89t-52 77L575-242q-36 35-79 52.5T408-172Z" />
+    </svg>
+  )
+}

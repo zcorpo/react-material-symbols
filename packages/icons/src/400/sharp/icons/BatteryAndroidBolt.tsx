@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function BatteryAndroidBolt({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M40-240v-480h707l-48 60H100v360h549l-10 60H40Zm60-60v-360 360Zm607 20 28-160H600l192-240h21l-28 160h135L728-280h-21Z" />
+    </svg>
+  )
+}

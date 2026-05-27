@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function Backspace({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="m466-331 95-94 95 94 55-55-95-94 93-94-55-56-93 95-95-95-56 56 96 94-96 94 56 55ZM311-135 55-480l255-346h597v691H311ZM172-480l186 252h455v-504H358L172-480Zm321 0Z" />
+    </svg>
+  )
+}

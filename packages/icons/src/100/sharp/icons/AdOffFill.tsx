@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function AdOffFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="m779-148-24-24H172v-583l-21-21 16-16 628 628-16 16Zm-585-46h539L194-734v540Zm594-82-22-22v-347H419L276-788h512v512Z" />
+    </svg>
+  )
+}

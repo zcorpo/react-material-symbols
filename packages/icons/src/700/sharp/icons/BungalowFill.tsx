@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function BungalowFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M263-109v-271l-52 81-71-44 340-526 340 526-71 44-52-81v271H521v-199h-82v199H263Zm176-293h82v-82h-82v82Z" />
+    </svg>
+  )
+}

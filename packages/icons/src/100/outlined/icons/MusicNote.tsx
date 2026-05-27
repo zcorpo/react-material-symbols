@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function MusicNote({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M326.5-212.5Q296-243 296-287t30.5-74.5Q357-392 401-392q24 0 46 9.5t37 28.5v-424h180v76H506v415q0 44-30.5 74.5T401-182q-44 0-74.5-30.5Z" />
+    </svg>
+  )
+}

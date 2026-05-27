@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function ListArrowFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M230-162 80-313l42-41 78 76v-483h60v483l77-76 42 41-149 151Zm259-37v-60h391v60H489Zm0-251v-60h391v60H489Zm0-251v-60h391v60H489Z" />
+    </svg>
+  )
+}

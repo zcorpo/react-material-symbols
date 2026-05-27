@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function Icon3k({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M520-360h50v-90l84.49 90H719L608.35-480 719-600h-64.51L570-510v-90h-50v240Zm-271 0h170v-240H249v50h120v54h-73v33h73v53H249v50ZM95-95v-771h771v771H95Zm94-94h582v-582H189v582Zm0 0v-582 582Z" />
+    </svg>
+  )
+}

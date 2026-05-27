@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function MobileCheckFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="m442-360 198-198-42-42-156 156-70-70-42 42 112 112ZM175-15v-931h608v223h43v193h-43v515H175Z" />
+    </svg>
+  )
+}

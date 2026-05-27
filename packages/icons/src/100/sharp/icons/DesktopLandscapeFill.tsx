@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function DesktopLandscapeFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M260-340h332v-172H260v172Zm418-118h22v-162H360v22h318v140ZM132-212v-536h696v536H132Z" />
+    </svg>
+  )
+}

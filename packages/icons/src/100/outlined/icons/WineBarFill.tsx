@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function WineBarFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M356-172v-22h113v-192q-90-13-136.5-73.5T286-600v-188h388v188q0 80-46.5 140.5T491-386v192h113v22H356Zm-48-439h344v-155H308v155Z" />
+    </svg>
+  )
+}

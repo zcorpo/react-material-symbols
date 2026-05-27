@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function GifFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M478-376v-208h25v208h-25Zm-250 0v-208h166v24H252v160h117v-72h25v96H228Zm358 0v-208h146v24H611v70h80v25h-80v89h-25Z" />
+    </svg>
+  )
+}

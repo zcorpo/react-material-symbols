@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function CalendarViewMonth({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M140-510h186v-230H140v230Zm246 0h188v-230H386v230Zm248 0h186v-230H634v230ZM140-220h186v-230H140v230Zm246 0h188v-230H386v230Zm248 0h186v-230H634v230ZM80-160v-640h800v640H80Z" />
+    </svg>
+  )
+}

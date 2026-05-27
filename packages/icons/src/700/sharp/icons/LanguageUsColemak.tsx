@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function LanguageUsColemak({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M588-375h143v-211H588v211Zm-453 95v-400h284v94H229v211h190v95H135Zm359 0v-400h332v400H494Z" />
+    </svg>
+  )
+}

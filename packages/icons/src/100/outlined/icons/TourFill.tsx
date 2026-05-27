@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function TourFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M226-106v-748h22v81h554l-70 172 70 172H248v323h-22Zm311-458.21q15-15.21 15-37T536.79-638q-15.21-15-36.5-15T464-637.79q-15 15.21-15 37T464.21-564q15.21 15 36.5 15T537-564.21Z" />
+    </svg>
+  )
+}

@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function MonitorWeightFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M120-120v-720h720v720H120Zm443.5-403.38q34.5-34.38 34.5-83.5t-34.38-83.62q-34.38-34.5-83.5-34.5t-83.62 34.38q-34.5 34.38-34.5 83.5t34.38 83.62q34.38 34.5 83.5 34.5t83.62-34.38ZM397-587v-40h40v40h-40Zm63 0v-40h40v40h-40Zm63 0v-40h40v40h-40Z" />
+    </svg>
+  )
+}

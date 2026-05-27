@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function ModeCommentFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M186-292q-23 0-38.5-15.5T132-346v-428q0-23 15.5-38.5T186-828h588q23 0 38.5 15.5T828-774v594L716-292H186Z" />
+    </svg>
+  )
+}

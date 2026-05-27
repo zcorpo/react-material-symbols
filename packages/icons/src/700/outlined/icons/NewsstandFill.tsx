@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function NewsstandFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M34-143v-94h892v94H34Zm72-177v-351h95v351h-95Zm182 0v-515h94v515h-94Zm182 0v-515h94v515h-94Zm320 0L608-631l84-47 180 311-82 47Z" />
+    </svg>
+  )
+}

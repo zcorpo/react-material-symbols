@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function DoneOutlineFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="m381-242 453-453-42-43-410 411-213-212-42 42 254 255Zm0 134L-7-496l177-176 211 211 412-412 175 178-587 587Z" />
+    </svg>
+  )
+}

@@ -1,0 +1,237 @@
+{
+  "name": "react-material-symbols",
+  "version": "0.1.0",
+  "description": "Material Symbols icons as React SVG components — no font loading, full tree shaking",
+  "sideEffects": false,
+  "main": "./dist/400/rounded/index.js",
+  "module": "./dist/400/rounded/index.mjs",
+  "types": "./dist/400/rounded/index.d.ts",
+  "exports": {
+    "./100/outlined": {
+      "import": {
+        "types": "./dist/100/outlined/index.d.mts",
+        "default": "./dist/100/outlined/index.mjs"
+      },
+      "require": {
+        "types": "./dist/100/outlined/index.d.ts",
+        "default": "./dist/100/outlined/index.js"
+      }
+    },
+    "./100/rounded": {
+      "import": {
+        "types": "./dist/100/rounded/index.d.mts",
+        "default": "./dist/100/rounded/index.mjs"
+      },
+      "require": {
+        "types": "./dist/100/rounded/index.d.ts",
+        "default": "./dist/100/rounded/index.js"
+      }
+    },
+    "./100/sharp": {
+      "import": {
+        "types": "./dist/100/sharp/index.d.mts",
+        "default": "./dist/100/sharp/index.mjs"
+      },
+      "require": {
+        "types": "./dist/100/sharp/index.d.ts",
+        "default": "./dist/100/sharp/index.js"
+      }
+    },
+    "./200/outlined": {
+      "import": {
+        "types": "./dist/200/outlined/index.d.mts",
+        "default": "./dist/200/outlined/index.mjs"
+      },
+      "require": {
+        "types": "./dist/200/outlined/index.d.ts",
+        "default": "./dist/200/outlined/index.js"
+      }
+    },
+    "./200/rounded": {
+      "import": {
+        "types": "./dist/200/rounded/index.d.mts",
+        "default": "./dist/200/rounded/index.mjs"
+      },
+      "require": {
+        "types": "./dist/200/rounded/index.d.ts",
+        "default": "./dist/200/rounded/index.js"
+      }
+    },
+    "./200/sharp": {
+      "import": {
+        "types": "./dist/200/sharp/index.d.mts",
+        "default": "./dist/200/sharp/index.mjs"
+      },
+      "require": {
+        "types": "./dist/200/sharp/index.d.ts",
+        "default": "./dist/200/sharp/index.js"
+      }
+    },
+    "./300/outlined": {
+      "import": {
+        "types": "./dist/300/outlined/index.d.mts",
+        "default": "./dist/300/outlined/index.mjs"
+      },
+      "require": {
+        "types": "./dist/300/outlined/index.d.ts",
+        "default": "./dist/300/outlined/index.js"
+      }
+    },
+    "./300/rounded": {
+      "import": {
+        "types": "./dist/300/rounded/index.d.mts",
+        "default": "./dist/300/rounded/index.mjs"
+      },
+      "require": {
+        "types": "./dist/300/rounded/index.d.ts",
+        "default": "./dist/300/rounded/index.js"
+      }
+    },
+    "./300/sharp": {
+      "import": {
+        "types": "./dist/300/sharp/index.d.mts",
+        "default": "./dist/300/sharp/index.mjs"
+      },
+      "require": {
+        "types": "./dist/300/sharp/index.d.ts",
+        "default": "./dist/300/sharp/index.js"
+      }
+    },
+    "./400/outlined": {
+      "import": {
+        "types": "./dist/400/outlined/index.d.mts",
+        "default": "./dist/400/outlined/index.mjs"
+      },
+      "require": {
+        "types": "./dist/400/outlined/index.d.ts",
+        "default": "./dist/400/outlined/index.js"
+      }
+    },
+    "./400/rounded": {
+      "import": {
+        "types": "./dist/400/rounded/index.d.mts",
+        "default": "./dist/400/rounded/index.mjs"
+      },
+      "require": {
+        "types": "./dist/400/rounded/index.d.ts",
+        "default": "./dist/400/rounded/index.js"
+      }
+    },
+    "./400/sharp": {
+      "import": {
+        "types": "./dist/400/sharp/index.d.mts",
+        "default": "./dist/400/sharp/index.mjs"
+      },
+      "require": {
+        "types": "./dist/400/sharp/index.d.ts",
+        "default": "./dist/400/sharp/index.js"
+      }
+    },
+    "./500/outlined": {
+      "import": {
+        "types": "./dist/500/outlined/index.d.mts",
+        "default": "./dist/500/outlined/index.mjs"
+      },
+      "require": {
+        "types": "./dist/500/outlined/index.d.ts",
+        "default": "./dist/500/outlined/index.js"
+      }
+    },
+    "./500/rounded": {
+      "import": {
+        "types": "./dist/500/rounded/index.d.mts",
+        "default": "./dist/500/rounded/index.mjs"
+      },
+      "require": {
+        "types": "./dist/500/rounded/index.d.ts",
+        "default": "./dist/500/rounded/index.js"
+      }
+    },
+    "./500/sharp": {
+      "import": {
+        "types": "./dist/500/sharp/index.d.mts",
+        "default": "./dist/500/sharp/index.mjs"
+      },
+      "require": {
+        "types": "./dist/500/sharp/index.d.ts",
+        "default": "./dist/500/sharp/index.js"
+      }
+    },
+    "./600/outlined": {
+      "import": {
+        "types": "./dist/600/outlined/index.d.mts",
+        "default": "./dist/600/outlined/index.mjs"
+      },
+      "require": {
+        "types": "./dist/600/outlined/index.d.ts",
+        "default": "./dist/600/outlined/index.js"
+      }
+    },
+    "./600/rounded": {
+      "import": {
+        "types": "./dist/600/rounded/index.d.mts",
+        "default": "./dist/600/rounded/index.mjs"
+      },
+      "require": {
+        "types": "./dist/600/rounded/index.d.ts",
+        "default": "./dist/600/rounded/index.js"
+      }
+    },
+    "./600/sharp": {
+      "import": {
+        "types": "./dist/600/sharp/index.d.mts",
+        "default": "./dist/600/sharp/index.mjs"
+      },
+      "require": {
+        "types": "./dist/600/sharp/index.d.ts",
+        "default": "./dist/600/sharp/index.js"
+      }
+    },
+    "./700/outlined": {
+      "import": {
+        "types": "./dist/700/outlined/index.d.mts",
+        "default": "./dist/700/outlined/index.mjs"
+      },
+      "require": {
+        "types": "./dist/700/outlined/index.d.ts",
+        "default": "./dist/700/outlined/index.js"
+      }
+    },
+    "./700/rounded": {
+      "import": {
+        "types": "./dist/700/rounded/index.d.mts",
+        "default": "./dist/700/rounded/index.mjs"
+      },
+      "require": {
+        "types": "./dist/700/rounded/index.d.ts",
+        "default": "./dist/700/rounded/index.js"
+      }
+    },
+    "./700/sharp": {
+      "import": {
+        "types": "./dist/700/sharp/index.d.mts",
+        "default": "./dist/700/sharp/index.mjs"
+      },
+      "require": {
+        "types": "./dist/700/sharp/index.d.ts",
+        "default": "./dist/700/sharp/index.js"
+      }
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch"
+  },
+  "peerDependencies": {
+    "react": ">=17"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "react": "^18.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.7.0"
+  }
+}

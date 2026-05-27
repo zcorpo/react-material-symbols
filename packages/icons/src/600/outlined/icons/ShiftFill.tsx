@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function ShiftFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M311.43-111.52v-310H102.48L480-893.57l378.09 472.05H648.48v310H311.43Z" />
+    </svg>
+  )
+}

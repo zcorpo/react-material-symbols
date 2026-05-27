@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function AlignVerticalTopFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M277-65.87v-649.04h119.22v649.04H277Zm286.78-240v-409.04H683v409.04H563.78ZM65.87-814.91v-79.79H894.7v79.79H65.87Z" />
+    </svg>
+  )
+}

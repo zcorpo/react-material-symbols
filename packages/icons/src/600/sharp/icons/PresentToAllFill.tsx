@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function PresentToAllFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M446.48-318.96h68.61v-192.3l75.04 77.61 49.78-49.22-160.34-159.35-159.92 159.35 49.78 49.22 77.05-77.05v191.74ZM65.87-145.87V-814.7H894.7v668.83H65.87Z" />
+    </svg>
+  )
+}

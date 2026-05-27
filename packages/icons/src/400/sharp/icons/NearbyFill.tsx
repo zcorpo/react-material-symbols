@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function NearbyFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M480-277 277-480l203-203 203 203-203 203Zm1 219L59-481l421-421 421 421L481-58Zm-1-109 313-313-313-313-313 313 313 313Z" />
+    </svg>
+  )
+}

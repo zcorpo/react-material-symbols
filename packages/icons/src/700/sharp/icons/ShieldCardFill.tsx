@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function ShieldCardFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M456-20v-391h494v391H456Zm87-87h320v-85H543v85Zm0-157h320v-60H543v60ZM396-85q-117-59-189-179.27Q135-384.55 135-523v-255.43L480-907l346 129v307H396v386Z" />
+    </svg>
+  )
+}

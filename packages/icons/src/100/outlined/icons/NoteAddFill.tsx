@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function NoteAddFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M469-264h22v-123h123v-22H491v-123h-22v123H346v22h123v123ZM266-132q-22.77 0-38.39-15.61Q212-163.23 212-186v-588q0-22.78 15.61-38.39Q243.23-828 266-828h326l156 156v486q0 22.77-15.61 38.39Q716.78-132 694-132H266Zm315-530h145L581-806v144Z" />
+    </svg>
+  )
+}

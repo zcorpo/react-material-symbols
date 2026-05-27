@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function MonitorHeartFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M55-510v-316h851v316H659l-68-134h-62L400-388l-61-122H55Zm0 375v-315h246l68 135h62l129-257 61 122h285v315H55Z" />
+    </svg>
+  )
+}

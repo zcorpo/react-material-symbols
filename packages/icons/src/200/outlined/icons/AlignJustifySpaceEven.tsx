@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function AlignJustifySpaceEven({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M809.23-120v-720H840v720h-30.77ZM120-120v-720h30.77v720H120Zm464.62-184.62v-350.76h70.76v350.76h-70.76Zm-280 0v-350.76h70.76v350.76h-70.76Z" />
+    </svg>
+  )
+}

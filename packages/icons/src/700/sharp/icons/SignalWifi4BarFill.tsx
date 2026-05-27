@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function SignalWifi4BarFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M480-62 0-600q98-98 219.5-155.5T480-813q139 0 260.5 57.5T960-600L480-62Z" />
+    </svg>
+  )
+}

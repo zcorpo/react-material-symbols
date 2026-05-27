@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function StraightenFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M186-292q-23 0-38.5-15.5T132-346.33v-267.34q0-23.33 15.5-38.83T186-668h117v148h22v-148h144v148h22v-148h144v148h22v-148h117q23 0 38.5 15.5t15.5 38.83v267.34q0 23.33-15.5 38.83T774-292H186Z" />
+    </svg>
+  )
+}

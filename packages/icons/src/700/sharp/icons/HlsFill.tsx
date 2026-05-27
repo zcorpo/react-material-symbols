@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function HlsFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M114-354v-252h60v89h86v-89h60v252h-60v-103h-86v103h-60Zm276 0v-252h60v192h120v60H390Zm224 0v-86h60v26h92v-47H614v-145h212v86h-60v-26h-92v47h152v145H614Z" />
+    </svg>
+  )
+}

@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function SdCardAlertFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M434-273h92v-93h-92v93Zm12-149h72v-222h-72v222ZM826-55H135v-597l254-254h437v851Z" />
+    </svg>
+  )
+}

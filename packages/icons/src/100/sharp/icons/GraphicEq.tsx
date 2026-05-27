@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function GraphicEq({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M321-286v-388h22v388h-22Zm148 154v-696h22v696h-22ZM172-436v-88h22v88h-22Zm446 150v-388h22v388h-22Zm148-150v-88h22v88h-22Z" />
+    </svg>
+  )
+}

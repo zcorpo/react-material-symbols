@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function HiveFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="m633-493-64-116 64-116h128l63 116-63 116H633ZM416-364l-64-116 64-116h128l64 116-64 116H416Zm0-258-64-116 64-116h128l64 116-64 116H416ZM199-493l-63-116 63-116h128l65 116-65 116H199Zm0 258-63-116 63-116h128l65 116-65 116H199Zm216 129-63-116 64-116h128l64 116-64 116H415Zm218-129-64-116 64-116h128l63 116-63 116H633Z" />
+    </svg>
+  )
+}

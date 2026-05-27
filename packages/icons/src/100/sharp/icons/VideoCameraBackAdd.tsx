@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function VideoCameraBackAdd({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M425-480ZM157-212v-256h22v234h492v-492H438v-22h255v252l110-110v251L693-465v253H157Zm104-126h332L492-472 392-348l-66-75-65 85Zm-22-224v-82h-82v-22h82v-82h22v82h83v22h-83v82h-22Z" />
+    </svg>
+  )
+}

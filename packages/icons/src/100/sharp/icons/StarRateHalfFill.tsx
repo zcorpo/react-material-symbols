@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function StarRateHalfFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M480-664v262l108 83-41-137 100-69H524l-44-139ZM330-258l56-186-144-104h180l58-192 58 192h180L574-444l56 186-150-114-150 114Z" />
+    </svg>
+  )
+}

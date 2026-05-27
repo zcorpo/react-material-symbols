@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function Sort({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M105.87-211.17v-79.22h261.48v79.22H105.87Zm0-229.22v-79.22h504.87v79.22H105.87Zm0-229.22v-78.65H854.7v78.65H105.87Z" />
+    </svg>
+  )
+}

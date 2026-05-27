@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function MountainFlagFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="m259-471 65-131h113v-304h289l-42 84 42 83H524v137h108l66 133-142 95-76-40-78 38-143-95ZM55-55l173-350 170 113 82-40 82 41 170-112L906-55H55Z" />
+    </svg>
+  )
+}

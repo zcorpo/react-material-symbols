@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function ChatBubbleOff({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M774-292v-22h32v-492H263l-22-22h587v536h-54Zm46 180L641-292H244L132-180v-620l-80-80 16-16 768 768-16 16ZM386-546Zm124-14ZM154-778v536l70-72h394L154-778Z" />
+    </svg>
+  )
+}

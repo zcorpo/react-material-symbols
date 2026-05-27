@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function DestructionFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M172-172v-239h616v239H172Zm93-299-124-73 194-34-53-193 162 117 99-174 34 197 192-53-115 163 88 50H265Z" />
+    </svg>
+  )
+}

@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function DriveFileMoveFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M55-135v-691h355l71 72h425v619H55Zm449-259-51 51 55 56 147-147-147-147-55 55 51 52H311v80h193Z" />
+    </svg>
+  )
+}

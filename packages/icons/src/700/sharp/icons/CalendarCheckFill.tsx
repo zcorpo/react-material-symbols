@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function CalendarCheckFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M95-55v-791h150.2v-60H327v60h306v-60h82.2v60H866v401l-95 94v-219H189v421h285l94 94H95Zm577 20L517-190l66-67 90 89 177-177 68 65L672-35Z" />
+    </svg>
+  )
+}

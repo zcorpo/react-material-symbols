@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function TurnRightFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M263-182v-329q0-39 27.5-66.5T357-605h328l-56-57q-15-14-15-32.5t14.5-33Q643-742 662-742t33 14l137 136q14 14 14 34t-14 34L695-388q-14 15-32.5 14.5t-33-15Q615-403 615-422t14-33l56-56H357v329q0 20-13.5 33.5T310-135q-20 0-33.5-13.5T263-182Z" />
+    </svg>
+  )
+}

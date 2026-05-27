@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function AccountBalanceWalletFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M140-140v-680h680v124.77H432.08v431.07H820V-140H140Zm337.46-169.54v-340.3h383.15v340.3H477.46Zm215.39-126.54q18.92-18.92 18.92-44.54 0-25.38-18.92-43.8-18.93-18.43-44.12-18.43-25.19 0-44.11 18.43-18.93 18.42-18.93 43.8 0 25.62 18.93 44.54 18.92 18.93 44.11 18.93 25.19 0 44.12-18.93Z" />
+    </svg>
+  )
+}

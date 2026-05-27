@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function GMobiledataBadgeFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M320-280h320v-232H513v60h68v112H380v-280h260v-60H320v400ZM120-120v-720h720v720H120Z" />
+    </svg>
+  )
+}

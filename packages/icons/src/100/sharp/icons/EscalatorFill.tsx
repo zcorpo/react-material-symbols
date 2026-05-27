@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function EscalatorFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M269-289h117l200-360h105v-22H574L374-311H269v22Zm-97 117v-616h616v616H172Z" />
+    </svg>
+  )
+}

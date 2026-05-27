@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function MobileVibrateFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M76-388v-185h22v185H76Zm108 83v-350h22v350h-22Zm678-83v-185h22v185h-22Zm-108 83v-350h22v350h-22ZM282-172v-616h396v616H282Zm217.28-459.07q7.72-7.07 7.72-18T499.21-667q-7.79-7-18-7T464-666.93q-7 7.07-7 18t7.07 17.93q7.07 7 17.28 7t17.93-7.07Z" />
+    </svg>
+  )
+}

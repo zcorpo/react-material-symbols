@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function Flag2({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M220-100v-720h600l-89.85 180.92L820-458.15H265.39V-100H220Zm45.39-403.54h480.76l-67.61-135.54 67.61-135.53H265.39v271.07Zm0 0v-271.07 271.07Z" />
+    </svg>
+  )
+}

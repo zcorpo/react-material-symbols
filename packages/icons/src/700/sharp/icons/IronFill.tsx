@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function IronFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M55-193v-155q0-74 51.74-126.5T232-527h357v-85H345v40h-96v-134h435v294h60v-334h162v94h-68v335H684v124H55Z" />
+    </svg>
+  )
+}

@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function CustomTypographyFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M441-55v-243h83v80h342v83H524v80h-83ZM95-135v-83h286v83H95Zm157-291h81l43.19-116H583l43 116h82L520-906h-81L252-426Zm147-181 80-225h1l79 225H399Z" />
+    </svg>
+  )
+}

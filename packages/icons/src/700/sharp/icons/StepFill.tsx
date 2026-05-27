@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function StepFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M785-343q-54 0-91.5-39T656-475q0-54 37.5-92.5T785-606q53 0 91.5 38.5T915-475q0 54-38.5 93T785-343Zm-455 86-67-68 98-101H44v-98h317l-98-98 67-70 214 217-214 218Z" />
+    </svg>
+  )
+}

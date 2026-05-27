@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function AirlineStopsFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M352-175v-94h82q-13-147-122-242.5T55-607v-94q136 0 250.5 68T479-444q33-80 92.08-143.02Q630.17-650.04 708-691H567v-95h299v305h-95v-136q-104 49-169.5 141.5T527-269h83v94H352Z" />
+    </svg>
+  )
+}

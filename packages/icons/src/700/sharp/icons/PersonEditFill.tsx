@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function PersonEditFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M556-95v-144l278-277 143 144L700-95H556Zm-421-27v-121q0-44 22.5-77.5T217-371q69-31 133.5-46.5T480-433q41 0 81 6.5t80 18.5L496-264v142H135Zm706-219 30-32-37-37-31 31 38 38ZM356-545q-51-51-51-124.5t51-124Q407-844 480-844t124.5 50.5Q656-743 656-669.5T604.5-545Q553-494 480-494t-124-51Z" />
+    </svg>
+  )
+}

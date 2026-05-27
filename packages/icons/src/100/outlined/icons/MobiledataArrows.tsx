@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function MobiledataArrows({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M345-612h22v397l96-95 15 16-122 122-121-122 15-16 95 95v-397Zm266 194h-22v-327l-94 95-16-16 121-122 122 122-16 16-95-95v327Z" />
+    </svg>
+  )
+}

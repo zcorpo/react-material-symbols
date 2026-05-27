@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function AirplanemodeInactiveFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="m906-263-193-78-322-324v-152q0-36 26-62.5t63-26.5q37 0 63 26.5t26 62.5v182l337 235v137ZM480-120 264-55v-115l127-87v-142L55-263v-137l236-165L45-811l50-50L862-93l-51 48-226-226v16l109 103v97l-214-65Z" />
+    </svg>
+  )
+}

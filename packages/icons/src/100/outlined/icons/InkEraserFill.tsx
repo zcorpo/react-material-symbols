@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function InkEraserFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M658-234h190v22H636l22-22Zm-481 22-47-48q-17-16-17-37t16-38l401-425q16-17 37.5-16.5T605-759l155 157q16 17 17 38.5T761-526L461-212H177Z" />
+    </svg>
+  )
+}

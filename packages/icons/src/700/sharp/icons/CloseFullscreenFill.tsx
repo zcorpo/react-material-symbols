@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function CloseFullscreenFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="m121-55-66-66 265-265H135v-94h345v345h-94v-185L121-55Zm359-425v-346h95v185l265-265 66 66-265 265h185v95H480Z" />
+    </svg>
+  )
+}

@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function MobileCancelFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="m370-316 110-110 111 110 54-54-110-110 110-111-54-54-111 110-110-110-54 54 110 111-110 110 54 54ZM175-15v-931h608v223h43v193h-43v515H175Z" />
+    </svg>
+  )
+}

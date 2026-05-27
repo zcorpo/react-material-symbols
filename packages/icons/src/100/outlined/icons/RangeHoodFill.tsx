@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function RangeHoodFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M144-430h671L628-618v-170H332v170L144-430Zm42 218h588q21.75 0 37.88-16.13Q828-244.25 828-266v-142H132v142q0 21.75 16.13 37.87Q164.25-212 186-212Zm214-97v-22h160v22H400Z" />
+    </svg>
+  )
+}

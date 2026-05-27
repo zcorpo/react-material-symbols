@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function IdentityAwareProxyFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M113.78-113.78v-72.44h732.44v72.44H113.78Zm0-660v-72.44h732.44v72.44H113.78Zm0 165v-72.44h72.44v72.44h-72.44Zm660 0v-72.44h72.44v72.44h-72.44Zm-660 330v-72.44h72.44v72.44h-72.44Zm660 0v-72.44h72.44v72.44h-72.44Zm-450 0v-165h-210v-72.44h210v-165h312.44v165h210v72.44h-210v165H323.78Z" />
+    </svg>
+  )
+}

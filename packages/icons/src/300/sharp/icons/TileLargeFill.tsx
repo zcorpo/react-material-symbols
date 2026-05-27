@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function TileLargeFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M140-140v-204.23h283.38V-140H140Zm396.85 0v-204.23H820V-140H536.85ZM140-457.31V-820h680v362.69H140Z" />
+    </svg>
+  )
+}

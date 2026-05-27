@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function LaptopWindows({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M52-224v-22h134v-29h-54v-461h696v461h-54v29h134v22H52Zm102-73h652v-417H154v417Zm0 0v-417 417Z" />
+    </svg>
+  )
+}

@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function LineStartFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M176.87-409q-29.69 0-50.28-20.68Q106-450.37 106-480.18q0-29.82 20.59-50.32t50.28-20.5q27.22 0 46.67 17Q243-517 248-491h606v22H248q-5 26-24.46 43-19.45 17-46.67 17Z" />
+    </svg>
+  )
+}

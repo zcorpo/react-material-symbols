@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function Mop({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M418-494h124v-296q0-26-18-44t-44-18q-26 0-44 17.75T418-790v296ZM188-348h584v-124H188v124Zm-69 240h160v-120h22v120h168v-120h22v120h168v-120h22v120h160l-67-224H186l-67 224ZM89-86l77-251v-157h230v-296q0-35 24.5-59.5T480-874q35 0 59.5 24.5T564-790v296h230v157l76 251H89Zm683-386H188h584Zm-230-22H418h124Z" />
+    </svg>
+  )
+}

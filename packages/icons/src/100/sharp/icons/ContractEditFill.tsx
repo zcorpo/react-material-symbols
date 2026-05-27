@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function ContractEditFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M478-132H236q-27 0-45.5-18.5T172-196v-112h120v-520h496v268l-22 22v-268H314v498h222l-58 58v118Zm94 0v-78l231-230 77 78-230 230h-78ZM380-536v-22h320v22H380Zm0-108v-22h320v22H380Zm423 320 37-38-37-38-38 38 38 38Z" />
+    </svg>
+  )
+}

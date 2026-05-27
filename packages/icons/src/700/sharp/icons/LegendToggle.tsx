@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function LegendToggle({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M143-166v-94h674v94H143Zm0-187v-94h674v94H143Zm0-181v-112l258-155 199 141 217-154v117L600-543 396-688 143-534Z" />
+    </svg>
+  )
+}

@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function Carpenter({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M565-90 435-221l53-54-330-470 118-118 532 532L565-90Zm-62-201 158-156-385-385-90 89 317 452Zm63 170 211-211-101-101-211 212 101 100Zm-63-170 158-156-158 156Z" />
+    </svg>
+  )
+}

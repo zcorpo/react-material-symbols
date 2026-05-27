@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function Icon30fps({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M126-246v-16h245v-210H127v-16h244v-210H126v-16h261v226l-8 8 8 8v226H126Zm423-16h269v-436H549v436Zm-16 16v-468h301v468H533Z" />
+    </svg>
+  )
+}

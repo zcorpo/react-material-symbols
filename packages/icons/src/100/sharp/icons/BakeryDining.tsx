@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function BakeryDining({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M481-267Zm312 15 73-81-86-161-78 193 91 49Zm-220-37h101l122-300-189-77-34 377Zm-286 0h101l-34-377-184 75 117 302Zm-119 37 91-49-76-193-87 167 72 75Zm242-37h141l38-423H373l37 423Zm-248 63-92-97 103-198-33-84 213-83-4-46h264l-4 45 216 87-33 80 99 193-91 104-81-42H242l-80 41Z" />
+    </svg>
+  )
+}

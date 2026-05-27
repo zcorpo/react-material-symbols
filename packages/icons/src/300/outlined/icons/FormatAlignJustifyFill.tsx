@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function FormatAlignJustifyFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M140-140v-45.39h680V-140H140Zm0-158.85v-45.38h680v45.38H140Zm0-158.46v-45.38h680v45.38H140Zm0-158.84v-45.39h680v45.39H140Zm0-158.46V-820h680v45.39H140Z" />
+    </svg>
+  )
+}

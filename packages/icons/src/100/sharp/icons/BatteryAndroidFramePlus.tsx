@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function BatteryAndroidFramePlus({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M92-292v-376h563v22H114v332h541v22H92Zm657-57v-120H629v-22h120v-120h22v120h120v22H771v120h-22Zm-578-22v-218h364v218H171Z" />
+    </svg>
+  )
+}

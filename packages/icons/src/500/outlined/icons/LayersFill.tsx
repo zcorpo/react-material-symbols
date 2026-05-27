@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function LayersFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="m479.76-113.98-369.8-287.89 56.69-42.02 313.11 243.63 313.59-243.63 56.69 42.02-370.28 287.89Zm0-162.28-369.8-287.65 369.8-287.89L849.8-563.91 479.76-276.26Z" />
+    </svg>
+  )
+}

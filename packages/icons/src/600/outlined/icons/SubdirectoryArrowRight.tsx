@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function SubdirectoryArrowRight({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="m566-105.87-56.57-56.56 152.96-152.96H185.87V-814.7h79.22v420.09h398.3L510.43-547.57l57.14-56.56L814.7-357 566-105.87Z" />
+    </svg>
+  )
+}

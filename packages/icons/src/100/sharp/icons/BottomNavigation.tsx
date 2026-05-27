@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function BottomNavigation({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M172-172v-616h616v616H172Zm22-162h572v-432H194v432Zm0 22v118h572v-118H194Zm0 0v118-118Z" />
+    </svg>
+  )
+}

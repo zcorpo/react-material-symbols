@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function LtePlusMobiledataFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M79-346v-268h22v246h121v22H79Zm255 0v-246h-81v-22h184v22h-81v246h-22Zm182 0v-268h143v22H538v101h121v22H538v101h121v22H516Zm302-42v-81h-81v-22h81v-81h22v81h81v22h-81v81h-22Z" />
+    </svg>
+  )
+}

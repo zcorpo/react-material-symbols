@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function Looks4Fill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M114.02-114.02v-732.2h732.2v732.2h-732.2ZM535-277h62.63v-406H535v169.57H425V-683h-62.63v232.43H535V-277Z" />
+    </svg>
+  )
+}

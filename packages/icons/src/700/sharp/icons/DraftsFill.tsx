@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function DraftsFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="m480-943 426 254v601H55v-601l425-254Zm0 487 320-188-320-193-320 193 320 188Z" />
+    </svg>
+  )
+}

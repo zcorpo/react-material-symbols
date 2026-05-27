@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function BackToTabFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M399-466 154-710v170h-22v-208h208v22H169l246 245-16 15ZM132-212v-231h22v209h314v22H132Zm674-240v-274H437v-22h391v296h-22Zm22 94v146H562v-146h266Z" />
+    </svg>
+  )
+}

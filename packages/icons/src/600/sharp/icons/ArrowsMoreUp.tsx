@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function ArrowsMoreUp({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M468.7-188.7v-360h-360v-79.21h439.21v439.21H468.7Zm222.26-222.26v-360h-360v-79.78h439.78v439.78h-79.78Z" />
+    </svg>
+  )
+}

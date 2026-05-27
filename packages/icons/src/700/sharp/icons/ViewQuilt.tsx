@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function ViewQuilt({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M95-175v-611h771v611H95Zm305-345h371v-171H400v171Zm229 251h142v-171H629v171Zm-229 0h142v-171H400v171Zm-211 0h131v-422H189v422Z" />
+    </svg>
+  )
+}

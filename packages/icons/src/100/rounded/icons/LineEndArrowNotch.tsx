@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function LineEndArrowNotch({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M547-342q-9 6-16.5-1t-2.5-17l63-109H120q-5 0-8-3t-3-8q0-5 3-8t8-3h471l-63-110q-5-9 2.5-16t16.5-1l182 116q13 8 13 22t-13 22L547-342Z" />
+    </svg>
+  )
+}

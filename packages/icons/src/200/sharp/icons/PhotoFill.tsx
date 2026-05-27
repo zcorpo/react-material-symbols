@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function PhotoFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M298.31-298.54h370.54L556.46-447.62 446.77-310.46l-71.46-87.77-77 99.69ZM160-160v-640h640v640H160Z" />
+    </svg>
+  )
+}

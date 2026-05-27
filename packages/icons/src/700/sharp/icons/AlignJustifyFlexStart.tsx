@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function AlignJustifyFlexStart({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M55-55v-851h94v851H55Zm458-218v-414h134v414H513Zm-240 0v-414h134v414H273Z" />
+    </svg>
+  )
+}

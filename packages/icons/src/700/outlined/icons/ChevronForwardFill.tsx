@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function ChevronForwardFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M506-481 308-679l67-67 265 265-265 265-67-67 198-198Z" />
+    </svg>
+  )
+}

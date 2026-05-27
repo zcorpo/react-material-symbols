@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function HPlusMobiledata({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M157.37-278.57v-402.86H220v170h266.5v-170h62.87v402.86H486.5v-170H220v170h-62.63ZM735-360.93v-87.75h-87.63v-62.75H735v-87.64h62.63v87.75h87.87v62.75h-87.75v87.64H735Z" />
+    </svg>
+  )
+}

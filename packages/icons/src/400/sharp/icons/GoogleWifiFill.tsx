@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function GoogleWifiFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="m104-550 15-250h721l17 250H104Zm94 390-11-30H81l19-300h760l19 300H773l-11 30H198Z" />
+    </svg>
+  )
+}

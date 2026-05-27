@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function MarkdownCopyFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M240-200v-680h560v680H240ZM120-80v-680h60v620h500v60H120Zm269-340h50v-190h57v127h50v-127h56v190h50v-240H389v240Z" />
+    </svg>
+  )
+}

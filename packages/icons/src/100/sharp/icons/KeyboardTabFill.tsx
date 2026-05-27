@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function KeyboardTabFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M806-266v-428h22v428h-22Zm-309-11-16-15 178-177H132v-22h526L482-669l15-14 203 203-203 203Z" />
+    </svg>
+  )
+}

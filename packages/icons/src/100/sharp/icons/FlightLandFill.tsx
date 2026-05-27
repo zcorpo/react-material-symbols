@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function FlightLandFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M172-172v-22h616v22H172Zm556-192L172-527v-222l42 12 45 133 178 52-32-327 57 17 118 352 173 51q15 4 25 17t10 29q0 23-17.5 39.5T728-364Z" />
+    </svg>
+  )
+}

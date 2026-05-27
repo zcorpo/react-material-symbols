@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function BatteryCharging802({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M120-290q-12 0-21-9t-9-21v-320q0-12 9-21t21-9h509l-48 60h-71v260h78l-11 60H120Zm559 0 28-160H581l176-220h4l-28 160h126L683-290h-4Z" />
+    </svg>
+  )
+}

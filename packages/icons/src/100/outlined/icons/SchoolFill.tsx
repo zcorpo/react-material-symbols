@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function SchoolFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M790-365v-222L480-420 148-600l332-180 332 180v235h-22ZM480-240 249-365.82V-521l231 125.68L711-521v155L480-240Z" />
+    </svg>
+  )
+}

@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function ArrowRange({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M276-303.39 100-479l175.62-175.61 32 32.61-120.31 119.31h584.77L651.77-622l32.61-32.61 175 175.61-175.61 175.61-33-32.23 121.31-120.69H185.92l121.7 120.69L276-303.39Z" />
+    </svg>
+  )
+}

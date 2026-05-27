@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function Road({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M212-212v-536h22v536h-22Zm257 0v-112h22v112h-22Zm257 0v-536h22v536h-22ZM469-424v-112h22v112h-22Zm0-212v-112h22v112h-22Z" />
+    </svg>
+  )
+}

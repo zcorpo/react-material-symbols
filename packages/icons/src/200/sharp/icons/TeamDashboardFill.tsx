@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function TeamDashboardFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M424.62-160v-314.62H160V-160h264.62Zm30.76 0H800v-314.62H455.38V-160ZM160-505.38h640V-800H160v294.62Z" />
+    </svg>
+  )
+}

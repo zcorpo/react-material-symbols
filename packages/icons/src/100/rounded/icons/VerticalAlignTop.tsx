@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function VerticalAlignTop({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M223-766q-5 0-8-3t-3-8q0-5 3-8t8-3h514q5 0 8 3t3 8q0 5-3 8t-8 3H223Zm249 591q-3-3-3-8v-430L342-486q-4 4-8 4t-8-4q-4-3-3.5-8t3.5-8l135-135q4-4 8.5-6.5T480-646q6 0 10.5 2.5t8.5 6.5l134 134q4 4 4 8t-4 8q-4 4-8.5 3.5T617-487L491-613v430q0 5-3 8t-8 3q-5 0-8-3Z" />
+    </svg>
+  )
+}

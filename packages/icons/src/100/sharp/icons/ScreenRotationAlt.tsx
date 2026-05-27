@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function ScreenRotationAlt({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M544-122 243-421h32l269 269 253-252H646v-22h188v188h-22v-152L544-122ZM126-535v-188h22v152l268-268 301 299h-32L416-809 163-557h151v22H126Z" />
+    </svg>
+  )
+}

@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function Ripples({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M194-194h572v-381q-18.75 13-39.82 20-21.08 7-44.18 7-55.83 0-95.41-39Q547-626 547-682q0-22.95 7-43.87 7-20.93 20-40.13H194v572Zm-22 22v-616h616v616H172Zm22-594v572-572Z" />
+    </svg>
+  )
+}

@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function NoSoundFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="m637-299-67-67 114-113-114-113 67-67 113 114 113-114 67 67-114 113 114 113-67 67-113-114-113 114ZM71-335v-291h175l236-235v762L246-335H71Z" />
+    </svg>
+  )
+}

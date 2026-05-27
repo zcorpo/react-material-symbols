@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function SquareFoot({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M200-200v-501l89 89-20 20 15 16 21-21 84 84-21 21 16 15 20-20 89 88-21 21 16 15 20-20 84 84-20 20 16 16 20-20 93 93H200Zm28-28h371L228-599v371Z" />
+    </svg>
+  )
+}

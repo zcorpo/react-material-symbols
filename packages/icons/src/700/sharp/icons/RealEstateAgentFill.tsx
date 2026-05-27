@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function RealEstateAgentFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M801-385v-38L384-578h-63v-156l287-205 288 205v349h-95ZM622-650h52v-52h-52v52Zm-80 0h52v-52h-52v52Zm80 80h52v-52h-52v52Zm-80 0h52v-52h-52v52ZM19-55v-439h165v439H19Zm549 45-323-92v-392h110l327 121v95H534l-142-45-14 43 136 47h391v132L568-10Z" />
+    </svg>
+  )
+}

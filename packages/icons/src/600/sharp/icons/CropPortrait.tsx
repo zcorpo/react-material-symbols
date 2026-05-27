@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function CropPortrait({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M145.87-65.87V-894.7H814.7v828.83H145.87Zm79.22-79.22h509.82v-669.82H225.09v669.82Zm0 0v-669.82 669.82Z" />
+    </svg>
+  )
+}

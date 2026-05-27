@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function DoorFrontFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M95-95h771v-94h-80v-677H175v677H95v94Zm448-364q-10-10-10-24t10-24q10-10 24-10t24 10q10 10 10 24t-10 24q-10 10-24 10t-24-10Z" />
+    </svg>
+  )
+}

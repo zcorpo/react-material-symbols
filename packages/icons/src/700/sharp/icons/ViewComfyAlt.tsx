@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function ViewComfyAlt({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M61-541v-359h359v359H61Zm94-94h170v-170H155v170ZM61-61v-359h359v359H61Zm94-94h170v-170H155v170Zm386-386v-359h359v359H541Zm94-94h170v-170H635v170ZM541-61v-359h359v359H541Zm94-94h170v-170H635v170ZM325-635Zm0 310Zm310-310Zm0 310Z" />
+    </svg>
+  )
+}

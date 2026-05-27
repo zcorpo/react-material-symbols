@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function NoMeetingRoom({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="m653-418-22-22v-285h-82v203l-22-22v-222H306l-22-22h265v41h104v329Zm134 271L549-386v214H172v-22h84v-485L153-782l16-16 635 635-17 16Zm-509-47h249v-214L278-657v463Zm138-461Zm-14 122Z" />
+    </svg>
+  )
+}

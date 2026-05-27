@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function LeaderboardFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="m76.61-116.61-5.09-480 214.52-6.78 5.09 480-214.52 6.78Zm298.96 0-5.09-720 213.95-6.78 5.09 720-213.95 6.78Zm298.95 0-5.09-400 213.96-6.78 5.09 400-213.96 6.78Z" />
+    </svg>
+  )
+}

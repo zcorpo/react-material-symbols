@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function TextSnippetFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M95-95v-771h508l263 263v508H95Zm176-202h418v-65H271v65Zm0-147h418v-66H271v66Zm0-148h278v-66H271v66Z" />
+    </svg>
+  )
+}

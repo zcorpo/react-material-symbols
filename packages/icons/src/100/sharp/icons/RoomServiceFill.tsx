@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function RoomServiceFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M144-284v-22h672v22H144Zm25-88v7q0-124 84-205.5T458-666v-48h44v48q120 14 204.5 95.5T791-365v-7H169Z" />
+    </svg>
+  )
+}

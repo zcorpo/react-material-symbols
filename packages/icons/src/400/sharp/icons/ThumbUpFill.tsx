@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function ThumbUpFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M254-120v-512l278-288 58 45-52 243h382v170L772-120H254Zm-174 0v-512h114v512H80Z" />
+    </svg>
+  )
+}

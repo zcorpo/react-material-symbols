@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function FluorescentFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M257-413v-135h446v135H257Zm213-358v-85h22v85h-22Zm258 100-15-15 54-55 16 16-55 54ZM470-108v-85h22v85h-22Zm297-113-54-55 15-16 55 55-16 16ZM232-671l-55-54 16-16 55 55-16 15Zm-39 450-16-16 55-55 16 16-55 55Z" />
+    </svg>
+  )
+}

@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function Movie({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="m186-748 52 106h123l-52-106h83l52 106h123l-52-106h82l53 106h123l-53-106h54q22.78 0 38.39 15.61T828-694v428q0 22.77-15.61 38.39Q796.78-212 774-212H186q-22.77 0-38.39-15.61Q132-243.23 132-266v-428q0-22.78 15.61-38.39Q163.23-748 186-748Zm-32 128v354q0 14 9 23t23 9h588q14 0 23-9t9-23v-354H154Zm0 0v386-386Z" />
+    </svg>
+  )
+}

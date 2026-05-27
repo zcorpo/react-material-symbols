@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function BusinessMessages({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M206-212v-400L92-748h736v536H206Zm-67-514 89 105v387h578v-492H139Zm350 411 16-16-84-75h239v-22H366l123 113ZM366-532h294L537-645l-16 16 84 75H366v22Zm107 52Z" />
+    </svg>
+  )
+}

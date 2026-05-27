@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function RainyHeavy({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M316-225 65-725l20-10 250 500-19 10Zm185 0L252-725l20-10 250 500-21 10Zm187 0L439-725l20-10 249 498-20 12Zm188 0L625-725l20-10 250 499-19 11Z" />
+    </svg>
+  )
+}

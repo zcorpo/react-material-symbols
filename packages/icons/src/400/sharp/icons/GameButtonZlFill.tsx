@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function GameButtonZlFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M260-339h193v-46H319l131-195v-40H261v46h129L260-379v40Zm620-461v486q0 65-44.94 109.5Q790.11-160 727-160H233q-64.07 0-108.53-44.5Q80-249 80-314v-486h800ZM527-339h173v-46H577v-235h-50v281Z" />
+    </svg>
+  )
+}
