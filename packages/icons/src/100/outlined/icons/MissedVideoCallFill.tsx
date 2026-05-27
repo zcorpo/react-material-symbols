@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function MissedVideoCallFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function MissedVideoCallFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="m455-359 143-144-16-16-127 128-162-163h109v-22H255v145h22v-107l178 179ZM211-212q-23 0-38.5-15.5T157-266v-428q0-23 15.5-38.5T211-748h428q23 0 38.5 15.5T693-694v198l110-110v251L693-465v199q0 23-15.5 38.5T639-212H211Z" />

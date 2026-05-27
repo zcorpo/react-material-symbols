@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function ArrowShapeUpStackFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function ArrowShapeUpStackFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M371.46-180v-122.46H180.62l300-317.62 299.99 317.62H589.15V-180H371.46ZM180-501.92l300.62-318.23 300.99 318.23h-63.99l-237-250.54L244-501.92h-64Z" />

@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function Texture({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function Texture({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M96-96v-70l701-698h66v69L162-96H96Zm-1-254v-136l379-380h136L95-350Zm0-324v-192h191L95-674ZM674-95l192-191v191H674Zm-324 0 516-515v136L486-95H350Z" />

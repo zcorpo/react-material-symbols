@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function SettingsInputComponentFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function SettingsInputComponentFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M123-40v-171.07l-83-82.45V-411h226v117l-83 82.6V-40h-60Zm327 0v-171.07l-83-82.45V-411h226v117l-83 82.6V-40h-60Zm327 0v-171.07l-83-82.45V-411h226v117l-83 82.6V-40h-60ZM40-471v-244h83v-205h60v205h83v244H40Zm327 0v-244h83v-205h60v205h83v244H367Zm327 0v-244h83v-205h60v205h83v244H694Z" />

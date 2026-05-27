@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function FlashOnFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function FlashOnFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M399.84-129.29q-5.1-6.1-5.1-15.3v-242.97H338.8q-27.15 0-46.08-18.94-18.94-18.93-18.94-46.09v-364.54q0-28.59 19.89-48.48 19.9-19.89 48.24-19.89h277.05q26.34 0 43.86 21.25 17.51 21.25 8.83 47.12l-61.37 204.46h72.09q30.11 0 43.71 25.91 13.59 25.91-4.56 52.02L441.24-129.91q-5.72 7.95-13.17 9.69-7.46 1.74-15.3-.62-7.84-2.36-12.93-8.45Z" />

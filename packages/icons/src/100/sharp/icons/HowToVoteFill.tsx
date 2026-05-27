@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function HowToVoteFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function HowToVoteFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M160-120v-171l116-128 16 16-112 124h600L670-402l16-16 114 127v171H160Zm322-251L289-567l249-250 195 195-251 251Zm-1-34 218-218-161-161-218 218 161 161Z" />

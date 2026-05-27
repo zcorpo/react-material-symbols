@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function HighDensity({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function HighDensity({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M160-310.38V-800h490.38v489.62H160Zm30.77-30.77h428.85v-428.08H190.77v428.08ZM160-160v-40h40v40h-40Zm150.38 0v-40h40v40h-40ZM460-160v-40h40v40h-40Zm150.38 0v-40h40v40h-40ZM760-160v-40h40v40h-40Zm0-150.38v-40h40v40h-40ZM760-460v-40h40v40h-40Zm0-150.38v-40h40v40h-40ZM760-760v-40h40v40h-40ZM404.92-555.31Z" />

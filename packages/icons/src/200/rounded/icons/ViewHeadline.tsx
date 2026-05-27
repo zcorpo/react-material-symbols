@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function ViewHeadline({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function ViewHeadline({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M194.38-390.46q-5.84 0-10.11-4.41t-4.27-11q0-6.82 4.29-11.09t11.09-4.27h570.24q5.84 0 10.11 4.8 4.27 4.79 4.27 10.61 0 6.82-4.29 11.09t-11.09 4.27H194.38Zm0 150.77q-5.84 0-10.11-4.41-4.27-4.42-4.27-11 0-6.82 4.29-11.09t11.09-4.27h570.24q5.84 0 10.11 4.79 4.27 4.8 4.27 10.62 0 6.82-4.29 11.09t-11.09 4.27H194.38Zm0-299.08q-5.84 0-10.11-4.8-4.27-4.79-4.27-10.61 0-6.82 4.29-11.09t11.09-4.27h570.24q5.84 0 10.11 4.41t4.27 11q0 6.82-4.29 11.09t-11.09 4.27H194.38Zm0-150.77q-5.84 0-10.11-4.79-4.27-4.8-4.27-10.62 0-6.82 4.29-11.09t11.09-4.27h570.24q5.84 0 10.11 4.41 4.27 4.42 4.27 11 0 6.82-4.29 11.09t-11.09 4.27H194.38Z" />

@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function VerticalAlignTop({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function VerticalAlignTop({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M160-780v-60h640v60H160Zm290 660v-484L329-483l-43-43 194-194 190 190-43 43-117-117v484h-60Z" />

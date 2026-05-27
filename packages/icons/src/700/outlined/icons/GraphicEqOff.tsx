@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function GraphicEqOff({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function GraphicEqOff({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M842-30 521-350v295h-82v-377l-89-90v301h-84v-384L30-842l50-50L892-80l-50 50ZM95-389v-182h83v182H95Zm426-162-82-83v-272h82v355Zm172 172-83-84v-276h83v360Zm89-10v-182h84v182h-84Z" />

@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function ValveFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function ValveFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M433-626v-160H273v-95h414v95H527v160h-94ZM120-57v-379h94v40h116v-106h-40v-94h381v94h-40v106h115v-40h95v379h-95v-40H214v40h-94Z" />

@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function EqualizerFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function EqualizerFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M135-135v-356h163v356H135Zm264 0v-691h162v691H399Zm263 0v-491h164v491H662Z" />

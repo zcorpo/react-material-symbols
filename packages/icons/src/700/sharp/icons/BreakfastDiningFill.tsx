@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function BreakfastDiningFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function BreakfastDiningFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M145-95v-441q-40-24-65-61.5T55-691q0-74 49.5-124.5T228-866h504q74 0 124 50.5T906-691q0 56-25 93.5T817-536v441H145Zm336-120 227-226-227-227-226 227 226 226Zm-1-99L356-438l124-124 124 124-124 124Z" />

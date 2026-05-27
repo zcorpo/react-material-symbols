@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function ArtTrackFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function ArtTrackFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M606.7-194.02H34.5v-572.2h572.2v572.2Zm96.65 0v-572.2h62.87v572.2h-62.87Zm159.28 0v-572.2h62.87v572.2h-62.87ZM156.48-357h325l-100-133-85 110-60-82-80 105Z" />

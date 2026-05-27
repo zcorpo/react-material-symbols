@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function MediaBluetoothOn({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function MediaBluetoothOn({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M188.88-201.19q-33.5-33.5-33.5-81.89 0-48.38 33.5-81.88 33.5-33.5 81.89-33.5 24.46 0 46.81 9.04 22.34 9.04 37.8 27.11v-430h192.47v89.62h-161.7v419.61q0 48.39-33.5 81.89t-81.88 33.5q-48.39 0-81.89-33.5Zm474.43 73.5v-199.08L541-204.46l-21.77-21.77 136.92-136.92-137.69-136.93 21.77-21.77 122.08 122.08v-199.85h11.77l130.77 131.54-105.7 104.93 105.7 104.92-129.77 130.54h-11.77Zm28.46-57.85 72.69-72.69-72.69-72.69v145.38Zm-1-210.61 73.46-71.93-73.46-73.46v145.39Z" />

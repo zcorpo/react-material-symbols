@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function IceSkatingFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function IceSkatingFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M106-106v-22h160v-141H146v-545h284v101H326v25h107v55H326v25h116q12 24 32.5 40.4T521-543l203 56v218H614v141h109q56.25 0 99.13-33.88Q865-195.75 872-251h22q-7 64-56.62 104.5T723-106H106Zm182-22h304v-141H288v141Z" />

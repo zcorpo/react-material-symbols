@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function KingBed({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function KingBed({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M181-252h-12.97L158-332h-26v-175h82v-149h532v149h82v175h-26l-10.02 80h-12.96L769-332H191l-10 80Zm310-255h233v-127H491v127Zm-255 0h233v-127H236v127Zm-82 153h652v-131H154v131Zm652 0H154h652Z" />

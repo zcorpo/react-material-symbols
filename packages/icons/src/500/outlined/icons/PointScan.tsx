@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function PointScan({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function PointScan({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M427.51-427.6q-21.58-21.66-21.58-52.49 0-30.82 21.67-52.4 21.66-21.58 52.49-21.58 30.82 0 52.4 21.67 21.58 21.66 21.58 52.49 0 30.82-21.67 52.4-21.66 21.58-52.49 21.58-30.82 0-52.4-21.67Zm18.42-216.47V-845.5h68.14v201.43h-68.14Zm0 529.57v-201.43h68.14v201.43h-68.14Zm198.14-331.43v-68.14H845.5v68.14H644.07Zm-529.57 0v-68.14h201.43v68.14H114.5Z" />

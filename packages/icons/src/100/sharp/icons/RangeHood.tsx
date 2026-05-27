@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function RangeHood({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function RangeHood({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M132-212v-206l200-200v-170h296v170l200 200v206H132Zm42-218h612L606-610v-156H354v156L174-430Zm-20 196h652v-174H154v174Zm246-75v-22h160v22H400Z" />

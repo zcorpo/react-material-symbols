@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function AddColumnRightFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function AddColumnRightFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M80-120v-720h329v720H80Zm389 0v-720h331v152q-7.5-1-14.62-1.5-7.13-.5-15.38-.5-88 0-149 60.9T560-480q0 88.2 61.5 149.1Q683-270 770-270q8.25 0 15.38-.5 7.12-.5 14.62-1.5v152H469Zm271-250v-80h-80v-60h80v-80h60v80h80v60h-80v80h-60Z" />

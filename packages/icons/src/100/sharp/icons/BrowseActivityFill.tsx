@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function BrowseActivityFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function BrowseActivityFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M80-200v-22h800v22H80Zm52-68v-257h181l80 160h15l150-269 56 109h214v257H132Zm271-127-75-152H132v-217h696v217H627l-58-117h-17L403-395Z" />

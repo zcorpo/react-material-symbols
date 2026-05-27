@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function AddCard({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function AddCard({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M80-160v-640h800v299H140v281h399v60H80Zm60-480h680v-100H140v100ZM780-80v-120H660v-60h120v-120h60v120h120v60H840v120h-60ZM140-220v-520 520Z" />

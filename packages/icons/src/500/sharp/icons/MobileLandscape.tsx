@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function MobileLandscape({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function MobileLandscape({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M34.02-194.02v-569.96h212.87v-42.24h177.78v42.24h501.55v569.96H34.02Zm824.07-68.13v-433.7H101.91v433.7h756.18Zm-756.18 0v-433.7 433.7Zm133.51-194.77q9.36-9.36 9.36-22.08 0-12.72-9.36-22.08-9.35-9.35-22.07-9.35t-22.08 9.35q-9.36 9.36-9.36 22.08 0 12.72 9.36 22.08 9.36 9.35 22.08 9.35 12.72 0 22.07-9.35Z" />

@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function AddTaskFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function AddTaskFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M729.23-120v-120h-120v-30.77h120v-120H760v120h120V-240H760v120h-30.77ZM397.62-366.77q10.38 9.62 24.84 10 14.46.39 25.08-9.23L663-565.77q4.38-4.38 4.38-10.23 0-5.85-4.38-11-5.15-4.38-11-4.27-5.85.12-11 4.27L422.08-384.77l-104.08-96q-5.15-3.61-11-3.61t-11 3.61q-4.38 4.39-4.38 10.62 0 6.23 4.38 10.61l101.62 92.77ZM535.38-200h-137q-118.53 0-202.69-80.73-84.15-80.73-84.15-199.04 0-117.31 84.15-198.65 84.16-81.35 202.69-81.35h162q118.54 0 203.7 81.35 85.15 81.34 85.15 198.65 0 8.62-.73 17.62-.73 9-1.96 17.61-23.16-11.61-48.12-18.42-24.96-6.81-52.8-6.81-90.08 0-153.24 63.27-63.15 63.27-63.15 154.12 0 13.15 1.73 26.3 1.73 13.16 4.42 26.08Z" />

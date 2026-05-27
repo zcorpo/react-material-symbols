@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function Icon60fps({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function Icon60fps({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M332.37-198.57H160q-34.61 0-58.62-24.17-24.01-24.17-24.01-58.69v-397.14q0-34.52 24.01-58.69 24.01-24.17 58.62-24.17h212v82.86H160v135.14h172.37q34.61 0 58.62 24.17Q415-495.09 415-460.57v179.14q0 34.52-24.01 58.69-24.01 24.17-58.62 24.17ZM160-460.57v179.14h172.37v-179.14H160Zm424.63 179.14H800v-397.14H584.63v397.14Zm0 82.86q-34.61 0-58.62-24.17Q502-246.91 502-281.43v-397.14q0-34.52 24.01-58.69 24.01-24.17 58.62-24.17H800q34.61 0 58.62 24.17 24.01 24.17 24.01 58.69v397.14q0 34.52-24.01 58.69-24.01 24.17-58.62 24.17H584.63Z" />

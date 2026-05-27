@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function TaskAltFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function TaskAltFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M400-212q-113 0-193-77.5T127-480q0-112 80-190t193-78h159q113 0 194 78t81 190q0 113-81 190.5T559-212H400Zm23-170L310-483l-13 14 127 116 241-221-15-16-227 208Z" />

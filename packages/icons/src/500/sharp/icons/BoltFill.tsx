@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function BoltFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function BoltFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="m314.74-73.3 40-280H151.15l369.33-533.63h87.89l-40 320h244.78l-411 493.63h-87.41Z" />

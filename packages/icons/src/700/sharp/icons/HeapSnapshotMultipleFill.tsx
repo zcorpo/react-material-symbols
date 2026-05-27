@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function HeapSnapshotMultipleFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function HeapSnapshotMultipleFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M484-533.44q12-11.43 12-28Q496-578 483.86-590t-28.71-12q-16.56 0-27.85 12.14-11.3 12.14-11.3 28.71 0 16.56 11.44 27.85 11.43 11.3 28 11.3Q472-522 484-533.44ZM463-346l209-209-43-43-209 209 43 43Zm201-7.44q12-11.43 12-28Q676-398 663.86-410t-28.71-12q-16.56 0-27.85 12.14-11.3 12.14-11.3 28.71 0 16.56 11.44 27.85 11.43 11.3 28 11.3Q652-342 664-353.44ZM206-171v-772h432l247 247v525H206Zm413-510h172L619-849v168ZM52-17v-704h94v610h505v94H52Z" />

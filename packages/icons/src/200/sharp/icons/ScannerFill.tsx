@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function ScannerFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function ScannerFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M741-430.77 196.77-637.69l9.69-30L800-442.23V-200H160v-230.77h581ZM396.92-300H700v-30.77H396.92V-300Zm-147.69 10.77h52.31v-52.31h-52.31v52.31Z" />

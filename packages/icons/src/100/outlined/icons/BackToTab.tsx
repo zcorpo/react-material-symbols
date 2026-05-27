@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function BackToTab({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function BackToTab({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M399-466 154-710v170h-22v-208h208v22H169l246 245-16 15ZM186-212q-22.77 0-38.39-15.61Q132-243.23 132-266v-177h22v177q0 14 9 23t23 9h282v22H186Zm620-240v-242q0-14-9-23t-23-9H437v-22h337q22.78 0 38.39 15.61T828-694v242h-22Zm22 94v146H562v-146h266Z" />

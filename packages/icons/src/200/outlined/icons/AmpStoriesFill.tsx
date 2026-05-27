@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function AmpStoriesFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function AmpStoriesFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M320-200v-560h320v560H320Zm-135.39-80v-400h30.77v400h-30.77Zm560.01 0v-400h30.77v400h-30.77Z" />

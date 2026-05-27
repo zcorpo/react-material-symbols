@@ -154,9 +154,9 @@ function buildComponent(componentName: string, paths: string[]): string {
       ? `      <path d="${paths[0]}" />`
       : paths.map((d) => `      <path d="${d}" />`).join('\n')
 
-  return `import type { SVGProps } from 'react'
+  return `import type { SVGProps, JSX } from 'react'
 
-export default function ${componentName}({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function ${componentName}({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
 ${pathsJsx}

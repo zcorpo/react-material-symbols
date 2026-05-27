@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function FolderOffFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function FolderOffFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M824-245 322-748h54l74 74h324q23 0 38.5 15.5T828-620v354q0 5-1 10.5t-3 10.5Zm25 161L721-212H186q-23 0-38.5-15.5T132-266v-428q0-23 15.5-38.5T186-748h30l54 54h-31L132-800l16-16 716 716-15 16Z" />

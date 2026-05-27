@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function SplitscreenPortraitFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function SplitscreenPortraitFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M327.31-218.46h305.38q12.51 0 20.68-8.17t8.17-20.68v-167.3q0-12.51-8.17-20.68t-20.68-8.17H327.31q-12.51 0-20.68 8.17t-8.17 20.68v167.3q0 12.51 8.17 20.68t20.68 8.17Zm0-298.08h305.38q12.51 0 20.68-8.17t8.17-20.68v-167.3q0-12.51-8.17-20.68t-20.68-8.17H327.31q-12.51 0-20.68 8.17t-8.17 20.68v167.3q0 12.51 8.17 20.68t20.68 8.17ZM237.69-100q-23.53 0-40.61-17.08T180-157.69v-644.62q0-23.53 17.08-40.61T237.69-860h484.62q23.53 0 40.61 17.08T780-802.31v644.62q0 23.53-17.08 40.61T722.31-100H237.69Z" />

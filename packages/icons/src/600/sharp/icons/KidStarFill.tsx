@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function KidStarFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function KidStarFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M299.09-711.74 480-946.91l180.91 235.17 281.87 95.52L766-363.04l6 283.56-292-81.39-291.44 81.39 6-284L17.65-616.22l281.44-95.52Z" />

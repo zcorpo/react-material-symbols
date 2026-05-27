@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function WaterDamage({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function WaterDamage({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M269-228h422v-356L480-748 269-584v356Zm-93 93v-377L71-431l-57-75 466-361 466 362-57 74-104-81v377H176Zm361.5-215.5Q561-374 561-408q0-27-12-51.5T480-566q-57 82-69 106.5T399-408q0 34 23.5 57.5T480-327q34 0 57.5-23.5ZM480-408Z" />

@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function CloudAlertFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function CloudAlertFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M253-135q-97.06 0-166.53-68.18Q17-271.35 17-369q0-84 51-150.5T201-600q24-100 102.17-162.5T482.29-825Q598-825 680-742.5 762-660 770-543v24q75 7 124 60.7 49 53.71 49 131.3 0 79.92-56.04 135.96Q830.92-135 751-135H253Zm184-316h87v-199h-87v199Zm0 142h87v-87h-87v87Z" />

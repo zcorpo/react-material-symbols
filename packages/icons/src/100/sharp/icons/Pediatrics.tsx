@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function Pediatrics({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function Pediatrics({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M329-656v-22h140v-110h22v110h140v22H329Zm3 502v-369q0-37.5 26.25-63.75T422-613h116q37.5 0 63.75 26.25T628-523v369H332Zm22-22h252v-347q0-28.9-19.55-48.45Q566.9-591 538-591H422q-28.9 0-48.45 19.55Q354-551.9 354-523v56h97v22h-97v123h97v22h-97v124Zm0 0v-415 415Z" />

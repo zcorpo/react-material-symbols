@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function VideoCameraBackAddFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function VideoCameraBackAddFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M157-212v-281q21 13 44.74 19 23.75 6 48.26 6 77.51 0 132.76-54.7Q438-577.4 438-655q0-24.51-6.5-48.26Q425-727 412-748h281v252l110-110v251L693-465v253H157Zm82-350v-82h-82v-22h82v-82h22v82h83v22h-83v82h-22Zm22 224h332L492-472 392-348l-66-75-65 85Z" />

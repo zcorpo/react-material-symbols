@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function ReplaceVideo({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function ReplaceVideo({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M239-115h360v-360H239v360ZM97-629q24-139 133-225t250-86q93.93 0 177.46 40.5Q741-859 794.05-781v-92H866v244H621v-71h118q-40-69-109.6-107.5T480.21-846Q378-846 297-786.5 216-727 191-629H97Zm48 609v-549h549v216l132-132v380L694-237v217H145Zm94-95v-360 360Z" />

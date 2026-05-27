@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function Icon3gMobiledataFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function Icon3gMobiledataFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M140-300v-30.77h203.15v-133.85H141.23v-30.76h201.92v-133.85H140V-660h233.92v360H140Zm680-196.62V-300H504.62v-360H820v30.77H535.38v298.46h254.08v-135.08H688v-30.77h132Z" />

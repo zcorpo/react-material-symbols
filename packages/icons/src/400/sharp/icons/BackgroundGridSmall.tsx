@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function BackgroundGridSmall({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function BackgroundGridSmall({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M180-180h105v-105H180v105Zm165 0h105v-105H345v105Zm165 0h105v-105H510v105Zm165 0h105v-105H675v105ZM180-675h105v-105H180v105Zm0 165h105v-105H180v105Zm0 165h105v-105H180v105Zm165-330h105v-105H345v105Zm0 165h105v-105H345v105Zm0 165h105v-105H345v105Zm165-330h105v-105H510v105Zm0 165h105v-105H510v105Zm0 165h105v-105H510v105Zm165-330h105v-105H675v105Zm0 165h105v-105H675v105Zm0 165h105v-105H675v105ZM120-120v-720h720v720H120Z" />

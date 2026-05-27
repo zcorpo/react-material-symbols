@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function Pageless({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function Pageless({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M80-120v-270.77h30.77v240h280V-120H80Zm489.23 0v-30.77h280v-240H880V-120H569.23ZM80-568.46V-840h310.77v30.77h-280v240.77H80Zm769.23 0v-240.77h-280V-840H880v271.54h-30.77Z" />

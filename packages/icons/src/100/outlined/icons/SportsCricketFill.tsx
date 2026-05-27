@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function SportsCricketFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function SportsCricketFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="m558-399-81 80q-8 8-19 8t-19-8L125-630q-8-9-8-18.5t8-17.5l85-84q8-9 17.5-10t18.5 8l312 316q8 8 8 18t-8 19Zm188 282L570-293l16-16 176 175-16 17Zm-73-556q-29-29-29-70t29-70q29-29 70.5-29t70 29q28.5 29 28.5 70t-28.5 70q-28.5 29-70 29T673-673Z" />

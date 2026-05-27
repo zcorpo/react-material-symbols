@@ -3,6 +3,7 @@
   "private": true,
   "scripts": {
     "sync": "tsx scripts/sync-icons.ts",
+    "patch-types": "tsx scripts/patch-return-types.ts",
     "build": "sh scripts/build-icons.sh"
   },
   "pnpm": {

@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function BarChart4BarsFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function BarChart4BarsFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M132-175v-22h696v22H132Zm40-108v-185h62v185h-62Zm184 0v-385h62v385h-62Zm185 0v-265h62v265h-62Zm185 0v-505h62v505h-62Z" />

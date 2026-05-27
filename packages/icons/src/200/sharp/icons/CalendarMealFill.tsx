@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function CalendarMealFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function CalendarMealFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M160-160v-649.23h138.08v-80h35.77v80h295.38v-80h33.46v80H800V-160H160Zm230.38-132.31h30.77v-159.23q24.53-5.32 41.69-22.93Q480-492.08 480-516.69v-151h-30.77v147.92h-28.46v-147.92H390v147.92h-28.46v-147.92h-30.77V-517q0 24.92 17.38 42.53t42.23 22.93v159.23Zm208.08 0h30.77v-374.61q-40.77 3.84-65.77 32.69-25 28.85-25 69.61v112.31h60v160Z" />

@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function MarkChatUnreadFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function MarkChatUnreadFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M682-751q-32-32-32-78t32-78q32-32 78-32t78 32q32 32 32 78t-32 78q-32 32-78 32t-78-32ZM240-240 131-131q-14 14-32.5 6.5T80-152v-668q0-24 18-42t42-18h403q13 0 21.5 10t6.5 23q-5 43 10.5 84t47.5 71q26 25 59.5 39t71.5 14q23 0 43.5-5t40.5-15q13-6 24.5.5T880-639v339q0 24-18 42t-42 18H240Z" />

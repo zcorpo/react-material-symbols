@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function TakeoutDining({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function TakeoutDining({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M312-229h335l21-273H292l20 273Zm-27-367h390l4-63-115-112H396L281-659l4 63Zm-88 96L34-666l67-67 88 91-5-49 172-175h249l171 175-5 49 88-91 67 67-163 166H197Zm28 365-28-365h566l-28 365H225Zm255-461Zm-1 94Z" />

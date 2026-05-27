@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function CollapseAllFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function CollapseAllFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M480-251 323-94q-14 14-33 14t-33-14q-14-14-14-33t14-33l157-157q28-28 66-28t66 28l157 157q14 14 14 33t-14 33q-14 14-33 14t-33-14L480-251Zm0-459 157-157q14-14 33-14t33 14q14 14 14 33t-14 33L546-644q-28 28-66 28t-66-28L257-801q-14-14-14-33t14-33q14-14 33-14t33 14l157 157Z" />

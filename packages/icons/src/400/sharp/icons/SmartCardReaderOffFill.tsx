@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function SmartCardReaderOffFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function SmartCardReaderOffFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="m833-91-39-39H80v-180h534l-80-80H203v-331L26-898l43-43 807 807-43 43Zm-76-839v540h-52L554-541q29 0 50-21t21-50q0-29-21-50t-50-21q-29 0-50 21t-21 50L165-930h592ZM323-459h23q23 0 40-13t29-37l-92-92v142Z" />

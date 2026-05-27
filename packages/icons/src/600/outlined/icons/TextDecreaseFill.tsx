@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function TextDecreaseFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function TextDecreaseFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="m28.7-200 229.6-560h98.09l226.79 560h-97.61l-54.74-143.78H178.22L122.91-200H28.7Zm175.21-214h201.22l-98.04-260.26h-4L203.91-414Zm407.79-29.78v-72.44h319.6v72.44H611.7Z" />

@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function GroupedBarChart({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function GroupedBarChart({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M200-200v-411.54h110.77V-200H200Zm180 0v-226.15h110.77V-200H380Zm269.23 0v-560H760v560H649.23Z" />

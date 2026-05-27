@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function BloodtypeFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function BloodtypeFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M241.27-163.92q-95.4-98.05-95.4-244.08 0-103.34 82.89-225.39Q311.65-755.44 480-898.65q168.35 143.21 251.52 265.26Q814.7-511.34 814.7-408q0 146.03-95.74 244.08-95.74 98.05-239.02 98.05-143.27 0-238.67-98.05ZM360-262.83h240v-60H360v60Zm90-100h60v-90h90v-60h-90v-90h-60v90h-90v60h90v90Z" />

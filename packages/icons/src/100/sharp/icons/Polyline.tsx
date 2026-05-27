@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function Polyline({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function Polyline({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M632-106v-89L323-349H146v-182h159l127-145v-178h182v182H458L328-524v153l304 151v-68h182v182H632ZM454-694h138v-138H454v138ZM168-371h138v-138H168v138Zm486 243h138v-138H654v138ZM523-763ZM237-440Zm486 243Z" />

@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function NoteStack({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function NoteStack({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M320-120v-520h520v343.08L663.08-120H320Zm30.77-30.77h292.61v-165.85h165.85v-292.61H350.77v458.46Zm-148.62-95.31-90.38-511.77 511.77-90.38 21.38 122.08h-30.77l-15.53-86.7-451.47 79.93 86.7 488.46v-7.31l-31.7 5.69ZM580-380Z" />

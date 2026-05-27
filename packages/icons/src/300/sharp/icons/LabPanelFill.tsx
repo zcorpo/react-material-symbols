@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function LabPanelFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function LabPanelFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M60-140v-320h80v-173.38h-40v-165.85h320v165.85h-40V-460h200v-173.38h-40v-165.85h320v165.85h-40V-460h80v320H60Zm565.39-320h149.22v-172.31H625.39V-460Zm-440 0h149.22v-172.31H185.39V-460Z" />

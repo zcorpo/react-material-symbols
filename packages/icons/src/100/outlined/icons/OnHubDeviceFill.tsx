@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function OnHubDeviceFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function OnHubDeviceFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M368-184v-22h224v22H368Zm0-99-34-456q-1-21 12-35t34-14h200q21 0 34 14t12 35l-34 456H368Z" />

@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function SignpostFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function SignpostFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M464.62-120v-173.85H255.38L160-389.23l95.38-95.39h209.24v-84.61H200V-760h264.62v-80h30.76v80h209.24L800-664.62l-95.38 95.39H495.38v84.61H760v190.77H495.38V-120h-30.76Z" />

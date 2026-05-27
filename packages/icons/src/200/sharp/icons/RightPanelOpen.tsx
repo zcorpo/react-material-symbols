@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function RightPanelOpen({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function RightPanelOpen({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M451.46-364v-232L334.69-480l116.77 116Zm185.39 173.23h132.38v-578.46H636.85v578.46Zm-446.08 0h415.31v-578.46H190.77v578.46Zm446.08 0h132.38-132.38ZM160-160v-640h640v640H160Z" />

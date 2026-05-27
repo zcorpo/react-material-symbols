@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function SettingsInputHdmiFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function SettingsInputHdmiFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M389-55q-40 0-67-27t-27-67v-35L186-392q-6-10-8.5-21.5T175-437v-141q0-22 11-41.5t29-31.5v-161q0-37 28-65.5t65-28.5h344q37 0 65.5 28.5T746-812v161q17 12 28.5 31.5T786-578v141q0 12-3 23.5t-9 21.5L666-184v35q0 40-27.5 67T571-55H389Zm-80-617h81v-54q0-10 8-17.5t18-7.5q10 0 17.5 7.5T441-726v54h78v-54q0-10 8-17.5t18-7.5q10 0 17.5 7.5T570-726v54h81v-139H309v139Z" />

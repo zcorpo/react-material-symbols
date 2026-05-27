@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function HorizontalAlignRight({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function HorizontalAlignRight({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M777.85-154.02v-652.2h68.37v652.2h-68.37ZM518.83-280.26 470.09-329l116.93-116.93h-473v-68.14h473L474.09-627l48.74-48.74L718.57-480 518.83-280.26Z" />

@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function GoToLineFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function GoToLineFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M454.88-699.57q-10.26-10.34-10.26-25.12 0-14.77 10.34-25.04T480.07-760q14.78 0 25.05 10.34 10.26 10.34 10.26 25.12 0 14.77-10.34 25.04t-25.11 10.27q-14.78 0-25.05-10.34Zm0 489.23q-10.26-10.34-10.26-25.12 0-14.77 10.34-25.04t25.11-10.27q14.78 0 25.05 10.34 10.26 10.34 10.26 25.12 0 14.77-10.34 25.04T479.93-200q-14.78 0-25.05-10.34Z" />

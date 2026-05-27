@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function EscalatorFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function EscalatorFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M234.07-252.63h173.3l197.2-354.98h121.36v-100h-173.3l-197.2 354.98H234.07v100ZM114.02-114.02v-732.2h732.2v732.2h-732.2Z" />

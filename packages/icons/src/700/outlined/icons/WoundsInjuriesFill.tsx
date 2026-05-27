@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function WoundsInjuriesFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function WoundsInjuriesFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="m113-46-67-67 84-84-82-22 25-92 82 22-22-82 91-25 21 83 143-142-82-23 25-91 83 23-23-83 91-25 23 82 142-143-83-21 25-91 82 22-22-82 92-25 22 82 84-84 67 67-84 84 82 22-25 92-82-22 22 82-91 25-21-83-143 142 82 23-25 91-83-23 23 83-91 25-23-82-142 143 83 21-25 91-82-22 22 82-92 25-22-82-84 84Z" />

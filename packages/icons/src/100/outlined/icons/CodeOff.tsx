@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function CodeOff({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function CodeOff({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M801-128 298-631 148-481l188 188-16 16-204-204 166-166-154-154 16-15 672 672-15 16Zm-87-222-16-16 114-114-188-189 16-16 204 204-130 131Z" />

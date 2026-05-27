@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function DomainVerificationFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function DomainVerificationFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="m438-322.77 202-202L606.77-558 438-389.23 353.23-474 320-440.77l118 118Zm-292.61-329h669.22v-82.84H145.39v82.84ZM100-180v-600h760v600H100Z" />

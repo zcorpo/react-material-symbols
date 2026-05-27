@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function SlideLibraryFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function SlideLibraryFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M132-212v-448h22v426h566v22H132Zm108-108v-428h345l-22 22H262v384h544v-301l22-22v345H240Zm273-180q-12 0-22.5-4T473-517q11 0 20.59-4.54 9.6-4.53 9.6-13.06 0-11.25 7.4-18.32Q518-560 529.35-560q10.36 0 18 7.51 7.65 7.5 7.65 17.65 0 15.84-12.56 25.34Q529.89-500 513-500Zm80-65-29-30 191-190 30 30-192 190Z" />

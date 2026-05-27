@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function ChairCounterFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function ChairCounterFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M322-132v-12q32-24 69.5-35.5T469-192v-127H359v-22h110v-280h-96l-19-36H212v-48q0-51 35-87t86-36h295q50 0 85 36t35 87v48H606l-18 36h-97v280h110v22H491v127q40 1 78 12.5t70 35.5v12H322Z" />

@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function ArrowSplit({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function ArrowSplit({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M180-455.69v-45.39h289.46l233.16-233.53H571.15V-780H780v208.85h-45.39V-702L488.69-455.69H180ZM571.15-180v-45.39h131.47L527.85-401.15l32-31.62L734.61-258v-131.23H780V-180H571.15Z" />

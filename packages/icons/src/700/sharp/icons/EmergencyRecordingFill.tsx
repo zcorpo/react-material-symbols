@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function EmergencyRecordingFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function EmergencyRecordingFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M359-294h82v-114l102 58 42-71-102-59 102-60-42-70-102 58v-114h-82v114l-104-57-41 71 103 58-101 59 41 71 102-58v114ZM55-135v-691h691v301l160-160v410L746-435v300H55Z" />

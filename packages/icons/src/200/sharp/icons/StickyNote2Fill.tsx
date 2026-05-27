@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function StickyNote2Fill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function StickyNote2Fill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M769.23-390.77h-200v200l200-200ZM160-160v-640h640v411.54L571.54-160H160Zm164.62-270.77h150.76v-30.77H324.62v30.77Zm0-158.46h310.76V-620H324.62v30.77Z" />

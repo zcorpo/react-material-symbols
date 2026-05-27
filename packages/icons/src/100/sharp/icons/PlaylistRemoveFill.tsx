@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function PlaylistRemoveFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function PlaylistRemoveFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="m580-116-17-16 107-107-107-107 17-16 106 107 107-107 16 16-107 107 107 107-16 16-107-107-106 107ZM151-349v-22h286v22H151Zm0-162v-22h449v22H151Zm0-161v-22h449v22H151Z" />

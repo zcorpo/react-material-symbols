@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function SideNavigation({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function SideNavigation({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M120-120v-720h720v720H120Zm360-60h300v-600H480v600Z" />

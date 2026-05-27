@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function LocalCafe({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function LocalCafe({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M200-160v-30.77h560V-160H200Zm0-141.54V-800h640v220H694v278.46H200Zm30.77-30.77h432.46v-436.92H230.77v436.92ZM694-610.77h115.23v-158.46H694v158.46ZM230.77-332.31h432.46-432.46Z" />

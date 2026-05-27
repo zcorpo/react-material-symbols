@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function Iframe({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function Iframe({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M467.91-427.91h184.74v-64.74H467.91v64.74Zm-75.26 75.26v-215.26h335.26v215.26H392.65ZM65.87-145.87V-814.7H894.7v668.83H65.87Zm79.22-79.22h669.82v-416.78H145.09v416.78Z" />

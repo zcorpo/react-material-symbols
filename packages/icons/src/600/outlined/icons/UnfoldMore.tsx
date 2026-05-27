@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function UnfoldMore({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function UnfoldMore({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="m480-106.43-194.7-194.7 57.57-57.57L480-221l137.13-137.7 57.57 57.57L480-106.43ZM342.87-599l-57.57-57L480-850.7 674.7-656l-57.57 57L480-736.13 342.87-599Z" />

@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function HotelFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function HotelFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M80-240v-513.46h30.77v357.84h355.31v-275.15H880V-240h-30.77v-124.85H110.77V-240H80Zm139.88-262.19q-22.8-22.43-22.8-55.5 0-33.08 22.8-55.5 22.81-22.43 55.5-22.43 32.7 0 55.5 22.43 22.81 22.42 22.81 55.5 0 33.07-22.81 55.5-22.8 22.42-55.5 22.42-32.69 0-55.5-22.42Zm89.16-22.23q13.88-13.89 13.88-33.27 0-19.39-13.88-33.27-13.89-13.89-33.66-13.89-19.76 0-33.65 13.89-13.88 13.88-13.88 33.27 0 19.38 13.88 33.27 13.89 13.88 33.65 13.88 19.77 0 33.66-13.88Zm-67.31 0q-13.88-13.89-13.88-33.27 0-19.39 13.88-33.27 13.89-13.89 33.65-13.89 19.77 0 33.66 13.89 13.88 13.88 13.88 33.27 0 19.38-13.88 33.27-13.89 13.88-33.66 13.88-19.76 0-33.65-13.88Z" />

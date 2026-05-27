@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function LocalPoliceFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function LocalPoliceFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="m366-350 114-84 112 84-46-137 114-82H522.02L480-703l-42.02 134H301l111 82-46 137ZM479.94-55q-151.07-38-248-172.6Q135-362.21 135-522.67V-778l345-129 346 129.03V-523q0 160.59-97.5 295.29Q631-93 479.94-55Z" />

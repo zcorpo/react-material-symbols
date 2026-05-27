@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function AreaChart({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function AreaChart({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M114.02-154.02v-537.94l164.55 123.35 200.23-280 203.35 162.39h164.07v532.2h-732.2Zm209.74-100.33 160-221 294.09 229.81v-372.31H658.04L492.48-750.89l-198 279-112.33-83.57v188.26l141.61 112.85Z" />

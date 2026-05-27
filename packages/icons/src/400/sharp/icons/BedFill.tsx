@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function BedFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function BedFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M80-200v-355h40v-205h720v205h40v355h-60v-80H140v80H80Zm430-355h270v-145H510v145Zm-330 0h270v-145H180v145Z" />

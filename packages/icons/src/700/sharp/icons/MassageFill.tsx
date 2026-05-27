@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function MassageFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function MassageFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M231-387 39-810l335-131 95 138h246l312 310-103 101-376-204-102-7-7 75 87 4 157 87-56 97-396-47ZM114-64l-27-90 235-58q82-20 158-35t167-15q84 0 164 33.5T950-139l-65 69q-44-45-104.5-71.5T648-168q-89 0-162 15t-158 36L114-64Z" />

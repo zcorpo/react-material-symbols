@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function ProcessChart({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function ProcessChart({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M93-241q-11-5-14.5-16.5T80-280l217-427q5-11 17-14t23 2q11 5 14.5 16.5T350-680L133-253q-5 11-17 14t-23-2Zm249.5-16.5Q339-269 344-280l217-427q5-11 17-14t23 2q11 5 14.5 16.5T614-680L397-253q-5 11-17 14t-23-2q-11-5-14.5-16.5Zm264 0Q603-269 608-280l217-427q5-11 17-14t23 2q11 5 14.5 16.5T878-680L661-253q-5 11-17 14t-23-2q-11-5-14.5-16.5Z" />

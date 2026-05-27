@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function VillaFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function VillaFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M370-120v-360h350q0-24.75 17.68-42.38Q755.35-540 780.18-540q24.82 0 42.32 17.62Q840-504.75 840-480v360H635v-170h-60v170H370Zm-250 0v-522l515-198v300H310v420H120Z" />

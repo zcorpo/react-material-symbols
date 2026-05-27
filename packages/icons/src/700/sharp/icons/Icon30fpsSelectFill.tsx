@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function Icon30fpsSelectFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function Icon30fpsSelectFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M161-389v-82h187v-93H160v-72h188v-93H161v-82h270v422H161Zm370 0v-422h293v422H531Zm83-82h126v-258H614v258ZM80-80v-188h72v188H80Zm132 0v-188h71v188h-71Zm131 0v-188h71v188h-71Zm131 0v-188h407v188H474Z" />

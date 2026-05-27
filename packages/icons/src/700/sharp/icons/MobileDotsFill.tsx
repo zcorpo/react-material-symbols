@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function MobileDotsFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function MobileDotsFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M269.5-446.68q13.5-13.67 13.5-33.5 0-19.82-13.68-33.32-13.67-13.5-34-13.5-20.32 0-33.82 13.68-13.5 13.67-13.5 33.5 0 19.82 13.68 33.32 13.67 13.5 34 13.5 20.32 0 33.82-13.68Zm163 0q13.5-13.67 13.5-33.5 0-19.82-13.68-33.32-13.67-13.5-34-13.5-20.32 0-33.82 13.68-13.5 13.67-13.5 33.5 0 19.82 13.68 33.32 13.67 13.5 34 13.5 20.32 0 33.82-13.68Zm163 0q13.5-13.67 13.5-33.5 0-19.82-13.68-33.32-13.67-13.5-34-13.5-20.32 0-33.82 13.68-13.5 13.67-13.5 33.5 0 19.82 13.68 33.32 13.67 13.5 34 13.5 20.32 0 33.82-13.68Zm163 0q13.5-13.67 13.5-33.5 0-19.82-13.68-33.32-13.67-13.5-34-13.5-20.32 0-33.82 13.68-13.5 13.67-13.5 33.5 0 19.82 13.68 33.32 13.67 13.5 34 13.5 20.32 0 33.82-13.68ZM15-175v-608h222v-43h193v43h516v608H15Z" />

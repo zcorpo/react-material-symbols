@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function TransitionChop({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function TransitionChop({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M100-180v-600h760v600H100Zm45.39-89.08L644.23-400l-86-334.61H145.39v465.53Zm11.07 43.69h658.15v-509.22H604.85l95.3 367.84-543.69 141.38Zm-11.07-509.22Z" />

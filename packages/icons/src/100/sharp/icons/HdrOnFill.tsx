@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function HdrOnFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function HdrOnFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M655-376v-208h149l20 20v84l-20 21h-25l36 83h-27l-34-80h-75v80h-24Zm24-105h121v-79H679v79ZM136-376v-208h24v83h121v-83h24v208h-24v-101H160v101h-24Zm259 0v-208h150l20 20v167l-20 21H395Zm25-24h120v-160H420v160Z" />

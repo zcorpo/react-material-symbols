@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function SimCardDownloadFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function SimCardDownloadFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="m482-278 156-156-43-43-83 83v-194h-60v194l-83-83-43 43 156 156ZM160-80v-561l239-239h401v800H160Z" />

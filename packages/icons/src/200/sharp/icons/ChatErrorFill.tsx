@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function ChatErrorFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function ChatErrorFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M120-156.92V-840h720v560H243.08L120-156.92Zm256-277.85L480-538l104 103.23L605.23-456 502-560l103.23-104L584-685.23 480-582 376-685.23 354.77-664 458-560 354.77-456 376-434.77Z" />

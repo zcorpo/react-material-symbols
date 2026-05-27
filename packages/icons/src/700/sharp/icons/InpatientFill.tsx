@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function InpatientFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function InpatientFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M804-291 638-458l166-166 62 61-62 62h146v87H804l62 62-62 61ZM50-43v-875h548v875H50Zm87-495q17.9-13.05 40.4-20.52Q199.9-566 225-566h198q25.1 0 47.6 7.48 22.5 7.47 40.4 20.52v-293H137v293Zm136-98.94q-21-20.94-21-51.65 0-30.7 21.09-51.56Q294.18-761 324.59-761T376-740.06q21 20.94 21 51.65 0 30.7-21.09 51.56Q354.82-616 324.41-616T273-636.94ZM283-200h80v-65h65v-79h-65v-65h-80v65h-65v79h65v65Z" />

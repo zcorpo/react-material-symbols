@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function WestFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function WestFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M360.48-193.78 74.26-480l286.22-286.22 47.74 47.74L203.8-514.07h682.42v68.14H203.8l204.42 204.17-47.74 47.98Z" />

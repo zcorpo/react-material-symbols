@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function SoundDetectionGlassBreakFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function SoundDetectionGlassBreakFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M95-301v-565h771v71L537-429 379-586 95-301Zm0 206v-71l285-287 162 162 324-363v559H95Z" />

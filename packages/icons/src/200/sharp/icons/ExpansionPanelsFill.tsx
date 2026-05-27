@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function ExpansionPanelsFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function ExpansionPanelsFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="m480-268.92 129.15-129.16-22.46-22.46L480-313.85 373.31-420.54l-22.46 22.46L480-268.92ZM373.31-539.46 480-646.15l106.69 106.69 22.46-23.23L480-691.08 350.85-562.69l22.46 23.23ZM160-160v-640h640v640H160Z" />

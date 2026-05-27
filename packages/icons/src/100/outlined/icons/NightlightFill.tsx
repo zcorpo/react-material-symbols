@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function NightlightFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function NightlightFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M586-132q-72 0-135.5-27.5T340-234q-47-47-74.5-110.5T238-480q0-72 27.5-135.5T340-726q47-47 110.5-74.5T586-828q26 0 49.5 3t46.5 11q-68 62-108 148t-40 186q0 100 40 186t108 148q-23 8-46.5 11t-49.5 3Z" />

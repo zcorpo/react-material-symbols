@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function SwitchAccessShortcutFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function SwitchAccessShortcutFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M598-80q-123-51-196.5-160T328-482q0-99 42-187.5T489-820H322v-60h276v276h-60v-179q-71 54-110.5 132.5T388-483q0 108 56.5 198.5T598-146v66Z" />

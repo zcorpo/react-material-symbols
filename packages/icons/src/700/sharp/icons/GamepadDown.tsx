@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function GamepadDown({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function GamepadDown({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M480-541 350-671v-242h261v242L480-541Zm191 191L541-480l130-131h242v261H671Zm-624 0v-261h242l131 131-131 130H47ZM350-47v-242l130-131 131 131v242H350Zm130-609 48-47v-128h-94v128l46 47ZM130-434h128l47-46-47-48H130v94Zm573 0h128v-94H703l-47 48 47 46Z" />

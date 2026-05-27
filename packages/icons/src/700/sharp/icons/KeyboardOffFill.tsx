@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function KeyboardOffFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function KeyboardOffFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M847-46 96-795l50-51L897-95l-50 49ZM300-325h367l-60-60H300v60Zm-97-125h60v-60h-60v60Zm124 0h60v-60h-60v60Zm370 0h60v-60h-60v60ZM203-575h60v-60h-60v60Zm371 0h60v-60h-60v60Zm123 0h60v-60h-60v60ZM46-166v-628h151l629 628H46Zm869-12L634-460v-50h-52l-72-75v-50h-54L298-795h617v617Z" />

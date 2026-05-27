@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function StarRateHalfFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function StarRateHalfFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M480-692.92v300.15l125.85 95.92L556.23-456l116-77H532l-52-159.92ZM270.31-173.08l78.77-258.61L142.31-580h256.31L480-850.76 561.38-580h256.31L610.92-431.69l78.77 258.61L480-332.62 270.31-173.08Z" />

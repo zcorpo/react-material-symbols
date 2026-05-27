@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function CurtainsFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function CurtainsFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M212-194v-540q0-22 16-38t38-16h428q22 0 38 16t16 38v540h69q5 0 8 3t3 8q0 5-3 8t-8 3H143q-5 0-8-3t-3-8q0-5 3-8t8-3h69Zm33-286q91 26 140.5 111.5T443-194h74q8-89 57.5-174.5T715-480q-92-26-142-111.5T516-766h-73q-8 89-57.5 174.5T245-480Z" />

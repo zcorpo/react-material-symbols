@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function GMobiledataBadge({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function GMobiledataBadge({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M310.96-276.61h338.65v-236.52H517.52v69.04h61.78v96.18H381.7v-264.74h267.91v-70.74H310.96v406.78ZM105.87-105.87V-854.7H854.7v748.83H105.87Zm79.22-79.22h589.82v-589.82H185.09v589.82Zm0-589.82v589.82-589.82Z" />

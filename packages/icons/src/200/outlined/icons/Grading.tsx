@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function Grading({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function Grading({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="m640-160-81.92-82.15 21.46-20.47 59.92 59.16 139.54-139 22.23 22L640-160Zm-480 0v-30.77h320V-160H160Zm0-152.69v-30.77h320v30.77H160Zm0-151.93v-30.76h640v30.76H160Zm0-152.69v-30.77h640v30.77H160Zm0-151.92V-800h640v30.77H160Z" />

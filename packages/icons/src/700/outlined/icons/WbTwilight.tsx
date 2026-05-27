@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function WbTwilight({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function WbTwilight({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="m750-562-66-68 110-108 66 66-110 110ZM63-130v-94h834v94H63Zm370-556v-155h94v155h-94ZM210-563 101-674l66-66 112 111-69 66Zm78 173h384q-20-63-72-101.5T480-530q-68 0-120 38.5T288-390Zm-105 87q0-129 85.5-221.5T480-617q126 0 211.5 92.5T777-303H183Zm297-87Z" />

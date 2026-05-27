@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function ApprovalDelegationFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function ApprovalDelegationFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M570-531 406-695l43-43 121 122 234-233 42 41-276 277ZM80-80v-394h154v394H80Zm526 32-311-89v-337h94l319 120v73H568l-116-38-10 28 116 40h362v107L606-48Z" />

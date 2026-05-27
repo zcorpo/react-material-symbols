@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function Azm({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function Azm({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M391.52-19.09v-372.43H19.09l416.95-416.96h372.44v372.44L391.52-19.09Zm246.39-351.87 95.31-95.87v-266.39H466.83l-95.87 95.31h266.95v266.95ZM466.78-200.39l95.87-95.31v-266.95H295.7l-95.31 95.87h266.39v266.39Z" />

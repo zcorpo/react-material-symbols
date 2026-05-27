@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function VignetteFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function VignetteFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M132-212v-536h696v536H132Zm499.82-173.7Q696-425.41 696-480q0-54.59-64.18-94.3Q567.63-614 480-614t-151.32 39.5Q265-535 265-480t63.68 94.5Q392.37-346 480-346t151.82-39.7Z" />

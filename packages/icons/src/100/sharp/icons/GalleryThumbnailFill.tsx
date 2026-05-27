@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function GalleryThumbnailFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function GalleryThumbnailFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M118-252v-456h456v456H118Zm536-268v-188h188v188H654ZM196-365h300l-95-127-75 100-55-73-75 100Zm458 113v-188h188v188H654Z" />

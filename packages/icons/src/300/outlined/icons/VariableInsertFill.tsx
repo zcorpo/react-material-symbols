@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function VariableInsertFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function VariableInsertFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M140-300v-360h680v173.08H600.77V-300H140Zm732.85 117.15-153.62-153V-200h-45.38v-213.85h213.84v45.39H751.23l153.23 154-31.61 31.61Z" />

@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function VerticalAlignCenterFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function VerticalAlignCenterFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M457.31-100v-212.77l-90.23 89.84-33.23-33.23L480-402.31l146.15 146.15-33.23 33.23-90.23-89.84V-100h-45.38ZM180-457.31v-45.38h600v45.38H180Zm300-100.38L333.85-703.84l33.23-33.23 90.23 89.84V-860h45.38v212.77l90.23-89.84 33.23 33.23L480-557.69Z" />

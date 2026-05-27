@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function BatteryAlert({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function BatteryAlert({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M326-132v-648h90v-48h128v48h90v648H326Zm22-22h264v-605H348v605Zm0 0h264-264Zm121-259h22v-188h-22v188Zm11.46 101q8.54 0 15.54-6.98 7-6.97 7-16.48 0-8.54-7.09-15.54t-16.37-7q-8.54 0-15.54 7.09t-7 16.37q0 8.54 6.98 15.54 6.97 7 16.48 7Z" />

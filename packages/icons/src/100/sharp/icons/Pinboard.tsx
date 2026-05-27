@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function Pinboard({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function Pinboard({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="m274-132-11-11v-178H132v-24l57-119v-132h-57v-22h284v22h-56v132l56 119v24H285v178l-11 11Zm232-80v-22h300v-492H132v-22h696v536H506ZM156-343h237l-55-112v-141H211v141l-55 112Zm118 0Z" />

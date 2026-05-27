@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function HealthAndBeauty({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function HealthAndBeauty({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M233-132 102-496l190-112v-220h45v220l190 112-131 364H233Zm412 0v-22h165v-127H645v-22h165v-127H645v-22h165v-128H645v-22h165v-127H645v-22h213v619H645Zm-395.6-22H380l120-332-161-95h-49l-161 95 120.4 332ZM314-368Z" />

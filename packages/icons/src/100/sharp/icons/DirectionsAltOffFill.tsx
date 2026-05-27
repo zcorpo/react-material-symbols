@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function DirectionsAltOffFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function DirectionsAltOffFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M856-72 643-285 480-123 123-480l162-163L90-838l16-16L872-88l-16 16ZM530-399l-66 66 16 16 66-66-16-16Zm180 46L604-459l21-20-163-163-21 20-88-88 127-127 357 357-127 127ZM317-491v22h142l-22-22H317Z" />

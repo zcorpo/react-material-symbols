@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function Crop23({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function Crop23({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M292-132v-696h376v696H292Zm22-22h332v-652H314v652Zm0 0v-652 652Z" />

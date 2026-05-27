@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function SwitchVideo({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function SwitchVideo({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="m284-348 40-40-65-65h282l-65 65 40 40 135-135-135-135-40 40 65 65H259l65-65-40-40-135 135 135 135ZM55-135v-691h691v301l160-160v410L746-435v300H55Zm94-94h502v-502H149v502Zm0 0v-502 502Z" />

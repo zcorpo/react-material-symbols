@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function BidLandscapeDisabledFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function BidLandscapeDisabledFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M818-72 718-172H172v-546l-99-99 16-15L834-87l-16 15Zm-30-166L612-414l154-166v-31L597-430 238-788h550v550Zm-594-84 180-180 164 165 6-8-179-180-171 171v32Z" />

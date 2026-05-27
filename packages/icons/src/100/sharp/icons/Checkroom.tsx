@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function Checkroom({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function Checkroom({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M143-212q-4.95 0-7.98-2.91-3.02-2.91-3.02-7.69 0-2.4 1-4.99 1-2.59 4-4.41l332-248v-67q0-4.95 3.1-7.97 3.1-3.03 6.9-3.03 36 0 61-24.52 25-24.53 25-59.5 0-34.98-24.25-59.48T481-726q-35 0-60 23.96T396-643h-22q0-44 31-74.5t76-30.5q45 0 75.5 30.5T587-642q0 41-27.5 71T491-536v56l333 248q3 1.73 4 4.18 1 2.45 1 4.92 0 4.9-3.03 7.9-3.02 3-7.97 3H143Zm35-22h605L480-460 178-234Z" />

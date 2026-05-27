@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function VideogameAssetFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function VideogameAssetFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M70.43-231.87v-496.5H889.8v496.5H70.43ZM288.57-346h60v-104h104v-60h-104v-104h-60v104h-104v60h104v104Zm337.86-31.18q13-13.17 13-32 0-18.82-13.17-31.82-13.18-13-32-13-18.83 0-31.83 13.18-13 13.17-13 32 0 18.82 13.18 31.82t32 13q18.82 0 31.82-13.18Zm90-143q13-13.17 13-32 0-18.82-13.17-31.82-13.18-13-32-13-18.83 0-31.83 13.18-13 13.17-13 32 0 18.82 13.18 31.82t32 13q18.82 0 31.82-13.18Z" />

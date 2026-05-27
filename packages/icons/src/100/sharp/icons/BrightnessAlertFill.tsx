@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function BrightnessAlertFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function BrightnessAlertFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M493-313q5-5 5-13t-5-13q-5-5-13-5t-13 5q-5 5-5 13t5 13q5 5 13 5t13-5Zm-23-117h22v-244h-22v244Zm10 330L367.77-212H212v-155.77L99-480l113-112.22V-748h155.77L480-861l112.22 113H748v155.78L861-480 748-367.77V-212H592.22L480-100Z" />

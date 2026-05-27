@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function MarkunreadMailboxFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function MarkunreadMailboxFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M186-132q-22.77 0-38.39-15.61Q132-163.23 132-186v-344q0-22 15.61-38 15.62-16 38.39-16h86v-244h236v140H294v283h94v-179h386q22.78 0 38.39 16T828-530v344q0 22.77-15.61 38.39Q796.78-132 774-132H186Z" />

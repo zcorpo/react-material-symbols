@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function Scan({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function Scan({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M135-55v-238h94v144h502v-144h95v238H135Zm0-452v-399h457l234 234v165h-95v-118H542v-186H229v304h-94ZM23-353v-94h914v94H23Zm457-154Zm0 214Z" />

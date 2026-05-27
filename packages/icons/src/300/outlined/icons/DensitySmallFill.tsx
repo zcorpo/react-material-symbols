@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function DensitySmallFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function DensitySmallFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M140-100v-45.39h680V-100H140Zm0-236.23v-45.38h680v45.38H140Zm0-242.16v-45.38h680v45.38H140Zm0-236.22V-860h680v45.39H140Z" />

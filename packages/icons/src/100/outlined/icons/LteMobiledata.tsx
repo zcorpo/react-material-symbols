@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function LteMobiledata({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function LteMobiledata({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M220-346v-268h22v246h121v22H220Zm260 0v-246h-81v-22h185v22h-82v246h-22Zm191 0v-268h143v22H693v101h121v22H693v101h121v22H671Z" />

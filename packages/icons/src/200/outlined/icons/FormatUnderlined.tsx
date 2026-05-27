@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function FormatUnderlined({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function FormatUnderlined({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M227.69-199.23V-230h504.62v30.77H227.69Zm118.5-166.96Q297-414.69 297-498.54v-308.38h36.08v306.84q0 68.39 39.38 107.93 39.39 39.53 107.54 39.53t107.54-39.53q39.38-39.54 39.38-107.93v-306.84H663v308.38q0 83.85-49.19 132.35T480-317.69q-84.62 0-133.81-48.5Z" />

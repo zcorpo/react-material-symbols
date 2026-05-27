@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function PianoOff({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function PianoOff({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="m842-30-66.23-65.23H95.23v-680.54L30-842l50-50L892-80l-50 50Zm24-178-95-94v-469h-86v383L522-551v-220h-84v136L208-866h658v658Zm-677 19h136v-195h-50v-211l-86-86v492Zm199 0h184v-110L433-437v52.81h-45V-189Zm231 0h62l-62-62v62Z" />

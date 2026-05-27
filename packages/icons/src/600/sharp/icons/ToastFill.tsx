@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function ToastFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function ToastFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M245.09-245.09h469.82v-60H245.09v60ZM105.87-105.87V-854.7H854.7v748.83H105.87Z" />

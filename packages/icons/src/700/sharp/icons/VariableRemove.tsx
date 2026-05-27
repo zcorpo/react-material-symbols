@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function VariableRemove({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function VariableRemove({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M625-255H95v-451h771v211h-95v-116H189v262h436v94Zm-436-94v-262 262Zm496 119 79-79-79-78 48-48 79 78 78-78 48 48-79 78 79 79-48 48-78-79-79 79-48-48Z" />

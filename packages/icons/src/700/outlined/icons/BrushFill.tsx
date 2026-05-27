@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function BrushFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function BrushFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M209-93q-38 0-79-18t-76-63q43-12 58.5-32.5T131-268q3-47 37-80t86-33q52 0 88 36t36 88q0 72-49 118T209-93Zm251-253L347-464l410-411q14-13 31-14t32 14l53 53q15 15 14 32.5T873-758L460-346Z" />

@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function TableLamp({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function TableLamp({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M520-120v-60h320v60H520ZM191-580h189v-200H278l-87 200Zm459 360v-470H440v170H99l140-320h201v90h270v530h-60ZM191-580h189-189Z" />

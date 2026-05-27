@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function MovieEditFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function MovieEditFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M55-135v-691h94l74 152h130l-74-152h89l74 152h130l-74-152h89l74 152h130l-74-152h94q39.46 0 67.23 27.77Q906-770.46 906-731v60L496-264v129H55Zm501 40v-144l278-277 143 143L700-95H556Zm285-246 30-32-37-37-31 31 38 38Z" />

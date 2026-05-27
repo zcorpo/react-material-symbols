@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function SerifFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function SerifFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M248-240h116.31v-13H301l52.54-147h169.92L576-253h-60.31v13h159.39v-13h-31l-172-467h-25L280-253h-32v13Zm110.54-175L438-637.69 518.46-415H358.54ZM120-120v-720h720v720H120Z" />

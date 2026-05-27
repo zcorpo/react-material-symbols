@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function HMobiledataFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function HMobiledataFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M341.43-448.57V-310q0 13.36-9.03 22.4-9.03 9.03-22.58 9.03-13.54 0-22.4-8.93-8.85-8.94-8.85-22.5v-340q0-13.36 9.03-22.4 9.03-9.03 22.58-9.03 13.54 0 22.4 8.93 8.85 8.94 8.85 22.56v138.51h277.14V-650q0-13.36 9.03-22.4 9.03-9.03 22.58-9.03 13.54 0 22.4 8.93 8.85 8.94 8.85 22.5v340q0 13.36-9.03 22.4-9.03 9.03-22.58 9.03-13.54 0-22.4-8.93-8.85-8.94-8.85-22.56v-138.51H341.43Z" />

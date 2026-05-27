@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function StarShineFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function StarShineFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="m831-252-79-80 15-15 80 79-16 16ZM708-713l-15-15 79-79 16 15-80 79Zm-456 1-79-80 15-15 80 79-16 16ZM128-252l-15-16 79-79 16 15-80 80Zm137 80 57-242-190-164 250-21 98-229 99 229 250 21-190 164 57 242-216-129-215 129Z" />

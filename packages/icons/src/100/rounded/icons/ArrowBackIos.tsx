@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function ArrowBackIos({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function ArrowBackIos({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="m95-480 320 319q5 6 5.42 15.07.42 9.07-5 15Q409-125 399.95-125q-9.04 0-14.95-6L74-443q-8.5-8-11.75-17.5T59-479.75q0-9.75 3-19.5T74-518l311-311q6.41-6 15.21-6 8.79 0 14.79 6 5 6 5 15t-5 15L95-480Z" />

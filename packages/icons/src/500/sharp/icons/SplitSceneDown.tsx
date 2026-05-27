@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function SplitSceneDown({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function SplitSceneDown({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M154.02-574.07v-272.15h652.2v272.15h-68.37v-203.78h-515.7v203.78h-68.13Zm0 460.05v-331.91h-80v-68.14h812.2v68.14h-80v331.91h-652.2Zm68.13-663.83h515.7-515.7Z" />

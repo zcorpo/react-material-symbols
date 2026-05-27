@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function BluetoothFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function BluetoothFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M469-120v-333L256-240l-16-16 224-224-224-224 16-16 213 213v-333h11l188 188-172 172 172 172-188 188h-11Zm22-387 145-145-145-145v290Zm0 344 145-145-145-145v290Z" />

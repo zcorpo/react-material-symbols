@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function ChangeHistory({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function ChangeHistory({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M134-160q-18 0-26.5-15.5T109-206l347-553q9-14 25-14t25 14l345 553q9 15 1 30.5T826-160H134Zm53-60h586L481-685 187-220Zm293-233Z" />

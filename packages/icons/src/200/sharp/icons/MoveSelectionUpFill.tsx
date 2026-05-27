@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function MoveSelectionUpFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function MoveSelectionUpFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M278.46-436.92V-840h403.08v403.08H278.46Zm363.08 158.46v-40h40v40h-40Zm-363.08 0v-40h40v40h-40ZM641.54-120v-40h40v40h-40ZM460-120v-40h40v40h-40Zm-181.54 0v-40h40v40h-40Z" />

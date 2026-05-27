@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function GifBox({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function GifBox({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M172-172v-616h616v616H172Zm22-22h572v-572H194v572Zm278-181h24v-208h-24v208Zm-212 0h146v-96h-25v72h-97v-160h122v-24H260v208Zm296 0h24v-89h73v-25h-73v-70h114v-24H556v208ZM194-194v-572 572Z" />

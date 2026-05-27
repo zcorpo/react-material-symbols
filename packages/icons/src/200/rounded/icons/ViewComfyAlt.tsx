@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function ViewComfyAlt({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function ViewComfyAlt({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M367.69-560H152.31q-13.21 0-22.76-9.55T120-592.31v-215.38q0-13.21 9.55-22.76t22.76-9.55h215.38q13.21 0 22.76 9.55t9.55 22.76v215.38q0 13.21-9.55 22.76T367.69-560Zm-216.92-30.77h218.46v-218.46H150.77v218.46ZM367.69-120H152.31q-13.21 0-22.76-9.55T120-152.31v-215.38q0-13.21 9.55-22.76t22.76-9.55h215.38q13.21 0 22.76 9.55t9.55 22.76v215.38q0 13.21-9.55 22.76T367.69-120Zm-216.92-30.77h218.46v-218.46H150.77v218.46ZM807.69-560H592.31q-13.21 0-22.76-9.55T560-592.31v-215.38q0-13.21 9.55-22.76t22.76-9.55h215.38q13.21 0 22.76 9.55t9.55 22.76v215.38q0 13.21-9.55 22.76T807.69-560Zm-216.92-30.77h218.46v-218.46H590.77v218.46ZM807.69-120H592.31q-13.21 0-22.76-9.55T560-152.31v-215.38q0-13.21 9.55-22.76t22.76-9.55h215.38q13.21 0 22.76 9.55t9.55 22.76v215.38q0 13.21-9.55 22.76T807.69-120Zm-216.92-30.77h218.46v-218.46H590.77v218.46Zm-221.54-440Zm0 221.54Zm221.54-221.54Zm0 221.54Z" />

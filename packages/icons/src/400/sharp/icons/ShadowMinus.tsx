@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function ShadowMinus({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function ShadowMinus({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M80-80v-628h172v-172h628v628H708v172H80Zm232-232h508v-508H312v508Zm98-218v-60h300v60H410Z" />

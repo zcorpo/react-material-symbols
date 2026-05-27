@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function HomeSpeakerFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function HomeSpeakerFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="m290-455 31-236q1-7 5-12.5t11-8.5l259-108q13-5 24.5 1.5T633-799l38 344H290Zm101 283q-58 0-91.5-45T274-320l14-113h386l12 118q6 56-27.5 99.5T569-172H391Z" />

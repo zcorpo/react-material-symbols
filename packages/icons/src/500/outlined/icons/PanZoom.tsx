@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function PanZoom({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function PanZoom({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M114.02-114.02v-241h68.13v124.13l143.94-143.94 48.74 48.74-143.94 143.94h124.13v68.13h-241Zm520.89-472.15-48.74-48.74 142.94-142.94H604.98v-68.37h241.24v241.24h-68.37v-124.13L634.91-586.17Z" />

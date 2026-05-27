@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function DiamondShineFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function DiamondShineFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="m226-673-73-72 16-16 73 72-16 16Zm245-53v-102h22v102h-22Zm264 53-15-16 73-72 15 16-73 72ZM482-132 181-426h600L482-132ZM340-638h282l158 190H182l158-190Z" />

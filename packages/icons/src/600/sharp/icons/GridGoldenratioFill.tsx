@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function GridGoldenratioFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function GridGoldenratioFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M357.78-67v-284h-284v-86h284v-87h-284v-79.78h284v-282.44H437v282.44h87v-282.44h79.78v282.44h282.44V-524H603.78v87h282.44v86H603.78v284H524v-284h-87v284h-79.22ZM437-437h87v-87h-87v87Z" />

@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function ComputerCancelFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function ComputerCancelFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="m368-387.54 112-112 112 112 22-22-112-112 112-112-22-22-112 112-112-112-22 22 112 112-112 112 22 22Zm-297.23 206v-30.77h818.46v30.77H70.77Zm49.23-80v-520h720v520H120Z" />

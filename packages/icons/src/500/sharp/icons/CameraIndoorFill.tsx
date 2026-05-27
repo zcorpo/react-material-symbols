@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function CameraIndoorFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function CameraIndoorFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M154.02-114.02v-489.09L480-847.65l326.22 244.54v489.09h-652.2ZM317-274h245v-88l82 43v-153l-82 43v-88H317v243Z" />

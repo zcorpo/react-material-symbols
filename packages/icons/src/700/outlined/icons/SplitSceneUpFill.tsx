@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function SplitSceneUpFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function SplitSceneUpFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M229-95q-39.05 0-66.52-27.47Q135-149.95 135-189v-184h691v184q0 39.05-27.77 66.53Q770.46-95 731-95H229ZM55-433v-94h80v-244q0-39.46 27.48-67.23Q189.95-866 229-866h502q39.46 0 67.23 27.77Q826-810.46 826-771v244h80v94H55Z" />

@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function ScienceOff({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function ScienceOff({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="m544-513-22-22v-231h-84v146l-22-22v-124h-64q-4.68 0-7.84-3.23t-3.16-8q0-4.77 3.16-7.77t7.84-3h256q4.67 0 7.84 3.23 3.16 3.23 3.16 8t-3.16 7.77q-3.17 3-7.84 3h-64v253ZM188-194h538L434-486 188-194Zm582 44-22-22H192q-15.73 0-22.37-14-6.63-14 4.37-26l244-290-266-266 16-16 618 618-16 16ZM434-486Zm46-91Z" />

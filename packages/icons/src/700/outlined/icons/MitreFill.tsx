@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function MitreFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function MitreFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M540-347v-266h100v-87H540v-266h300v266H740v87h100v266H540ZM120 6v-266h100v-87H120v-266h100v-87H120v-266h300v266H320v87h100v266H320v87h100V6H120Z" />

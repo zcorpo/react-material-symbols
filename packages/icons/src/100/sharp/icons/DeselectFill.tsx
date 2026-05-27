@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function DeselectFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function DeselectFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M810-118 610-318H318v-292L121-807l16-15 688 688-15 16ZM340-340h248L340-588v248Zm303-81-22-22v-178H443l-22-22h222v222ZM318-172v-34h34v34h-34Zm0-582v-34h34v34h-34Zm145 582v-34h34v34h-34Zm0-582v-34h34v34h-34Zm146 0v-34h34v34h-34Zm0 582v-34h34v34h-34Zm145-582v-34h34v34h-34ZM172-172v-34h34v34h-34Zm0-146v-34h34v34h-34Zm0-145v-34h34v34h-34Zm0-146v-34h34v34h-34Zm582 291v-34h34v34h-34Zm0-145v-34h34v34h-34Zm0-146v-34h34v34h-34Z" />

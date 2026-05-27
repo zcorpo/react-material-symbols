@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function ElectricalServicesFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function ElectricalServicesFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M732-360v-71h149v71H732Zm0 171v-71h149v71H732Zm-257 46v-80h-97v-174h97v-80h227v334H475ZM68-263v-344h295v-116H108v-94h350v304H163v156h185v94H68Z" />

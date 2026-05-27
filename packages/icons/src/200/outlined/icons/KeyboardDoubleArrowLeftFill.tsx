@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function KeyboardDoubleArrowLeftFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function KeyboardDoubleArrowLeftFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M456.08-267.92 243.77-480.23l212.31-212.31 22 21.23L287-480.23l191.08 190.31-22 22Zm239.15 0L482.92-480.23l212.31-212.31 21.23 21.23-190.31 191.08 190.31 190.31-21.23 22Z" />

@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function OpenJamFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function OpenJamFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M240-120v-60h270v-339l78 78 46-46-154-154-154 154 46 46 78-78v191H80v-512h800v512H610v148h110v60H240Z" />

@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function LegendToggleFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function LegendToggleFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M155.93-191.87V-260h648.14v68.13H155.93Zm0-174.06v-68.14h648.14v68.14H155.93Zm0-175.68v-80.8L400.24-769.8 600-628.04l204.07-144.87v85.04L600-543.76 396.76-688 155.93-541.61Z" />

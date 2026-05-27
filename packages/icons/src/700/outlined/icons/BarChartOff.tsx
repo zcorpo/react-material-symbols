@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function BarChartOff({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function BarChartOff({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M135-135v-491h163v491H135Zm264 0v-438l162 162v276H399Zm162-376L399-674v-152h162v315Zm265 264L671-401v-50h155v204Zm16 217L30-842l50-50L892-80l-50 50Z" />

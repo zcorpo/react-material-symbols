@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function AddPhotoAlternate({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function AddPhotoAlternate({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M480-480ZM95-95v-771h448v95H189v582h582v-354h95v448H95Zm145-187h480L576-474 449-307l-94-124-115 149Zm458.5-321v-95H603v-71h96v-97h71v97h96v71.5h-96v94.5h-71.5Z" />

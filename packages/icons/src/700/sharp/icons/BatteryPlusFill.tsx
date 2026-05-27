@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function BatteryPlusFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function BatteryPlusFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M642-55v-129H517v-95h125v-124h94v124h130v95H736v129h-94Zm-393 0v-787h134v-64h194v64h134v366q-9-1-18.07-1.54-9.07-.53-17.23-.6Q580-476 511.5-407.5 443-339 443-239q0 53.44 22.5 101.22T529-55H249Z" />

@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function HumidityHighFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function HumidityHighFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M479.77-75Q337-75 236-173.07q-101-98.08-101-240.59 0-69.34 26.5-131.84T237-657l177-174q14-13 31.03-20 17.04-7 35-7 17.97 0 34.97 7t31 20l177 174q49 49 76 111.56T826-414q0 142.66-101.73 240.83Q622.54-75 479.77-75Z" />

@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function TabletAndroidFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function TabletAndroidFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M107-27v-906h746v906H107Zm301-104.22h164v-40H408v40Zm-221.78-125h587.56v-507.56H186.22v507.56Z" />

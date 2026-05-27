@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function VolumeMuteFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function VolumeMuteFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M462-412H359q-11.75 0-19.37-7.63Q332-427.25 332-439v-82q0-11.75 7.63-19.38Q347.25-548 359-548h103l105-105q6-6 13.5-2.78T588-646v331q0 7.56-7.5 10.78Q573-301 567-307L462-412Z" />

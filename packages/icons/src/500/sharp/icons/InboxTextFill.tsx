@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function InboxTextFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function InboxTextFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M278.2-475.52h403.84v-60H278.2v60Zm0-144h403.84v-60H278.2v60Zm-164.18 505.5v-732.2h732.2v732.2h-732.2ZM554-317.58q33-23.38 56.05-59.62h167.8v-400.65h-595.7v400.65H350q23 36.24 56.25 59.62 33.24 23.38 74 23.38 40.75 0 73.75-23.38Z" />

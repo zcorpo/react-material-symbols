@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function DetectorStatusFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function DetectorStatusFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M438-64 285-217l68-66 85 85 169-170 68 67L438-64ZM297-647l18 60h331l17-60H297Zm-59 155-38-155H65v-249h831v249H760l-40 155H238Z" />

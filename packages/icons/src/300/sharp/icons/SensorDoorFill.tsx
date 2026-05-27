@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function SensorDoorFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function SensorDoorFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M187.31-107.31v-745.38h585.38v745.38H187.31Zm432.79-330q17.82 0 30.21-12.48 12.38-12.48 12.38-30.31 0-17.82-12.48-30.21-12.48-12.38-30.3-12.38-17.83 0-30.22 12.48-12.38 12.48-12.38 30.31 0 17.82 12.48 30.21 12.48 12.38 30.31 12.38Z" />

@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function PinchFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function PinchFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M426-697v-121L142-534h121v22H104v-159h22v121l284-284H289v-22h159v159h-22Zm89 593L292-326l22-25 152 37v-349h22v308h91v-180h22v180h92v-140h22v140h91v-60h22v311H515Z" />

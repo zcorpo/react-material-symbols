@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function AlignJustifySpaceBetween({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function AlignJustifySpaceBetween({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M814.61-100v-197.31h-85.38v-365.38h85.38V-860H860v760h-45.39ZM100-100v-760h45.39v197.31h85.38v365.38h-85.38V-100H100Z" />

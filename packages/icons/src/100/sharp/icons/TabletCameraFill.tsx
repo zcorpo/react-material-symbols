@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function TabletCameraFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function TabletCameraFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M92-212v-536h776v536H761v-514H199v514H92Zm242 80v-227h81l33-33h64l32.57 33H626v227H334Zm186-74q17-17 17-40.14t-17-39.5Q503-302 480-302t-40 16.36q-17 16.36-17 39.5T440-206q17 17 40 17t40-17Z" />

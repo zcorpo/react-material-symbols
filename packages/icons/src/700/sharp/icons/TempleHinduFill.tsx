@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function TempleHinduFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function TempleHinduFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="m297-709 44-149v-91h94v80h89v-80h95v86l44 154H297ZM46-34v-515h94v109h75l10-31h511l9 31h75v-109h95v515H536v-250H424v250H46Zm197-497 36-118h402l37 118H243Z" />

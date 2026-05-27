@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function ResponsiveLayoutFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function ResponsiveLayoutFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M609.23-140v-469.23H374.92V-820H820v680H609.23Zm-234.31 0v-423.85h188.93V-140H374.92ZM140-140v-423.85h189.54V-140H140Z" />

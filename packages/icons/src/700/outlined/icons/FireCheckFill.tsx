@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function FireCheckFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function FireCheckFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="m661-188 177-177 68 65L660-55 505-210l66-67 90 89ZM145-430q0-133 93.5-259T495-894v156q0 28 19 46.5t47 18.5q15 0 27.5-6t22.5-18l25-32q82 47 128 133t41 179L661-273l-91-89-149 152L533-99q-14 3-27 3.5t-26 .5q-140 0-237.5-97.5T145-430Z" />

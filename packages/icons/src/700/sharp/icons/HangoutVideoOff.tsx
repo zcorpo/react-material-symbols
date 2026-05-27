@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function HangoutVideoOff({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function HangoutVideoOff({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M415-641h153v154L415-641Zm139 140 170-135v305L554-501Zm265 261 95 96v-678H234l95 95h490v487ZM140-817l90 90h-69v489h458l-91-91H257v-271L22-833l51-51L894-63l-51 51-130-132H67v-673h73Zm435 337Zm-183 14Z" />

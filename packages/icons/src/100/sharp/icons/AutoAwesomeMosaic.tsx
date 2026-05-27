@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function AutoAwesomeMosaic({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function AutoAwesomeMosaic({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M443-172H172v-616h271v616Zm-22-22v-572H194v572h227Zm96-323v-271h271v271H517Zm22-22h227v-227H539v227Zm-22 367v-271h271v271H517Zm22-22h227v-227H539v227ZM421-480Zm118-59Zm0 118Z" />

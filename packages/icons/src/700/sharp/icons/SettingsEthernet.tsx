@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function SettingsEthernet({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function SettingsEthernet({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="m680-216-67-66 197-198-197-198 67-66 264 264-264 264Zm-398 0L17-480l265-264 66 66-196 198 196 198-66 66Zm17-235q-12-12-12-29t12-29q12-12 29-12t29 12q12 12 12 29t-12 29q-12 12-29 12t-29-12Zm152 0q-12-12-12-29t12-29q12-12 29-12t29 12q12 12 12 29t-12 29q-12 12-29 12t-29-12Zm152.5 0Q592-463 592-480t11.5-29q11.5-12 28.5-12t29 12q12 12 12 29t-12 29q-12 12-29 12t-28.5-12Z" />

@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function DockToBottom({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function DockToBottom({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M180-180h600v-147H180v147Zm0-207h600v-393H180v393Zm0 60v147-147Zm-60 207v-720h720v720H120Z" />

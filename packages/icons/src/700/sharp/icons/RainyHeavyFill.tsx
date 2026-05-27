@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function RainyHeavyFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function RainyHeavyFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M300-177 18-741l83-42 282 563-83 43Zm186 1L203-741l85-42 282 563-84 44Zm187-1L390-742l85-41 282 562-84 44Zm187 0L577-742l85-41 281 563-83 43Z" />

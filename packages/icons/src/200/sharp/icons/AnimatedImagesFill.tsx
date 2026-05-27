@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function AnimatedImagesFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function AnimatedImagesFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="m504.62-459 178.92-121-178.92-121v242ZM186.31-118.62l-69.23-527.76 103.23-10.16v436.23h547.23l5.15 28.85-586.38 72.84Zm104.77-172.46V-840H840v548.92H291.08Z" />

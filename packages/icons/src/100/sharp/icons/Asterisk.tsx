@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function Asterisk({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function Asterisk({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M469-172v-281L270-254l-16-16 199-199H172v-22h282L254-690l16-15 199 199v-282h22v282l199-199 15 15-199 199h282v22H506l199 199-15 16-199-200v282h-22Z" />

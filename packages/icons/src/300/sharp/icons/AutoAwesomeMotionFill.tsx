@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function AutoAwesomeMotionFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function AutoAwesomeMotionFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M361.54-100v-498.46H860V-100H361.54ZM230.77-216v-513.23H744v45.39H276.16V-216h-45.39ZM100-346.77V-860h513.23v45.39H145.39v467.84H100Z" />

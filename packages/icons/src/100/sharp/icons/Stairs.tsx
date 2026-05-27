@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function Stairs({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function Stairs({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M269-269h119v-133h103v-133h103v-134h97v-22H572v133H469v133H366v134h-97v22Zm-97 97v-616h616v616H172Zm22-22h572v-572H194v572Zm0 0v-572 572Z" />

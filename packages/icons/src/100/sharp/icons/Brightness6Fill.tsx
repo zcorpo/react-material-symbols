@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function Brightness6Fill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function Brightness6Fill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M480-100 367.77-212H212v-155.77L99-480l113-112.22V-748h155.77L480-861l112.22 113H748v155.78L861-480 748-367.77V-212H592.22L480-100Zm0-32 103-102h143v-143l103-103-103-103v-143H583L480-829 377-726H234v143L131-480l103 103v143h143l103 102Zm0-190q66 0 112.5-46T639-480q0-66-46.3-112.5T480-639v317Z" />

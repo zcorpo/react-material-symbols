@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function ForwardToInbox({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function ForwardToInbox({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M480-436 149-653v424h385v94H55v-691h851v422h-95v-249L480-436Zm0-82 331-213H149l331 213ZM785-16l-51-52 65-67H594v-75h205l-66-66 52-53 157 157L785-16ZM149-653v501-252 3-330 78Z" />

@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function CurrencyYenFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function CurrencyYenFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M440.39-105.87v-144.91h-210V-330h210v-90.39h-210v-79.22h173.09L179.09-854.7h94.74L480-527.09 686.74-854.7h94.17L557.09-499.61h172.52v79.22h-210V-330h210v79.22h-210v144.91h-79.22Z" />

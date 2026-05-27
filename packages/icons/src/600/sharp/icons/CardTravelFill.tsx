@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function CardTravelFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function CardTravelFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M65.87-105.87V-734.7h220.91v-172.43h385.44v172.43H894.7v628.83H65.87ZM366-734.7h227v-93.21H366v93.21ZM145.09-275.87h669.82v-121H145.09v121Z" />

@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function FormatItalic({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function FormatItalic({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M233.23-214.39v-57.69h133.62L510.46-693H358.39v-57.69h351.53V-693H574L430.77-272.08h154v57.69H233.23Z" />

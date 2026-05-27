@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function PulmonologyFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function PulmonologyFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M433-897h94v325l124 123 64-65-104-103v-160h181l140 359v315H520v-180l24-139-64-64-64 64 24 139v180H28v-315l140-359h180v160L244-514l65 65 124-123v-325Z" />

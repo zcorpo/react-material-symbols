@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function TextIncreaseFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function TextIncreaseFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="m72-226 215-508h14l215 508h-28l-61-148H158L96-226H72Zm94-169h252L295.67-691H290L166-395Zm577 49v-123H620v-22h123v-123h22v123h123v22H765v123h-22Z" />

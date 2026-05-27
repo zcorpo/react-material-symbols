@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function FirstPageFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function FirstPageFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M260-260v-440h30.77v440H260Zm423.15-9.15L473.77-478.54l209.38-209.38 22.23 22.23-187.15 187.15 187.15 187.16-22.23 22.23Z" />

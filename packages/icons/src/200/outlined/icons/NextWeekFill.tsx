@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function NextWeekFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function NextWeekFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M120-160v-520h240v-120h240v120h240v520H120Zm270.77-520h178.46v-89.23H390.77V-680Zm42.92 386 126-126-126.23-126.23-15.69 14.92L528.31-420 418-309.69 433.69-294Z" />

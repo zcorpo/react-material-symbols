@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function BorgFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function BorgFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M464.62-127.23 170.77-297.77v-166.85h179.08v115.38h114.77v222.01ZM170.77-495.38v-166.85l293.85-170.54v222.01H349.85v115.38H170.77Zm209.85 115.3v-199.07h197.76v199.07H380.62Zm114.76 252.85v-222.01h113.77v-115.38h180.08v166.85L495.38-127.23Zm113.77-368.15v-115.38H495.38v-222.01l293.85 170.54v166.85H609.15Z" />

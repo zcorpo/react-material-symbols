@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function VitalSignsFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function VitalSignsFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M370.01-264.58q-5.98-4.57-8.01-11.42l-82-193H96v-22h200l87 209 173-403q1.99-5.85 7.89-10.42 5.9-4.58 13-4.58 7.11 0 13.1 4.58 5.98 4.57 8.01 10.42l84 194h184v22H666l-89-210-173 403q-1.99 6.85-7.89 11.42-5.9 4.58-13 4.58-7.11 0-13.1-4.58Z" />

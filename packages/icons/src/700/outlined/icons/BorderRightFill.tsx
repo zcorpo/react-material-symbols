@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function BorderRightFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function BorderRightFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M95-95v-94h94v94H95Zm0-169v-95h94v95H95Zm0-169v-94h94v94H95Zm0-169v-95h94v95H95Zm0-169v-95h94v95H95ZM264-95v-94h95v94h-95Zm0-338v-94h95v94h-95Zm0-338v-95h95v95h-95ZM433-95v-94h94v94h-94Zm0-169v-95h94v95h-94Zm0-169v-94h94v94h-94Zm0-169v-95h94v95h-94Zm0-169v-95h94v95h-94ZM602-95v-94h95v94h-95Zm0-338v-94h95v94h-95Zm0-338v-95h95v95h-95ZM771-95v-771h95v771h-95Z" />

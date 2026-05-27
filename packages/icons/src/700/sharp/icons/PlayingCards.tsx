@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function PlayingCards({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function PlayingCards({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="m609-378 44-159-137-93-43 159 136 93ZM170-152 29-204l141-334v386Zm60 59v-395L376-93H230Zm218 21L196-757l481-174 253 682L448-72Zm56-123 301-111-185-502-301 110 185 503Zm59-307Z" />

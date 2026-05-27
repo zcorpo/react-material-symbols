@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function HomePinFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function HomePinFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M374-451h67v-95h78v95h67v-173l-106-70-106 70v173ZM480-55Q307-199 221-318.5T135-555q0-159.72 104.25-255.36Q343.51-906 480-906t241.25 95.64Q826-714.72 826-555q0 117-86.5 236.5T480-55Z" />

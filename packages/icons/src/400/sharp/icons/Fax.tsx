@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function Fax({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function Fax({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M80-120v-520h240v40-200h400v200h160v440H320v40H80Zm60-60h120v-400H140v400Zm240-420h280v-140H380v140Zm-60 380h500v-320H320v320Zm60-60h140v-200H380v200Zm-60 60v-320 320Zm240-180h80v-80h-80v80Zm120 0h80v-80h-80v80ZM560-280h80v-80h-80v80Zm120 0h80v-80h-80v80Z" />

@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function TransitionPush({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function TransitionPush({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M328-135v-94h74v-502h-74v-95h169v691H328Zm249 0v-691h369v691H577Zm94-94h181v-502H671v502Zm-502-74-67-66 61-65H10v-93h153l-61-62 66-66 175 175-174 177Zm502 74v-502 502Z" />

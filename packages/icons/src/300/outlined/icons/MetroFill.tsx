@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function MetroFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function MetroFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M140-140v-680h129.31L480-266.84 690.08-820H820v680h-82.31v-568.23L518.85-140.62h-78.08L222.31-703.85V-140H140Z" />

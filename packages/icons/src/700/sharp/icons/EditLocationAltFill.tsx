@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function EditLocationAltFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function EditLocationAltFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M480-55Q307-199 221-318.5T135-555q0-160 104.5-255.5T480-906q43 0 83 10t78 29L396-622v149h149l245-244q16 36 26 76.5t10 85.5q0 117-86.5 236.5T480-55Zm-24-478v-64l244-244 64 64-244 244h-64Zm349-284-65-65 58-58 65 65-58 58Z" />

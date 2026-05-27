@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function PlannerBannerAdPt({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function PlannerBannerAdPt({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M180-100v-760h600v760H180Zm45.39-45.39h509.22v-669.22H225.39v669.22Zm72.07-102.38h371.62L552.23-404.15 447.62-271.23l-68.47-83.38-81.69 106.84Zm-72.07 102.38v-669.22 669.22Z" />

@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function NightShelterFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function NightShelterFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M320-268h32v-48h256v48h32v-128q0-26.4-18.8-45.2Q602.4-460 576-460H464v112H352v-144h-32v224Zm116.5-107.64q11.5-11.64 11.5-28.5t-11.64-28.36q-11.64-11.5-28.5-11.5t-28.36 11.64q-11.5 11.64-11.5 28.5t11.64 28.36q11.64 11.5 28.5 11.5t28.36-11.64ZM212-172v-402l268-202 268 202v402H212Z" />

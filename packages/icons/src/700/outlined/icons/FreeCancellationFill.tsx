@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function FreeCancellationFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function FreeCancellationFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M680-17 514-183l66-66 99 99 184-185 66 68L680-17ZM317-244l-66-66 71-71-71-71 66-66 71 71 71-71 66 66-71 71 71 71-66 66-71-71-71 71ZM189-55q-39.05 0-66.53-27.47Q95-109.95 95-149v-602q0-39.46 27.47-67.23Q149.95-846 189-846h56v-60h82v60h306v-60h82v60h56q39.46 0 67.23 27.77Q866-790.46 866-751v329l-95 96v-244H189v421h273l94 94H189Z" />

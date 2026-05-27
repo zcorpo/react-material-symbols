@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function Stylus({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function Stylus({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="m331.08-190-178.46 37.38L190-331.08 331.08-190Zm0 0L190-331.08l485-485L816.08-675l-485 485Zm8-51.46L772.62-675 675-772.62 241.46-339.08l97.62 97.62Z" />

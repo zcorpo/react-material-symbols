@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function Lightbulb2Fill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function Lightbulb2Fill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M304-218v-133q-61.37-44.02-95.19-110.11Q175-527.2 175-602.02q0-126.4 88.85-215.19 88.86-88.79 216-88.79Q607-906 696.5-816.6 786-727.21 786-599.77q0 74.58-34.5 140.18Q717-394 656-350.65V-218H304Zm44 163v-93h266v93H348Z" />

@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function NoSimFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function NoSimFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M760-286.23 311.08-734.38 416.69-840H760v553.77Zm69.08 213.46L686.23-215.62l21.23-22L760-185.08V-120H200v-501.15L240.85-661 86.69-815.15l22-22L851.08-94.77l-22 22Z" />

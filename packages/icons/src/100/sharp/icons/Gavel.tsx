@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function Gavel({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function Gavel({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M166-146v-22h428v22H166Zm241-231L218-566l44-46 191 189-46 46Zm210-210L428-778l46-44 189 189-46 46Zm211 391L338-686l16-16 490 490-16 16Z" />

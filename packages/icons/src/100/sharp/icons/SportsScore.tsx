@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function SportsScore({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function SportsScore({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M359-722h66v-66h-66v66Zm132 0v-66h66v66h-66ZM359-458v-66h66v66h-66Zm264-132v-66h66v66h-66Zm0 132v-66h66v66h-66Zm-132 0v-66h66v66h-66Zm132-264v-66h66v66h-66Zm-198 66v-66h66v66h-66ZM271-188v-600h22v66h66v66h-66v66h66v66h-66v336h-22Zm286-336v-66h66v66h-66Zm-132 0v-66h66v66h-66Zm-66-66v-66h66v66h-66Zm132 0v-66h66v66h-66Zm66-66v-66h66v66h-66Z" />

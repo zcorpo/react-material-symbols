@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function PermContactCalendarFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function PermContactCalendarFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M180-180q58-57 135.5-88.5T480-300q87 0 164 31.5T780-180v-580H180v580Zm203.5-253.5Q344-473 344-530t39.5-96.5Q423-666 480-666t96.5 39.5Q616-587 616-530t-39.5 96.5Q537-394 480-394t-96.5-39.5ZM180-80q-24 0-42-18t-18-42v-620q0-24 18-42t42-18h65v-28q0-14 9-23t23-9q14 0 23.5 9t9.5 23v28h340v-28q0-14 9-23t23-9q14 0 23.5 9t9.5 23v28h65q24 0 42 18t18 42v620q0 24-18 42t-42 18H180Z" />

@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function DiscoverTune({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function DiscoverTune({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M546-623v-22h123v-169h22v169h123v22H546Zm123 477v-351h22v351h-22Zm-400 0v-166H146v-22h268v22H291v166h-22Zm0-314v-354h22v354h-22Z" />

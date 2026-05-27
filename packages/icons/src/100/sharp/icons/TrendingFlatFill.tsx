@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function TrendingFlatFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function TrendingFlatFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="m685-336-16-16 116-117H172v-22h614L669-607l15-16 144 143-143 144Z" />

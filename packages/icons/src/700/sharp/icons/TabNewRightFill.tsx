@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function TabNewRightFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function TabNewRightFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="m791 4-56-55 63-65H631v-79h167l-63-64 56-56 159 160L791 4ZM95-95v-771h771v503q-20-7-38.84-10.5Q808.32-377 789-377q-91 0-155.5 67T569-151.83q1 14.83 3.5 28.83 2.5 14 5.5 28H95Zm344-179h82v-165h165v-82H521v-165h-82v165H274v82h165v165Z" />

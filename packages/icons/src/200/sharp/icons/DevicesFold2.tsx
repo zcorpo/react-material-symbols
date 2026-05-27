@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function DevicesFold2({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function DevicesFold2({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M240.77-160v-640h491.08l134.46 335.38H726.77V-160h-486Zm137.61-335.38h442.24L710.85-769.23H269.62l108.76 273.85ZM271.54-190.77H696v-273.85H357.62l-86.08-215.46v489.31Zm273.31-441.92Z" />

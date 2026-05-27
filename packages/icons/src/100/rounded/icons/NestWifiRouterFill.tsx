@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function NestWifiRouterFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function NestWifiRouterFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M346-172q-60 0-107.5-37.5T176-306h608q-15 59-62.5 96.5T614-172H346ZM173-328q-1-5-1-9v-277q0-72 51-123t123-51h268q72 0 123 51t51 123v277q0 4-1 9H173Z" />

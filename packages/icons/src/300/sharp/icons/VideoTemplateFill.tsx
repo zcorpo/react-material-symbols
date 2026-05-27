@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function VideoTemplateFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function VideoTemplateFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M138.85-60v-125.77h682.3V-60h-682.3ZM100-258.85v-442.69h760v442.69H100Zm313.23-121.23L580.46-480 413.23-580.54v200.46ZM138.85-774.62V-900h682.3v125.38h-682.3Z" />

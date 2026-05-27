@@ -1,7 +1,21 @@
 {
-  "name": "react-material-symbols",
+  "name": "@zcorpo/react-material-symbols",
   "version": "0.1.0",
   "description": "Material Symbols icons as React SVG components — no font loading, full tree shaking",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "icons",
+    "material-symbols",
+    "material-design",
+    "svg",
+    "google-fonts"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zcorpo/react-material-symbols"
+  },
+  "homepage": "https://github.com/zcorpo/react-material-symbols#readme",
   "sideEffects": false,
   "main": "./dist/400/rounded/index.js",
   "module": "./dist/400/rounded/index.mjs",
@@ -219,11 +233,13 @@
     }
   },
   "files": [
-    "dist"
+    "dist",
+    "README.md"
   ],
   "scripts": {
     "build": "tsup",
-    "dev": "tsup --watch"
+    "dev": "tsup --watch",
+    "prepublishOnly": "tsup"
   },
   "peerDependencies": {
     "react": ">=17"

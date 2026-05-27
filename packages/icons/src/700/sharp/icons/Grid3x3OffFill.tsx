@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function Grid3x3OffFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function Grid3x3OffFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="m756-305-94-94h155v94h-61ZM656-405 405-656h156v-161h95v161h161v95H656v156ZM399-663l-94-94v-60h94v154ZM814-46 656-203v60h-95v-154l-7-8H399v162h-94v-162H143v-94h162v-155l-8-7H143v-95h59L62-796l51-50L863-96l-49 50Z" />

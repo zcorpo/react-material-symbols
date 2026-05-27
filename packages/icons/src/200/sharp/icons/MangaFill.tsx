@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function MangaFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function MangaFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M120-200v-560h720v560H120Zm241.77-30.77h422.85q9.23 0 16.92-7.69 7.69-7.69 7.69-16.92v-401.39L680-614.38l-113.67-35.93-70.76 96.95-113.89 36.16v120.15L311.46-300l50.31 69.23Z" />

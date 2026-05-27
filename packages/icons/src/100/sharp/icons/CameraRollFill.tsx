@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function CameraRollFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function CameraRollFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M132-132v-656h120v-80h136v80h120v80h320v496H506v80H132Zm256-158h50v-50h-50v50Zm0-290h50v-50h-50v50Zm156 290h50v-50h-50v50Zm0-290h50v-50h-50v50Zm156 290h50v-50h-50v50Zm0-290h50v-50h-50v50Z" />

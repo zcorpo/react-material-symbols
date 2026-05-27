@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function Panorama({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function Panorama({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M120-200v-560h720v560H120Zm30.77-30.77h658.46v-498.46H150.77v498.46ZM298.54-320h369.31L556.23-470.54 446.77-331.92l-71.23-88.23-77 100.15Zm-147.77 89.23v-498.46 498.46Z" />

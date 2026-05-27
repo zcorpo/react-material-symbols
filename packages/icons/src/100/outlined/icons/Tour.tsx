@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function Tour({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function Tour({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M226-106v-748h22v81h554l-70 172 70 172H248v323h-22Zm22-645v300-300Zm289 186.79q15-15.21 15-37T536.79-638q-15.21-15-36.5-15T464-637.79q-15 15.21-15 37T464.21-564q15.21 15 36.5 15T537-564.21ZM248-451h521l-60-150 60-150H248v300Z" />

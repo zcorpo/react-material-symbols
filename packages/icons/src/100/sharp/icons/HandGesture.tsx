@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function HandGesture({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function HandGesture({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M846-733q0-40-26.5-69T754-831v-25q50 0 83.5 36.6T871-733h-25ZM237-104q-56 0-94.5-38.9T104-237h25q0 45 31.63 76.5T237-129v25Zm162.47-14L129-515l26-24 177 126v-346h22v388L161-507l249 367h356v-608h22v630H399.47ZM477-506v-333h22v333h-22Zm145 0v-293h22v293h-22ZM499-323Z" />

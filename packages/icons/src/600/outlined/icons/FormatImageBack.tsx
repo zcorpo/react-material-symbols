@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function FormatImageBack({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function FormatImageBack({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M105.87-105.87v-78.65H854.7v78.65H105.87Zm0-166.69v-79.79h166.69v-88.04H105.87v-79.22h166.69v-88.04H105.87v-79.79H854.7v79.79H687.44v88.04H854.7v79.22H687.44v88.04H854.7v79.79H105.87Zm246.48-79.79h255.3v-88.04h-255.3v88.04Zm0-167.26h255.3v-88.04h-255.3v88.04ZM105.87-775.48v-79.22H854.7v79.22H105.87ZM480-440.39Zm0-79.22Z" />

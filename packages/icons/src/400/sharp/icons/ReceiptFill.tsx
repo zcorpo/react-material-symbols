@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function ReceiptFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function ReceiptFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M120-81v-798l60 60 60-60 60 60 60-60 60 60 60-60 60 60 60-60 60 60 60-60 60 60 60-60v798l-60-60-60 60-60-60-60 60-60-60-60 60-60-59.85L360-81l-60-59.85L240-81l-60-59.85L120-81Zm117-215h490v-60H237v60Zm0-154h490v-60H237v60Zm0-155h490v-60H237v60Z" />

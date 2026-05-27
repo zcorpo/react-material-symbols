@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function AndroidCell4BarFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function AndroidCell4BarFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M45.87-145.87v-331.17h119.22v331.17H45.87Zm249.83 0v-435.87h119.21v435.87H295.7Zm249.39 0v-541.57H664.3v541.57H545.09Zm249.82 0V-813.7H914.7v667.83H794.91Z" />

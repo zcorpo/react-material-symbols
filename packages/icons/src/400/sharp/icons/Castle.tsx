@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function Castle({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function Castle({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M40-120v-470h60v80h110v-330h60v80h100v-80h60v80h100v-80h60v80h100v-80h60v330h110v-80h60v470H570v-210H390v210H40Zm60-60h230v-210h300v210h230v-270H690v-250H270v250H100v270Zm270-310h60v-110h-60v110Zm160 0h60v-110h-60v110Zm-50 50Z" />

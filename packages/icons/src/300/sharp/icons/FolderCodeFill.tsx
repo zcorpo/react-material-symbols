@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function FolderCodeFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function FolderCodeFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M628.85-84.08 509.62-202.69l119.23-119 31.61 32-87 87 87 87-31.61 31.61Zm150.92 0-31.62-31.61 87-87-87-87 31.62-32 119.61 119L779.77-84.08ZM100-180v-600h307.15l65.39 65.39H860v321.76H627.31q-78.16 0-133.54 53.39-55.39 53.38-57.23 126.3V-180H100Z" />

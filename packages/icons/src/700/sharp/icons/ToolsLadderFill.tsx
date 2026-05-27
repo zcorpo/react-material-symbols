@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function ToolsLadderFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function ToolsLadderFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="m166-103 209-754h94l-36 130h230l37-130h94L586-103h-94l34-130H297l-36 130h-95Zm212-424h230l30-106H408l-30 106Zm-56 200h231l30-106H351l-29 106Z" />

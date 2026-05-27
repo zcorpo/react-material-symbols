@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function BatteryFullAltFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function BatteryFullAltFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M207-326q-10.5 0-18.75-7.75T180-353v-63h-48v-128h48v-63.21q0-11.54 8.25-19.17Q196.5-634 207-634h594q11.5 0 19.25 7.75T828-607v253.83q0 11.92-7.75 19.54Q812.5-326 801-326H207Z" />

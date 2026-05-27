@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function PointOfSaleFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function PointOfSaleFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M175-622v-284h610v284H175Zm80-79h450v-125H255v125ZM55-55v-134h851v134H55Zm2-174 173-353h501l173 353H57Zm262-76h81v-40h-81v40Zm0-80h81v-41h-81v41Zm0-81h81v-40h-81v40Zm121 161h81v-40h-81v40Zm0-80h81v-41h-81v41Zm0-81h81v-40h-81v40Zm121 161h81v-40h-81v40Zm0-80h81v-41h-81v41Zm0-81h81v-40h-81v40Z" />

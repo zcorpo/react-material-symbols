@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function TeamDashboardFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function TeamDashboardFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M226-172q-21.5 0-37.75-16.25T172-226v-253h257v307H226Zm225 0v-307h337v253q0 21.5-16.25 37.75T734-172H451ZM172-501v-233q0-21.5 16.25-37.75T226-788h508q21.5 0 37.75 16.25T788-734v233H172Z" />

@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function PictureInPictureAlt({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function PictureInPictureAlt({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M100-180v-600h760v600H100Zm45.39-45.39h669.22v-509.22H145.39v509.22Zm0 0v-509.22 509.22ZM450.62-270h324.61v-246.23H450.62V-270ZM496-315.38v-155.47h233.85v155.47H496Z" />

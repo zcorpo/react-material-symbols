@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function ChatBubbleOffFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function ChatBubbleOffFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M833.7-234.35 172.35-894.7h721.78v660.35H833.7ZM860-18.96 653.65-225.87H225.87l-160 160v-748.22l-30.78-29.78 45.52-48.52L907.52-65.48 860-18.96Z" />

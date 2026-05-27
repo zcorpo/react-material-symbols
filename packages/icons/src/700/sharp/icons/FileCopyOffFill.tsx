@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function FileCopyOffFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function FileCopyOffFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M885-202 215-874v-69h423l247 247v494Zm0 184L732-171H206v-526L50-853l51-52L936-70l-51 52ZM589-651h222L589-869l222 218-222-218v218ZM52-17v-664h94v570h545v94H52Z" />

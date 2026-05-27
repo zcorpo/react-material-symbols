@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function EmergencyHomeFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function EmergencyHomeFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M469-431h22v-200h-22v200Zm23 72q5-5 5-12t-5-12q-5-5-12-5t-12 5q-5 5-5 12t5 12q5 5 12 5t12-5Zm-12 236L123-480l357-357 357 357-357 357Z" />

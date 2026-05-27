@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function TextAdOff({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function TextAdOff({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M806-258v-468H338l-22-22h512v512l-22-22ZM424-484Zm148-8ZM851-78 716-212H132v-536h80l22 22h-80v492h540L90-838l16-16L866-94l-15 16ZM241-341v-22h356l22 22H241Zm0-128v-22h228l22 22H241Zm0-128v-22h100l22 22H241Zm354 128h124v-22H573l22 22ZM467-597h103v-22H445l22 22Z" />

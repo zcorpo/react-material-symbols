@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function NearMeDisabled({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function NearMeDisabled({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="m531-206-92-235-235-94-2-12 213-81-230-230 16-15 672 672-15 16-233-233-82 212h-12Zm132-309-17-17 74-190-191 73-17-16 246-95-95 245ZM537-254l70-181-176-176-181 70 205 82 82 205Zm51-336Zm-69 67Z" />

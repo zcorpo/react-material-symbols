@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function StackGroupFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function StackGroupFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M397.69-100q-23.5 0-40.59-17.1-17.1-17.09-17.1-40.59V-340H157.69q-23.5 0-40.59-17.1-17.1-17.09-17.1-40.59v-404.62q0-23.5 17.1-40.59 17.09-17.1 40.59-17.1h404.62q23.5 0 40.59 17.1 17.1 17.09 17.1 40.59V-620h182.31q23.5 0 40.59 17.1 17.1 17.09 17.1 40.59v404.62q0 23.5-17.1 40.59-17.09 17.1-40.59 17.1H397.69Z" />

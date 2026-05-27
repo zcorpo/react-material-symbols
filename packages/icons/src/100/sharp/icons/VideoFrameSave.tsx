@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function VideoFrameSave({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function VideoFrameSave({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M806-563v-163H643v-22h185v185h-22Zm-674 0v-185h185v22H154v163h-22Zm0 351v-185h22v163h163v22H132Zm275-139v-258l202 129-202 129ZM644-26v-22h268v22H644Zm133-106L654-255l16-16 96 97v-214h22v214l96-97 16 16-123 123Z" />

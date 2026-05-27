@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function CachedFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function CachedFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M480-140q-136 0-236-98T144-470v-46l-69 69-46-47 162-163 163 163-47 47-69-69v44q0 97 71.5 167T480-235q31 0 59-6t52-18l66 65q-41 28-85.5 41T480-140Zm291-160L608-463l48-48 68 68v-40q0-96-72-166.5T482-720q-32 0-60 6.5T370-697l-65-66q41-27 85-39.5t92-12.5q135 0 235.5 98.5T818-485v44l68-69 47 47-162 163Z" />

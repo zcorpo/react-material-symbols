@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function SmartDisplay({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function SmartDisplay({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="m398.92-328 236.92-153.62-236.92-153.22V-328ZM100-180v-600h760v600H100Zm45.39-45.39h669.22v-509.22H145.39v509.22Zm0 0v-509.22 509.22Z" />

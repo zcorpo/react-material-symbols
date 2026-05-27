@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function MilitaryTechFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function MilitaryTechFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M300-850h360v280q0 21-12 39.5T615-499l-132 79 29 97h99l-82 58 33 101-82-62-82 62 32-101-81-58h99l29-97-133-77q-21-12-32.5-31.5T300-570v-280Zm170 22v378l11 6 11-6v-378h-22Z" />

@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function CampingFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function CampingFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M132-106v-143l335-451-37-49 18-13 32 44 33-44 17 13-36 49 334 451v143H132Zm177-22h342L480-368 309-128Z" />

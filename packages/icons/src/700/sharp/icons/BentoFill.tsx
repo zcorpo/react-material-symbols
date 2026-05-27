@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function BentoFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function BentoFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M627-527h270v-250H627v250ZM63-183h470v-594H63v594Zm235.06-230Q271-413 251-432.94q-20-19.94-20-47.5t19.94-47.06q19.94-19.5 47.5-19.5t47.06 19.52q19.5 19.53 19.5 47.42Q365-453 345.48-433q-19.53 20-47.42 20ZM627-183h270v-250H627v250Z" />

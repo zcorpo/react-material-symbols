@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function RepeatOneFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function RepeatOneFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M478-377v-182h-43v-25h68v207h-25ZM296-132 172-256l124-124 16 16-97 97h487v-160h22v182H215l97 97-16 16Zm-60-401v-182h509l-97-97 16-16 124 124-124 124-16-16 97-97H258v160h-22Z" />

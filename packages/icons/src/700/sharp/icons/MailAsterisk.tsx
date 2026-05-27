@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function MailAsterisk({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function MailAsterisk({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M480-480Zm0-38 331-213H149l331 213ZM55-135v-691h851v426h-95v-248L480-431 149-648v419h380v94H55ZM715-23l-69-40 45-79h-91v-80h91l-45-79 69-39 45 79 45-79 70 39-46 79h91v80h-91l46 79-70 40-45-79-45 79Z" />

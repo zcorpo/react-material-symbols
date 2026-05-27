@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function PlayPause({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function PlayPause({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M200-332v-296l220 148-220 148Zm340 12v-320h60v320h-60Zm160 0v-320h60v320h-60Z" />

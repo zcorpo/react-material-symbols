@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function HourglassFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function HourglassFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M135-55v-94h88v-117.65Q223-335 258.5-392t95.5-88q-60-32-95.5-89T223-694.35V-811h-88v-95h691v95h-88v116.65Q738-626 702.5-569T607-480q60 31 95.5 88T738-266.65V-149h88v94H135Z" />

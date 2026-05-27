@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function Straighten({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function Straighten({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M132-292v-376h696v376H132Zm22-22h652v-332H657v126h-22v-126H491v126h-22v-126H325v126h-22v-126H154v332Zm149-206h22-22Zm166 0h22-22Zm166 0h22-22Zm-155 40Z" />

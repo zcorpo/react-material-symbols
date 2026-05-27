@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function Book6Fill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function Book6Fill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M252-132q-33 0-56.5-23T172-210v-538q0-33 23.5-56.5T252-828h402v562H252q-24 0-41 16t-17 40q0 24 17 40t41 16h514v-594h22v616H252Zm48-300h28l23-61h125l23 61h27l-96-256h-33l-97 256Zm61-88 53-140 52 140H361Z" />

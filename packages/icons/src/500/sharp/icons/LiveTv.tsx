@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function LiveTv({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function LiveTv({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M380.37-348.8 651.2-521.2 380.37-693.83v345.03Zm-53.48 234.78v-80H74.02v-652.2h812.2v652.2H633.35v80H326.89ZM142.15-262.15h675.7v-515.7h-675.7v515.7Zm0 0v-515.7 515.7Z" />

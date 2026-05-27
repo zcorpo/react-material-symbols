@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function ContrastSquare({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function ContrastSquare({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M180-120q-24 0-42-18t-18-42v-600q0-24 18-42t42-18h600q24 0 42 18t18 42v600q0 24-18 42t-42 18H180Zm0-60h600v-600L180-180Zm540-130H494v-50h226v50ZM224-610h76v76h50v-76h76v-50h-76v-76h-50v76h-76v50Z" />

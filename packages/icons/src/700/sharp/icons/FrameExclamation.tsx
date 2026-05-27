@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function FrameExclamation({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function FrameExclamation({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M433-369v-414h94v414h-94Zm0 192v-94h94v94h-94ZM15-15v-219h94v125h125v94H15Zm712 0v-94h125v-125h94v219H727ZM15-727v-219h219v94H109v125H15Zm837 0v-125H727v-94h219v219h-94Z" />

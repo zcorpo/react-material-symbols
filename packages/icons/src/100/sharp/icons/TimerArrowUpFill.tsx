@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function TimerArrowUpFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function TimerArrowUpFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M181-282.5q-70-70.5-70-171t70-171Q251-695 351-695q47 0 88.5 16.5T513-633l39-38 14 14-37 39q30 32 47 74t17 90q0 101-70.5 171.5t-171 70.5Q251-212 181-282.5ZM767-212v-493l-68 67-16-15 95-95 94 95-15 15-68-67v493h-22ZM284-766v-22h137v22H284Zm56 313h22v-133h-22v133Z" />

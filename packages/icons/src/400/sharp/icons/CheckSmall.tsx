@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function CheckSmall({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function CheckSmall({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M400-318 247-471l42-42 111 111 271-271 42 42-313 313Z" />

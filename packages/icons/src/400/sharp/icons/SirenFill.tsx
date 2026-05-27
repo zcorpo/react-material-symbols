@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function SirenFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function SirenFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M327-439h60v-123q0-39 27-66.5t66-27.5v-60q-64 0-108.5 45T327-562v123ZM80-120v-225h123v-217q0-115 81-196.5T480-840q115 0 196 81.5T757-562v217h123v225H80Z" />

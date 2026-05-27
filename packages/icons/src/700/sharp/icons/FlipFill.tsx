@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function FlipFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function FlipFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M602-771v-95h95v95h-95Zm0 676v-94h95v94h-95Zm169-676v-95h95v95h-95Zm0 676v-94h95v94h-95Zm0-169v-95h95v95h-95Zm0-169v-94h95v94h-95Zm0-169v-95h95v95h-95ZM364-95H95v-771h269v95H189v582h175v94Zm73 78v-926h95v926h-95Z" />

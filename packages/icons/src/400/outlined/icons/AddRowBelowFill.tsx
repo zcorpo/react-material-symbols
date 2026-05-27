@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function AddRowBelowFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function AddRowBelowFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M120-551v-329h720v329H120Zm0 391v-331h720v331H688q1-7.5 1.5-14.63.5-7.12.5-15.37 0-88-60.9-149T480-400q-88.2 0-149.1 61.5Q270-277 270-190q0 8.25.5 15.37.5 7.13 1.5 14.63H120Zm330 80v-80h-80v-60h80v-80h60v80h80v60h-80v80h-60Z" />

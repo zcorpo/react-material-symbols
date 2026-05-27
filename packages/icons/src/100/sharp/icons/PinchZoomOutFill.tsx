@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function PinchZoomOutFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function PinchZoomOutFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M72-483v-159h22v121l138-137 15 15-137 138h121v22H72Zm245-230-15-15 137-138H318v-22h159v159h-22v-121L317-713Zm198 609L292-326l22-25 152 37v-349h22v308h91v-180h22v180h92v-140h22v140h91v-60h22v311H515Z" />

@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function KitchenFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function KitchenFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M307-641h71v-118h-71v118Zm0 354h71v-189h-71v189ZM229-55q-38.78 0-66.39-27.61T135-149v-380h691v380q0 38.78-27.91 66.39Q770.19-55 731-55H229Zm-94-534v-222q0-38.75 27.61-66.88Q190.22-906 229-906h502q39.19 0 67.09 27.91Q826-850.19 826-811v222H135Z" />

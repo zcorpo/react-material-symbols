@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function MultilineChart({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function MultilineChart({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="m128-198-66-66 318-318 164 165 129-146q-60-65-132.5-100T383-698q-72 0-137.5 26T127-599l-66-67q65-59 146.5-93T383-793q102 0 193.5 43.5T736-631l97-110 66 66-107 122q36 50 58.5 118T882-296h-95q-6-51-21-97t-39-88L548-281 380-450 128-198Z" />

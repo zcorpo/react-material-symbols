@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function TripFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function TripFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M677.08-160v-520H840v520H677.08ZM390.77-680h178.46v-89.23H390.77V-680Zm-77.08 520v-520H360v-120h240v120h46.31v520H313.69ZM120-160v-520h162.92v520H120Z" />

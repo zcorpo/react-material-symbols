@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function DragPanFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function DragPanFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M480-34 293-221l68-68 72 71v-215H218l66 67-68 68L34-480l183-183 68 68-67 68h215v-216l-67 67-68-68 182-182 182 182-68 68-67-67v216h216l-67-67 68-68 182 182-182 182-68-68 67-67H527v215l72-71 68 68L480-34Z" />

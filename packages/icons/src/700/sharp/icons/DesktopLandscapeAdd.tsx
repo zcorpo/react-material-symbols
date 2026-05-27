@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function DesktopLandscapeAdd({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function DesktopLandscapeAdd({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M149-229v-502 502Zm70-70v-223h383v223H219ZM55-135v-691h851v420h-95v-325H149v502h435v94H55Zm612-271v-181H336v-74h405v255h-74Zm87 351v-109H644v-72h110v-110h72v110h109v72H826v109h-72Z" />

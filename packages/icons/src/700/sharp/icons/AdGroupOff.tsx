@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function AdGroupOff({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function AdGroupOff({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="m840-192-94-94h82v-491H280v24l-88-87v-83h731v731h-83Zm-6 179L655-192H192v-463L13-834l50-50L884-63l-50 50ZM286-286h274L286-560v274ZM37-37v-731h95v636h636v95H37Zm388-384Zm94-92Z" />

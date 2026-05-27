@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function VideoCameraFrontOff({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function VideoCameraFrontOff({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M806-355 696-465v104l-22-22v-343H331l-22-22h387v252l110-110v251Zm-36 205L122-798l16-16 648 648-16 16ZM503-555Zm-69 69ZM206-746l20 20h-44v492h492v-44l20 20v46H160v-534h46Zm93 391v-2q0-29 35.5-47.5T425-423q55 0 90.5 18.5T551-357v2H299Z" />

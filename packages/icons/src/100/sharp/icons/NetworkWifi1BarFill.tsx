@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function NetworkWifi1BarFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function NetworkWifi1BarFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M480-194 74-600q83-69 185.5-108.5T480-748q118 0 220 39.5T886-600L480-194ZM356-349q26-19 57.5-30t66.5-11q35 0 66.5 11t57.5 30l248-248q-81-61-174.5-95T480-726q-104 0-197.5 34T108-597l248 248Z" />

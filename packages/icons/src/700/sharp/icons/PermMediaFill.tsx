@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function PermMediaFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function PermMediaFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M10-95v-625h95v531h761v94H10Zm155-154v-657h314l80 80h391v577H165Zm186-192h412L631-617 521-471l-74-86-96 116Z" />

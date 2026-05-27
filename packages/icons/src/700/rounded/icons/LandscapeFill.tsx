@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function LandscapeFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function LandscapeFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="m74-305 169-225q7-9 16.5-13.5T280-548q11 0 20.5 4.5T318-530l146 195q4 6 10.5 9t13.5 3q19 0 27-16t-3-31l-93-124q-10-13-10-28.5t10-28.5l104-139q7-9 16.5-13.5T560-708q11 0 20.5 4.5T598-690l288 385q18 25 5 50.5T849-229H111q-29 0-42-25.5t5-50.5Z" />

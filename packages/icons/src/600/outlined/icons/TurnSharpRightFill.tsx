@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function TurnSharpRightFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function TurnSharpRightFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M240.39-105.87v-254.52q0-32.68 23.27-55.95 23.27-23.27 55.95-23.27h320.78v-263.78l-90 90-55.57-55.57L680-854.13l185.18 185.17-55.57 55.57-90-90v263.78q0 32.68-23.27 55.95-23.27 23.27-55.95 23.27H319.61v254.52h-79.22Z" />

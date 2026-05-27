@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function DualScreen({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function DualScreen({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="m234-251 253 101v-559L234-810v559Zm-87 58v-701h94l333 127.41V-21L147-193Zm340 6v-87h240v-533H241v-87h573v707H487Zm-253-64v-559 559Z" />

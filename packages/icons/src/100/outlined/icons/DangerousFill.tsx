@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function DangerousFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function DangerousFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M352-172 172-352v-256l180-180h256l180 180v256L608-172H352Zm11-176 117-116 117 116 16-15-117-117 117-117-16-16-117 117-117-117-15 16 116 117-116 117 15 15Z" />

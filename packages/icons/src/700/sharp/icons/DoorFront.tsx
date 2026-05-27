@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function DoorFront({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function DoorFront({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M95-95v-94h80v-677h611v677h80v94H95Zm174-94h422v-582H269v582Zm298-260q14.45 0 24.22-9.77Q601-468.55 601-483q0-14.45-9.78-24.23Q581.45-517 567-517t-24.22 9.77Q533-497.45 533-483q0 14.45 9.78 24.23Q552.55-449 567-449ZM269-771v582-582Z" />

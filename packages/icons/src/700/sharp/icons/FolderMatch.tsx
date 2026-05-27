@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function FolderMatch({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function FolderMatch({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M357-158q-92-36-151.74-111.55Q145.53-345.11 135-442h93q8 58 43.5 103.5T357-264v106Zm77 103v-388h220l40.62 63H906v325H434ZM55-517v-389h220l40.62 64H527v325H55Zm677 37q0-67-36.5-122.5T602-693v-106q100.36 39.37 162.18 125.34Q826-587.7 826-480h-94ZM527-148h285v-138H644l-42-63h-75v201ZM148-611h285v-137H265l-42-64h-75v201Zm379 463v-201 201ZM148-611v-201 201Z" />

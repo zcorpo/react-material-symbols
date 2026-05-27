@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function SurgicalFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function SurgicalFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="m457-386-76-76 287-287 76 76-287 287Zm79 173 22-22h329v22H536Zm-300 1q-22 0-43-5t-41-16l186-186 101 101-52 55q-25 26-58.5 38.5T260-212h-24Z" />

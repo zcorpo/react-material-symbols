@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function Wrist({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function Wrist({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M427-39 227.94-239H10v-94h257l148 148-61-128h516v94H502l41 86-116 94ZM10-637v-95h222.51L314-812h516v95H353l-81 80H10Zm541 254v-95h399v95H551Zm0-170v-94h359v94H551ZM10-451Z" />

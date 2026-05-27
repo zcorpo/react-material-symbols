@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function VolcanoFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function VolcanoFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="m59.65-54 171.87-386h119.44l80-200h298.65L897.52-54H59.65ZM543-780v-153h73v153h-73Zm197.39 78.83-51.04-51.05 108.04-108.04 52.05 51.04-109.05 108.05Zm-321.78 0L310.56-809.22l51.05-52.04 108.61 109.04-51.61 51.05Z" />

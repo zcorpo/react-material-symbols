@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function SportsMma({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function SportsMma({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M280-120v-135h400v135H280Zm-40-204-40-190v-326h490v160h70v166l-40 190H240Zm48.57-60H671l29-147v-37h-70v-212H260v249l28.57 147ZM335-568h220v-134H335v134Zm145-14Z" />

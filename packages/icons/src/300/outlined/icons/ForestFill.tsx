@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function ForestFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function ForestFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M556.85-100v-124h86.92v124h-86.92Zm-240 0v-152.08H37.7l182.07-264.77h-91.15L360-845.38l231.38 328.53h-90.15l181.69 264.77H403.77V-100h-86.92Zm399.99-152.08L555-488.77h89.92L497.46-699.69 600-845.38l231.38 328.53h-90.15L922.3-252.08H716.84Z" />

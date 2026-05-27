@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function Timer10Select({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function Timer10Select({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M334-262h229v-436H334v436Zm-16 16v-468h261v468H318Zm-160 0v-452H76v-16h98v468h-16Zm542 0v-22h162v-101H700v-145h184v22H722v101h162v145H700Z" />
