@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function ImagesearchRollerFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M633.39-26.43H401.48V-359.7h80.09v-119.43H65.87v-333.91h156v-81.66H814.7v242.05H221.73v-89.09h-85.12v191.31H552.3v190.73h81.09v333.27Z" />
+    </svg>
+  )
+}

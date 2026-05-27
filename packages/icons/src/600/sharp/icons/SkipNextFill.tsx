@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function SkipNextFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M687.35-213.43v-533.14h79.22v533.14h-79.22Zm-493.92 0v-533.14L579.57-480 193.43-213.43Z" />
+    </svg>
+  )
+}

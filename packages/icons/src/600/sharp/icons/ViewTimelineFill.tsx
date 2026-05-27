@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function ViewTimelineFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M105.87-105.87V-854.7H854.7v748.83H105.87ZM250-281.83h220v-60H250v60Zm240-336.91h220v-60H490v60ZM370-450h220v-60H370v60Z" />
+    </svg>
+  )
+}

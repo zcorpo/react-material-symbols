@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function Pergola({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M105.87-105.87V-894.7h79.22v80h589.82v-80h79.79v788.83h-79.79v-449.82H185.09v449.82h-79.22Zm79.22-529.04h589.82v-100H185.09v100Zm255.3 529.04v-119.26H320.96v-79.22h318.08v79.22H519.61v119.26h-79.22Zm-255.3-529.04v-100 100Z" />
+    </svg>
+  )
+}

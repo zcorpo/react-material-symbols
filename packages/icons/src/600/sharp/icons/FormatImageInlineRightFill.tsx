@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function FormatImageInlineRightFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M105.87-105.87v-78.65H854.7v78.65H105.87Zm333.96-166.69v-414.88H854.7v414.88H439.83ZM105.87-775.48v-79.22H854.7v79.22H105.87Zm0 502.92v-79.79h290.91v79.79H105.87Z" />
+    </svg>
+  )
+}

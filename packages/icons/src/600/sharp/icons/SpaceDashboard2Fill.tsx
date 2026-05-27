@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function SpaceDashboard2Fill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M825.87-105.87V-854.7h28.83v748.83h-28.83Zm-709.26-10.74H530v-726.78H116.61v726.78Zm473.39 0h253.39V-450H590v333.39ZM590-510h253.39v-333.39H590V-510Z" />
+    </svg>
+  )
+}

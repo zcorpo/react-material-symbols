@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function CollapseAll({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M290-71.43 234.43-127 480-372.57 725.57-127 670-71.43l-190-190-190 190Zm190-517L234.43-834 290-889.57l190 190 190-190L725.57-834 480-588.43Z" />
+    </svg>
+  )
+}
