@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function PictureInPictureMobileFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M760-120H200v-720h560v720Zm-74.23-335.23v-314.23H449.54v314.23h236.23Z" />
+    </svg>
+  )
+}

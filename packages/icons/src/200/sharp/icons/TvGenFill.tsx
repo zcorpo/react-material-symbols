@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function TvGenFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M189.23-181.54V-240H120v-520h720v520h-69.23v58.46h-12.23L737.92-240H223.85l-22.39 58.46h-12.23Z" />
+    </svg>
+  )
+}

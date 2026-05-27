@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function FastForwardFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M165.54-295.38v-369.24L436.15-480 165.54-295.38Zm358.54 0v-369.24L794.69-480 524.08-295.38Z" />
+    </svg>
+  )
+}

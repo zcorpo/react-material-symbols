@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function ShortText({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M200-393.85v-30.77h315.15v30.77H200Zm0-141.53v-30.77h560v30.77H200Z" />
+    </svg>
+  )
+}

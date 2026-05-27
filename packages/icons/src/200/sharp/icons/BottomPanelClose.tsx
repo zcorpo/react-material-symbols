@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function BottomPanelClose({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="m480-508.54 116-116.77H364l116 116.77ZM190.77-190.77h578.46v-132.38H190.77v132.38Zm0-163.15h578.46v-415.31H190.77v415.31Zm0 30.77v132.38-132.38ZM160-160v-640h640v640H160Z" />
+    </svg>
+  )
+}

@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function TableRowsNarrowFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M160-323.46v-141.16h640v141.16H160Zm0-171.92v-141.93h640v141.93H160Zm0-172.7v-141.15h640v141.15H160Zm0 517.31v-141.92h640v141.92H160Z" />
+    </svg>
+  )
+}

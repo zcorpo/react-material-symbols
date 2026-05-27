@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function BatteryAndroidShare({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M760-605.23 885.23-480 760-354.77 737.77-377l88.61-87.62h-251v120h-30.76v-150.76h281.76L738-584l22-21.23ZM80-280v-400h634.31l-32.54 30.77h-571v338.46h347.69V-280H80Zm30.77-30.77v-338.46 338.46Z" />
+    </svg>
+  )
+}

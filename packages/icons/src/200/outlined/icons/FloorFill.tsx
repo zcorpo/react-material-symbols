@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function FloorFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M140-104.62v-30.76h144.62v-180h180v-180h180v-180h180V-820h30.76v175.38h-180v180h-180v180h-180v180H140Z" />
+    </svg>
+  )
+}

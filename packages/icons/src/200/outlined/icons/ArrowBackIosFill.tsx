@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function ArrowBackIosFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M400-107.69 27.69-480 400-852.31l36 36.23L99.15-480 436-143.92l-36 36.23Z" />
+    </svg>
+  )
+}

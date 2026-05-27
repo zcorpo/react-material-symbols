@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function AspectRatioFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M587.77-297.08h155.61v-157.07h-30.76v126.3H587.77v30.77ZM216.85-505.85h30.77v-126.3h124.84v-30.77H216.85v157.07ZM120-200v-560h720v560H120Z" />
+    </svg>
+  )
+}

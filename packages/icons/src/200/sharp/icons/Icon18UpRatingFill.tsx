@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function Icon18UpRatingFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M350.62-372.31h30.76v-215.38h-92.23v30.77h61.47v184.61Zm124.61 0H626v-215.38H475.23v215.38ZM506-401.85v-64h89.23v64H506Zm0-92.3v-64h89.23v64H506ZM160-160v-640h640v640H160Z" />
+    </svg>
+  )
+}
