@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function TrendingUp({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M132.62-258.08 100-290.69l271.23-271 165.08 165.08L785-643.77H649.54v-45.38H860v210.46h-44.77v-131.85L535.69-330.62 370.62-495.69l-238 237.61Z" />
+    </svg>
+  )
+}

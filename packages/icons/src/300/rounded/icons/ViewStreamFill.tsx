@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function ViewStreamFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M197.69-220q-23.5 0-40.59-17.1-17.1-17.09-17.1-40.59v-121.93q0-23.5 17.1-40.59 17.09-17.1 40.59-17.1h564.62q23.5 0 40.59 17.1 17.1 17.09 17.1 40.59v121.93q0 23.5-17.1 40.59-17.09 17.1-40.59 17.1H197.69Zm0-282.69q-23.5 0-40.59-17.1-17.1-17.09-17.1-40.59v-121.93q0-23.5 17.1-40.59 17.09-17.1 40.59-17.1h564.62q23.5 0 40.59 17.1 17.1 17.09 17.1 40.59v121.93q0 23.5-17.1 40.59-17.09 17.1-40.59 17.1H197.69Z" />
+    </svg>
+  )
+}

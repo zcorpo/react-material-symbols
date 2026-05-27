@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function BatteryFullAlt({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M157.85-297.69v-108.46H100v-147.7h57.85v-108.46H860v364.62H157.85Z" />
+    </svg>
+  )
+}

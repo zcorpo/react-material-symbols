@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function DatasetFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M297.31-297.31h125.38v-125.38H297.31v125.38Zm240 0h125.38v-125.38H537.31v125.38Zm-240-240h125.38v-125.38H297.31v125.38Zm240 0h125.38v-125.38H537.31v125.38ZM197.69-140q-23.53 0-40.61-17.08T140-197.69v-564.62q0-23.53 17.08-40.61T197.69-820h564.62q23.53 0 40.61 17.08T820-762.31v564.62q0 23.53-17.08 40.61T762.31-140H197.69Z" />
+    </svg>
+  )
+}

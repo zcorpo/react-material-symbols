@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function DualScreenFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M180-215.46V-860l360 134.92v653.85L180-215.46ZM605.38-220v-549.54L364.16-860H780v640H605.38Z" />
+    </svg>
+  )
+}

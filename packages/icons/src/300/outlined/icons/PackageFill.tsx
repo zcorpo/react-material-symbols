@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function PackageFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M197.69-140q-23.53 0-40.61-17.08T140-197.69v-564.62q0-23.53 17.08-40.61T197.69-820h564.62q23.53 0 40.61 17.08T820-762.31v564.62q0 23.53-17.08 40.61T762.31-140H197.69ZM280-290h200v-60H280v60Zm60-178.69 140-70 140 70v-305.92H340v305.92Z" />
+    </svg>
+  )
+}

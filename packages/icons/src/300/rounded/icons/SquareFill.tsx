@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function SquareFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M197.69-140q-23.75 0-40.72-16.97T140-197.69v-564.62q0-23.75 16.97-40.72T197.69-820h564.62q23.75 0 40.72 16.97T820-762.31v564.62q0 23.75-16.97 40.72T762.31-140H197.69Z" />
+    </svg>
+  )
+}

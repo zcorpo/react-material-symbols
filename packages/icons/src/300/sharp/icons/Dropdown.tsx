@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function Dropdown({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M482.54-482.54h238.08v-238.08H482.54v238.08ZM140-140v-680h680v680H140Zm45.39-45.39h589.22v-589.22H185.39v589.22Zm0 0v-589.22 589.22Z" />
+    </svg>
+  )
+}

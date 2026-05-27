@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function LineEndCircle({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M755.58-364.42q47.5-47.5 47.5-115.58t-47.5-115.58q-47.5-47.5-115.58-47.5t-115.58 47.5q-47.5 47.5-47.5 115.58t47.5 115.58q47.5 47.5 115.58 47.5t115.58-47.5ZM640-271.54q-80.85 0-139.69-53.58-58.85-53.57-67.15-132.19H101.54v-45.38h331.62q8.3-78.62 67.15-132.19 58.84-53.58 139.69-53.58 86.92 0 147.69 60.77 60.77 60.77 60.77 147.69 0 86.92-60.77 147.69-60.77 60.77-147.69 60.77ZM640-480Z" />
+    </svg>
+  )
+}

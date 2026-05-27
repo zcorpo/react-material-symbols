@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function PlayPauseFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M210-345.85v-268.3L408.08-480 210-345.85ZM544.62-330v-300H590v300h-45.38Zm160 0v-300H750v300h-45.38Z" />
+    </svg>
+  )
+}

@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function Download2Fill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M180-100v-45.39h600V-100H180Zm299-155.39L226.69-584.23h145.39V-860h214.23v275.77h146L479-255.39Z" />
+    </svg>
+  )
+}

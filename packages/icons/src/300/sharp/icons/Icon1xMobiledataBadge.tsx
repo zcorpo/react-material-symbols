@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function Icon1xMobiledataBadge({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M291.62-290H337v-380H210v45.38h81.62V-290Zm177.61 0H520l90-158.23L701.62-290h50.53L638.31-489.08 741.69-670h-50.38l-80.93 142.23L528.85-670h-51.16l104.39 181.69L469.23-290ZM60-140v-680h840v680H60Zm45.39-45.39h749.22v-589.22H105.39v589.22Zm0 0v-589.22 589.22Z" />
+    </svg>
+  )
+}

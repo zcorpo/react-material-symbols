@@ -1,0 +1,9 @@
+import type { SVGProps } from 'react'
+
+export default function WbTwilight2Fill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
+      <path d="M90-177.31v-45.38h780v45.38H90ZM222.31-340q6.92-102 80.92-171T480-580q102.77 0 176.77 69 74 69 80.92 171H222.31Z" />
+    </svg>
+  )
+}
