@@ -10,7 +10,7 @@ function makeCombo(w: string, s: string) {
       `src/${w}/${s}/index.ts`,
     ],
     outDir: `dist/${w}/${s}`,
-    bundle: false,
+    bundle: true,
     format: ['esm', 'cjs'],
     dts: false,
     external: ['react', 'react/jsx-runtime'],

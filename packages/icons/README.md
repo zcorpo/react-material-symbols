@@ -1,125 +1,147 @@
 # @zcorpo/react-material-symbols
 
-Google's [Material Symbols](https://fonts.google.com/icons) as React SVG components.
+[![npm](https://img.shields.io/npm/v/@zcorpo/react-material-symbols)](https://www.npmjs.com/package/@zcorpo/react-material-symbols)
+[![license](https://img.shields.io/npm/l/@zcorpo/react-material-symbols)](https://github.com/zcorpo/react-material-symbols/blob/main/LICENSE)
 
-- No font loading or web requests at runtime
-- Full tree shaking — only icons you import are bundled
-- All 7,758 icons across 7 weights × 3 styles = 21 combinations
-- `size` prop, full `SVGProps` passthrough, `fill="currentColor"`
+**7,758 [Material Symbols](https://fonts.google.com/icons) icons as React SVG components.**
+
+- No font loading, no web requests — pure inline SVG
+- Full tree shaking — production bundles include only what you import
+- 21 combinations: 7 weights × 3 styles (`outlined` / `rounded` / `sharp`)
+- Every icon ships with a filled variant (`SearchFill`, `HomeFill`, …)
+- `size` prop, full `SVGProps` passthrough, color via CSS `currentColor`
 - ESM + CJS, TypeScript declarations included
 
 ## Installation
 
 ```sh
 npm install @zcorpo/react-material-symbols
-# or
-pnpm add @zcorpo/react-material-symbols
-# or
-yarn add @zcorpo/react-material-symbols
+# pnpm add @zcorpo/react-material-symbols
+# yarn add @zcorpo/react-material-symbols
 ```
 
-## Usage
-
-Pick a weight (`100`–`700`) and style (`outlined` | `rounded` | `sharp`):
+## Quick start
 
 ```tsx
 import { Search, Home, Settings } from '@zcorpo/react-material-symbols/400/rounded'
 
 export default function App() {
-  return <Search size={24} className="icon" />
+  return (
+    <nav>
+      <Home size={24} />
+      <Search size={24} style={{ color: 'royalblue' }} />
+      <Settings size={24} className="icon" aria-label="Settings" />
+    </nav>
+  )
 }
 ```
 
-### Fill variants
+## Import paths
 
-Every icon ships with a filled variant suffixed with `Fill`:
-
-```tsx
-import { Search, SearchFill } from '@zcorpo/react-material-symbols/400/rounded'
-```
-
-### All available import paths
+Choose a weight (`100`–`700`) and style:
 
 ```ts
-import { ... } from '@zcorpo/react-material-symbols/100/outlined'
-import { ... } from '@zcorpo/react-material-symbols/100/rounded'
-import { ... } from '@zcorpo/react-material-symbols/100/sharp'
-
-import { ... } from '@zcorpo/react-material-symbols/200/outlined'
-// ...
-
-import { ... } from '@zcorpo/react-material-symbols/400/rounded'  // recommended default
-
-// ...through 700/sharp
+import { ... } from '@zcorpo/react-material-symbols/400/outlined'
+import { ... } from '@zcorpo/react-material-symbols/400/rounded'   // recommended default
+import { ... } from '@zcorpo/react-material-symbols/400/sharp'
 ```
 
-### Props
+All 21 paths follow the same pattern — swap weight and style as needed:
+
+```
+/100/outlined   /100/rounded   /100/sharp
+/200/outlined   /200/rounded   /200/sharp
+/300/outlined   /300/rounded   /300/sharp
+/400/outlined   /400/rounded   /400/sharp  ← default export (main/module)
+/500/outlined   /500/rounded   /500/sharp
+/600/outlined   /600/rounded   /600/sharp
+/700/outlined   /700/rounded   /700/sharp
+```
+
+## Fill variants
+
+Every icon has a pre-built filled variant with a `Fill` suffix:
+
+```tsx
+import { Favorite, FavoriteFill, Star, StarFill } from '@zcorpo/react-material-symbols/400/rounded'
+
+function LikeButton({ liked }: { liked: boolean }) {
+  return liked ? <FavoriteFill size={24} style={{ color: 'red' }} /> : <Favorite size={24} />
+}
+```
+
+## Props
 
 | Prop | Type | Default | Description |
 |------|------|---------|-------------|
 | `size` | `number` | `24` | Sets both `width` and `height` |
-| `...props` | `SVGProps<SVGSVGElement>` | — | All standard SVG attributes |
+| `...props` | `SVGProps<SVGSVGElement>` | — | All standard SVG attributes (`className`, `style`, `aria-*`, etc.) |
 
-Icons render with `fill="currentColor"`, so color is controlled via CSS `color`.
+Icons render with `fill="currentColor"` — color is set via the CSS `color` property:
 
 ```tsx
-<Search size={32} style={{ color: 'blue' }} aria-label="Search" />
+<Search size={32} className="text-blue-500" />
+<Search size={32} style={{ color: '#1a73e8' }} />
 ```
 
-### Weight reference
+## Weight reference
 
-| Weight | Appearance |
-|--------|-----------|
-| 100 | Thin |
-| 200 | Extra-light |
-| 300 | Light |
-| 400 | Regular (default) |
-| 500 | Medium |
-| 600 | Semi-bold |
-| 700 | Bold |
+| Weight | Style |
+|--------|-------|
+| `100` | Thin |
+| `200` | Extra-light |
+| `300` | Light |
+| `400` | Regular (recommended) |
+| `500` | Medium |
+| `600` | Semi-bold |
+| `700` | Bold |
+
+## Framework examples
+
+### Next.js (App Router)
+
+```tsx
+// app/components/Nav.tsx
+import { Home, Search, Settings } from '@zcorpo/react-material-symbols/400/rounded'
+
+export function Nav() {
+  return (
+    <nav className="flex gap-4">
+      <Home size={24} />
+      <Search size={24} />
+      <Settings size={24} />
+    </nav>
+  )
+}
+```
+
+### Vite / React
+
+```tsx
+import { ArrowBack, Check } from '@zcorpo/react-material-symbols/400/outlined'
+
+function SuccessBanner() {
+  return (
+    <div>
+      <Check size={20} style={{ color: 'green' }} />
+      Done
+    </div>
+  )
+}
+```
 
 ## Icons starting with a digit
 
-A small number of icons have names that start with a digit (e.g. `10k`, `360`). These are exported with an `Icon` prefix to keep them valid identifiers:
+Icons whose original names start with a digit are prefixed with `Icon` to produce valid identifiers:
 
 ```ts
 import { Icon10k, Icon360, Icon1kPlus } from '@zcorpo/react-material-symbols/400/rounded'
 ```
 
-## Contributing / Staying up to date
+## Tree shaking
 
-SVG source comes from [`marella/material-symbols`](https://github.com/marella/material-symbols). To pull the latest icons:
-
-```sh
-# Sync all 21 combinations (skips already-synced ones)
-pnpm sync
-
-# Re-sync a specific combination
-pnpm sync --weight=400 --style=rounded
-
-# Force re-sync everything
-pnpm sync --force
-
-# Then rebuild
-pnpm build
-```
-
-### Repo structure
-
-```
-react-material-symbols/
-├── packages/icons/          # the published package
-│   ├── src/
-│   │   └── {weight}/{style}/
-│   │       ├── icons/       # one .tsx file per icon
-│   │       └── index.ts     # barrel re-exports
-│   └── dist/                # built output (gitignored)
-├── scripts/
-│   ├── sync-icons.ts        # fetches SVGs and generates components
-│   └── build-icons.sh       # sequential build runner (one combination at a time)
-└── package.json             # workspace root
-```
+This package is marked `"sideEffects": false`. Modern bundlers (webpack 5+, Vite/Rollup, esbuild) will include only the icons you import in production builds. For optimal results, import named exports from a specific subpath rather than dynamic lookups.
 
 ## License
 
-MIT
+MIT — SVG artwork from [google/material-design-icons](https://github.com/google/material-design-icons) (Apache 2.0).
