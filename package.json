@@ -4,6 +4,7 @@
   "scripts": {
     "sync": "tsx scripts/sync-icons.ts",
     "patch-types": "tsx scripts/patch-return-types.ts",
+    "generate-dts": "tsx scripts/generate-dts.ts",
     "build": "sh scripts/build-icons.sh"
   },
   "pnpm": {

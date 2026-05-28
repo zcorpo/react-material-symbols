@@ -238,8 +238,7 @@
   ],
   "scripts": {
     "build": "tsup",
-    "dev": "tsup --watch",
-    "prepublishOnly": "tsup"
+    "dev": "tsup --watch"
   },
   "peerDependencies": {
     "react": ">=17"

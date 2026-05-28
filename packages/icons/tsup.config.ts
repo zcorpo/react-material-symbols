@@ -8,12 +8,11 @@ function makeCombo(w: string, s: string) {
   return defineConfig({
     entry: [
       `src/${w}/${s}/index.ts`,
-      `src/${w}/${s}/icons/*.tsx`,
     ],
     outDir: `dist/${w}/${s}`,
     bundle: false,
     format: ['esm', 'cjs'],
-    dts: true,
+    dts: false,
     external: ['react', 'react/jsx-runtime'],
     clean: false,
     sourcemap: false,

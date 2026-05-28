@@ -1,35 +1,55 @@
 #!/usr/bin/env sh
 set -e
 
-ICONS_DIR="$(cd "$(dirname "$0")/../packages/icons" && pwd)"
-PARALLEL=${BUILD_PARALLEL:-4}
+ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+ICONS_DIR="$ROOT/packages/icons"
+BINDIR="$ICONS_DIR/node_modules/.bin"
 
-rm -rf "$ICONS_DIR/dist"
-printf 'Cleaned dist/\n\n'
+# Resolve the actual esbuild Go binary from the wrapper script
+_rel=$(grep '".*esbuild"' "$BINDIR/esbuild" 2>/dev/null | head -1 \
+  | sed "s|.*\"\\\$basedir/\([^\"]*\)\".*|\1|")
+ESBUILD_BIN="$(cd "$BINDIR" && cd "$(dirname "$_rel")" && pwd)/$(basename "$_rel")"
 
-tmp=$(mktemp)
-trap 'rm -f "$tmp"' EXIT
+if [ ! -x "$ESBUILD_BIN" ]; then
+  # Fallback: find the Go binary directly in the pnpm store
+  ESBUILD_BIN=$(find "$ROOT/node_modules/.pnpm" -path "*/esbuild/bin/esbuild" \
+    -type f -perm +0111 2>/dev/null | head -1)
+fi
 
-for w in 100 200 300 400 500 600 700; do
-  for s in outlined rounded sharp; do
-    test -f "$ICONS_DIR/src/$w/$s/index.ts" || continue
-    printf '%s/%s\n' "$w" "$s" >> "$tmp"
-  done
-done
-
-count=$(wc -l < "$tmp" | tr -d ' ')
-if [ "$count" -eq 0 ]; then
-  printf 'No icon sets found in src/. Run: pnpm sync\n'
+if [ ! -x "$ESBUILD_BIN" ]; then
+  printf 'ERROR: could not locate esbuild binary\n' >&2
   exit 1
 fi
 
-printf 'Building %s combination(s) with %d parallel jobs…\n\n' "$count" "$PARALLEL"
+rm -rf "$ICONS_DIR/dist"
+printf 'Cleaned dist/\n\nesbuild: %s\n\n' "$ESBUILD_BIN"
 
-export ICONS_DIR
-xargs -P "$PARALLEL" -I{} sh -c '
-  printf "Building {}…\n"
-  cd "$ICONS_DIR" && BUILD_COMBO="{}" NODE_OPTIONS="--max-old-space-size=8192" node_modules/.bin/tsup > /dev/null 2>&1
-  printf "Done    {}\n"
-' < "$tmp"
+# Build icon files in batches of 500 (ESM + CJS in parallel, low memory)
+build_icons() {
+  src="$ICONS_DIR/src/$1/$2/icons"
+  dst="$ICONS_DIR/dist/$1/$2/icons"
+  find "$src" -name "*.tsx" | xargs -n 500 "$ESBUILD_BIN" \
+    --format=esm --jsx=automatic --target=es2020 \
+    --out-extension:.js=.mjs --outbase="$src" --outdir="$dst" &
+  find "$src" -name "*.tsx" | xargs -n 500 "$ESBUILD_BIN" \
+    --format=cjs --jsx=automatic --target=es2020 \
+    --outbase="$src" --outdir="$dst" &
+  wait
+}
 
-printf '\nBuilt %s combination(s).\n' "$count"
+built=0
+for w in 100 200 300 400 500 600 700; do
+  for s in outlined rounded sharp; do
+    test -f "$ICONS_DIR/src/$w/$s/index.ts" || continue
+    printf 'Building %s/%s…\n' "$w" "$s"
+    mkdir -p "$ICONS_DIR/dist/$w/$s/icons"
+    (cd "$ICONS_DIR" && BUILD_COMBO="$w/$s" node_modules/.bin/tsup)
+    build_icons "$w" "$s"
+    built=$((built + 1))
+  done
+done
+
+printf '\nGenerating type declarations…\n'
+node --import tsx/esm "$ROOT/scripts/generate-dts.ts"
+
+printf '\nBuilt %d combination(s).\n' "$built"
