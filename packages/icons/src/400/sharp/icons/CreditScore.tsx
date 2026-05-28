@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function CreditScore({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function CreditScore({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M140-640h680v-100H140v100ZM80-160v-640h800v299H140v281h233v60H80Zm518 80L428-250l43-43 127 127 240-240 42 44L598-80ZM140-220v-158 130-492 520Z" />

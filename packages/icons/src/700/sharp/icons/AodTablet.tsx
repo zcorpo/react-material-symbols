@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function AodTablet({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function AodTablet({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M17-135v-691h926v691H17Zm124-596h-30v502h30v-502Zm60 502h558v-502H201v502Zm618-502v502h30v-502h-30Zm0 0h30-30Zm-678 0h-30 30Zm162 238v-74h354v74H303Zm40 120v-74h274v74H343Z" />

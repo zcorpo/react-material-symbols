@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function FormatTextClip({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function FormatTextClip({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M181.54-170v-620h45.38v620h-45.38Zm551.54 0v-287.31H336.92v-45.38h396.16V-790h45.38v620h-45.38Z" />

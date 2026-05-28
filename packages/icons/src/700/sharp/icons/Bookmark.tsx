@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function Bookmark({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function Bookmark({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M175-82v-789h611v789L480-212.17 175-82Zm94-143 211-88.16L691-225v-551H269v551Zm0-551h422-422Z" />

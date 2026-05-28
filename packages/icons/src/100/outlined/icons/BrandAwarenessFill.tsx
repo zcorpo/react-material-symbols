@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function BrandAwarenessFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function BrandAwarenessFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M627-470v-22h115v22H627Zm37 256-93-70 14-17 93 70-14 17Zm-83-450-14-16 93-70 14 17-93 69ZM178-412v-136h130l126-126v388L308-412H178Z" />

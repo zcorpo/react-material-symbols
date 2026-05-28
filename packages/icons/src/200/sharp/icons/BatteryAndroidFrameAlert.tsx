@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function BatteryAndroidFrameAlert({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function BatteryAndroidFrameAlert({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M822.73-322.88q-7.35-7.49-7.35-17.27 0-9.77 7.5-17.12 7.49-7.35 17.27-7.35 9.77 0 17.12 7.5 7.35 7.49 7.35 17.27 0 9.77-7.5 17.12-7.49 7.35-17.27 7.35-9.77 0-17.12-7.5Zm1.89-107.89v-224.61h30.76v224.61h-30.76ZM80-280v-400h658.46v30.77H110.77v338.46h631.92q5.16 12.15 15.58 20.69 10.42 8.54 23.27 10.08H80Zm81.54-81.54v-236.92h576.92v236.92H161.54Z" />

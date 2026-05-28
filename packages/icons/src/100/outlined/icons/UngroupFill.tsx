@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function UngroupFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function UngroupFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="m348-333-15-15 201-201H349v-22h222v222h-22v-185L348-333Zm418-147v-286H480v-22h308v308h-22ZM226-172q-22.77 0-38.39-15.61Q172-203.23 172-226v-562h22v562q0 12 10 22t22 10h562v22H226Z" />

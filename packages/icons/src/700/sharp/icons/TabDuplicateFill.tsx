@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function TabDuplicateFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function TabDuplicateFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M224-224v-682h682v682H224Zm0 169v-94h95v94h-95Zm-75-676H55v-95h94v95ZM393-55v-94h94v94h-94Zm169 0v-94h95v94h-95ZM55-55v-94h94v94H55Zm0-169v-95h94v95H55Zm0-169v-94h94v94H55Zm0-169v-95h94v95H55Zm676 413h95v94h-95v-94ZM525-643h287v-169H525v169Z" />

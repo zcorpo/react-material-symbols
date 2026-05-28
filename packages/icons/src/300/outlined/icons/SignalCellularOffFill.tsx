@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function SignalCellularOffFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function SignalCellularOffFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M845.38-49.39 794.77-100H100l347.39-347.39-316.85-316.84 32.61-32.62L878-82l-32.62 32.61ZM860-192.93 526.46-526.46 860-860v667.07Z" />

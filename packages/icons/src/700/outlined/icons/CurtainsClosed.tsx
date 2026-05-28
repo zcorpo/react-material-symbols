@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function CurtainsClosed({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function CurtainsClosed({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M46-86v-95h80v-693h708v693h80v95H46Zm175-95h130v-598H221v598Zm209 0h100v-598H430v598Zm179 0h130v-598H609v598Zm-388 0v-598 598Zm518 0v-598 598Z" />

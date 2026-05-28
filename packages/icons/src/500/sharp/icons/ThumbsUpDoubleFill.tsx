@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function ThumbsUpDoubleFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function ThumbsUpDoubleFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="m693.63-283.17 43.96-103.86v-186.4H496.83l16-113-32.87-32.87 166.91-166.92 52.63 52.63-22 152h249.67v114.35L806.5-283.17H693.63ZM32.83-114.02v-399.41h64.54v399.41H32.83Zm124.54 0v-362.66L396.2-718.07l52.63 52.64-21 152h249.76v114.58L556.97-114.02h-399.6Z" />

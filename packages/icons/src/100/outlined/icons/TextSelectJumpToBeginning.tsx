@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function TextSelectJumpToBeginning({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function TextSelectJumpToBeginning({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M754-754v-34h34v34h-34Zm0 582v-34h34v34h-34ZM609-754v-34h34v34h-34Zm0 582v-34h34v34h-34ZM463-754v-34h34v34h-34Zm-145 0v-34h34v34h-34Zm0 582v-34h34v34h-34Zm-146 0v-616h22v616h-22Zm354-189L407-480l119-119 16 15-92 93h338v22H450l92 93-16 15Zm-63 189v-34h34v34h-34Z" />

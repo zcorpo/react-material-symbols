@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function HourglassTop({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function HourglassTop({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M317-149h326v-118q0-68-47.5-115T480-429q-68 0-115.5 47T317-267v118ZM135-55v-94h88v-118q0-68 35.5-125t95.5-88q-60-32-95.5-89T223-694v-117h-88v-95h691v95h-88v117q0 68-35.5 125T607-480q60 31 95.5 88T738-267v118h88v94H135Z" />

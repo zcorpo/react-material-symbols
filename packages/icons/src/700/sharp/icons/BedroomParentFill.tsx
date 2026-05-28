@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function BedroomParentFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function BedroomParentFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M189-271h87v-63h408v63h87v-257h-48v-148H237v148h-48v257Zm316-257v-76h145v76H505Zm-195 0v-76h145v76H310Zm-34 122v-71h408v71H276ZM55-55v-851h851v851H55Z" />

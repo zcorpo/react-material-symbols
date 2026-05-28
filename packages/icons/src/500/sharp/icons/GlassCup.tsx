@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function GlassCup({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function GlassCup({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="m203.46-74.02-89.44-812.2h732.2l-89.44 812.2H203.46Zm50.13-172.63 11.28 104.5h430.5l11.28-104.5H253.59Zm-8.2-69.13h469.22l55.28-502.07H190.11l55.28 502.07Zm8.2 173.63h453.06-453.06Z" />

@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function SyncSavedLocallyFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function SyncSavedLocallyFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="m437-387 236-237-66-68-170 170-85-84-67 67 152 152ZM17-83v-72h926v72H17Zm38-132v-651h851v651H55Z" />

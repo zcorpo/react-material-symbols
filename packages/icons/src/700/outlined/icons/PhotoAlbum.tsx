@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function PhotoAlbum({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function PhotoAlbum({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M229-55q-39.05 0-66.52-27.47Q135-109.95 135-149v-662q0-39.46 27.48-67.23Q189.95-906 229-906h502q39.46 0 67.23 27.77Q826-850.46 826-811v662q0 39.05-27.77 66.53Q770.46-55 731-55H229Zm0-94h502v-662h-49v266l-97-56-97 56v-266H229v662Zm55-88h397L553-408 448-272l-70-88-94 123Zm-55 88v-662 662Zm259-396 97-56 97 56-97-56-97 56Z" />

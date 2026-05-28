@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function FullscreenExit({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function FullscreenExit({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M318-172v-146H172v-22h168v168h-22Zm303 0v-168h168v22H643v146h-22ZM172-620v-22h146v-146h22v168H172Zm449 0v-168h22v146h146v22H621Z" />

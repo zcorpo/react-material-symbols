@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function LocalPizzaFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function LocalPizzaFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M480-80 80-685q86-72 188-113.5T480-840q110 0 212 41.5T880-685L480-80Zm-71-501.06q16-16.06 16-39T408.94-659q-16.06-16-39-16T331-658.94q-16 16.06-16 39T331.06-581q16.06 16 39 16T409-581.06Zm110 215q16-16.06 16-39T518.94-444q-16.06-16-39-16T441-443.94q-16 16.06-16 39T441.06-366q16.06 16 39 16T519-366.06Z" />

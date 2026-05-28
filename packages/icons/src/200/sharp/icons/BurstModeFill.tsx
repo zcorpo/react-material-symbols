@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function BurstModeFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function BurstModeFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M70.77-240v-480h30.77v480H70.77ZM240-240v-480h30.77v480H240Zm169.23 0v-480h480v480h-480Zm98.46-127.77h284.77L708.62-480l-79.39 104.62-57.92-77.39-63.62 85Z" />

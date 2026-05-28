@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function TextRotateVertical({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function TextRotateVertical({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="m456-320 165-440h58l165 440h-55l-44-122H555l-44 122h-55Zm114-166h160l-78-222h-4l-78 222ZM226-160 100-286l42-42 54 51v-563h60v563l54-51 42 42-126 126Z" />

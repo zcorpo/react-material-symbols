@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function AddDiamondFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function AddDiamondFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M439-316h82v-122h123v-82H521v-123h-82v123H317v82h122v122Zm41 261q-18 0-35-7t-32-20L82-413q-14-14-20-31t-6-35q0-18 6-35.5T82-545l331-333q14-14 31.5-20.5T480-905q18 0 35 6.5t30 20.5l335 333q14 13 20 30.5t6 35.5q0 18-6 35t-20 31L545-82q-13 13-30 20t-35 7Z" />

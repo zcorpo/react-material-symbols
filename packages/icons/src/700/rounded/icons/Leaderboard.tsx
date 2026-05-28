@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function Leaderboard({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function Leaderboard({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M149-189h158v-342H149v342Zm252 0h158v-582H401v582Zm252 0h158v-262H653v262Zm-598 0v-342q0-40.21 27.1-67.61Q109.2-626 149-626h158v-145q0-40.21 27.63-67.61Q362.25-866 401-866h158q38.75 0 66.38 27.39Q653-811.21 653-771v225h158q40.21 0 67.61 27.39Q906-491.21 906-451v262q0 39.8-27.39 66.9Q851.21-95 811-95H149q-39.8 0-66.9-27.1Q55-149.2 55-189Z" />

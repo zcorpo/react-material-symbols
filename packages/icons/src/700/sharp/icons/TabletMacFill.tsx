@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function TabletMacFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function TabletMacFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M97-17v-926h766v926H97Zm94-244h578v-498H191v498Zm313 126.32q9-8.67 9-21.5 0-12.82-9.18-21.32-9.17-8.5-21.5-8.5-12.32 0-20.82 8.68-8.5 8.67-8.5 21.5 0 12.82 8.68 21.32 8.67 8.5 21 8.5 12.32 0 21.32-8.68Z" />

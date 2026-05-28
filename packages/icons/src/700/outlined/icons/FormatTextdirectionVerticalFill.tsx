@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function FormatTextdirectionVerticalFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function FormatTextdirectionVerticalFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M205-222v-207q-76-6-130.5-56T20-608q0-74 54.5-125.5T205-785h339v95h-65v468h-95v-468h-85v468h-94Zm551 87L574-319l66-66 69 71v-471h95v471l69-71 67 66-184 184Z" />

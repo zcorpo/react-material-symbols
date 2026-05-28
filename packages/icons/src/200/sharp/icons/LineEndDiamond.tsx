@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function LineEndDiamond({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function LineEndDiamond({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M600-333.46 746.54-480 600-626.54 453.46-480 600-333.46Zm0 44.23L424.61-464.62H123.08v-30.76h301.53L600-670.77 790.77-480 600-289.23ZM600-480Z" />

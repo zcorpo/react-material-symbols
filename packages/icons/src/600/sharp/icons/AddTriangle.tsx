@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function AddTriangle({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function AddTriangle({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M25.87-145.87 480-934.7l454.7 788.83H25.87Zm130.57-75.26h647.69L480-784.17 156.44-221.13Zm286.21-71.52h75.26v-74.52h75.52v-75.26h-75.52v-75.53h-75.26v75.53H367.7v75.26h74.95v74.52Zm37.92-111.87Z" />

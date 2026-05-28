@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function ScreenshotFrameFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function ScreenshotFrameFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M252-683v-145h145v22H274v123h-22Zm0 551v-145h22v123h123v22H252Zm434-551v-123H563v-22h145v145h-22ZM563-132v-22h123v-123h22v145H563Z" />

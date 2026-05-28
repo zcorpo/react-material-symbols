@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function SwitchAccess3Fill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function SwitchAccess3Fill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="m403-367-14-16 85-86H132v-22h342l-85-86 14-16 113 113-113 113ZM132-597v-98h98v98h-98Zm0 331v-97h98v97h-98Zm302 134v-133l214-215-214-215v-133h394v190h37v129h-37v377H434Z" />

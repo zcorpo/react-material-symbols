@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function AcuteFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function AcuteFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M623-153q-137 0-232.5-95.68T295-480.17q0-136.99 95.5-232.41Q486-808 623-808q136.16 0 231.58 95.3Q950-617.39 950-480.11 950-344 854.58-248.5T623-153Zm87-180 61-61-105-104.57V-639h-87v176l131 130ZM50-597v-87h205v87H50ZM10-437v-87h245v87H10Zm40 160v-87h205v87H50Z" />

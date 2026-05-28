@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function TransitionFadeFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function TransitionFadeFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M120-120v-720h280v720H120Zm320-640v-80h80v80h-80Zm80 80v-80h80v80h-80Zm80-80v-80h80v80h-80Zm160 0v-80h80v80h-80Zm-80 80v-80h80v80h-80Zm-240 80v-80h80v80h-80Zm160 0v-80h80v80h-80Zm160 0v-80h80v80h-80Zm-240 80v-80h80v80h-80Zm160 0v-80h80v80h-80Zm-240 80v-80h80v80h-80Zm160 0v-80h80v80h-80Zm160 0v-80h80v80h-80Zm-240 80v-80h80v80h-80Zm160 0v-80h80v80h-80Zm-240 80v-80h80v80h-80Zm160 0v-80h80v80h-80Zm160 0v-80h80v80h-80Zm-240 80v-80h80v80h-80Zm160 0v-80h80v80h-80Zm-240 80v-80h80v80h-80Zm160 0v-80h80v80h-80Zm160 0v-80h80v80h-80Z" />

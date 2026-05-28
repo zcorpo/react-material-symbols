@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function ArrowDownwardAltFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function ArrowDownwardAltFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M479.38-253.85 252.23-480.62l32-32.61 173.08 170.46v-405h45.38v406.62l171.46-171.46 32 31.99-226.77 226.77Z" />

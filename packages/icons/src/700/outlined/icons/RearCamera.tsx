@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function RearCamera({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function RearCamera({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="m230-328 152-152-152-152-55 55 56 57H55v80h176l-56 56 55 56Zm470.5-296.68q12.5-12.67 12.5-31 0-18.32-12.68-30.82-12.67-12.5-31-12.5-18.32 0-30.82 12.68-12.5 12.67-12.5 31 0 18.32 12.68 30.82 12.67 12.5 31 12.5 18.32 0 30.82-12.68ZM520-189h291v-582H520v582ZM149-95q-39.05 0-66.53-27.47Q55-149.95 55-189v-176h94v176h291v-582H149v176H55v-176q0-39.46 27.47-67.23Q109.95-866 149-866h662q39.46 0 67.23 27.77Q906-810.46 906-771v582q0 39.05-27.77 66.53Q850.46-95 811-95H149Zm291-676v582-582Z" />

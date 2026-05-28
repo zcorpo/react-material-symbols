@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function EditNoteFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function EditNoteFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M200-404.62v-30.76h289.23v30.76H200Zm0-162.69v-30.77h453.85v30.77H200Zm0-161.92V-760h453.85v30.77H200ZM529.23-200v-88.38l238.39-237.39L855-437.62 617.62-200h-88.39Zm238.39-199.38 37-38.24-37-37.76-38 38 38 38Z" />

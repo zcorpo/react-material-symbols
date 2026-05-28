@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function LightGroup({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function LightGroup({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M149-132v-22h262v22H149Zm531.36-41q-22.36 0-37.86-16T627-227H494v-24q0-63 53.5-105T669-401v-373h22v373q69 3 122.5 45T867-251v24H734q0 22-15.28 38-15.29 16-38.36 16ZM269-226v-294H96l68-256h233l68 256H291v294h-22Zm248-22h327q-4-60-52.71-96t-111.53-36Q618-380 569.5-344 521-308 517-248ZM124-542h312l-56-212H182l-58 212Zm156-106Zm400 334Z" />

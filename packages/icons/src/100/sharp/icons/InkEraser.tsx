@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function InkEraser({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function InkEraser({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M658-234h190v22H636l22-22Zm-481 22-84-85 474-502 230 235-336 352H177Zm275-22 317-331-200-204-446 470 64 65h265Zm28-246Z" />

@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function TableBarFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function TableBarFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="m209-143 94-234h130v-116q-167-7-271.5-51.5T57-654q0-70 121-116.5T480-817q180 0 301.5 46.5T903-654q0 65-104.5 109.5T527-493v116h130l94 234h-97l-55-140H362l-56 140h-97Z" />

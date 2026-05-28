@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function DoorSlidingFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function DoorSlidingFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M398.5-459.5Q409-470 409-484t-10.5-24.5Q388-519 373.5-519T349-508.5Q339-498 339-484t10 24.5q10 10.5 24.5 10.5t25-10.5Zm214 0Q623-470 623-484t-10.5-24.5Q602-519 587.5-519T563-508.5Q553-498 553-484t10 24.5q10 10.5 24.5 10.5t25-10.5ZM119-95q-20 0-33.5-13.5T72-142q0-21 11.5-38t35.5-9h22v-582q0-40 27-67.5t67-27.5h230v677h30v-677h230q40 0 67.5 27.5T820-771v582h21q20 0 33.5 13.5T888-142q0 20-13.5 33.5T841-95H119Z" />

@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function TransitionPushFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function TransitionPushFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M359-212v-21h86v-493h-86v-22h108v536H359Zm208 0v-536h301v536H567ZM241-369l-16-16 87-84H92v-22h220l-87-83 14-15 115 109-113 111Z" />

@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function AccountTreeFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function AccountTreeFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M627-146v-122H469v-403H333v123H106v-266h227v121h294v-121h227v266H627v-123H491v381h136v-123h227v267H627Z" />

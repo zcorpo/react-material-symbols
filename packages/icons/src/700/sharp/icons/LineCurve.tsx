@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function LineCurve({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function LineCurve({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M713-143q0-118.17-45-222.09Q623-469 546-546T365.09-668Q261.17-713 143-713v-94q138 0 258.67 52.2 120.68 52.2 210.79 142.13 90.12 89.93 142.33 210.92Q807-280.76 807-143h-94Z" />

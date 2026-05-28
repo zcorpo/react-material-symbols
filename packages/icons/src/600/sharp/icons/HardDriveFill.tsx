@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function HardDriveFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function HardDriveFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M717.2-339.41q14.5-14.5 14.5-35.5t-14.5-35.5q-14.5-14.5-35.5-14.5t-35.5 14.5q-14.5 14.5-14.5 35.5t14.5 35.5q14.5 14.5 35.5 14.5t35.5-14.5ZM893-564.91H67.56l162.09-208.66h501.26L893-564.91ZM67.56-188.13v-316.78H893v316.78H67.56Z" />

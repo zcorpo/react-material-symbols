@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function LineAxis({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function LineAxis({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="m140-185-46-46 300-300 160 161 93-104-249-238-258 258-46-46 300-300 293 280 165-185 42 41-164 185 163 156-43 43-160-153-136 153-160-159-254 254Z" />

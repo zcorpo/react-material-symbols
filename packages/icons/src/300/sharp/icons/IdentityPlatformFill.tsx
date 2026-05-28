@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function IdentityPlatformFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function IdentityPlatformFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="m480-136.77 214.38-130q-46.84-35.15-101.34-55.54-54.5-20.38-113.04-20.38-58.54 0-113.04 20.58-54.5 20.57-102.34 54.73L480-136.77Zm86.81-356.42q35.88-35.89 35.88-86.81t-35.88-86.81q-35.89-35.88-86.81-35.88t-86.81 35.88q-35.88 35.89-35.88 86.81t35.88 86.81q35.89 35.88 86.81 35.88t86.81-35.88ZM480-83.46 140-291.15v-377.7l340-207.69 340 207.69v377.7L480-83.46Z" />

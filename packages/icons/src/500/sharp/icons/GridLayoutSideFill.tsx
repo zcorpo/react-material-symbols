@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function GridLayoutSideFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function GridLayoutSideFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M834.02-114.02v-732.2h12.2v732.2h-12.2Zm-715.45-4.55H530v-722.86H118.57v722.86Zm722.86 0v-722.86H590v722.86h251.43Z" />

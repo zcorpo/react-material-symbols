@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function GiteFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function GiteFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M100-220v-335.61l149.39-152.47h60.77V-780h45.38v71.92h355.07L860-555.61V-220H100Zm520-45.39h194.61v-270.99L717.69-636 620-535.61v270.22Zm-474.61 0h429.22v-233.46H145.39v233.46Z" />

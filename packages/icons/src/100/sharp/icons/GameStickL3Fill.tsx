@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function GameStickL3Fill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function GameStickL3Fill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="m480-745-62-83h124l-62 83Zm160 440v174H319v-174q-84-25-135.5-69.5T132-476q0-80 101.5-136.5T480-669q145 0 246.5 56.5T828-476q0 57-51.5 102T640-305Zm-208-66h112v-26h-87v-182h-25v208Z" />

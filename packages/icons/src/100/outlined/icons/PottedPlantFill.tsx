@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function PottedPlantFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function PottedPlantFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M365-132q-19 0-33-11.5T312-172l-42-165h420l-42 165q-6 17-20 28.5T596-132H365Zm115-473q11-69 63-120.5T664-788q-10 65-59.5 116T491-606v101h279v89q0 22-16 38t-38 16H246q-22 0-38-16t-16-38v-89h277v-101q-64-15-113-66t-60-116q69 11 121 62.5T480-605Z" />

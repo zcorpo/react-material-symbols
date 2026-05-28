@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function ProductionQuantityLimitsFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function ProductionQuantityLimitsFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M239-98.58q-21-21.21-21-51t21.21-50.79q21.21-21 51-21T341-200.16q21 21.22 21 51 0 29.79-21.21 50.79t-51 21Q260-77.37 239-98.58Zm404 0q-21-21.21-21-51t21.21-50.79q21.21-21 51-21T745-200.16q21 21.22 21 51 0 29.79-21.21 50.79t-51 21Q664-77.37 643-98.58ZM59.37-817.37v-65.26h120.54L348.48-521.5h286.99l158.86-277.13h73.45L681.87-451H334.11l-54.33 101.37h488.85v65.26H169.74L284.89-496 138.33-817.37H59.37Zm389.2 91.87v-198.57h62.86v198.57h-62.86Zm-5.44 138.87v-73.74h73.5v73.74h-73.5Z" />

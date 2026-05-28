@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function AirlineSeatIndividualSuiteFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function AirlineSeatIndividualSuiteFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M17-246v-421h83v327h364v-327h311q69.79 0 118.89 49.11Q943-568.79 943-499v253H17Zm342.68-181Q393-461 393-511.18q0-50.17-33.32-83.5Q326.35-628 276.18-628 226-628 192-594.68q-34 33.33-34 83.5Q158-461 192-427q34 34 84.18 34 50.17 0 83.5-34Z" />

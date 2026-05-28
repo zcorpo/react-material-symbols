@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function RadioFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function RadioFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M55-34v-681l549-222 22 53.69L236-725h670v691H55Zm324-178.68q28-28.69 28-69Q407-322 378.82-350q-28.19-28-69-28Q269-378 241-349.82q-28 28.19-28 68.5 0 40.32 28.18 68.82 28.19 28.5 69 28.5Q351-184 379-212.68ZM149-485h511v-55h60v55h91v-145H149v145Z" />

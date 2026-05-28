@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function FilterVintageFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function FilterVintageFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M402.5-221Q370-256 375-298q-39 27-83 16t-68-52q-22-39-7.5-84t61.5-62q-48-18-62-63.5t9-84.5q23-39 68.5-51t81.5 15q-5-43 28-77.5t78-34.5q45 0 77.5 34.5T586-664q36-27 81-14.5t68 50.5q23 39 8.5 85T682-480q46 17 60.5 62.5T734-334q-24 40-67.5 51.5T586-298q5 42-28 77t-78 35q-45 0-77.5-35ZM480-369q46 0 78.5-32.5T591-480q0-46-32.5-78.5T480-591q-46 0-78 32.5T370-480q0 46 32 78.5t78 32.5Z" />

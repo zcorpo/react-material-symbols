@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function CampaignFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function CampaignFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M719-469v-22h117v22H719Zm43 255-94-70 14-17 94 70-14 17Zm-83-449-14-17 93-70 14 17-93 70ZM229-254v-150h-51q-22 0-38-16t-16-38v-44q0-22 16-38t38-16h152l146-86v324l-146-86h-79v150h-22Zm327-116v-220q18 17 29 46t11 64q0 35-11 64t-29 46Z" />

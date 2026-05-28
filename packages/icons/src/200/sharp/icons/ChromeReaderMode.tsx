@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function ChromeReaderMode({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function ChromeReaderMode({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M120-200v-560h720v560H120Zm30.77-30.77h313.85v-498.46H150.77v498.46Zm344.61 0h313.85v-498.46H495.38v498.46Zm44.77-349.08h224.54v-30.77H540.15v30.77Zm0 104.39h224.54v-30.77H540.15v30.77Zm0 104.38h224.54v-30.77H540.15v30.77ZM150.77-729.23v498.46-498.46Z" />

@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function ArrowsOutward({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function ArrowsOutward({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="m693.48-287.02-49.22-48.74L754.43-444.7H510v-69.37h244.43L645.5-621.76l48.98-48.74 190.74 191.74-191.74 191.74Zm-427.72 0L74.02-478.76 265.76-670.5l47.74 48.74-108.7 107.69H450v69.37H203.57L313.5-335.76l-47.74 48.74Z" />

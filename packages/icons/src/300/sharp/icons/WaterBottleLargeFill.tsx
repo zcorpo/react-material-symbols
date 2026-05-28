@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function WaterBottleLargeFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function WaterBottleLargeFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M217.69-97.69v-216.16h80v-212.3h-80v-216.16h203.46v-62.3h-47.3V-850h212.3v45.39h-47.3v62.3h203.46v216.16h-80v212.3h80v216.16H217.69Z" />

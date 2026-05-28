@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function MusicVideo({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function MusicVideo({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M493-326.75q21-20.75 21-51.25v-221h96v-54H487v219q-8-7-20.13-11.5Q454.74-450 442-450q-30.24 0-51.12 21T370-378q0 30 21.18 51 21.19 21 51 21Q472-306 493-326.75ZM132-212v-536h696v536H132Zm22-22h652v-492H154v492Zm0 0v-492 492Z" />

@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function VoiceChatOffFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function VoiceChatOffFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M679-549h22v-22h-22v22ZM579-651v164l-88-89v-155h-22v133L241-828h587v536h-56L601-465v-186h-22Zm241 539L641-292H244L132-180v-620l-80-80 16-16 768 768-16 16ZM498-434l-29-29v74h29v-45Zm-139-35h22v-82l-22-22v104Zm-100-80h22v-38l16 16h-38v22Z" />

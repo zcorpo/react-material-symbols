@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function HomeRepairServiceFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function HomeRepairServiceFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M330.77-621.54h298.46v-107.69H330.77v107.69ZM120-200v-195.38h135.38v49.23h30.77v-49.23h387.7v49.23h30.77v-49.23H840V-200H120Zm0-235.38v-186.16h180V-760h360v138.46h180v186.16H704.62v-40h-30.77v40h-387.7v-40h-30.77v40H120Z" />

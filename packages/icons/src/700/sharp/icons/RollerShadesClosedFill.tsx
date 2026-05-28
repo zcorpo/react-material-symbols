@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function RollerShadesClosedFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function RollerShadesClosedFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M46-86v-95h80v-693h708v693h80v95H550q0 29.2-20.6 49.1Q508.8-17 479.9-17t-49.4-19.9Q409.99-56.8 409.99-86H46Zm175-95h219v-99H221v99Zm299 0h219v-99H520v99Z" />

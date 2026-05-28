@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function OvenFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function OvenFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M95-651v-215h771v215H95Zm0 556v-526h771v526H95Zm245-613q14-14 14-33t-14-33q-14-14-33-14t-33 14q-14 14-14 33t14 33q14 14 33 14t33-14Zm37 237h207v-71H377v71Zm136-237q14-14 14-33t-14-33q-14-14-33-14t-33 14q-14 14-14 33t14 33q14 14 33 14t33-14Zm173 0q14-14 14-33t-14-33q-14-14-33-14t-33 14q-14 14-14 33t14 33q14 14 33 14t33-14Z" />

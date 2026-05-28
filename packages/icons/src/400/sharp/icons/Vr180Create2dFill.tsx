@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function Vr180Create2dFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function Vr180Create2dFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M420-80v-460h460v460H420Zm89-104h283l-89-117-72 97-57-71-65 91Zm-149-58q-119-23-199.5-114T80-568q0-130 91-221t221-91q121 0 211 80t111 200H360v358Z" />

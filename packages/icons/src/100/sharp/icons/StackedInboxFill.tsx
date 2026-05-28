@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function StackedInboxFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function StackedInboxFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M211-262v-468h634v468H211Zm317.5-111q34.5 0 59.5-25.5t25-59.5h210v-250H233v250h210q0 34 25.5 59.5t60 25.5ZM662-166H115v-479h22v457h525v22Z" />

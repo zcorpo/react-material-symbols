@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function PanToolAlt({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function PanToolAlt({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M382-172 136-467l33-30 163 97v-429h22v468L146-489l247 295h373v-400h22v422H382Zm95-320v-234h22v234h-22Zm145 0v-178h22v178h-22Zm-59 153Z" />

@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function AutoReadPlayFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function AutoReadPlayFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="m402-451 162-109-162-108v217ZM132-180v-594q0-23 15.5-38.5T186-828h588q23 0 38.5 15.5T828-774v428q0 23-15.5 38.5T774-292H244L132-180Z" />

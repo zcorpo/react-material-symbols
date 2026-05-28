@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function PregnantWoman({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function PregnantWoman({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M441-106v-220h-69v-268q0-29 17.5-46.5T436-658q28 0 45 19t17 45q41 5 65.5 36t24.5 73v159H470v220h-29Zm-49-648q-18-18-18-44t18-44q18-18 44-18t44 18q18 18 18 44t-18 44q-18 18-44 18t-44-18Z" />

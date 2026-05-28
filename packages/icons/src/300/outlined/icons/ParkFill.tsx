@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function ParkFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function ParkFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M524.15-100h-87.69v-152.08H157.7L339-516.85h-90.38L480-845.38l231.38 328.53H622l180.3 264.77H524.15V-100Z" />

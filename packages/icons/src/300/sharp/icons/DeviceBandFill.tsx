@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function DeviceBandFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function DeviceBandFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M339.54-100v-515.54h-33.85v-86.23h33.85V-860h281.15v158.23h34.85v86.23h-34.85V-100H339.54Z" />

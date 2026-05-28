@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function ToysFan({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function ToysFan({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M480-480q0-72 52-124t124-52q72 0 124 52t52 124H480ZM180-356q-52-52-52-124h352q0 72-52 124t-124 52q-72 0-124-52Zm300-124q-72 0-124-52t-52-124q0-72 52-124t124-52v352Zm0 352v-352q72 0 124 52t52 124q0 72-52 124t-124 52Z" />

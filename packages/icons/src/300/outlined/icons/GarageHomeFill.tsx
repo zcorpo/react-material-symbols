@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function GarageHomeFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function GarageHomeFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M180-140v-450l300-225.77L780-590v450H670v-380.38H290V-140H180Zm155.38-45.77h289.24v-121.92H335.38v121.92Zm0-167.31h289.24V-475H335.38v121.92Z" />

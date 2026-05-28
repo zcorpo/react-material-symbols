@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function BorderColor({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function BorderColor({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M80 0v-121h800V0H80Zm140-301h44l391-391-22-22-22-22-391 391v44Zm-60 60v-128l536-536 128 128-536 536H160Zm576-537-41-41 41 41Zm-81 86-22-22-22-22 44 44Z" />

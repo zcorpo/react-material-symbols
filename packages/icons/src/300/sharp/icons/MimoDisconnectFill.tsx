@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function MimoDisconnectFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function MimoDisconnectFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M817.62-100.08 671.54-246.15h-31.08l41.08 39.84V-140H278.46v-65.69l40.46-40.46H100v-574.62h61.54l-3.85 61.38L49.54-867.54l32.61-32.61 768.46 767.46-32.99 32.61Zm3.15-153.77L253.46-820h607.15v566.15h-39.84Z" />

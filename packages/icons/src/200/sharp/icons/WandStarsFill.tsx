@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function WandStarsFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function WandStarsFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="m182-160.23-22-22 321.38-320.62L310.23-545l165.08-102.31L460.85-840l147.61 124.23 179-72.46-71.92 179L840-461.62l-193.69-13.92L545-311.23l-42.15-170.39L182-160.23Zm23.46-539.39L160-745.08l45.69-45.69 46.23 45.46-46.46 45.69ZM745.31-160l-45.46-45.69 45.46-46.23 45.46 46.46L745.31-160Z" />

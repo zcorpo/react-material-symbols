@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function TamperDetectionOn({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function TamperDetectionOn({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M455-190v-95h196v-502H149v154H55v-248h691v300l160-160v410L746-491v301H455Zm-80 65H132L-10-267l38-38 74 76v-304h51v169h23v-229h52v229h22v-189h51v189h23v-138h51v377Zm276-662v502-502Z" />

@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function Pentagon({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function Pentagon({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M283.6-180H676l133-397-329-229-329 229 132.6 397ZM240-120 80-600l400-280 400 280-160 480H240Zm240-373Z" />

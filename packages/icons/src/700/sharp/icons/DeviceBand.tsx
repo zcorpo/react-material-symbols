@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function DeviceBand({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function DeviceBand({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M301-55v-516h-58v-138h58v-197h361v197h58v138h-58v516H301Zm93-538v445h174v-445H394Zm0-94h174v-125H394v125Zm0 94h174-174Zm0-94h174-174Z" />

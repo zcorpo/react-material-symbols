@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function ContentCopyFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function ContentCopyFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M260.77-230.77V-860H770v629.23H260.77ZM150-120v-616.92h45.39v571.53h451.53V-120H150Z" />

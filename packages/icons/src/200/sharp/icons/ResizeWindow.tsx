@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function ResizeWindow({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function ResizeWindow({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M778-160 160.23-777.77l22-22L800-182l-22 22Zm-392.85 0L160.23-385.15l22-21.23L407.38-182l-22.23 22Z" />

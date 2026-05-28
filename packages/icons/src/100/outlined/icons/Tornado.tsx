@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function Tornado({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function Tornado({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M130-788h700L480-184 130-788Zm39 22 90 155h442l91-155H169Zm102 177 103 178h212l103-178H271Zm115 200 94 161 94-161H386Z" />

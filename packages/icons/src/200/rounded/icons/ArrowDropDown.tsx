@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function ArrowDropDown({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function ArrowDropDown({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M465.31-403.15 352.14-515.32q-1.99-1.99-3.49-4.18-1.5-2.2-1.5-5.48 0-6.56 3.84-10.67 3.84-4.12 9.63-4.12h238.76q5.79 0 9.63 4.36 3.84 4.35 3.84 10.68 0 1.19-5 9.42L495.46-403.15q-3.23 3.23-7.34 5.23-4.11 2-8.12 2-4.01 0-8.12-2-4.11-2-6.57-5.23Z" />

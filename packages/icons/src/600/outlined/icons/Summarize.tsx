@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function Summarize({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function Summarize({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M332.54-627.46q9.85-9.84 9.85-23.54t-9.85-23.54q-9.84-9.85-23.54-9.85t-23.54 9.85q-9.85 9.84-9.85 23.54t9.85 23.54q9.84 9.85 23.54 9.85t23.54-9.85Zm0 171q9.85-9.84 9.85-23.54t-9.85-23.54q-9.84-9.85-23.54-9.85t-23.54 9.85q-9.85 9.84-9.85 23.54t9.85 23.54q9.84 9.85 23.54 9.85t23.54-9.85Zm0 171q9.85-9.84 9.85-23.54t-9.85-23.54q-9.84-9.85-23.54-9.85t-23.54 9.85q-9.85 9.84-9.85 23.54t9.85 23.54q9.84 9.85 23.54 9.85t23.54-9.85ZM185.09-105.87q-32.51 0-55.87-23.35-23.35-23.36-23.35-55.87v-589.82q0-32.74 23.35-56.26 23.36-23.53 55.87-23.53H642L854.7-642v456.91q0 32.51-23.53 55.87-23.52 23.35-56.26 23.35H185.09Zm0-79.22h589.82V-596.7H597.13v-178.21H185.09v589.82Zm0-589.82v178.21-178.21 589.82-589.82Z" />

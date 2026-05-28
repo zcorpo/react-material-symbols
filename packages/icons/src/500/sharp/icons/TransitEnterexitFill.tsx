@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function TransitEnterexitFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function TransitEnterexitFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M234.74-235.93v-410.33h103.13v227.93l308.89-308.89 79.74 79.26-308.89 308.89h227.46v103.14H234.74Z" />

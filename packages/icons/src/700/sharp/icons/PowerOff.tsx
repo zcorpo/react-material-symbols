@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function PowerOff({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function PowerOff({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M348-95v-142L215-384v-300h69l84 84h-59v177.99L442-275.3v86.3h76v-86l35-39L59-808l50-51 750 750-50 51-173-172-23 26v109H348Zm367-242-64-64v-199H452L327-725v-141h95v171h117v-171h94v171.48h113V-371l-31 34ZM553-498Zm-116 67Z" />

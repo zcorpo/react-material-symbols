@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function Margin({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function Margin({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M172-172v-616h616v616H172Zm22-22h572v-572H194v572Zm0 0v-572 572Zm103-413v-56h55v56h-55Zm155 0 1-56h55v56h-56Zm156 0v-56h56v56h-56ZM297-452v-56h55v56h-55Zm155-1 1-55h55v56l-56-1Zm156 1v-56h56v56h-56Z" />

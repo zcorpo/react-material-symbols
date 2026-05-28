@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function LineEndCircle({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function LineEndCircle({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M767.5-352.5Q820-405 820-480t-52.5-127.5Q715-660 640-660t-127.5 52.5Q460-555 460-480t52.5 127.5Q565-300 640-300t127.5-52.5ZM640-240q-92 0-159.5-60.5T402-450H80v-60h322q11-89 78.5-149.5T640-720q100 0 170 70t70 170q0 100-70 170t-170 70Zm0-240Z" />

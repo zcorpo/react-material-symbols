@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function ElevatorFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function ElevatorFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M286.22-230h120v-170h40v-190h-200v190h40v170ZM386-640.5q16.22-16.5 16.22-39.5T386-719.5Q369.78-736 346.5-736t-39.78 16.5q-16.5 16.5-16.5 39.5t16.5 39.5q16.5 16.5 39.78 16.5t39.5-16.5ZM511.61-530h200l-100-160-100 160Zm100 260 100-160h-200l100 160ZM105.87-105.87V-854.7H854.7v748.83H105.87Z" />

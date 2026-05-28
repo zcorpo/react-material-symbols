@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function ChipsFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function ChipsFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M307-470h346q5 0 8-3t3-8q0-4-3-7.5t-8-3.5H307q-5 0-8 3.5t-3 7.5q0 5 3 8t8 3Zm-81 298q-23 0-38.5-15.5T172-226v-508q0-23 15.5-38.5T226-788h508q23 0 38.5 15.5T788-734v508q0 23-15.5 38.5T734-172H226Z" />

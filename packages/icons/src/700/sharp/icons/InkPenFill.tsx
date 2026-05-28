@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function InkPenFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function InkPenFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M599-448 448-599l152-152-31-31-233 233-60-59 293-293 92 88 80-79 151 151-293 293ZM240-89H89v-151l316-316 151 151L240-89Z" />

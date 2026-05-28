@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function Pergola({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function Pergola({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M172-172v-656h22v80h572v-80h22v656h-22v-406H194v406h-22Zm22-428h572v-126H194v126Zm275 428v-114H358v-22h243v22H491v114h-22ZM194-600v-126 126Z" />

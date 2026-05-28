@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function TiltArrowDown({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function TiltArrowDown({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M160-120v-720h640v720H160Zm60-60h520v-600H220v600Zm230-233-74-74-42 42 146 146 146-146-42-42-74 74v-227h-60v227Zm290 233H220h520Z" />

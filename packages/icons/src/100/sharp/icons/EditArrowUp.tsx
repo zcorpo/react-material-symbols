@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function EditArrowUp({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function EditArrowUp({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M767-212v-493l-68 67-16-15 95-95 94 95-15 15-68-67v493h-22Zm-595-75v-116l299-294q16-16 38.5-16t38.5 16l40 40q15 16 15 38.5T587-581L289-287H172Zm22-22h87l211-209-43-42-43-42-212 208v85Zm314-224-86-85 86 85Z" />

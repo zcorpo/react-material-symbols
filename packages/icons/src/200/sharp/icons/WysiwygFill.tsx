@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function WysiwygFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function WysiwygFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M160-160v-640h640v640H160Zm30.77-30.77h578.46v-498.46H190.77v498.46ZM280-504.62v-30.76h395.38v30.76H280Zm0 160v-30.76h235.38v30.76H280Z" />

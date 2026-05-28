@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function GoogleHomeDevicesFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function GoogleHomeDevicesFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M309-95v-87H47v-684h851v206h-95v-111H141v495h344v181H309Zm350.38-251.5q28.38-28.5 69.5-28.5 41.12 0 69.62 28.38 28.5 28.38 28.5 69.5 0 41.12-28.38 69.62-28.38 28.5-69.5 28.5-41.12 0-69.62-28.38-28.5-28.38-28.5-69.5 0-41.12 28.38-69.62ZM914-630v535H545v-535h369Zm-230 61.1q-19 19.11-19 44.5 0 25.4 19 43.9t45 18.5q26 0 45-18.6 19-18.61 19-44 0-25.4-19-44.4t-45-19q-26 0-45 19.1Zm147 393.71q40-40.18 40-102Q871-339 830.81-379q-40.18-40-102-40Q667-419 627-378.81q-40 40.18-40 102Q587-215 627.19-175q40.18 40 102 40Q791-135 831-175.19Z" />

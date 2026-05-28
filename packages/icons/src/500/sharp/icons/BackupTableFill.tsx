@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function BackupTableFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function BackupTableFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M266.22-266.22h246.41v-246.41H266.22v246.41Zm0-309.28h555.69v-246.41H266.22v246.41ZM575.5-266.22h246.41v-246.41H575.5v246.41Zm-377.41 68.13v-692.19h692.19v692.19H198.09ZM69.72-69.72v-692.19h68.37v623.82h623.82v68.37H69.72Z" />

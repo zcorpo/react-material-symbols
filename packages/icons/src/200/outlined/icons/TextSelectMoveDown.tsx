@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function TextSelectMoveDown({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function TextSelectMoveDown({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M164.62-769.23V-800h630.76v30.77H164.62ZM480-314 354-440l22-22 88.62 87.62v-281h30.76v281L584-462l22 22-126 126ZM164.62-160v-30.77h630.76V-160H164.62Z" />

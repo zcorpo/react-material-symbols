@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function StylusHighlighter({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function StylusHighlighter({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M294.08-338.31V-820h71.31l299.15 144.46v337.23H294.08Zm45.38-45.38h279.69v-262.08L354.85-774h-15.39v390.31ZM180-140l35.92-96h528.16L780-140H180Zm159.46-243.69h279.69-279.69Z" />

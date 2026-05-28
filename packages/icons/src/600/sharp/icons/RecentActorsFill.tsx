@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function RecentActorsFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function RecentActorsFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M27-185.87V-774.7h588.83v588.83H27Zm79.22-131.22q49-32 102.95-48 53.96-16 111.96-16 58 0 111.96 16 53.95 16 102.95 48v-377.82H106.22v377.82ZM242.63-461.5q-32.5-32.5-32.5-78.5t32.5-78.5q32.5-32.5 78.5-32.5t78.5 32.5q32.5 32.5 32.5 78.5t-32.5 78.5q-32.5 32.5-78.5 32.5t-78.5-32.5Zm465.28 275.63V-774.7h66.79v588.83h-66.79Zm158.31 0V-774.7H933v588.83h-66.78Z" />

@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function CribFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function CribFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M480-154q28 0 55.5-5t53.5-14v-171H371v171q26 9 53.5 14t55.5 5Zm0 22q-69 0-132.5-26.5T233-233l16-16q22 22 47 39t53 29v-163H212v-289q0-48 31.5-81.5T320-748h118v195h310v209H611v163q28-12 53-29t47-39l16 16q-51 47-114.5 74T480-132Z" />

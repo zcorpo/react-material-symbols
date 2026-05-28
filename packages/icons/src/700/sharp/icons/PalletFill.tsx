@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function PalletFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function PalletFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M48-61v-99h864v99H783v-25H545v25H415v-25H177v25H48Zm135-242v-594h594v594H183Zm164-335h266v-75H347v75Z" />

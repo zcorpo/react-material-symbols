@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function MpFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function MpFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M254-376h25v-183h77v122h25v-122h77v183h25v-208H254v208Zm305 0h25v-61h122v-147H559v208Zm25-86v-97h97v97h-97ZM172-172v-616h616v616H172Z" />

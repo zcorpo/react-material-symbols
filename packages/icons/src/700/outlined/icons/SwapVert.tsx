@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function SwapVert({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function SwapVert({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M304-449v-277L201-622l-66-66 217-218 217 218-66 66-104-104v277h-95ZM609-55 392-272l66-66 103 103v-277h95v277l104-103 66 66L609-55Z" />

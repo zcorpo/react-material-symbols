@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function SignalCellularAlt1Bar({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function SignalCellularAlt1Bar({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M258-218.13q-6-6.12-6-14.87v-94q0-8.75 6.18-14.88 6.17-6.12 15-6.12 8.82 0 14.82 6.12 6 6.13 6 14.88v94q0 8.75-6.18 14.87-6.17 6.13-15 6.13-8.82 0-14.82-6.13Z" />

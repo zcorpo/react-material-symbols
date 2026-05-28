@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function TwoPagerStoreFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function TwoPagerStoreFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M580-80v-130h300v130H580ZM80-160v-640h800v320h-60v-260H510v249h-60v331H80Zm453-80 36-180h322l36 180H533Zm-343-77h210v-60H190v60Zm0-129h210v-60H190v60Zm0-129h210v-60H190v60Zm370 0v-60h210v60H560Z" />

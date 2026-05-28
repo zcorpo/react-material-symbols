@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function FormatClearFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function FormatClearFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="m488-559-16-16 48-116H354l-23-23h423v22H544l-56 133Zm284 407L452-473l-98 231h-25l107-248-294-292 16-16 630 630-16 16Z" />

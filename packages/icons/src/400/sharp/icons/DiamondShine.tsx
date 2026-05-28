@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function DiamondShine({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function DiamondShine({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M482-80 123-433l197-240h323l198 240L482-80ZM173-701l-72-70 43-44 71 72-42 42Zm279-78v-101h60v101h-60Zm336 78-42-42 72-72 42 44-72 70ZM482-164l246-242H236l246 242ZM349-613 228-466h508L615-613H349Z" />

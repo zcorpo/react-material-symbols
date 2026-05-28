@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function OutpatientFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function OutpatientFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M92-172v-616h460v616H392v-152H253v152H92Zm131-287h46v-46h-46v46Zm0-152h46v-46h-46v46Zm152 152h46v-46h-46v46Zm0-152h46v-46h-46v46Zm395 230-16-15 73-73H652v-22h175l-73-73 16-15 99 99-99 99Z" />

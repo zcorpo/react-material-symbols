@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function GppMaybeFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function GppMaybeFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M512-331.49q13-13.49 13-32 0-18.51-13-32.01-13-13.5-32-13.5t-32 13.49q-13 13.49-13 32 0 18.51 13 32.01 13 13.5 32 13.5t32-13.49ZM444-458h72v-224h-72v224Zm35.94 403Q329.1-92.81 232.05-227.41 135-362.01 135-522.67v-255.79L480-907l346 128.57V-523q0 160.79-97.62 295.49Q630.77-92.81 479.94-55Z" />

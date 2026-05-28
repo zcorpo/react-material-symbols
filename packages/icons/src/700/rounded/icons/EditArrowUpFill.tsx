@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function EditArrowUpFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function EditArrowUpFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M112-220q-20 0-33.5-13.5T65-267v-94q0-19 7-36.5T92-429l278-279q28-28 67.5-28.5T505-707l46 45q26 28 26 66.5T550-530L272-249q-14 14-31.5 21.5T204-220h-92Zm319-312 56-58-55-55-56 56 55 57Zm327-126-25 24q-13 14-30.5 14t-31-14Q658-648 658-665t14-31l95-95q14-14 34-14t35 14l95 95q13 14 13.5 31t-13 31q-13.5 14-31 13.5T869-634l-24-25v481q0 18-13 30.5T801-135q-18 0-30.5-12.5T758-178v-480Z" />

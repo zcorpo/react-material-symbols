@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function BackHandFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function BackHandFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M500-15q-101.7 0-189.35-53Q223-121 170-210L48-419l86-91 136 96v-452h80v386h93v-470h79v470h93v-426h79v426h92v-346h80v457.65Q866-219 758.5-117T500-15Z" />

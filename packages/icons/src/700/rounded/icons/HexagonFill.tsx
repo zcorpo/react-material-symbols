@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function HexagonFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function HexagonFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M318-103q-25 0-47-12.5T236-150L71-433q-13-22-13-47t13-47l165-283q13-22 35-34.5t47-12.5h325q24 0 46 12.5t36 34.5l164 283q13 22 13 47t-13 47L725-150q-14 22-36 34.5T643-103H318Z" />

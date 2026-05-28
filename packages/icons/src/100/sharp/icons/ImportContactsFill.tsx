@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function ImportContactsFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function ImportContactsFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M492-256q51-29 103-42.5T704-312q37 0 77 7t65 18v-411q-27-16-64-23t-78-7q-57 0-112.5 17.5T492-658v402Zm-11 32q-51-32-108-49t-117-17q-47 0-92.5 12T92-254v-460q30-16 73-26t91-10q61 0 118 18t107 53q49-35 106-53t117-18q48 0 90.5 10t73.5 26v460q-26-12-71.5-24T704-290q-60 0-116.5 17T481-224Z" />

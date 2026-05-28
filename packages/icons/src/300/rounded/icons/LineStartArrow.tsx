@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function LineStartArrow({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function LineStartArrow({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M452.08-271.31 162.7-456.15q-13.62-8.54-13.62-23.81t13.62-23.89l289.38-184.84q14.23-9.61 29.15-1.07 14.92 8.54 14.92 26.3v160.77h339.62q9.9 0 16.3 6.4 6.39 6.39 6.39 16.3t-6.39 16.3q-6.4 6.38-16.3 6.38H496.15v160.77q0 17.76-14.92 26.3t-29.15-1.07Zm-1.31-54.61v-308.16L209.31-480l241.46 154.08Zm0-154.08Z" />

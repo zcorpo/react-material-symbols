@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function Exclamation({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function Exclamation({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M469-390v-314h22v314h-22Zm0 134v-22h22v22h-22Z" />

@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function ViewComfyFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function ViewComfyFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M65.87-510v-304.7H894.7V-510H65.87Zm318.26 364.13V-450H894.7v304.13H384.13Zm-318.26 0V-450h258.26v304.13H65.87Z" />

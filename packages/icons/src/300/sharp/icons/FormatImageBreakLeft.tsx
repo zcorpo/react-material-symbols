@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function FormatImageBreakLeft({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function FormatImageBreakLeft({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M140-140v-45.39h680V-140H140Zm0-158.85v-362.69h362.69v362.69H140Zm45.39-45.38h271.92v-271.92H185.39v271.92ZM140-774.61V-820h680v45.39H140ZM321.54-480Z" />

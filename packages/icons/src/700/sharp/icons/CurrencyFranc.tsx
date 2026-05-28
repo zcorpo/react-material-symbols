@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function CurrencyFranc({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function CurrencyFranc({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M273-95v-130h-90v-94h90v-547h464v95H367v244h330v94H367v114h160v94H367v130h-94Z" />

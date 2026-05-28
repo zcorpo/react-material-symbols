@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function WallLamp({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function WallLamp({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M88-103v-274h94v274H88Zm245-432h374l-72-241H405l-72 241Zm0 0h374-374ZM222-193v-94h251v-153H206l129.18-430H705l129 430H567v247H222Z" />

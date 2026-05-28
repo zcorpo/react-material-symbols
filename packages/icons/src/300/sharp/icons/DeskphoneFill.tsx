@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function DeskphoneFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function DeskphoneFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M655.77-183.08h113.08v-589.23H655.77v589.23Zm-395-229.61h54.62v-54.62h-54.62v54.62Zm0 120h54.62v-54.62h-54.62v54.62Zm0-244.62h294.62v-125.38H260.77v125.38Zm120 124.62h54.62v-54.62h-54.62v54.62Zm0 120h54.62v-54.62h-54.62v54.62Zm120-120h54.62v-54.62h-54.62v54.62Zm0 120h54.62v-54.62h-54.62v54.62Zm-355 115v-600h464.62v-40h203.84v680H610.39v-40H145.77Z" />

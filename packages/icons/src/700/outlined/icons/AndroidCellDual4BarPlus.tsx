@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function AndroidCellDual4BarPlus({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function AndroidCellDual4BarPlus({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M35-380v-204h134v204H35Zm252 0v-270h134v270H287ZM35-135v-185h134v185H35Zm252 0v-185h134v185H287Zm504-327v-363h135v359q-33-10-68-8.5T791-462ZM539-135v-185h112.22q-16.03 45.98-11.13 94.99Q645-176 669-135H539Zm279 16v-80h-80v-93h80v-80h94v80h80v93h-80v80h-94ZM539-380v-357h134v343q-4.33 3.12-7.17 6.56-2.83 3.44-5.5 7.44H539Z" />

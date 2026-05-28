@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function BungalowFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function BungalowFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M300-140v-287.54l-58.31 92.77L203-358.08 480-802.3l276.61 444.22-38.69 23.31L660-427.16V-140H508.08v-160.77h-56.16V-140H300Zm151.92-267.31h56.16v-56.15h-56.16v56.15Z" />

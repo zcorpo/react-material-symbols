@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function SignalCellularAltOff({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function SignalCellularAltOff({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M803.77-112.54 532.31-383.23V-200h-55.39v-238.62L112.54-803.77l22.23-21.46 690.46 690.46-21.46 22.23ZM760-299.85l-55.38-55.38V-760H760v460.15ZM240-200v-160h55.38v160H240Z" />

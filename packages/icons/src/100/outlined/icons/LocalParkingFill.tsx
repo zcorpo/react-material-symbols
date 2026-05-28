@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function LocalParkingFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function LocalParkingFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M292-172v-616h230q77 0 131.5 54.5t54.5 131q0 76.5-54.5 131T522-417H336v245h-44Zm44-289h184q59 0 100.5-41.5t41.5-100q0-58.5-41.5-100T520-744H336v283Z" />

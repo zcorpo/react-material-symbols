@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function BodyFatFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function BodyFatFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M788-352h-40v196L99-479l649-323v194h40v22H686v-22h40v-157L507-657q29 39 46.5 84t17.5 93q0 50-17.5 95T507-301l218 109v-160h-39v-22h102v22Zm-302 41q27-37 45-80t18-89q0-46-17-88t-45-78L149-480l337 169Z" />

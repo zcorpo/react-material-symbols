@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function MouseFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function MouseFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M480.07-100q-108.61 0-184.34-75.68T220-360v-207.69h520V-360q0 108.64-75.66 184.32Q588.69-100 480.07-100ZM220-613.08q0-101.99 68.23-176.23 68.23-74.23 169.08-82.53v258.76H220Zm282.69 0v-258.76q100.85 8.3 169.08 82.53Q740-715.07 740-613.08H502.69Z" />

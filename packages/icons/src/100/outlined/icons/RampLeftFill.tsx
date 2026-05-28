@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function RampLeftFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function RampLeftFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M470-173v-572l-98 98-16-15 125-125 124 125-16 15-97-98v151q0 57 19 106t50.5 90q31.5 41 72 74.5T716-262l-15 15q-74-47-128.5-105T492-472v299h-22Z" />

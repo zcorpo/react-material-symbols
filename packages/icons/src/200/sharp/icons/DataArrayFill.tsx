@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function DataArrayFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function DataArrayFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M616.92-200v-30.77h112.31v-498.46H616.92V-760H760v560H616.92ZM200-200v-560h143.08v30.77H230.77v498.46h112.31V-200H200Z" />

@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function TabCloseRight({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function TabCloseRight({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="m366-351 114-114 114 114 15-15-114-114 114-114-15-15-114 114-114-114-15 15 114 114-114 114 15 15ZM194-194v-572 572Zm-22 22v-616h616v379q-5 0-11-.5t-11-.5v-356H194v572h356q0 5 .5 11t.5 11H172Zm592 95-15-15 91-93H633v-22h207l-91-93 15-15 119 119L764-77Z" />

@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function AndroidCell5BarPlus({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function AndroidCell5BarPlus({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M40-160v-225h100v225H40Zm195 0v-308h100v308H235Zm195 0v-433h100v433H430Zm490-288q-24-10-49-13.5t-51-1.5v-337h100v352ZM625-675h100v245q-33 22-56 55t-33 73h-11v-373Zm185 531v-80h-80v-60h80v-80h60v80h80v60h-80v80h-60Z" />

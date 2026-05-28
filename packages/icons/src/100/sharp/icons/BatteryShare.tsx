@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function BatteryShare({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function BatteryShare({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M434-309v-142h265l-92-93 16-15 119 119-119 119-16-16 93-92H456v120h-22ZM326-132v-648h90v-48h128v48h90v135h-22v-114H348v605h264v-81h22v103H326Z" />

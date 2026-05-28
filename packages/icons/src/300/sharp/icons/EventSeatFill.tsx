@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function EventSeatFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function EventSeatFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M170-133.85v-205.38h620v205.38h-45.38v-160H215.38v160H170Zm-30-280.38v-85.38h85.39v85.38H140Zm155.39 5v-414.61h369.22v414.61H295.39Zm439.22-5v-85.38H820v85.38h-85.39Z" />

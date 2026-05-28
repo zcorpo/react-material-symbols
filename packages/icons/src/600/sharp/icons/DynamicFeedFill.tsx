@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function DynamicFeedFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function DynamicFeedFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M54-94v-450.78h79.78v371h452V-94H54Zm133-133v-450.22h79.22v371h453V-227H187Zm133-133v-506h586v506H320Zm79.78-79.78h426.44v-284.44H399.78v284.44Z" />

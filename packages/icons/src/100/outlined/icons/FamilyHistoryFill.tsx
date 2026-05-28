@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function FamilyHistoryFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function FamilyHistoryFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M395.5-155.5Q361-190 361-240q0-47 31-80.5t77-38.5v-110H255v-136h-98v-218h218v218h-98v114h406v-114q-46-5-77-38.5T575-724q0-50 34.5-84.5T694-843q50 0 84.5 34.5T813-724q0 47-31 80.5T705-605v136H491v110q46 5 77 38.5t31 80.5q0 50-34.5 84.5T480-121q-50 0-84.5-34.5Z" />

@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function CreditCardClockFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function CreditCardClockFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="m776-177 20-20-82-82v-115h-27v127l89 90Zm-73 73q-72 0-122-49.5T531-274q0-72 50-122.5T703-447q71 0 121 50.5T874-274q0 71-50 120.5T703-104ZM186-212q-23 0-38.5-15.5T132-266v-428q0-23 15.5-38.5T186-748h588q23 0 38.5 15.5T828-694v191q-5-3-10.5-6t-11.5-6v-80H154v66h455q-77 30-124.5 97.5T437-278q0 17 1.5 33.5T444-212H186Z" />

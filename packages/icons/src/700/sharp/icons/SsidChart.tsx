@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function SsidChart({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function SsidChart({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M480-86 232-326 95-229v-116l146-104 245 238 164-132h216v94H682L480-86Zm0-409L305-670 95-518v-116l219-160 175 175 377-272v116L480-495Z" />

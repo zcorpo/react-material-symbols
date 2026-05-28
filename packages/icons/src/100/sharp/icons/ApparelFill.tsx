@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function ApparelFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function ApparelFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="m295-623-111 62-62-108 199-119h68v30q0 38 26.5 64.5T480-667q38 0 65-26.5t27-64.5v-30h67l200 119-64 110-111-65v452H295v-451Z" />

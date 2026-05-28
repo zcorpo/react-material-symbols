@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function StackOffFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function StackOffFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M880-166 406-640h414q24.75 0 42.38 17.62Q880-604.75 880-580v414ZM580-700v-120H226l-60-60h414q24.75 0 42.38 17.62Q640-844.75 640-820v120h-60ZM837-37l-43-43H380q-25.5 0-42.75-17.25T320-140v-414L140-734v354h120v60H140q-25.5 0-42.75-17.25T80-380v-414l-43-43 43-43L880-80l-43 43Z" />

@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function Scoreboard({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function Scoreboard({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M572-378v-205h145v205H572Zm25-25h95v-155h-95v155Zm-354 25v-117h120v-63H243v-25h145v118H268v62h120v25H243Zm225-150v-28h25v28h-25Zm0 130v-28h25v28h-25ZM130-223v-508h179v-80h22v80h298v-80h22v80h179v508H130Zm25-25h313v-48h25v48h312v-458H493v48h-25v-48H155v458Zm0 0v-458 458Z" />

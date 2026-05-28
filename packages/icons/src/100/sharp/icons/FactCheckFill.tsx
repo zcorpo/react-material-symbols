@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function FactCheckFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function FactCheckFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M226-306h148v-28H226v28Zm356-91 161-161-20-20-141 142-57-57-19 20 76 76Zm-356-69h148v-28H226v28Zm0-160h148v-28H226v28Zm-96 454v-616h700v616H130Z" />

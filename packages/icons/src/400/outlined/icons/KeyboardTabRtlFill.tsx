@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function KeyboardTabRtlFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function KeyboardTabRtlFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M140-240H80v-480h60v480Zm340 1L239-480l241-241 42 42-168 169h526v60H354l169 169-43 42Z" />

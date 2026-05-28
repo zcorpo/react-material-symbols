@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function HovFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function HovFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M457.5-100.5Q447-106 440-118L246-430q-7-12-10.5-24.5T232-480q0-13 3.5-25.5T246-531l194-311q7-12 17.5-17.5T480-865q12 0 22.5 5.5T520-842l194 311q7 13 10.5 25.5T728-480q0 13-3.5 25.5T714-430L520-118q-7 12-17.5 17.5T480-95q-12 0-22.5-5.5Z" />

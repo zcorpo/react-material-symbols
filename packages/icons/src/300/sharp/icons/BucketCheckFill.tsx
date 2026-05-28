@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function BucketCheckFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function BucketCheckFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="m215-140-75-528.85h117.62V-820H703v151.15h117.61L745.23-140H215Zm223.15-165.77L611.77-478l-32.62-32.23-140.61 139.85-57.08-55.7-31.61 32 88.3 88.31ZM303-668.85h354.62v-105.76H303v105.76Z" />

@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function BatteryAndroidFrameShareFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function BatteryAndroidFrameShareFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M10-215v-531h798l-86 95H105v342h387v94H10Zm542-110v-187h232l-64-65 57-55 159 159-159 160-57-57 64-63H631v108h-79Zm-60-14H135v-282h519l-61 60H492v222Z" />

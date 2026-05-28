@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function ConciergeFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function ConciergeFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M12-443h165v-440H12v440Zm226 0h110l326-121v-95H527l-143 45-15-51 137-47h391v-124l-337-91-322 88v396ZM387-40h547v-87H387v87Zm40-147h467q0-91-51.5-155.5T714-426v-67H607v67q-79 19-129.5 83.5T427-187Z" />

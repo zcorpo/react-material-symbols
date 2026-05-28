@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function IosShare({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function IosShare({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M200-120v-493.62h162.85v30.77H230.77v432.08h498.46v-432.08H596.69v-30.77H760V-120H200Zm264.38-232.38v-440.08l-94.92 94.92-23-22.23 133.31-132.54 132.54 132.54-22.23 22.23-94.93-94.92v440.08h-30.77Z" />

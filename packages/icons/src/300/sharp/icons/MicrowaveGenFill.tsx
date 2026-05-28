@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function MicrowaveGenFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function MicrowaveGenFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M100-180v-600h760v600H100Zm117.69-117.69h364.62v-364.62H217.69v364.62Zm45.39-45.39v-273.84h273.84v273.84H263.08Zm421.15-263.07h56.15v-56.16h-56.15v56.16Zm0 154.23h56.15v-56.16h-56.15v56.16Zm0 154.23h56.15v-56.16h-56.15v56.16Z" />

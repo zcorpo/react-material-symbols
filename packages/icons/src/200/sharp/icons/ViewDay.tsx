@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function ViewDay({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function ViewDay({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M160-209.23V-240h640v30.77H160Zm0-155.62v-230.3h640v230.3H160Zm30.77-30.77h578.46v-168.76H190.77v168.76ZM160-720v-30.77h640V-720H160Zm30.77 324.38v-168.76 168.76Z" />

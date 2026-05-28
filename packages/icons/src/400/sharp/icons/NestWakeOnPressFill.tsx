@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function NestWakeOnPressFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function NestWakeOnPressFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M780-441v-359h100v359H780ZM284-120 80-337l51-53 149 32v-422q0-26 17-43t43-17q26 0 43 17t17 43v240h56l231 117-44 303H284Z" />

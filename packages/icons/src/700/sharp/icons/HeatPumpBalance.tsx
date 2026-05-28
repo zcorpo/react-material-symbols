@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function HeatPumpBalance({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function HeatPumpBalance({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M165-706h79v388h75v-388h234v388h75v-428h180l-39-40 55-56 136 136-136 135-55-57 40-38H708v428H474v-388h-75v388H165v-468ZM10-74v-442h918v442H10Zm95-94h728v-253H105v253Zm728-253H105h728Z" />

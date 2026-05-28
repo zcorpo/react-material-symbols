@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function SkilletCooktopFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function SkilletCooktopFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M172-397v-191h474v-66l219-74 7 20-204 69v242H172Zm249 225v-117H132v-22h311v139h-22Zm96 0v-139h311v22H539v117h-22Z" />

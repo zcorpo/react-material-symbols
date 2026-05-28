@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function ShelfPosition({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function ShelfPosition({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M160-160.23V-800h640v639.77H160ZM190.77-191h578.46v-150.23H190.77V-191ZM640-372h129.23v-397.23H640V-372Zm-449.23 0H320v-397.23H190.77V-372Zm160 0h258.46v-397.23H350.77V-372Z" />

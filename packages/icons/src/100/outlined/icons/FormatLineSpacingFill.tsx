@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function FormatLineSpacingFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function FormatLineSpacingFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M256-212 132-336l16-16 97 98v-451l-97 97-16-16 124-124 124 124-16 16-97-97v451l97-98 16 16-124 124Zm244-40v-22h328v34l-328-12Zm0-217v-22h328v22H500Zm0-217v-22l328-12v34H500Z" />

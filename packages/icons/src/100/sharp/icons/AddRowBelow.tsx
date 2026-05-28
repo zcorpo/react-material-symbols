@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function AddRowBelow({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function AddRowBelow({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M194-528h572v-278H194v278Zm-22 316v-616h616v616H677v-22h89v-272H194v272h89v22H172Zm308-294Zm0-22v22-22Zm0 0Zm-11 396v-80h-80v-22h80v-80h22v80h80v22h-80v80h-22Z" />

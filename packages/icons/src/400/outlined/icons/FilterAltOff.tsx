@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function FilterAltOff({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function FilterAltOff({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="m580-465-43-43 183-232H305l-60-60h527q21 0 31 19t-4 36L580-465ZM813-61 560-314v114q0 17-11.5 28.5T520-160h-80q-17 0-28.5-11.5T400-200v-274L61-813l43-43 752 752-43 43ZM537-508Z" />

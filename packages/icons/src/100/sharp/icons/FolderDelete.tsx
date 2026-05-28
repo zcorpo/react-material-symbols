@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function FolderDelete({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function FolderDelete({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M132-212v-536h253l74 74h369v462H132Zm22-22h652v-418H450.82L377-726H154v492Zm0 0v-492 492Zm362-66h194v-243h30v-25h-93v-18h-68v18h-93v25h30v243Zm25-25v-218h144v218H541Z" />

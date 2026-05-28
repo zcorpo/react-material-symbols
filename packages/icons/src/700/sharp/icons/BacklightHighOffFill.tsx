@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function BacklightHighOffFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function BacklightHighOffFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M23-370v-95h184v95H23Zm410-310v-235h94v235h-94Zm265 112-66-68 141-142 65 69-140 141Zm55 198v-95h184v95H753Zm89 340L666-206H263v-134h268L30-842l50-50L892-80l-50 50Z" />

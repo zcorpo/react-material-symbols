@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function TextCompareFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function TextCompareFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M459-80v-92H172v-616h287v-92h22v800h-22Zm106-686v-22h233v616H565v-22h211v-572H565Zm0 297v-22h153v22H565Zm0-134v-22h153v22H565ZM306-335h153v-22H306v22Zm0-134h153v-22H306v22Zm0-134h153v-22H306v22Z" />

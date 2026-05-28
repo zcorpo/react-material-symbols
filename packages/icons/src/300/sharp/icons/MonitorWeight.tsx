@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function MonitorWeight({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function MonitorWeight({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M558.31-526.74q32.38-32.36 32.38-78.31t-32.36-78.53q-32.35-32.57-78.3-32.57-45.95 0-78.34 32.55-32.38 32.55-32.38 78.5t32.36 78.33q32.35 32.38 78.3 32.38 45.95 0 78.34-32.35Zm-160.54-58.34v-40h40v40h-40Zm62.23 0v-40h40v40h-40Zm62.23 0v-40h40v40h-40ZM140-140v-680h680v680H140Zm45.39-45.39h589.22v-589.22H185.39v589.22Zm0 0v-589.22 589.22Z" />

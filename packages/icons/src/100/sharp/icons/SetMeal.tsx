@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function SetMeal({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function SetMeal({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M86-406v-428h788v428H86Zm22-406v384h744v-384H108Zm30 555-1-28 687-36 1 28-687 36Zm-2 100v-28h688v28H136Zm299.53-370q60.31 0 116.71-18.98Q608.64-564.96 653-607q6 28 29.5 43t52.5 18v-148q-29 4-53.5 19.5T653-631q-44.77-40.63-100.88-61.31Q496.02-713 436-713q-64.6 0-124.8 21.64-60.2 21.63-101.2 71.5Q250-570 310.55-548.5T435.53-527ZM108-812v384-384Z" />

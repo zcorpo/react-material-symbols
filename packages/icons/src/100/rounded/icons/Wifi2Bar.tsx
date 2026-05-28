@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function Wifi2Bar({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function Wifi2Bar({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M447-166q-14-14-14-33t14-33q14-14 33-14t33 14q14 14 14 33t-14 33q-14 14-33 14t-33-14Zm33-283q-61 0-117 22.5T260-362q-5 5-11.5 6t-11.5-4q-5-4-4.5-11t5.5-12q51-47 111.5-72T480-480q70 0 130.5 25T722-383q5 5 5.5 11.5T723-360q-5 5-11.5 4t-11.5-6q-47-42-103-64.5T480-449Z" />

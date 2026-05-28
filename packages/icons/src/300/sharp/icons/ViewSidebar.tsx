@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function ViewSidebar({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function ViewSidebar({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M100-180v-600h760v600H100Zm571.46-412.23h143.15v-142.38H671.46v142.38Zm0 179.08h143.15v-133.7H671.46v133.7ZM145.39-225.39h480.69v-509.22H145.39v509.22Zm526.07 0h143.15v-142.38H671.46v142.38Z" />

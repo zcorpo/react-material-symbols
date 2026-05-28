@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function SplitSceneLeft({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function SplitSceneLeft({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M585-212v-22h149q12 0 22-10t10-22v-428q0-12-10-22t-22-10H585v-22h149q22.78 0 38.39 15.61T788-694v428q0 22.77-15.61 38.39Q756.78-212 734-212H585Zm-116 80v-80H226q-22.77 0-38.39-15.61Q172-243.23 172-266v-428q0-22.78 15.61-38.39Q203.23-748 226-748h243v-80h22v696h-22Zm297-594v492-492Z" />

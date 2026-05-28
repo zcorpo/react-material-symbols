@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function StackedLineChart({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function StackedLineChart({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="m117-154 234-234q17-17 42.5-17.5T436-388l118 118 278-312q8-9 20.5-10t21.37 7.87Q882-576 882.5-564.1q.5 11.89-7.5 21.1L596-228q-17 20-43 20.5T509-225L394-339 163-108q-9.96 10-22.98 10T117-107.97q-10-9.96-10-23Q107-144 117-154Zm0-269 234-234q17-17 42.5-17.5T436-657l118 118 278-312q8-9 20.5-10t21.37 7.87Q882-845 882.5-833.1q.5 11.89-7.5 21.1L596-497q-17 20-43 20.5T509-494L394-608 163-377q-9.96 10-22.98 10T117-376.97q-10-9.96-10-23Q107-413 117-423Z" />

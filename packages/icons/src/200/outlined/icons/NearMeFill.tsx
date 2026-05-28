@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function NearMeFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function NearMeFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M530.08-186.15 433-434.54l-248.39-98.61-1.53-19.16 593.84-226.15-227.69 592.31h-19.15Z" />

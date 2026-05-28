@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function CallMissedOutgoing({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function CallMissedOutgoing({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M474.23-292.92 159-608.15l22-22.23 293.23 293.23 274.46-274.47H524.38v-30.76H800v278.76h-30.77v-224.3l-295 295Z" />

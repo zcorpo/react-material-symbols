@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function ImageInset({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function ImageInset({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M209-289h542v-382H209v382Zm93-103 93.84-126.16 61.95 81.87L542-548l116 156H302ZM55-135v-691h851v691H55Zm94-94h662v-502H149v502Zm0 0v-502 502Z" />

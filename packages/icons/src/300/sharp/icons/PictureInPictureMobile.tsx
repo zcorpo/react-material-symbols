@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function PictureInPictureMobile({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function PictureInPictureMobile({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M780-100H180v-760h600v760Zm-45.39-45.39v-669.22H225.39v669.22h509.22Zm0-669.22H225.39h509.22Zm-44.23 363.99v-324.61H443.77v324.61h246.61ZM645-496H489.15v-233.85H645V-496Z" />

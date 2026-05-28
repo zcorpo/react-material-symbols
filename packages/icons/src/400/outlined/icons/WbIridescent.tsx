@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function WbIridescent({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function WbIridescent({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M216-376v-208h528v208H216Zm236-394v-110h60v110h-60Zm297 107-42-42 68-68 42 42-68 68ZM452-80v-110h60v110h-60Zm323-110-68-68 42-42 68 68-42 42ZM211-663l-68-68 42-42 68 68-42 42Zm-26 473-42-42 68-68 42 42-68 68Zm91-246h408v-88H276v88Zm0 0v-88 88Z" />

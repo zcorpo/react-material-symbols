@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function PageMenuIosFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function PageMenuIosFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M172-172v-22h393v22H172Zm0-128v-22h616v22H172Zm54-128q-22.77 0-38.39-15.61Q172-459.23 172-482v-252q0-22.78 15.61-38.39Q203.23-788 226-788h508q22.78 0 38.39 15.61T788-734v252q0 22.77-15.61 38.39Q756.78-428 734-428H226Z" />

@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function EditRoadFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function EditRoadFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M646-497v-251h22v229l-22 22ZM212-212v-536h22v536h-22Zm217-428v-108h22v108h-22Zm0 213v-107h22v107h-22Zm0 215v-108h22v108h-22Zm143 0v-78l231-230 77 78-230 230h-78Zm231-192 37-38-37-38-38 38 38 38Z" />

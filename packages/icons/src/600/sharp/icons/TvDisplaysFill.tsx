@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function TvDisplaysFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function TvDisplaysFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M65.87-316.26V-894.7H725.3v79.79H145.09v498.65H65.87ZM457.01-65.87v-80H245.09v-569.04h691.87v569.04H725.65v80H457.01Z" />

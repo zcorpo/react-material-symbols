@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function WaterLossFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function WaterLossFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M251-326q45-22 93-33.5t99-11.5q29 0 58 4t56 11q54 15 82.5 20t61.5 5h9l53-475H196l55 480Zm49 194q-22 0-37-13.5T246-180l-74-648h616l-73 648q-2 21-17 34.5T661-132H300Z" />

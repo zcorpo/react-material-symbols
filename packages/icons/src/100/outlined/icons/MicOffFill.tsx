@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function MicOffFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function MicOffFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="m650-442-18-19q6-9 9-26t3-36h22q0 27-4.5 46.5T650-442ZM501-590 376-717v-49q0-26 18-44t44-18q27 0 45 18t18 44v175q0-1 0 0v1Zm-74 444v-148q-91-7-154-72.5T210-523h22q0 86 60.5 145.5T438-318q48 0 88.5-19.5T596-391l16 15q-30 35-72 56.5T449-294v148h-22Zm384-2L79-879l15-15 731 732-14 14Z" />

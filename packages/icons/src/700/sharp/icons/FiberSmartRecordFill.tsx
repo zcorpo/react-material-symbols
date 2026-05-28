@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function FiberSmartRecordFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function FiberSmartRecordFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M347-175q-128 0-217-89T41-480q0-127 89-216.5T347-786q127 0 215.5 89.5T651-480q0 127-88.5 216T347-175Zm326-8v-98q68-17 110-74t42-128q0-71-42-127.5T673-685v-97q107 20 176.5 104.5T919-483q0 110-69.5 194.5T673-183Z" />

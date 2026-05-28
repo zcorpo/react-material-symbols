@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function CandlestickChartFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function CandlestickChartFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M320-200v-84.62h-80v-390.76h80V-760h30.77v84.62h80v390.76h-80V-200H320Zm289.23 0v-189.23h-80v-213.85h80V-760H640v156.92h80v213.85h-80V-200h-30.77Z" />

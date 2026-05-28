@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function FormatLetterSpacingWider({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function FormatLetterSpacingWider({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M55-135v-691h94v691H55Zm756 0v-691h95v691h-95ZM297-276l149-407h69l150 407h-66l-37-105H399l-37 105h-65Zm120-161h126l-63-175h-1l-62 175Z" />

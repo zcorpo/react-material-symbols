@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function ContentPasteGo({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function ContentPasteGo({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="m734-120-42-42 74-74H504v-60h262l-74-74 42-42 146 146-146 146Zm106-453h-60v-207h-60v90H240v-90h-60v600h251v60H120v-720h262q7-35 34.5-57.5T480-920q36 0 63.5 22.5T578-840h262v267ZM508.5-791.5Q520-803 520-820t-11.5-28.5Q497-860 480-860t-28.5 11.5Q440-837 440-820t11.5 28.5Q463-780 480-780t28.5-11.5Z" />

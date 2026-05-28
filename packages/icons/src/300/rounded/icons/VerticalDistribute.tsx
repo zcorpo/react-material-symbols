@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function VerticalDistribute({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function VerticalDistribute({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M122.69-100q-9.64 0-16.16-6.58-6.53-6.58-6.53-16.31 0-9.73 6.53-16.11 6.52-6.39 16.16-6.39h714.62q9.64 0 16.16 6.59 6.53 6.58 6.53 16.3 0 9.73-6.53 16.11-6.52 6.39-16.16 6.39H122.69Zm210-337.31q-17.79 0-30.24-12.48T290-480.1q0-17.82 12.45-30.21 12.45-12.38 30.24-12.38h294.62q17.79 0 30.24 12.48T670-479.9q0 17.82-12.45 30.21-12.45 12.38-30.24 12.38H332.69Zm-210-377.3q-9.64 0-16.16-6.59-6.53-6.58-6.53-16.3 0-9.73 6.53-16.11 6.52-6.39 16.16-6.39h714.62q9.64 0 16.16 6.58 6.53 6.58 6.53 16.31 0 9.73-6.53 16.11-6.52 6.39-16.16 6.39H122.69Z" />

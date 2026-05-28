@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function FastRewindFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function FastRewindFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M793.23-295.38 522.62-480l270.61-184.62v369.24Zm-355.85 0L166.77-480l270.61-184.62v369.24Z" />

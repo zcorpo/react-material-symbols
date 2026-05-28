@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function VolumeDownFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function VolumeDownFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M220-380v-200h148.46L540-751.53v543.06L368.46-380H220Zm400.77 51.84v-305.07q45.15 18.15 72.19 60.35Q720-530.69 720-480q0 51.69-27.04 92.69t-72.19 59.15Z" />

@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function ShowChart({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function ShowChart({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="m129.85-233.85-34.46-34.46 286.15-286.15 160 160.61 291.84-330.76 32 30.23-323.07 368.61-160.77-159.77-251.69 251.69Z" />

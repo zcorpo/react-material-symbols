@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function SlabSerifFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function SlabSerifFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M240-240h173v-25H311l52-137h227l53 137H542v25h178v-25h-48L493-720h-31L284-265h-44v25Zm134-188 101-259h4l101 259H374ZM186-132q-23 0-38.5-15.5T132-186v-588q0-23 15.5-38.5T186-828h588q23 0 38.5 15.5T828-774v588q0 23-15.5 38.5T774-132H186Z" />

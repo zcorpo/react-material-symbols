@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function ComicBubbleFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function ComicBubbleFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="m440-952 126.75 126.33h179.19v178.61L872-520 752-399l132 258-64 64-259-132L440-88 313.67-214.75H135.06v-179.19L8-520l126.75-126.75v-179.19h179.19L440-952Z" />

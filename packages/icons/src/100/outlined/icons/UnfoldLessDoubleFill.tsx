@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function UnfoldLessDoubleFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function UnfoldLessDoubleFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="m354-74-16-16 143-141L623-89l-16 15-126-126L354-74Zm0-200-16-16 143-141 142 142-16 15-126-126-127 126Zm126-254L338-670l16-17 126 126 127-126 16 16-143 143Zm0-200L338-870l16-17 126 126 127-126 16 16-143 143Z" />

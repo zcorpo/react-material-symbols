@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function LineEndArrowNotchFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function LineEndArrowNotchFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="m425-173 136-260H73v-94h488L425-787l483 307-483 307Z" />

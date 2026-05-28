@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function WbShade({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function WbShade({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M820-138 556-402v-105l369 369H820Zm-264 0v-201l200 201H556Zm-450 2v-421H34l267-267 267 267h-72v421H106Zm164-266h80v-155h-80v155Z" />

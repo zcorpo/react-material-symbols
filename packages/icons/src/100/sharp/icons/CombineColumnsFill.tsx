@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function CombineColumnsFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function CombineColumnsFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M204-172v-616h219v132q-58 18-93 66.5T295-480q0 61 35 109.5t93 66.5v132H204Zm333 0v-132q58-18 93-66.5T665-480q0-61-35-109.5T537-656v-132h219v616H537Zm-68-217v-80h-80v-22h80v-80h22v80h80v22h-80v80h-22Z" />

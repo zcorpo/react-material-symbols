@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function TauntFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function TauntFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M197-419q-27 15-57 7.5T96-447q-16-33-5-67t47-46l375-131 42 83-358 189Zm36 316v-252l417-220-19-35 182-87 41 82-287 215v297H233Zm-66.5-534Q124-680 124-741.5T166.5-846q42.5-43 104-43T375-846q43 43 43 104.5T375-637q-43 43-104.5 43t-104-43Z" />

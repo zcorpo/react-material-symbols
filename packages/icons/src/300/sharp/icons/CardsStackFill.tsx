@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function CardsStackFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function CardsStackFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M398.85-615.69h300v-45.39h-300v45.39Zm0 137.69h179.38v-45.38H398.85V-478ZM180.54-133.54l-69-493.92 52.46-6.23V-246h603.31l6.23 42.38-593 70.08Zm57.15-185.92V-820H860v500.54H237.69Z" />

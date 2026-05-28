@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function ViewObjectTrackFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function ViewObjectTrackFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M285.91-145.87q-58.74 0-99.39-42-40.65-41.99-40.65-101.97 0-59.97 40.65-102.33 40.65-42.35 99.39-42.35h468.18q58.98 0 99.79 42.31 40.82 42.31 40.82 102.28t-40.82 102.02q-40.81 42.04-99.79 42.04H285.91Zm-80-380.17q-58.74 0-99.39-42T65.87-670.01q0-59.98 40.65-102.33 40.65-42.36 99.39-42.36h468.74q58.75 0 99.4 42.31 40.65 42.31 40.65 102.29 0 59.97-40.65 102.01-40.65 42.05-99.4 42.05H205.91Z" />

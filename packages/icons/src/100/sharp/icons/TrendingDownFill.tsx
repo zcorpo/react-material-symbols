@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function TrendingDownFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function TrendingDownFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M644-287v-22h149L532-567 370-404 132-643l16-16 222 221 162-162 274 275v-146h22v184H644Z" />

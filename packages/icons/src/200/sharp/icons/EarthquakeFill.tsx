@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function EarthquakeFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function EarthquakeFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M353.92-120 251.08-464.62H120v-30.76h154.54l89.69 296.23L506-840h23.38L633-387.08l80.92-264.46h22.46l57.93 156.16h44.92v30.76h-67.92l-43.93-122.23-84.61 278.39h-23.69L517.69-751.15 378.62-120h-24.7Z" />

@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function MinimizeFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function MinimizeFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M270-95q-19.75 0-33.37-13.68Q223-122.35 223-142.18q0-19.82 13.63-33.32Q250.25-189 270-189h421q19.75 0 33.38 13.68Q738-161.65 738-141.82q0 19.82-13.62 33.32Q710.75-95 691-95H270Z" />

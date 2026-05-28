@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function RoofingFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function RoofingFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M367-160v-226h226v226H367ZM76-456l-36-48 440-337 178 136v-95h100v172l162 124-36 48-404-309L76-456Z" />

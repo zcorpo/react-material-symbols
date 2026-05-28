@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function SwipeUpAlt({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function SwipeUpAlt({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M352.73-252.73Q300-305.46 300-380q0-74.31 47.81-123.12 47.81-48.8 116.81-57.42v-220.84l-95.16 95.92-22-22L480-840l132.54 132.54-21.23 22-95.93-95.92v220.84q69 8.62 116.81 57.42Q660-454.31 660-380q0 74.54-52.73 127.27Q554.54-200 480-200q-74.54 0-127.27-52.73Zm233.19-21.35q43.31-43.3 43.31-105.92 0-62.62-43.31-105.92-43.3-43.31-105.92-43.31-62.62 0-105.92 43.31-43.31 43.3-43.31 105.92 0 62.62 43.31 105.92 43.3 43.31 105.92 43.31 62.62 0 105.92-43.31ZM480-380Z" />

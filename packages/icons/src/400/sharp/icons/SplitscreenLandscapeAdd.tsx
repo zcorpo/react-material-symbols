@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function SplitscreenLandscapeAdd({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function SplitscreenLandscapeAdd({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M510-280h250v-400H510v400Zm-310 0h250v-400H200v400Zm600-370v-90h-90v-60h90v-90h60v90h90v60h-90v90h-60ZM140-220v-520 520Zm-60 60v-640h570v60H140v520h680v-369h60v429H80Z" />

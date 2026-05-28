@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function VideoChatFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function VideoChatFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M300-424.38h276.85V-546l80.07 80.08v-190.85l-80.07 80.08v-121.62H300v273.93ZM120-156.92V-840h720v560H243.08L120-156.92Z" />

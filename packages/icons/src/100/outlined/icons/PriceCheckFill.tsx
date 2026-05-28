@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function PriceCheckFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function PriceCheckFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M289-386v-42H186v-22h206v-139H211q-9.45 0-17.23-7.56Q186-604.13 186-615v-133q0-10.88 7.05-17.94Q200.1-773 211-773h78v-41h22v41h103v22H208v140h181q10.45 0 17.72 7.05Q414-596.9 414-586v133q0 10.9-7.06 17.95Q399.88-428 389-428h-78v42h-22Zm269 230L424-290l16-16 118 118 232-232 16 16-248 248Z" />

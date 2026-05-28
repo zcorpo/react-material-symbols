@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function HorizontalDistributeFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function HorizontalDistributeFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M74.02-74.02v-812.2h68.13v812.2H74.02Zm351.91-201.91v-408.14h108.14v408.14H425.93ZM817.85-74.02v-812.2h68.37v812.2h-68.37Z" />

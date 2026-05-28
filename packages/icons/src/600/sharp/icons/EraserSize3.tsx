@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function EraserSize3({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function EraserSize3({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M332.5-185.87q-60.85 0-103.74-42.03-42.89-42.02-42.89-103.18 0-28.35 10.85-55.12 10.84-26.76 32.54-48.45L525.91-732.3q21.03-21.08 48.06-31.74 27.02-10.66 54.81-10.66 61.13 0 103.52 42.74 42.4 42.73 42.4 102.94 0 28.45-10.35 55.22-10.35 26.76-32.05 48.45L434.65-228.26q-21.69 22.26-48.09 32.33-26.4 10.06-54.06 10.06Z" />

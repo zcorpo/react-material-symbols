@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function CurrencyLiraFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function CurrencyLiraFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M370-120v-224l-130 81v-71l130-81v-118l-130 81v-70l130-82v-236h60v198l170-106v70L430-571v118l170-106v70L430-382v202h19q89 0 149-57.5T660-380h60q-2 111-80 185.5T450-120h-80Z" />

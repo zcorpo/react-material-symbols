@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function Tooltip({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function Tooltip({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M480-74.02 373.37-234.37H74.02v-651.85h812.2v651.85H586.63L480-74.02Zm0-122.35 70.33-106.13h267.76v-515.59H141.91v515.59h267.76L480-196.37Zm0-364.54Z" />

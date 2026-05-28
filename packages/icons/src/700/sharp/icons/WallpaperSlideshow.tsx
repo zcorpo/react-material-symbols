@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function WallpaperSlideshow({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function WallpaperSlideshow({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M673.5-673.68q-8.5-8.67-8.5-21.5 0-12.82 8.68-21.32 8.67-8.5 21.5-8.5 12.82 0 21.32 8.68 8.5 8.67 8.5 21.5 0 12.82-8.68 21.32-8.67 8.5-21.5 8.5-12.82 0-21.32-8.68ZM362-394l93-123 68 87 103-135 127 171H362ZM37-37v-731h95v636h636v95H37Zm155-535v-351h335v95H286v256h-94Zm0 380v-320h94v226h241v94H192Zm395 0v-94h241v-226h95v320H587Zm241-380v-256H587v-95h336v351h-95Z" />

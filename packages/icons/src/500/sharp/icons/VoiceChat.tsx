@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function VoiceChat({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function VoiceChat({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M246.41-530H290v-60h-43.59v60Zm101.92 80h43.58v-220h-43.58v220Zm110 79.52h43.58v-379.28h-43.58v379.28Zm110-79.52h43.58v-220h-43.58v220ZM670-530h43.59v-60H670v60ZM74.02-74.02v-812.2h812.2v652.2h-652.2l-160 160Zm134-228.13h609.83v-515.7h-675.7v587.57l65.87-71.87Zm-65.87 0v-515.7 515.7Z" />

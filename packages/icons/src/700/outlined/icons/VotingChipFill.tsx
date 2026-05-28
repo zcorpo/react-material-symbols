@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function VotingChipFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function VotingChipFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M320-175q-126.79 0-215.89-89.15Q15-353.3 15-480.15T104.11-696q89.1-89 215.89-89h320q126.79 0 215.89 89.15Q945-606.7 945-479.85T855.89-264q-89.1 89-215.89 89H320Zm0-190h70v-80h80v-70h-80v-80h-70v80h-80v70h80v80Zm295 0h70v-230H555v70h60v160Z" />

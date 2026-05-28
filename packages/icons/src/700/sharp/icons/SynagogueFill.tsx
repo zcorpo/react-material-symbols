@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function SynagogueFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function SynagogueFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M750-676v-39q0-39 28.5-67.5T846-811q39 0 68 28.5t29 67.5v39H750Zm-733 0v-39q0-39 29-67.5t68-28.5q39 0 67.5 28.5T210-715v39H17Zm0 567v-526h193v526H17Zm234 0v-572l229-197 229 197v572H560v-291H400v291H251Zm499 0v-526h193v526H750ZM519-521q16-16 16-39t-16-39q-16-16-39-16t-39 16q-16 16-16 39t16 39q16 16 39 16t39-16Z" />

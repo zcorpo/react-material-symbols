@@ -1,4 +1,4 @@
-# react-material-symbols
+# @zcorpo/react-material-symbols
 
 Google's [Material Symbols](https://fonts.google.com/icons) as React SVG components.
 
@@ -8,12 +8,22 @@ Google's [Material Symbols](https://fonts.google.com/icons) as React SVG compone
 - `size` prop, full `SVGProps` passthrough, `fill="currentColor"`
 - ESM + CJS, TypeScript declarations included
 
+## Installation
+
+```sh
+npm install @zcorpo/react-material-symbols
+# or
+pnpm add @zcorpo/react-material-symbols
+# or
+yarn add @zcorpo/react-material-symbols
+```
+
 ## Usage
 
 Pick a weight (`100`–`700`) and style (`outlined` | `rounded` | `sharp`):
 
 ```tsx
-import { Search, Home, Settings } from 'react-material-symbols/400/rounded'
+import { Search, Home, Settings } from '@zcorpo/react-material-symbols/400/rounded'
 
 export default function App() {
   return <Search size={24} className="icon" />
@@ -25,20 +35,20 @@ export default function App() {
 Every icon ships with a filled variant suffixed with `Fill`:
 
 ```tsx
-import { Search, SearchFill } from 'react-material-symbols/400/rounded'
+import { Search, SearchFill } from '@zcorpo/react-material-symbols/400/rounded'
 ```
 
 ### All available import paths
 
 ```ts
-import { ... } from 'react-material-symbols/100/outlined'
-import { ... } from 'react-material-symbols/100/rounded'
-import { ... } from 'react-material-symbols/100/sharp'
+import { ... } from '@zcorpo/react-material-symbols/100/outlined'
+import { ... } from '@zcorpo/react-material-symbols/100/rounded'
+import { ... } from '@zcorpo/react-material-symbols/100/sharp'
 
-import { ... } from 'react-material-symbols/200/outlined'
+import { ... } from '@zcorpo/react-material-symbols/200/outlined'
 // ...
 
-import { ... } from 'react-material-symbols/400/rounded'  // recommended default
+import { ... } from '@zcorpo/react-material-symbols/400/rounded'  // recommended default
 
 // ...through 700/sharp
 ```
@@ -73,7 +83,7 @@ Icons render with `fill="currentColor"`, so color is controlled via CSS `color`.
 A small number of icons have names that start with a digit (e.g. `10k`, `360`). These are exported with an `Icon` prefix to keep them valid identifiers:
 
 ```ts
-import { Icon10k, Icon360, Icon1kPlus } from 'react-material-symbols/400/rounded'
+import { Icon10k, Icon360, Icon1kPlus } from '@zcorpo/react-material-symbols/400/rounded'
 ```
 
 ## Contributing / Staying up to date

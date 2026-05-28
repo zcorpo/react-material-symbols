@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function Keyboard({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function Keyboard({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M132-252v-456h696v456H132Zm22-22h652v-412H154v412Zm172-60h308v-50H326v50ZM213-455h50v-50h-50v50Zm121 0h50v-50h-50v50Zm121 0h50v-50h-50v50Zm121 0h50v-50h-50v50Zm121 0h50v-50h-50v50ZM213-577h50v-50h-50v50Zm121 0h50v-50h-50v50Zm121 0h50v-50h-50v50Zm121 0h50v-50h-50v50Zm121 0h50v-50h-50v50ZM154-274v-412 412Z" />

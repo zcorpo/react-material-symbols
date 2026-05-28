@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function DesktopAccessDisabledFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function DesktopAccessDisabledFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M829-61 665-226H551v100h86v95H323v-95h86v-100H55v-634h76v101L12-877l51-52 818 817-52 51Zm19-167L209-866h698v638h-59Z" />

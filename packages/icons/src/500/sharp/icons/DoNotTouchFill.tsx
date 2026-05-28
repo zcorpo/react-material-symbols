@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function DoNotTouchFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function DoNotTouchFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M846.22-206.24 566-486.22h48.24v-400h64.54v407.18h102.65v-327.18h64.79v599.98ZM510.59-541.63l-64.55-63.78v-321.76h64.55v385.54Zm-168.2-167.44-64.06-63.82v-72.85h64.06v136.67Zm-.3 675.05L53.04-468.24l65.35-53.24 159.22 119.94v-193.89L25.04-848l44.92-44.91L922.46-38.5 878.5 5.46l-39.48-39.48H342.09Z" />

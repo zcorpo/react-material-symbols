@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function InsertPageBreakFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function InsertPageBreakFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M225.09-65.87q-32.68 0-55.95-23.27-23.27-23.27-23.27-55.95v-155.3H814.7v155.3q0 32.68-23.44 55.95-23.44 23.27-56.35 23.27H225.09Zm320.82-563.04h189l-189-186v186Zm-199.3 268.52v-79.22h266.78v79.22H346.61Zm326.78 0v-79.22h256.22v79.22H673.39Zm-643 0v-79.22h256.22v79.22H30.39Zm115.48-139.22v-315.3q0-32.91 23.27-56.35 23.27-23.44 55.95-23.44h362.13L814.7-667.22v167.61H145.87Z" />

@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function GameButtonLFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function GameButtonLFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M74.02-154.02V-647.2q0-66.15 45.7-112.58 45.69-46.44 111.85-46.44h496.86q66.16 0 111.97 46.44 45.82 46.43 45.82 112.58v493.18H74.02Zm348.31-182.59h176.58v-51.02H476.63v-235h-54.3v286.02Z" />

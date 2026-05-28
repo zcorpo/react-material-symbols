@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function AudioVideoReceiverFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function AudioVideoReceiverFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M120-332.31v-383.07h720v383.07h-80v50.77h-30.77v-50.77H230.77v50.77H200v-50.77h-80Zm596.5-145.04q17.35-17.34 17.35-42.65t-17.35-42.65Q699.15-580 673.85-580q-25.31 0-42.66 17.35-17.34 17.34-17.34 42.65t17.34 42.65Q648.54-460 673.85-460q25.3 0 42.65-17.35ZM255.38-460h267.7v-120h-267.7v120Z" />

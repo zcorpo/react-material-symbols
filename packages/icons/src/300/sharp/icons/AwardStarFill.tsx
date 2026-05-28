@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function AwardStarFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function AwardStarFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M371.85-323.85 480-389.46l108.15 65.61-28.69-123 95.92-82.69-126.23-10.61-49.15-116-49.15 116-126.23 10.61 95.92 82.69-28.69 123ZM480.62-56.31 354.46-180H180v-174.46L54.08-480 180-605.54V-780h174.46l126.16-125.92L605.54-780H780v174.46L905.92-480 780-354.46V-180H605.54L480.62-56.31Z" />

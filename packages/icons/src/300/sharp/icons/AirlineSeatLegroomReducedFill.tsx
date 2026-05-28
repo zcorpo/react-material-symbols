@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function AirlineSeatLegroomReducedFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function AirlineSeatLegroomReducedFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M574.69-135.39v-85.92l50.62-176H242.69V-830h205.39v267.31h276.53l27.85 37.23-94.62 310.85h118.31v79.22H574.69ZM475.38-290H135.39v-540h45.38v494.62h294.61V-290Z" />

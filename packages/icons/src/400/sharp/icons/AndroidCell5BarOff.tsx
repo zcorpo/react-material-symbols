@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function AndroidCell5BarOff({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function AndroidCell5BarOff({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M430-160v-246L36-682l46-65 786 550-45 65-98-68v40H625v-110l-95-66v176H430Zm-390 0v-225h100v225H40Zm195 0v-308h100v308H235Zm490-211-100-70v-234h100v304Zm195 137-100-70v-496h100v566Z" />

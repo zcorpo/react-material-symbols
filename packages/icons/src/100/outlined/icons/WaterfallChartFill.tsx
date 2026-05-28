@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function WaterfallChartFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function WaterfallChartFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M172-212v-169h59v169h-59Zm185-220v-133h59v133h-59Zm186-185v-131h59v131h-59Zm186 405v-536h59v536h-59Z" />

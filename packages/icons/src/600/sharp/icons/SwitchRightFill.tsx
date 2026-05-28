@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function SwitchRightFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function SwitchRightFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M403.39-158.74 82.13-480l321.26-321.26v642.52Zm153.22 0v-642.52L878.44-480 556.61-158.74Zm81.57-195.74L763.13-480 638.18-605.52v251.04Z" />

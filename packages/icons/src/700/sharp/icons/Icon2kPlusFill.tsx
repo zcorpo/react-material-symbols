@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function Icon2kPlusFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function Icon2kPlusFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M680-400h40v-63h51v-33h-51v-64h-40v64h-63v33h63v63Zm-209 40h50v-90l84 90h66L559-480l112-120h-66l-84 90v-90h-50v240Zm-224 0h166v-50H290v-53h123v-137H247v50h116v54H247v136ZM95-95v-771h771v771H95Z" />

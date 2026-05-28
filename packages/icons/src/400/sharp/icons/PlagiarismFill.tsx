@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function PlagiarismFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function PlagiarismFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M448-294q20 0 40.5-5.5T528-317l110 110 40-40-111-111q11-17 15.5-36t4.5-39q0-59-40-99t-99-40q-59 0-99 40t-40 99q0 59 40 99t99 40Zm-56.5-82.5Q369-399 369-433t22.5-56.5Q414-512 448-512t56.5 22.5Q527-467 527-433t-22.5 56.5Q482-354 448-354t-56.5-22.5ZM160-80v-800h421l219 219v581H160Zm391-554h189L551-820v186Z" />

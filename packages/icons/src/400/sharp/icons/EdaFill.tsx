@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function EdaFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function EdaFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M120-40v-280h235l128 170 166-167 175-104 92 68L603-40H120Zm167-450v-390h60v390h106.5v-430H513v430h106.5v-350H680v408L488-241 385-380H120v-420h60v310h107Z" />

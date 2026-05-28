@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function GoogleWifi({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function GoogleWifi({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M173-551h613l-10-180H184l-11 180Zm-6 95-14 197h653l-13-197H167Zm27.95 321L186-165H52l44-661h766.89L908-165H773l-9 30H194.95Z" />

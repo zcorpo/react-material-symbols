@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function BikeDock({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function BikeDock({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M172-172v-22l205-33 31-561h144l31 561 205 33v22H172Zm258-53h100v-541H430v541Z" />

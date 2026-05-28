@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function VerticalShadesClosed({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function VerticalShadesClosed({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M106.17-111.87q-14.66 0-24.48-9.87t-9.82-24.49q0-14.62 9.82-24.31 9.82-9.7 24.48-9.7h45.7v-599.52q0-28.34 20.02-48.35 20.01-20.02 48.35-20.02h519.52q28.34 0 48.35 20.02 20.02 20.01 20.02 48.35v599.52h45.94q14.42 0 24.24 9.87 9.82 9.87 9.82 24.49t-9.82 24.31q-9.82 9.7-24.24 9.7h-747.9Zm114.07-68.37h81.41v-599.52h-81.41v599.52Zm145.96 0h81.41v-599.52H366.2v599.52Zm146.19 0h81.41v-599.52h-81.41v599.52Zm145.96 0h81.41v-599.52h-81.41v599.52Z" />

@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function FontDownloadFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function FontDownloadFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M312-262h25l43-121h201l42 121h25L487-710h-14L312-262Zm77-144 89-252h4l89 252H389ZM186-132q-23 0-38.5-15.5T132-186v-588q0-23 15.5-38.5T186-828h588q23 0 38.5 15.5T828-774v588q0 23-15.5 38.5T774-132H186Z" />

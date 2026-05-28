@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function BlurShort({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function BlurShort({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M687-393q36-36 36-87t-36-87q-36-36-87-36t-87 36q-36 36-36 87t36 87q36 36 87 36t87-36Zm-87 130q-76 0-135-47.5T389-433H212v-94h177q2-22 12-41.5t26-34.5H132v-94h468q90 0 153.5 63.5T817-480q0 90-63.5 153.5T600-263Z" />

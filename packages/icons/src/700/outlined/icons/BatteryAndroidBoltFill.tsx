@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function BatteryAndroidBoltFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function BatteryAndroidBoltFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M128-215q-49.25 0-83.62-34.08Q10-283.17 10-332v-297q0-49.25 34.38-83.13Q78.75-746 128-746h636L468-376h205l-28 161H128Zm584.82-43L744-436H594l214-267h23.18L800-525h150L736-258h-23.18Z" />

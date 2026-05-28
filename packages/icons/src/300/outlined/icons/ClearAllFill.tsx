@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function ClearAllFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function ClearAllFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M140-302.31v-45.38h525v45.38H140Zm77.31-155v-45.38h525v45.38h-525Zm77.69-155v-45.38h525v45.38H295Z" />

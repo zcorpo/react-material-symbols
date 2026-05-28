@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function MarkAsUnread({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function MarkAsUnread({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M55-263v-458.97L416-906l469 245H682L417-800 150-664v401H55ZM180-95v-536h726v536H180Zm363-249L274-474v294h537v-294L543-344Zm0-74 262-127H280l263 127Zm289-127H253h579Z" />

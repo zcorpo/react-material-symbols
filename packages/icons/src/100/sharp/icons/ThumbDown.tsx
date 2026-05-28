@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function ThumbDown({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function ThumbDown({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M94-374v-111l128-303h438v414L419-134l-18-15 43-225H94Zm544-392H236L116-479v83h353l-43 226 212-214v-382Zm0 382v-382 382Zm22 10v-22h146v-370H660v-22h168v414H660Z" />

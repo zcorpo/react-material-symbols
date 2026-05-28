@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function ModeCommentFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function ModeCommentFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M149-215q-39.05 0-66.53-27.48Q55-269.95 55-309v-502q0-39.46 27.47-67.23Q109.95-906 149-906h662q39.46 0 67.23 27.77Q906-850.46 906-811v756L746-215H149Z" />

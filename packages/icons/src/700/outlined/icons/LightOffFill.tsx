@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function LightOffFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function LightOffFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M417.5-62Q392-90 390-133h180q-2 43-27.5 71T480-34q-37 0-62.5-28ZM694-379 241-833q41-48 104-79t135-31q132 0 229 96.5T806-618q0 73-30.5 134.5T694-379Zm163 263-51 50-273-274H316q-74-45-117.5-118.5T155-618q0-26 3.5-48t8.5-39L33-838l51-51 773 773ZM646-273v72H311v-72h335Z" />

@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function ShoppingCart({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function ShoppingCart({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M236-91q-21-21-21-51t21-51q21-21 51-21t51 21q21 21 21 51t-21 51q-21 21-51 21t-51-21Zm400 0q-21-21-21-51t21-51q21-21 51-21t51 21q21 21 21 51t-21 51q-21 21-51 21t-51-21ZM254-730l93 194h285l105-194H254Zm-42.22-82H881L684-453H337l-49 93h482v82H146l122-220-146-311H40v-82h135l36.78 79ZM347-536h285-285Z" />

@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function RemoveModeratorFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function RemoveModeratorFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M769-287 238-817l242-90 346 128v255q0 65-15.5 124.5T769-287Zm45 249L679-170q-42 43-93 73T480-55Q326-97 230.5-228T135-524v-192L36-816l51-50L864-89l-50 51Z" />

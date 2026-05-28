@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function PersonalPlacesFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function PersonalPlacesFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M292-209v-515q0-10 7-17t17-7h290q13 0 25.5 6t19.5 17l63 92q10 14 10 30.5T714-572l-63 92q-7 11-19.5 17t-25.5 6H314v248q0 5-3 8t-8 3q-5 0-8-3t-3-8Z" />

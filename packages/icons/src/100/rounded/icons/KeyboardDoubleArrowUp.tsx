@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function KeyboardDoubleArrowUp({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function KeyboardDoubleArrowUp({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M480-449 300-268q-3 3-7.5 3t-8.5-3q-4-4-4-8t4-8l177-177q4-4 8.5-6.5T480-470q6 0 10.5 2.5t8.5 6.5l177 177q3 3 3.5 7.5T676-268q-4 4-8 4t-8-4L480-449Zm0-244L300-512q-3 3-7.5 3.5T284-512q-4-4-4-8t4-8l177-177q4-4 8.5-6.5T480-714q6 0 10.5 2.5t8.5 6.5l177 177q3 3 3.5 7.5T676-512q-4 4-8 4t-8-4L480-693Z" />

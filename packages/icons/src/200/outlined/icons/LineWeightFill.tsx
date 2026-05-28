@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function LineWeightFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function LineWeightFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M220-229.23v-15.39h520v15.39H220Zm0-86.15v-30.77h520v30.77H220Zm0-101.54v-44.62h520v44.62H220Zm0-116.93v-196.92h520v196.92H220Z" />

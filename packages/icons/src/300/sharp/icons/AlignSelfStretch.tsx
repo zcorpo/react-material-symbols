@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function AlignSelfStretch({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function AlignSelfStretch({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M100-814.61V-860h760v45.39H100ZM100-100v-45.39h760V-100H100Zm337.31-187.31v-405.38h85.38v405.38h-85.38Z" />

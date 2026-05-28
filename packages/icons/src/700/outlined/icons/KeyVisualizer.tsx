@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function KeyVisualizer({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function KeyVisualizer({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M95-95v-94h157v94H95Zm0-177v-87h364v87H95Zm0-168v-87h771v87H95Zm0-170v-87h364v87H95Zm0-169v-87h157v87H95ZM302-95v-94h157v94H302Zm-2-684v-87h157v87H300ZM507-95v-94h151v94H507Zm-3-177v-87h362v87H504Zm0-338v-87h362v87H504Zm0-169v-87h156v87H504ZM708-95v-94h158v94H708Zm0-684v-87h158v87H708Z" />

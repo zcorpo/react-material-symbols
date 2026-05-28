@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function PhoneEnabled({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function PhoneEnabled({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M206-172h-34v-153l129-26 102 107q57-31 100.5-62.5T583-375q32-32 63-74t61-93l-107-98 34-148h154v34q0 97-49.5 200.5T600-360q-90 90-193 139t-201 49Zm512-390q25-58 37.5-109t10.5-95H651l-27 119 94 85ZM382-235l-89-93-99 20v115q51 0 101.5-11t86.5-31Zm336-327ZM382-235Z" />

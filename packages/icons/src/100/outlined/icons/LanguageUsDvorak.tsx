@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function LanguageUsDvorak({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function LanguageUsDvorak({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M234-328h146q14 0 23-9t9-23v-240q0-14-9-23t-23-9H234v304Zm-22 22v-348h168q22 0 38 16.12 16 16.13 16 37.88v240q0 21.75-16.12 37.87Q401.75-306 380-306H212Zm424 0L515-654h22l115 326 114-326h22L668-306h-32Z" />

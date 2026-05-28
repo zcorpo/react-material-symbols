@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function YakitoriFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function YakitoriFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M863.65-41.35 687.61-217.39l-147 148-177.52-176.96 59-60L354.43-374l-59 59-176.95-176.39 59-59.57L56.09-672.91l87.3-89.7-106-105 56.57-55.57 105 106 89.69-87.3 121.96 121.39 58-59 178.96 177.96-59.57 58 67.22 67.65 59-58.43 177.96 176.95-148 147L919.22-96.35l-55.57 55Z" />

@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function LineStartCircle({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function LineStartCircle({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M447.5-352.5Q500-405 500-480t-52.5-127.5Q395-660 320-660t-127.5 52.5Q140-555 140-480t52.5 127.5Q245-300 320-300t127.5-52.5ZM320-240q-100 0-170-70T80-480q0-100 70-170t170-70q92 0 159.5 60.5T558-510h322v60H558q-11 89-78.5 149.5T320-240Zm0-240Z" />

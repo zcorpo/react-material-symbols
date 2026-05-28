@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function ChatDashedFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function ChatDashedFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M132-487v-146h22v146h-22Zm0 307v-213h22v161l80-82h79v22h-69L132-180Zm275-112v-22h146v22H407Zm240 0v-22h159v-79h22v101H647Zm159-195v-146h22v146h-22Zm0-240v-79H647v-22h181v101h-22Zm-399-79v-22h146v22H407Zm-275 79v-101h181v22H154v79h-22Z" />

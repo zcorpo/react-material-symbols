@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function TileSmallFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function TileSmallFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M105.87-168.91V-427H427v258.09H105.87Zm426.13 0V-427h322.7v258.09H532ZM105.87-533v-258.65H427V-533H105.87ZM532-533v-258.65h322.7V-533H532Z" />

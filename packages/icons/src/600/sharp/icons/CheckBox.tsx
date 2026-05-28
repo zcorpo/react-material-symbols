@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function CheckBox({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function CheckBox({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="m417.87-310.26 295.22-295.78-54.31-54.87L417.87-420 303.96-533.91l-54.31 54.87 168.22 168.78Zm-312 204.39V-854.7H854.7v748.83H105.87Zm79.22-79.22h589.82v-589.82H185.09v589.82Zm0 0v-589.82 589.82Z" />

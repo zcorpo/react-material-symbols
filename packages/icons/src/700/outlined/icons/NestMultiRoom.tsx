@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function NestMultiRoom({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function NestMultiRoom({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M145-105v-503l335-251 335 251.33V-105H145Zm95-95h280v-121H240v121Zm360 0h121v-121H600v121ZM240-400h120v-121H240v121Zm200 0h281v-121H440v121ZM293-600h374L480-739 293-600Z" />

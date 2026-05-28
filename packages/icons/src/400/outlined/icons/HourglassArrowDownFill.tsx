@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function HourglassArrowDownFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function HourglassArrowDownFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M100-160v-60h60v-108q0-48 25-89t67-64q-42-23-67-63t-25-88v-108h-60v-60h473v60h-60v108q0 48-24.5 88T422-481q42 23 66.5 64t24.5 89v108h60v60H100Zm692 0L663-289l42-42 56 56v-525h60v526l57-57 42 42-128 129Z" />

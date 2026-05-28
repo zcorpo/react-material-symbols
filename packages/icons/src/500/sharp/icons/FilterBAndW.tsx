@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function FilterBAndW({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function FilterBAndW({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M846.22-114.02h-732.2v-732.2h732.2v732.2Zm-664.07-68.13H480V-522.1l297.85 339.95v-595.7H480v255.75L182.15-182.15Z" />

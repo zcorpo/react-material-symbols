@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function NfcOffFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function NfcOffFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M172-172v-584l-82-82 16-16L872-88l-16 16-100-100H172Zm148-148h288l-22-22H342v-244l-22-22v288Zm468 46L640-422v-218H468v45L274-788h514v514ZM618-444 491-571v-47h127v174Z" />

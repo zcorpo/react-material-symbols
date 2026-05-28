@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function KeyboardHideFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function KeyboardHideFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M480-17 312-186h337L480-17ZM55-267v-610h851v610H55Zm269-153h313v-60H324v60ZM204-541h60v-60h-60v60Zm124 0h60v-60h-60v60Zm122 0h60v-60h-60v60Zm123 0h60v-60h-60v60Zm123 0h60v-60h-60v60ZM204-666h60v-60h-60v60Zm124 0h60v-60h-60v60Zm122 0h60v-60h-60v60Zm123 0h60v-60h-60v60Zm123 0h60v-60h-60v60Z" />

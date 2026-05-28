@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function AddToQueue({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function AddToQueue({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M450-360h60v-130h130v-60H510v-130h-60v130H320v60h130v130ZM330-120v-80H80v-640h800v640H630v80H330ZM140-260h680v-520H140v520Zm0 0v-520 520Z" />

@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function FiberPinFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function FiberPinFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M218-375h25v-87h143v-123H218v210Zm237 0h25v-210h-25v210Zm115 0h26v-174l116 174h30v-210h-27v171L600-585h-30v210ZM243-487v-73h118v73H243ZM132-212v-536h696v536H132Z" />

@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function UnarchiveFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function UnarchiveFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M480-576 323-418l52 54 65-65v150h80v-150l65 64 53-54-158-157ZM95-95v-621l121-150h528l122 150v621H95Zm128-631h513l-36-46H259l-36 46Z" />

@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function CreditCardOff({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function CreditCardOff({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="m828-236-22-22v-271H535l-67-66h338v-131H338l-22-22h512v512ZM445-484Zm127-8Zm-172-37H154v295h540L400-529ZM851-78 716-212H132v-536h80l22 22h-80v131h179L90-838l16-16L866-94l-15 16Z" />

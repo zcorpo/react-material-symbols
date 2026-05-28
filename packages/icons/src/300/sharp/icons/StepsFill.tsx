@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function StepsFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function StepsFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M773.46-100 289.92-562.69H87.23l226.54-302.54L420-812.69v145.46l153.54-37.54 83.77 253.54L860-248.54 830-100h-56.54Zm-260.77 0L53.54-517.31h217.54L706.61-100H512.69Z" />

@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function LastPageFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function LastPageFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="m278-278-16-16 186-186-186-186 16-17 202 203-202 202Zm394 12v-428h22v428h-22Z" />

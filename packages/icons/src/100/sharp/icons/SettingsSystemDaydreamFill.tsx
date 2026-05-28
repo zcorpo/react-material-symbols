@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function SettingsSystemDaydreamFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function SettingsSystemDaydreamFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M366-381h264q19 0 32-12t13-30.5q0-18.5-13-30.5t-32-12h-30q1-49-27-86t-74-37q-38 0-67.5 23T397-506h-30q-26 0-44 18t-18 44q0 27 17.5 45t43.5 18ZM132-212v-536h696v536H132Z" />

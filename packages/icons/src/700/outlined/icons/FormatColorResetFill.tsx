@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function FormatColorResetFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function FormatColorResetFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M781.38-268 306-743l174-173 242 239q49 47 76.5 109T826-432.56q0 42.14-12 84.85Q802-305 781.38-268ZM822-24 683.5-162Q645-131 592-113T479.56-95q-141.07 0-242.82-98.98Q135-292.96 135-435.39 135-496 151.5-546t53.5-95L25-821l51-51L873-75l-51 51Z" />

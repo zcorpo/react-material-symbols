@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function DashboardFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function DashboardFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M506.61-576.22v-289.22h358.83v289.22H506.61ZM94.56-439.26v-426.18h358.83v426.18H94.56ZM506.61-95.69v-426.75h358.83v426.75H506.61Zm-412.05 0v-289.79h358.83v289.79H94.56Z" />

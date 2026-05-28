@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function HouseWithShieldFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function HouseWithShieldFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M480.12-260.65q59.18-14.44 97.55-67.46 38.37-53.02 38.37-117.47v-86.49L480-599.91l-135.48 67.84v86.49q0 64.45 38.52 117.49 38.53 53.04 97.08 67.44ZM145.87-105.87v-501.48L480-858.09l334.7 250.74v501.48H145.87Z" />

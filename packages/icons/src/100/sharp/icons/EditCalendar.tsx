@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function EditCalendar({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function EditCalendar({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M172-132v-622h142v-86h27v86h282v-86h24v86h141v272h-22v-49H194v377h284v22H172Zm22-421h572v-179H194v179Zm0 0v-179 179Zm378 421v-78l231-230 77 78-230 230h-78Zm268-230-37-38 37 38ZM600-160h38l144-144-19-19-18-20-145 145v38Zm163-163-18-20 37 39-19-19Z" />

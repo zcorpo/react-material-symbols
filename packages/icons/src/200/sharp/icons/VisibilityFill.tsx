@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function VisibilityFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function VisibilityFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M580.12-400.07q41.42-41.6 41.42-100.11t-41.61-99.94q-41.6-41.42-100.11-41.42t-99.94 41.61q-41.42 41.6-41.42 100.11t41.61 99.94q41.6 41.42 100.11 41.42t99.94-41.61Zm-178.08-21.97q-31.73-31.73-31.73-77.96 0-46.23 31.73-77.96 31.73-31.73 77.96-31.73 46.23 0 77.96 31.73 31.73 31.73 31.73 77.96 0 46.23-31.73 77.96-31.73 31.73-77.96 31.73-46.23 0-77.96-31.73ZM244.46-311.08Q138-382.15 83.08-500 138-617.85 244.35-688.92 350.7-760 479.89-760t235.65 71.08Q822-617.85 876.92-500 822-382.15 715.65-311.08 609.3-240 480.11-240t-235.65-71.08Z" />

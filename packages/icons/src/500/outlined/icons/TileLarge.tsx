@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function TileLarge({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function TileLarge({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M114.02-114.02v-237.91H428v237.91H114.02Zm418.98 0v-237.91h313.22v237.91H533Zm-350.85-68.13h177.72v-101.42H182.15v101.42Zm419.22 0h176.48v-101.42H601.37v101.42ZM114.02-456.93v-389.29h732.2v389.29h-732.2Zm156.87 223.45Zm419.22 0Z" />

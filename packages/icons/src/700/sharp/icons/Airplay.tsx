@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function Airplay({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function Airplay({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="m243-95 237-236L716-95H243ZM55-175v-691h851v691H738v-94h73v-502H149v502h72v94H55Zm425-298Z" />

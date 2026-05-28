@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function ThunderstormFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function ThunderstormFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="m279-9 40-112h-84l55-153h127l-48 109h92L339-9h-60Zm285-45 32-89h-88l48-131h127l-38 87h91L624-54h-60ZM290-334q-94 0-160.5-67T63-561q0-84 58-150t145-75q35-56 90.5-89.5T480-909q93 0 158 58t84 144q82 8 128.5 61.5T897-521q0 77-54.5 132T710-334H290Z" />

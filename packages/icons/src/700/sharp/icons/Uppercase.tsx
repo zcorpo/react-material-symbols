@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function Uppercase({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function Uppercase({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M668-240v-264l-68 68-50-50 154-154 154 154-50 50-69-68v264h-71Zm-545 0 160-447h75l163 447h-71l-40-113H233l-41 113h-69Zm129-175h137l-67-193h-1l-69 193Z" />

@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function BacklightLow({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function BacklightLow({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M92.31-377.31v-45.38h100.38v45.38H92.31ZM266-582l-76.15-76.54 31.61-31.61 76.15 76.54L266-582Zm24 322v-85.39h380V-260H290Zm167.31-420v-107.69h45.38V-680h-45.38Zm235.3 98.23L661-614.38l76.54-75.77 31.61 32.61-76.54 75.77Zm74.7 204.46v-45.38h100.38v45.38H767.31Z" />

@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function BarcodeFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function BarcodeFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M27-192.65v-575.83h87.26v575.83H27Zm123.39 0v-575.83h82.26v575.83h-82.26Zm123.96 0v-575.83h41.13v575.83h-41.13Zm123.39 0v-575.83H480v575.83h-82.26Zm123.39 0v-575.83h123.39v575.83H521.13Zm165.09 0v-575.83h41.13v575.83h-41.13Zm123.39 0v-575.83H933v575.83H809.61Z" />

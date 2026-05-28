@@ -6,10 +6,13 @@ const STYLES = ['outlined', 'rounded', 'sharp']
 
 function makeCombo(w: string, s: string) {
   return defineConfig({
-    entry: { [`${w}/${s}/index`]: `src/${w}/${s}/index.ts` },
+    entry: [
+      `src/${w}/${s}/index.ts`,
+    ],
+    outDir: `dist/${w}/${s}`,
+    bundle: true,
     format: ['esm', 'cjs'],
-    dts: true,
-    treeshake: true,
+    dts: false,
     external: ['react', 'react/jsx-runtime'],
     clean: false,
     sourcemap: false,

@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function MergeType({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function MergeType({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M684.69-180 454.46-410.62v-321.46L327.08-604.69l-32.23-32.62 182.3-182.3 182.31 182.3-32.23 32.62-127.38-127.39v302.23l216.84 217.23-32 32.62Zm-413.23 0-32.61-32.62 160.84-160.84 32.23 32.61L271.46-180Z" />

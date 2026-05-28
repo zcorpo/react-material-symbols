@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function SensorWindow({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function SensorWindow({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M160-80v-800h640v800H160Zm60-430h190v-40h140v40h190v-310H220v310Zm0 60v310h520v-310H220Zm0 310h520-520Z" />

@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function BottomDrawerFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function BottomDrawerFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M114.02-114.02v-732.2h732.2v732.2h-732.2Zm68.13-663.83v360.92l57.33-57.09h481.28l57.09 57.09v-360.92h-595.7Z" />

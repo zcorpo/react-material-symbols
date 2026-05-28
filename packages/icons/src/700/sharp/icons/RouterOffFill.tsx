@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function RouterOffFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function RouterOffFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="m555-671-48-48q24-25 57.5-40t71.5-15q38 0 71.5 15t58.5 40l-48 48q-15-13-36.5-22t-45.5-9q-23 0-45 9t-36 22Zm-92-92-51-52q33-35 92.5-63t132-28q72.5 0 132 28t92.5 63l-51 52q-26-28-71.5-49.5T636-834q-57 0-102 21.5T463-763Zm402 569L589-470v-141h95v123h181v294ZM843-15l-80-80H95v-393h275L16-842l51-50L894-65l-51 50ZM249-249h84v-84h-84v84Zm133 0h84v-84h-84v84Zm133 0h84v-10l-74-74h-10v84Z" />

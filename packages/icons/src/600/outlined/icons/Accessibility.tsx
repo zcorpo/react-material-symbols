@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function Accessibility({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function Accessibility({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M423.98-760.69q-23.2-23.3-23.2-56.02 0-32.73 23.04-56.2 23.04-23.48 56.03-23.48 32.98 0 56.17 23.3 23.2 23.3 23.2 56.02t-23.04 56.2q-23.04 23.48-56.03 23.48-32.98 0-56.17-23.3ZM364.65-75.48v-527.91H120v-73h720v73H595.91v527.91h-73V-340h-85.82v264.52h-72.44Z" />

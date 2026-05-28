@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function LdaFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function LdaFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M433-50v-117L173-277v-242h260v-97H293v-294h374v294H527v97h260v242L527-167v117h-94Zm0-220v-154H268v84l165 70Zm94-1 166-69v-84H527v153Z" />

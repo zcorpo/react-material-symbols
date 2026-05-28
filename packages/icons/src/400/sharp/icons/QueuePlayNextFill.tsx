@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function QueuePlayNextFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function QueuePlayNextFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M449-369h60v-130h130v-60H509v-130h-60v130H319v60h130v130ZM791-60l-47-46 124-124-123-123 46-46 170 169L791-60Zm-461-60v-80H80v-640h800v357H686v283h-56v80H330Z" />

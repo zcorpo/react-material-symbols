@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function CurrencyRupee({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function CurrencyRupee({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M545-172 309-417v-40h111q65 0 119-40.5T592-619H266v-22h326q-10-54-58-89.5T420-766H266v-22h428v22H521q36 17 61 52t31 73h81v22h-81q2 87-57 135.5T420-435h-97l252 263h-30Z" />

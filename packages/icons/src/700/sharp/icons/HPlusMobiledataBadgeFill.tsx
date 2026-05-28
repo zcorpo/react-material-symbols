@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function HPlusMobiledataBadgeFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function HPlusMobiledataBadgeFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M185-274h80v-168h180v168h80v-412h-80v168H265v-168h-80v412Zm475-85h71v-85h85v-72h-85v-85h-71v85h-85v72h85v85ZM15-95v-771h931v771H15Z" />

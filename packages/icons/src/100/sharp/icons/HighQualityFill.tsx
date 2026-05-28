@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function HighQualityFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function HighQualityFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M592-314h25v-61h71v-210H520v210h72v61Zm-320-61h25v-83h118v83h25v-210h-25v102H297v-102h-25v210Zm273-25v-160h118v160H545ZM132-212v-536h696v536H132Z" />

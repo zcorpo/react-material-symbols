@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function NewLabel({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function NewLabel({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M472.31-200v-30.77h137.92L802.15-480 610.23-729.23H150.77v212.31H120V-760h505.32l214.91 280-213.61 280H472.31Zm4.54-280ZM235.38-160v-120h-120v-30.77h120v-120h30.77v120h120V-280h-120v120h-30.77Z" />

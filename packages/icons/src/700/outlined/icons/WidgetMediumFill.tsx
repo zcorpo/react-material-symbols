@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function WidgetMediumFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function WidgetMediumFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M55-55v-240h240v240H55Zm304 0v-240h242v240H359Zm306 0v-240h241v240H665ZM55-359v-242h240v242H55Zm304 0v-242h242v242H359Zm306 0v-242h241v242H665ZM55-665v-241h546v241H55Zm610 0v-241h241v241H665Z" />

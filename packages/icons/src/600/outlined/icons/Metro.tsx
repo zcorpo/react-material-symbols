@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function Metro({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function Metro({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M105.87-105.87V-854.7h177.52L480-320.31 676.17-854.7H854.7v748.83H729.26v-528.48L534.61-106.87H424.26L231.3-630.35v524.48H105.87Z" />

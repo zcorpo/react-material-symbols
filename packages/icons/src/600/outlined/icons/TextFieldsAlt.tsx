@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function TextFieldsAlt({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function TextFieldsAlt({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M80-100.78V-180h800v79.22H80ZM780-280v-560h53v560h-53Zm-636.96 0 229.61-560h98.65l226.22 560h-97.61l-55.3-144.78H293.13L237.26-280h-94.22Zm175.79-214h200.65l-98.05-260.26h-4L318.83-494Z" />

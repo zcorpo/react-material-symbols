@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function MuseumFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function MuseumFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M132-132v-22h81v-427h-81v10l348-245 348 245v-10h-81v427h81v22H132Zm221-134h22v-194l105 156 105-156v194h22v-227h-29l-98 146-98-146h-29v227Z" />

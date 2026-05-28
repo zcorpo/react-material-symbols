@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function Polymer({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function Polymer({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M241.08-209.23 90.77-480l152.31-270.77h124.69L215.69-480l96.16 170.62 270.53-441.39h134.31L869.23-480 716.92-209.23H592.23L744.31-480l-96.39-170.15-270.84 440.92h-136Z" />

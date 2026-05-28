@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function NearbyErrorFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function NearbyErrorFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M807-213v-343h82v343h-82Zm41 155q-21 0-35.5-14.5T798-108q0-21 14.5-35.5T848-158q21 0 35.5 14.5T898-108q0 21-14.5 35.5T848-58ZM483-26 27-482l456-455 275 273v159L483-780 183-480l300 299 275-274v156L483-26Zm0-233L261-480l222-222 222 222-222 221Z" />

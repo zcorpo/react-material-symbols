@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function MenuBook2Fill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function MenuBook2Fill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M212-132v-149h-40v-22h40v-166h-40v-22h40v-166h-40v-22h40v-149h536v696H212Zm206-164h25v-159q23-5 40-21.5t17-40.5v-147h-28v147h-28v-147h-28v147h-28v-147h-28v147q0 24 17 40.5t41 21.5v159Zm177 0h25v-367q-38 5-61.5 33.5T535-563v107h60v160Z" />

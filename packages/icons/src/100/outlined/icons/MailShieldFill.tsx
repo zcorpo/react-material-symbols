@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function MailShieldFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function MailShieldFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M187-212q-23 0-39-15.5T132-266v-428q0-22 16-38t38-16h588q22 0 38 16t16 38v227l-82-43-216 111v136q0 13 1 26t3 25H187ZM746-92q-58-15-90-63.5T624-263v-79l122-62 122 62v79q0 59-32 107.5T746-92Zm0-20q49-15 75-57.5t26-93.5v-67l-101-50v268ZM480-493l326-217-16-16-310 204-310-204-16 16 326 217Z" />

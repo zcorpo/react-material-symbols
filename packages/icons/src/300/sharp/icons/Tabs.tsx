@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function Tabs({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function Tabs({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M140-140v-680h680v680H140Zm45.39-45.39h589.22v-316.46H185.39v316.46Zm0-361.84h589.22v-227.38H185.39v227.38Zm353.69-129.31h202.84v-65.38H539.08v65.38ZM185.39-547.23v-227.38 227.38Z" />

@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function PersonEditFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function PersonEditFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M572-172v-78l231-230 77 78-230 230h-78Zm-360-60v-47q0-23 14-42t37-30q57-25 111-38t106-13q24 0 49 3t51 9L478-290v58H212Zm591-132 37-38-37-38-38 38 38 38ZM405.5-542.5Q375-573 375-617t30.5-74.5Q436-722 480-722t74.5 30.5Q585-661 585-617t-30.5 74.5Q524-512 480-512t-74.5-30.5Z" />

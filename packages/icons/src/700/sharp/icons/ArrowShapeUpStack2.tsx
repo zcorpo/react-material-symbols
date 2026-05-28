@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function ArrowShapeUpStack2({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function ArrowShapeUpStack2({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M353-10v-128H136l345-375 346 375H609v128H353Zm79-80h97v-127h126L481-405 307-217h125v127ZM135-357l346-375 346 375H726L481-622 236-357H135Zm1-218 345-374 345 374H726L481-840 236-575H136Zm345 358Z" />

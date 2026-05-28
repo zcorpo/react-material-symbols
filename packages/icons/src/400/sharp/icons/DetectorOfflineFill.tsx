@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function DetectorOfflineFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function DetectorOfflineFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="m376-120-42-42 104-104-104-104 42-42 104 104 104-104 42 42-104 104 104 104-42 42-104-104-104 104Zm-75-540 18 60h322l18-60H301Zm-26 120-38-120H120v-180h720v180H723l-44 120H275Z" />

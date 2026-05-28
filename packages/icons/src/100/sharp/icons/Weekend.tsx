@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function Weekend({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function Weekend({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M92-212v-395h66v-143h644v143h66v395H92Zm125-183h526v-212h37v-121H180v121h37v212ZM114-234h732v-352h-81v213H195v-213h-81v352Zm366-139Zm0-22Zm0 22Z" />

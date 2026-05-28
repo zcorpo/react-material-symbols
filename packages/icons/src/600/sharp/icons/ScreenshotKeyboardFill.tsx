@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function ScreenshotKeyboardFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function ScreenshotKeyboardFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M480-480Zm113.28 113.28q46.33-46.32 46.33-113.28 0-66.96-46.33-113.28-46.32-46.33-113.28-46.33-66.96 0-113.28 46.33-46.33 46.32-46.33 113.28 0 66.96 46.33 113.28 46.32 46.33 113.28 46.33 66.96 0 113.28-46.33ZM65.87-145.87V-814.7H894.7v668.83H65.87Z" />

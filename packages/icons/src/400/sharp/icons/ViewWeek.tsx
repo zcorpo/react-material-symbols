@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function ViewWeek({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function ViewWeek({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M140-220h187v-520H140v520Zm247 0h186v-520H387v520Zm246 0h187v-520H633v520Zm247 60H80v-640h800v640Z" />

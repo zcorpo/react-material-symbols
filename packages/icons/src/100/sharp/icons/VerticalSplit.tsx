@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function VerticalSplit({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function VerticalSplit({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M170-396v-22h271v22H170Zm0 144v-22h271v22H170Zm0-290v-22h271v22H170Zm0-144v-22h271v22H170Zm411 434v-456h209v456H581Zm22-22h165v-412H603v412Zm83-206Z" />

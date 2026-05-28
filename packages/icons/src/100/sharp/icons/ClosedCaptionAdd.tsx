@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function ClosedCaptionAdd({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function ClosedCaptionAdd({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M480-480Zm135 268H172v-536h616v363h-22v-341H194v492h421v22Zm151 80v-80h-80v-22h80v-80h22v80h80v22h-80v80h-22ZM276-376h169v-50h-25v25H301v-158h119v27h25v-52H276v208Zm240 0h168v-50h-25v25H541v-158h118v27h25v-52H516v208Z" />

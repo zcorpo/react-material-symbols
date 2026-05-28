@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function ChatPasteGo2Fill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function ChatPasteGo2Fill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="m720-124-42-42 73-74H570v-60h181l-73-74 42-42 146 146-146 146Zm-600 4v-620q0-25 17.5-42.5T180-800h520q25 0 42.5 17.5T760-740v223q-10-2-20-2.5t-20-.5q-95 0-167.5 73T480-280q0 10 .5 20t2.5 20H240L120-120Z" />

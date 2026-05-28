@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function OutdoorGardenFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function OutdoorGardenFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M115.23-130h224.46v-587.31l-112.23-110-112.23 110V-130Zm252.54 0h224.46v-587.31L480-827.31l-112.23 110V-130Zm252.54 0h224.46v-587.31l-112.23-110-112.23 110V-130Z" />

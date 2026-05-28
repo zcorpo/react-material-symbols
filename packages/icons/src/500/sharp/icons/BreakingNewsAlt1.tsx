@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function BreakingNewsAlt1({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function BreakingNewsAlt1({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M251.2-291.2h180v-60h-180v60Zm397.84 0h60v-60h-60v60ZM251.2-450h180v-60h-180v60Zm397.84 0h60v-219.04h-60V-450ZM251.2-609.04h180v-60h-180v60ZM66.02-114.02v-732.2h828.2v732.2H66.02Zm68.13-68.13h691.7v-595.7h-691.7v595.7Zm0 0v-595.7 595.7Z" />

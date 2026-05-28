@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function TvOff({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function TvOff({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="m886-213-75-74v-484H327l-94-95h673v653h-20ZM142-857l85 86h-78v502h479L13-883l51-51 823 822-51 51-114-114h-78v80H317v-80H55v-682h87Zm272 374Zm158-43Z" />

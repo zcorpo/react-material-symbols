@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function NotificationMultipleFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function NotificationMultipleFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M121-132v-486h22v464h512v22H121Zm96-96v-392l311-184 22 11-303 182 281 172 283-172 28 17v366H217Zm300-309-77-77 16-16 61 61 155-154 16 16-171 170Z" />

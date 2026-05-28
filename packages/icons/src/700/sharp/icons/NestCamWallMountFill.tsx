@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function NestCamWallMountFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function NestCamWallMountFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M99-244.5Q73-271 73-308v-365q0-37 26-63.5t64-26.5q37 0 63.5 26t26.5 63q35-52 91.5-84T469-790q54 0 102.5 20.5T658-711l235 234-378 377-235-233q-9-8-15.5-17T253-369v61q0 37-26.5 63.5t-64 26.5Q125-218 99-244.5Z" />

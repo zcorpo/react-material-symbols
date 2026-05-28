@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function QrCodeFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function QrCodeFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M86-510v-365h364v365H86Zm94-95h176v-175H180v175ZM86-86v-364h364v364H86Zm94-94h176v-176H180v176Zm330-330v-365h365v365H510Zm95-95h175v-175H605v175ZM784-86v-91h91v91h-91ZM510-359v-91h91v91h-91Zm91 91v-91h91v91h-91Zm-91 91v-91h91v91h-91Zm91 91v-91h91v91h-91Zm91-91v-91h92v91h-92Zm0-182v-91h92v91h-92Zm92 91v-91h91v91h-91Z" />

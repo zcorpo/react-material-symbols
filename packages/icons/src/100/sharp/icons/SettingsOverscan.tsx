@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function SettingsOverscan({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function SettingsOverscan({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M267-422v-116l-59 58 59 58Zm213 133 58-58H422l58 58Zm-58-324h116l-58-58-58 58Zm272 191 58-58-58-58v116ZM132-212v-536h696v536H132Zm22-22h652v-492H154v492Zm0 0v-492 492Z" />

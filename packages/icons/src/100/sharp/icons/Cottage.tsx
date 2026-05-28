@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function Cottage({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function Cottage({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M212-172v-371l-83 64-13-17 96-74v-97h22v79l246-187 364 279-13 17-83-64v371H212Zm22-22h189v-200h114v200h189v-365L480-747 234-559v365Zm-22-526q0-31 19.04-53T289-795q30.27 0 42.64-15.5Q344-826 344-848h22q0 31-18.62 53-18.63 22-58.38 22-30 0-42.5 15.36T234-720h-22Zm22 526h492-492Z" />

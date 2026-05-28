@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function HallwayFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function HallwayFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M189-34q-39.05 0-66.53-27.77Q95-89.54 95-129v-581q0-39.46 27.47-67.23Q149.95-805 189-805h134l158-157 159 157h131q39.46 0 67.23 27.77Q866-749.46 866-710v581q0 39.46-27.77 67.23Q810.46-34 771-34H189Zm33-184h518L579-442 447-268l-93-129-132 179Zm186-587h147l-74-73-73 73Z" />

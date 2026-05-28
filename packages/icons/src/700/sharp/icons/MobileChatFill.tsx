@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function MobileChatFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function MobileChatFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M177-17v-926h606v323H460v509h56l109-109h158v203H177Zm343-183v-360h360v280H600l-80 80Zm-15.5-510.5Q515-721 515-736t-10.5-25.5Q494-772 479-772t-25.5 10.5Q443-751 443-736t10.5 25.5Q464-700 479-700t25.5-10.5Z" />

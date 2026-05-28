@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function SignalCellularConnectedNoInternet4BarFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function SignalCellularConnectedNoInternet4BarFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="m55-55 851-851v275H731v576H55Zm770-13.5Q811-82 811-102q0-19 14-33t33.5-14q19.5 0 33.5 14t14 33q0 20-14 33.5T858.5-55Q839-55 825-68.5ZM811-192v-359h95v359h-95Z" />

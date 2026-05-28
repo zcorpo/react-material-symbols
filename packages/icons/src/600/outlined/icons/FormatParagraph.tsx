@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function FormatParagraph({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function FormatParagraph({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M359.26-150.39v-260.57h-20q-79.98-3.39-134.99-61.04-55.01-57.65-55.01-138.11 0-82.88 58.39-141.19 58.38-58.31 141.22-58.31H731.3v79.22h-90v580h-79.78v-580H438.48v580h-79.22Z" />

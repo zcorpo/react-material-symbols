@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function Icon360Fill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function Icon360Fill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="m353-148-50-51 70-70q-150-17-234-72T55-486q0-100 123-158t302-58q179 0 302.5 57.5T906-486q0 75-71 127.5T646-287v-98q80-16 122.5-46t42.5-55q0-34-77.5-77.5T480-607q-175 0-253 43.5T149-486q0 45 48.5 73T388-358l-85-83 50-52 173 172-173 173Z" />

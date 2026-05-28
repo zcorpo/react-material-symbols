@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function Padding({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function Padding({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M284.69-622.61h56.16v-56.16h-56.16v56.16Zm167.23 0h56.16v-56.16h-56.16v56.16Zm167.23 0h56.16v-56.16h-56.16v56.16ZM140-140v-680h680v680H140Zm45.39-45.39h589.22v-589.22H185.39v589.22Zm0 0v-589.22 589.22Z" />

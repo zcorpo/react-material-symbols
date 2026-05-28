@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function ArrowCoolDown({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function ArrowCoolDown({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M480.24-74.02 194.02-360l47.74-47.74 204.41 204.41v-293.08h68.13v293.08l204.18-204.65L766.22-360 480.24-74.02Zm-34.07-482.39v-141.2h68.13v141.2h-68.13Zm0-201.2v-128.13h68.13v128.13h-68.13Z" />

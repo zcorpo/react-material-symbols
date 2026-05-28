@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function TitleFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function TitleFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M420.39-145.87v-549.61H185.87V-814.7H774.7v119.22H540.17v549.61H420.39Z" />

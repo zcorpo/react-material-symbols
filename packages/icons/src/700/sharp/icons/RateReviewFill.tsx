@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function RateReviewFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function RateReviewFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M234-394h144l234-234-145-142-233 232v144Zm299-263-29 89-96-37 32-88 93 36Zm-83 263h276v-60H510l-60 60ZM55-55v-851h851v691H215L55-55Z" />

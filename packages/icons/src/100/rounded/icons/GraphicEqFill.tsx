@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function GraphicEqFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function GraphicEqFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M321-297v-366q0-4.67 3.03-7.84 3.02-3.16 7.5-3.16 4.47 0 7.97 3.16 3.5 3.17 3.5 7.84v366q0 4.68-3.71 7.84t-8.18 3.16q-4.48 0-7.29-3.16Q321-292.32 321-297Zm148 154v-674q0-4.67 3.23-7.84 3.23-3.16 8-3.16t7.77 3.16q3 3.17 3 7.84v674q0 4.67-3.23 7.84-3.23 3.16-8 3.16t-7.77-3.16q-3-3.17-3-7.84ZM172-447v-66q0-4.67 3.23-7.84 3.23-3.16 8-3.16t7.77 3.16q3 3.17 3 7.84v66q0 4.68-3.23 7.84t-8 3.16q-4.77 0-7.77-3.16t-3-7.84Zm446 150v-366q0-4.67 3.03-7.84 3.02-3.16 7.5-3.16 4.47 0 7.97 3.16 3.5 3.17 3.5 7.84v366q0 4.68-3.71 7.84t-8.18 3.16q-4.48 0-7.29-3.16Q618-292.32 618-297Zm148-150v-66q0-4.67 3.23-7.84 3.23-3.16 8-3.16t7.77 3.16q3 3.17 3 7.84v66q0 4.68-3.23 7.84t-8 3.16q-4.77 0-7.77-3.16t-3-7.84Z" />

@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function FoodBankFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function FoodBankFill({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M416-274h32v-128q20 0 34-14t14-34v-96h-32v96h-16v-96h-32v96h-16v-96h-32v96q0 20 14 34t34 14v128Zm128 0h32v-272q-26 0-45 18.8T512-482v96h32v112ZM212-172v-402l268-202 268 202v402H212Z" />

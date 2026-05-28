@@ -1,6 +1,6 @@
-import type { SVGProps } from 'react'
+import type { SVGProps, JSX } from 'react'
 
-export default function Fort({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }) {
+export default function Fort({ size = 24, ...props }: SVGProps<SVGSVGElement> & { size?: number }): JSX.Element {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} fill="currentColor" viewBox="0 -960 960 960" {...props}>
       <path d="M12-86v-209l80-80v-250l-80-80v-170h82v80h89v-80h83v80h88v-80h83v170l-85 86v68h251v-74l-80-80v-170h83v80h88v-80h83v80h89v-80h83v170l-80 80v250l80 80v209H553v-221H407v221H12Zm94-94h207v-221h334v221h207v-76l-80-80v-316l60-59H638l59 59v183H263v-183l59-59H126l60 59v316l-80 80v76Zm374-266Z" />
