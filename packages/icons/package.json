@@ -1,6 +1,6 @@
 {
   "name": "@zcorpo/react-material-symbols",
-  "version": "0.1.2",
+  "version": "0.1.5",
   "description": "Material Symbols icons as React SVG components — no font loading, full tree shaking",
   "license": "MIT",
   "keywords": [
@@ -21,6 +21,76 @@
   "module": "./dist/400/rounded/index.mjs",
   "types": "./dist/400/rounded/index.d.ts",
   "exports": {
+    "./100": {
+      "import": {
+        "types": "./dist/100/index.d.mts",
+        "default": "./dist/100/index.mjs"
+      },
+      "require": {
+        "types": "./dist/100/index.d.ts",
+        "default": "./dist/100/index.js"
+      }
+    },
+    "./200": {
+      "import": {
+        "types": "./dist/200/index.d.mts",
+        "default": "./dist/200/index.mjs"
+      },
+      "require": {
+        "types": "./dist/200/index.d.ts",
+        "default": "./dist/200/index.js"
+      }
+    },
+    "./300": {
+      "import": {
+        "types": "./dist/300/index.d.mts",
+        "default": "./dist/300/index.mjs"
+      },
+      "require": {
+        "types": "./dist/300/index.d.ts",
+        "default": "./dist/300/index.js"
+      }
+    },
+    "./400": {
+      "import": {
+        "types": "./dist/400/index.d.mts",
+        "default": "./dist/400/index.mjs"
+      },
+      "require": {
+        "types": "./dist/400/index.d.ts",
+        "default": "./dist/400/index.js"
+      }
+    },
+    "./500": {
+      "import": {
+        "types": "./dist/500/index.d.mts",
+        "default": "./dist/500/index.mjs"
+      },
+      "require": {
+        "types": "./dist/500/index.d.ts",
+        "default": "./dist/500/index.js"
+      }
+    },
+    "./600": {
+      "import": {
+        "types": "./dist/600/index.d.mts",
+        "default": "./dist/600/index.mjs"
+      },
+      "require": {
+        "types": "./dist/600/index.d.ts",
+        "default": "./dist/600/index.js"
+      }
+    },
+    "./700": {
+      "import": {
+        "types": "./dist/700/index.d.mts",
+        "default": "./dist/700/index.mjs"
+      },
+      "require": {
+        "types": "./dist/700/index.d.ts",
+        "default": "./dist/700/index.js"
+      }
+    },
     "./100/outlined": {
       "import": {
         "types": "./dist/100/outlined/index.d.mts",
@@ -234,6 +304,13 @@
   },
   "typesVersions": {
     "*": {
+      "100": ["./dist/100/index.d.ts"], 
+      "200": ["./dist/200/index.d.ts"],
+      "300": ["./dist/300/index.d.ts"],
+      "400": ["./dist/400/index.d.ts"],
+      "500": ["./dist/500/index.d.ts"],
+      "600": ["./dist/600/index.d.ts"],
+      "700": ["./dist/700/index.d.ts"],
       "100/outlined": ["./dist/100/outlined/index.d.ts"],
       "100/rounded": ["./dist/100/rounded/index.d.ts"],
       "100/sharp": ["./dist/100/sharp/index.d.ts"],

@@ -43,6 +43,16 @@ async function generateCombo(w: string, s: string): Promise<void> {
   console.log(`DTS  ${w}/${s}  (${names.length} exports)`)
 }
 
+async function generateWeight(w: string): Promise<void> {
+  const distDir = path.join(DIST_DIR, w)
+  const dts = `export * from './rounded/index';\n`
+  await Promise.all([
+    fs.writeFile(path.join(distDir, 'index.d.ts'), dts),
+    fs.writeFile(path.join(distDir, 'index.d.mts'), dts),
+  ])
+  console.log(`DTS  ${w}  (re-export from rounded)`)
+}
+
 async function main() {
   for (const w of WEIGHTS) {
     for (const s of STYLES) {
@@ -54,6 +64,9 @@ async function main() {
       if (!exists) continue
       await generateCombo(w, s)
     }
+    const distDir = path.join(DIST_DIR, w)
+    const exists = await fs.access(distDir).then(() => true).catch(() => false)
+    if (exists) await generateWeight(w)
   }
   console.log('Done.')
 }

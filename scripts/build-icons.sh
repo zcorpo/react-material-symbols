@@ -17,6 +17,13 @@ for w in 100 200 300 400 500 600 700; do
   done
 done
 
+printf '\nBuilding per-weight barrels…\n'
+for w in 100 200 300 400 500 600 700; do
+  test -f "$ICONS_DIR/src/$w/index.ts" || continue
+  printf 'Building %s…\n' "$w"
+  (cd "$ICONS_DIR" && BUILD_WEIGHT="$w" node_modules/.bin/tsup)
+done
+
 printf '\nGenerating type declarations…\n'
 node --import tsx/esm "$ROOT/scripts/generate-dts.ts"
 
