@@ -1,6 +1,6 @@
 {
   "name": "@zcorpo/react-material-symbols",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Material Symbols icons as React SVG components — no font loading, full tree shaking",
   "license": "MIT",
   "keywords": [
