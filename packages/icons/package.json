@@ -1,6 +1,6 @@
 {
   "name": "@zcorpo/react-material-symbols",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Material Symbols icons as React SVG components — no font loading, full tree shaking",
   "license": "MIT",
   "keywords": [
@@ -230,6 +230,31 @@
         "types": "./dist/700/sharp/index.d.ts",
         "default": "./dist/700/sharp/index.js"
       }
+    }
+  },
+  "typesVersions": {
+    "*": {
+      "100/outlined": ["./dist/100/outlined/index.d.ts"],
+      "100/rounded": ["./dist/100/rounded/index.d.ts"],
+      "100/sharp": ["./dist/100/sharp/index.d.ts"],
+      "200/outlined": ["./dist/200/outlined/index.d.ts"],
+      "200/rounded": ["./dist/200/rounded/index.d.ts"],
+      "200/sharp": ["./dist/200/sharp/index.d.ts"],
+      "300/outlined": ["./dist/300/outlined/index.d.ts"],
+      "300/rounded": ["./dist/300/rounded/index.d.ts"],
+      "300/sharp": ["./dist/300/sharp/index.d.ts"],
+      "400/outlined": ["./dist/400/outlined/index.d.ts"],
+      "400/rounded": ["./dist/400/rounded/index.d.ts"],
+      "400/sharp": ["./dist/400/sharp/index.d.ts"],
+      "500/outlined": ["./dist/500/outlined/index.d.ts"],
+      "500/rounded": ["./dist/500/rounded/index.d.ts"],
+      "500/sharp": ["./dist/500/sharp/index.d.ts"],
+      "600/outlined": ["./dist/600/outlined/index.d.ts"],
+      "600/rounded": ["./dist/600/rounded/index.d.ts"],
+      "600/sharp": ["./dist/600/sharp/index.d.ts"],
+      "700/outlined": ["./dist/700/outlined/index.d.ts"],
+      "700/rounded": ["./dist/700/rounded/index.d.ts"],
+      "700/sharp": ["./dist/700/sharp/index.d.ts"]
     }
   },
   "files": [
