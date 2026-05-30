@@ -12,6 +12,10 @@
 - `size` prop, full `SVGProps` passthrough, color via CSS `currentColor`
 - ESM + CJS, TypeScript declarations included
 
+## Proof for bundle size from Next.js (App router)
+
+<img width="3665" height="2020" alt="Screenshot 2026-05-30 at 9 29 46 PM" src="https://github.com/user-attachments/assets/8a67be23-a503-4f59-89d5-3c7e27568949" />
+
 ## Installation
 
 ```sh
